@@ -1,0 +1,4 @@
+vendor/
+sites/default/files
+sites/default/settings.local.php
+
