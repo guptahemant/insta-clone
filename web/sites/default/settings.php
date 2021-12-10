@@ -803,4 +803,6 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
    include $app_root . '/' . $site_path . '/settings.local.php';
  }
 
+
 $settings['config_sync_directory'] = '../config/config_WyKm06hAxVMNj5K2LMNjqjoh75S2C6nDkQ_201AlGuq-uz1YT4qX8gUftlmGoAsxsmZcjqgMHA/sync';
+
