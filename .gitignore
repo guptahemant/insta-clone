@@ -1,4 +1,7 @@
 vendor/
-sites/default/files
-sites/default/settings.local.php
+web/sites/default/files/*
+web/sites/default/settings.local.php
+libraries/
+modules/contrib
+
 
