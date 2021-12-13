@@ -1,0 +1,22 @@
+uuid: 38246b5f-6e02-4f9a-a8ab-136b38632645
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - instagram
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: instagram_help
+theme: instagram
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

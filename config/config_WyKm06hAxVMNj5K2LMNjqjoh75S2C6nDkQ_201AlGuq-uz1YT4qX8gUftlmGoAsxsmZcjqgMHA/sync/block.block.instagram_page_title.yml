@@ -1,0 +1,20 @@
+uuid: 1534f86f-e8d3-4998-8984-cb72f8a9a8bb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - instagram
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: instagram_page_title
+theme: instagram
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

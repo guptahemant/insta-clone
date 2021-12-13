@@ -1,0 +1,22 @@
+uuid: d4073882-87c3-4f06-a2f9-45b8755d04b1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - instagram
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: instagram_local_tasks
+theme: instagram
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
