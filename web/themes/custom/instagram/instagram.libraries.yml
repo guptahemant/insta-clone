@@ -1,0 +1,9 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/all/style.css: {}
+  js:
+    js/instagram.js: {}
+  dependencies:
+    - core/jquery
