@@ -11,4 +11,5 @@ libraries:
 regions:
   header: header
   content: Content
-  footer: Footer 
+  footer_top: Footer Top
+  footer_bottom: Footer Bottom
