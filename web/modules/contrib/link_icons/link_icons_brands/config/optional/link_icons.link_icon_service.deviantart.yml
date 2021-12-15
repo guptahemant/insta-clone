@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: deviantart
+label: 'DeviantArt'
+hostnames:
+ - 'deviantart.com'
+icon: 'deviantart'
+icon_style: 'brand'
+color: '#CFDD20'

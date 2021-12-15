@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: yahoo
+label: 'Yahoo'
+hostnames:
+ - 'yahoo.com'
+icon: 'yahoo'
+icon_style: 'brand'
+color: '#6001D2'

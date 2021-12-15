@@ -1,0 +1,72 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for link_icons.
+ */
+
+use Drupal\Core\Config\FileStorage;
+
+/**
+ * Helper function to read in new/updated brand service config files.
+ */
+function _link_icons_brands_read_services_config(array $config_files) {
+  /**
+   * @var \Drupal\Core\Config\FileStorage $source_dir
+   */
+  $source_dir = new FileStorage(drupal_get_path('module', 'link_icons_brands') . '/config/optional');
+
+  /**
+   * @var \Drupal\Core\Config\StorageInterface $config_storage
+   */
+  $config_storage = \Drupal::service('config.storage');
+
+  foreach ($config_files as $config) {
+    $config_name = 'link_icons.link_icon_service.' . $config;
+    $config_storage->write($config_name, $source_dir->read($config_name));
+    \Drupal::configFactory()->getEditable($config_name)->set('uuid', \Drupal::service('uuid')->generate())->save();
+  }
+
+  return 'Added/updated configurations for ' . implode(', ', $config_files) . '.';
+}
+
+/**
+ * Add new configurations.
+ */
+function link_icons_brands_update_8301() {
+  return _link_icons_brands_read_services_config([
+    'acast',
+    'airbnb',
+    'audible',
+    'blogger',
+    'dailymotion',
+    'ebay',
+    'itunes',
+    'kickstarter',
+    'mixcloud',
+    'napster',
+    'periscope',
+    'skype',
+    'slack',
+  ]);
+}
+
+/**
+ * Update configurations.
+ */
+function link_icons_brands_update_8302() {
+  return _link_icons_brands_read_services_config([
+    'bitbucket',
+    'facebook',
+    'pinterest',
+  ]);
+}
+
+/**
+ * Update configurations.
+ */
+function link_icons_brands_update_8303() {
+  return _link_icons_brands_read_services_config([
+    'wikipedia',
+  ]);
+}

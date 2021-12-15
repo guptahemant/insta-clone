@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: github
+label: 'GitHub'
+hostnames:
+ - 'github.com'
+icon: 'github'
+icon_style: 'brand'
+icon_square: 'github-square'
+color: 'black'

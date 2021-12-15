@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: sellcast
+label: 'Sellcast'
+hostnames:
+ - 'sellcast.com'
+icon: 'sellcast'
+icon_style: 'brand'
+color: '#F15B2F'

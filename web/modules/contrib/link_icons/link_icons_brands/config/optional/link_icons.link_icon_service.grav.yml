@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: grav
+label: 'Grav'
+hostnames:
+ - 'getgrav.org'
+icon: 'grav'
+icon_style: 'brand'
+color: 'black'

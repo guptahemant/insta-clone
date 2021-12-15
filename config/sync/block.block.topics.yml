@@ -1,0 +1,25 @@
+uuid: a63228f2-c831-4c5b-84dd-ad8cd4298503
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.topics
+  module:
+    - system
+  theme:
+    - instagram
+id: topics
+theme: instagram
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:topics'
+settings:
+  id: 'system_menu_block:topics'
+  label: Topics
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

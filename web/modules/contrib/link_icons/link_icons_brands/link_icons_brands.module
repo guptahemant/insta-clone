@@ -1,0 +1,105 @@
+<?php
+
+/**
+ * @file
+ * A sub-module adding various link icon brand service configurations.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function link_icons_brands_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.link_icons_brands':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The <em>Link Icons Brands</em> module adds configurations for various link icon services of online brands. You can modify and/or remove these services on the <a href=":link_icon_service_list">Link icon services</a> configuration page.', [':link_icon_service_list' => Url::fromRoute('entity.link_icon_service.collection')->toString()]) . '</p';
+      $output .= '<h3>' . t('Services') . '</h3>';
+      $output .= '<ul>';
+      $output .= '<li>500px</li>';
+      $output .= '<li>Acast</li>';
+      $output .= '<li>Airbnb</li>';
+      $output .= '<li>Amazon</li>';
+      $output .= '<li>AngelList</li>';
+      $output .= '<li>Apple</li>';
+      $output .= '<li>Audible</li>';
+      $output .= '<li>Bandcamp</li>';
+      $output .= '<li>Behance</li>';
+      $output .= '<li>Bitbucket</li>';
+      $output .= '<li>Blogger</li>';
+      $output .= '<li>Codepen</li>';
+      $output .= '<li>Dailymotion</li>';
+      $output .= '<li>Delicious</li>';
+      $output .= '<li>DeviantArt</li>';
+      $output .= '<li>Digg</li>';
+      $output .= '<li>Dribbble</li>';
+      $output .= '<li>Dropbox</li>';
+      $output .= '<li>Drupal</li>';
+      $output .= '<li>eBay</li>';
+      $output .= '<li>Etsy</li>';
+      $output .= '<li>Facebook</li>';
+      $output .= '<li>Flickr</li>';
+      $output .= '<li>Font Awesome</li>';
+      $output .= '<li>Foursquare</li>';
+      $output .= '<li>freeCodeCamp</li>';
+      $output .= '<li>Grav</li>';
+      $output .= '<li>Github</li>';
+      $output .= '<li>Google</li>';
+      $output .= '<li>Google Chrome</li>';
+      $output .= '<li>Google Drive</li>';
+      $output .= '<li>Google Play</li>';
+      $output .= '<li>Google Plus</li>';
+      $output .= '<li>IMDb</li>';
+      $output .= '<li>Instagram</li>';
+      $output .= '<li>iTunes</li>';
+      $output .= '<li>Joomla</li>';
+      $output .= '<li>JSFiddle</li>';
+      $output .= '<li>Kickstarter</li>';
+      $output .= '<li>last.fm</li>';
+      $output .= '<li>LinkedIn</li>';
+      $output .= '<li>Linode</li>';
+      $output .= '<li>Medium</li>';
+      $output .= '<li>Meetup</li>';
+      $output .= '<li>Mixcloud</li>';
+      $output .= '<li>Napster</li>';
+      $output .= '<li>Paypal</li>';
+      $output .= '<li>Periscope</li>';
+      $output .= '<li>Pinterest</li>';
+      $output .= '<li>Product Hunt</li>';
+      $output .= '<li>Quora</li>';
+      $output .= '<li>Ravelry</li>';
+      $output .= '<li>Reddit</li>';
+      $output .= '<li>Sellcast</li>';
+      $output .= '<li>Skype</li>';
+      $output .= '<li>Slack</li>';
+      $output .= '<li>Slideshare</li>';
+      $output .= '<li>Snapchat</li>';
+      $output .= '<li>Soundcloud</li>';
+      $output .= '<li>Spotify</li>';
+      $output .= '<li>Stack Exchange</li>';
+      $output .= '<li>Stack Overflow</li>';
+      $output .= '<li>Steam</li>';
+      $output .= '<li>StumbleUpon</li>';
+      $output .= '<li>Telegram</li>';
+      $output .= '<li>Tripadvisor</li>';
+      $output .= '<li>Tumblr</li>';
+      $output .= '<li>Twitch</li>';
+      $output .= '<li>Twitter</li>';
+      $output .= '<li>Viadeo</li>';
+      $output .= '<li>Vimeo</li>';
+      $output .= '<li>Vine</li>';
+      $output .= '<li>Wikipedia</li>';
+      $output .= '<li>WordPress</li>';
+      $output .= '<li>WPExplorer</li>';
+      $output .= '<li>Xing</li>';
+      $output .= '<li>Yahoo</li>';
+      $output .= '<li>Yelp</li>';
+      $output .= '<li>YouTube</li>';
+      $output .= '</ul>';
+
+      return $output;
+  }
+}

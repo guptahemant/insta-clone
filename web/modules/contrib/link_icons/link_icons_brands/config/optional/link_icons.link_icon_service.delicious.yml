@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: delicious
+label: 'Delicious'
+hostnames:
+ - 'del.icio.us'
+icon: 'delicious'
+icon_style: 'brand'
+color: 'black'

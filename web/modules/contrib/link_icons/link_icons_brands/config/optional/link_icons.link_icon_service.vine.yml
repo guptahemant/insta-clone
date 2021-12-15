@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: vine
+label: 'Vine'
+hostnames:
+ - 'vine.co'
+icon: 'vine'
+icon_style: 'brand'
+color: '#00BF8F'

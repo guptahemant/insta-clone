@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: instagram
+label: 'Instagram'
+hostnames:
+ - 'instagram.com'
+icon: 'instagram'
+icon_style: 'brand'
+color: '#48769B'

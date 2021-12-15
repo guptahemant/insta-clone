@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: digg
+label: 'Digg'
+hostnames:
+ - 'digg.com'
+icon: 'digg'
+icon_style: 'brand'
+color: 'black'

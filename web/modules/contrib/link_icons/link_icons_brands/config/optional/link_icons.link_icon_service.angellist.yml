@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: angellist
+label: 'AngelList'
+hostnames:
+ - 'angel.co'
+icon: 'angellist'
+icon_style: 'brand'
+color: 'black'

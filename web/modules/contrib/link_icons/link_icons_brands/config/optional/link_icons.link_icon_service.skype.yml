@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: skype
+label: 'Skype'
+hostnames:
+ - 'skype.com'
+icon: 'skype'
+icon_style: 'brand'
+color: '#0078D7'

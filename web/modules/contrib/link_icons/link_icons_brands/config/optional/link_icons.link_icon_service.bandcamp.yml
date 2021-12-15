@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: bandcamp
+label: 'Bandcamp'
+hostnames:
+ - 'bandcamp.com'
+icon: 'bandcamp'
+icon_style: 'brand'
+color: '#639AA9'

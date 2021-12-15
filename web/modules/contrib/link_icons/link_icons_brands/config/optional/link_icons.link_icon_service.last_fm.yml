@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: last_fm
+label: 'last.fm'
+hostnames:
+ - 'last.fm'
+icon: 'lastfm'
+icon_style: 'brand'
+icon_square: 'lastfm-square'
+color: '#B90000'

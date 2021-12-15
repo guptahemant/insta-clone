@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+id: googleplus
+label: 'Google Plus'
+hostnames:
+ - 'plus.google.com'
+class: 'google-plus'
+icon: 'google-plus-g'
+icon_style: 'brand'
+icon_square: 'google-plus-square'
+icon_circle: 'google-plus'
+color: '#DD4B39'

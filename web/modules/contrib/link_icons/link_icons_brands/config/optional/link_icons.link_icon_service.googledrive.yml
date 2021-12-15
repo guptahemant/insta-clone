@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: googledrive
+label: 'Google Drive'
+hostnames:
+ - 'drive.google.com'
+class: 'google-drive'
+icon: 'google-drive'
+icon_style: 'brand'
+color: '#1FA463'

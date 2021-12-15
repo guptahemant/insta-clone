@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: youtube
+label: 'YouTube'
+hostnames:
+ - 'youtube.com'
+icon: 'youtube'
+icon_style: 'brand'
+icon_square: 'youtube-square'
+color: '#CC181E'

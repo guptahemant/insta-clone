@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: dropbox
+label: 'Dropbox'
+hostnames:
+ - 'dropbox.com'
+icon: 'dropbox'
+icon_style: 'brand'
+color: '#1182DE'

@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+id: steam
+label: 'Steam'
+hostnames:
+ - 'steamcommunity.com'
+ - 'steampowered.com'
+icon: 'steam-symbol'
+icon_style: 'brand'
+icon_square: 'steam-square'
+icon_circle: 'steam'
+color: 'black'

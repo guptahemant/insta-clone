@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: 500px
+label: '500px'
+hostnames:
+  - '500px.com'
+  - 'web.500px.com'
+class: 'fivehundredpx'
+icon: '500px'
+icon_style: 'brand'
+color: 'black'

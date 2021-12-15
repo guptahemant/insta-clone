@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: yelp
+label: 'Yelp'
+hostnames:
+ - 'yelp.com'
+ - 'yelp.co.uk'
+icon: 'yelp'
+icon_style: 'brand'
+color: '#D32323'

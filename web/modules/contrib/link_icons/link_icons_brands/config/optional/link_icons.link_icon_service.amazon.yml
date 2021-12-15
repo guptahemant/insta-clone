@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies: {  }
+id: amazon
+label: 'Amazon'
+hostnames:
+ - 'amazon.com'
+ - 'amazon.com.au'
+ - 'amazon.com.br'
+ - 'amazon.com.mx'
+ - 'amazon.ca'
+ - 'amazon.cn'
+ - 'amazon.co.uk'
+ - 'amazon.co.jp'
+ - 'amazon.de'
+ - 'amazon.es'
+ - 'amazon.fr'
+ - 'amazon.in'
+ - 'amazon.nl'
+icon: 'amazon'
+icon_style: 'brand'
+color: 'black'

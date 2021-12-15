@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: napster
+label: 'Napster'
+hostnames:
+ - 'napster.com'
+icon: 'napster'
+icon_style: 'brand'
+color: '#2E45B5'

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: etsy
+label: 'Etsy'
+hostnames:
+ - 'etsy.com'
+icon: 'etsy'
+icon_style: 'brand'
+color: '#F56400'

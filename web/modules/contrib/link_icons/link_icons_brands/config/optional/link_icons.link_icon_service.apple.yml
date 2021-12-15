@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: apple
+label: 'Apple'
+hostnames:
+ - 'apple.com'
+icon: 'apple'
+icon_style: 'brand'
+color: '#6E6E6E'

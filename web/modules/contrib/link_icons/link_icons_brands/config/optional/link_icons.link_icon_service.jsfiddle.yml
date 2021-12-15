@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: jsfiddle
+label: 'JSFiddle'
+hostnames:
+ - 'jsfiddle.net'
+icon: 'jsfiddle'
+icon_style: 'brand'
+color: '#4679BD'

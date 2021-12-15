@@ -1,0 +1,16 @@
+name: 'Link Icons formatter'
+type: module
+description: 'Field formatter for Link field to render a Font Awesome icon for the service being linked to (ex. Facebook, Twitter or LinkedIn), with various display options'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Fields
+configure: entity.link_icon_service.collection
+
+dependencies:
+  - drupal:link
+  - drupal:fontawesome (>=8.x-2.x)
+
+# Information added by Drupal.org packaging script on 2021-01-13
+version: '3.0.3'
+project: 'link_icons'
+datestamp: 1610516198

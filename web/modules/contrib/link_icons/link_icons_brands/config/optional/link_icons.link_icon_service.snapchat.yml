@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: snapchat
+label: 'Snapchat'
+hostnames:
+ - 'snapchat.com'
+icon: 'snapchat-ghost'
+icon_style: 'brand'
+icon_square: 'snapchat-square'
+icon_circle: 'snapchat'
+color: '#FFFC01'

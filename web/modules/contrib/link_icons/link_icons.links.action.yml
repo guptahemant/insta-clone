@@ -1,0 +1,5 @@
+entity.link_icon_service.add_form:
+  route_name: 'entity.link_icon_service.add_form'
+  title: 'Add service'
+  appears_on:
+    - entity.link_icon_service.collection

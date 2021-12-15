@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: behance
+label: Behance
+hostnames:
+ - 'behance.net'
+icon: 'behance'
+icon_style: 'brand'
+icon_square: 'behance-square'
+color: 'black'

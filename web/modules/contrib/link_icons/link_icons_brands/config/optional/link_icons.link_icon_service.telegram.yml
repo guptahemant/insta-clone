@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: telegram
+label: 'Telegram'
+hostnames:
+ - 'telegram.org'
+icon: 'telegram-plane'
+icon_style: 'brand'
+icon_circle: 'telegram'
+color: '#179CDE'

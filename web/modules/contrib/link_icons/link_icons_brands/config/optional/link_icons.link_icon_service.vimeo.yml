@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: vimeo
+label: 'Vimeo'
+hostnames:
+ - 'vimeo.com'
+icon: 'vimeo-v'
+icon_style: 'brand'
+icon_square: 'vimeo-square'
+color: '#1AB7EA'

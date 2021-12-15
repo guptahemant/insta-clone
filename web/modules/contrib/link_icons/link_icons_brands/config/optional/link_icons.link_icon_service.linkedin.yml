@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: linkedin
+label: 'LinkedIn'
+hostnames:
+ - 'linkedin.com'
+icon: 'linkedin'
+icon_style: 'brand'
+color: '#1C87BD'

@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+id: facebook
+label: 'Facebook'
+hostnames:
+ - 'facebook.com'
+ - 'fb.com'
+icon: 'facebook-f'
+icon_style: 'brand'
+icon_square: 'facebook-square'
+icon_circle: 'facebook'
+color: '#4965A0'

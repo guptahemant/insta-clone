@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: joomla
+label: 'Joomla'
+hostnames:
+ - 'joomla.org'
+icon: 'joomla'
+icon_style: 'brand'
+color: '#1B63A2'

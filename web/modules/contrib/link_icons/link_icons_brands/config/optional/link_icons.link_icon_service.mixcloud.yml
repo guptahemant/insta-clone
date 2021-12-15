@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: mixcloud
+label: 'Mixcloud'
+hostnames:
+ - 'mixcloud.com'
+icon: 'mixcloud'
+icon_style: 'brand'
+color: 'black'

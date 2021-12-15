@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: producthunt
+label: 'Product Hunt'
+hostnames:
+ - 'producthunt.com'
+class: 'product-hunt'
+icon: 'product-hunt'
+icon_style: 'brand'
+color: '#DA552F'

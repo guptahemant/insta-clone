@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+id: fontawesome
+label: 'Font Awesome'
+hostnames:
+ - 'fontawesome.com'
+ - 'fontawesome.io'
+class: 'font-awesome'
+icon: 'font-awesome'
+icon_style: 'brand'
+icon_square: 'font-awesome-alt'
+color: 'rgb(51, 154, 240)'

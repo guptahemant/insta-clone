@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: flickr
+label: 'Flickr'
+hostnames:
+ - 'flickr.com'
+icon: 'flickr'
+icon_style: 'brand'

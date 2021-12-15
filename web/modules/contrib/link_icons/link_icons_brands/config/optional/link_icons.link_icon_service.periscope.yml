@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: periscope
+label: 'Periscope'
+hostnames:
+ - 'pscp.tv'
+icon: 'periscope'
+icon_style: 'brand'
+color: '#3E9FBE'

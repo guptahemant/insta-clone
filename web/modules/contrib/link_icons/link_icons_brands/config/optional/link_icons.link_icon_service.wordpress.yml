@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: wordpress
+label: 'WordPress'
+hostnames:
+ - 'wordpress.com'
+ - 'wordpress.org'
+icon: 'wordpress-simple'
+icon_style: 'brand'
+icon_circle: 'wordpress'
+color: '#0074A2'

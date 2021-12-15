@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: tripadvisor
+label: 'Tripadvisor'
+hostnames:
+ - 'tripadvisor.com'
+ - 'tripadvisor.co.uk'
+icon: 'tripadvisor'
+icon_style: 'brand'
+color: 'black'

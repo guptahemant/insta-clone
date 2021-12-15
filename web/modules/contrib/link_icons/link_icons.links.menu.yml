@@ -1,0 +1,6 @@
+entity.link_icon_service.collection:
+  title: 'Link icon services'
+  route_name: entity.link_icon_service.collection
+  description: 'Configure which services have their own link icons'
+  parent: system.admin_config_search
+  weight: 0

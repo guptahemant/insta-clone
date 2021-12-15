@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: slack
+label: 'Slack'
+hostnames:
+ - 'slack.com'
+icon: 'slack'
+icon_style: 'brand'
+color: '#481449'

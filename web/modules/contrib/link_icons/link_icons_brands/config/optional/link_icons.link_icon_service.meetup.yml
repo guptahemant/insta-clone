@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: meetup
+label: 'Meetup'
+hostnames:
+ - 'meetup.com'
+icon: 'meetup'
+icon_style: 'brand'
+color: '#ED1C40'

@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: slideshare
+label: 'Slideshare'
+hostnames:
+ - 'slideshare.com'
+ - 'slideshare.net'
+icon: 'slideshare'
+icon_style: 'brand'
+color: 'black'

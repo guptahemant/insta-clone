@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: xing
+label: 'Xing'
+hostnames:
+ - 'xing.com'
+icon: 'xing'
+icon_style: 'brand'
+icon_square: 'xing-square'
+color: '#006464'

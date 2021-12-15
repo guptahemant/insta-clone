@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: wikipedia
+label: 'Wikipedia'
+hostnames:
+ - 'wikipedia.org'
+icon: 'wikipedia-w'
+icon_style: 'brand'
+color: 'black'

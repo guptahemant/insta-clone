@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: stackoverflow
+label: 'Stack Overflow'
+hostnames:
+ - 'stackoverflow.com'
+class: 'stack-overflow'
+icon: 'stack-overflow'
+icon_style: 'brand'
+color: '#FE7A15'

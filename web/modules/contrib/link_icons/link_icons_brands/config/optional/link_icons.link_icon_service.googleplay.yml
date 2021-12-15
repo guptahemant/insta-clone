@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: googleplay
+label: 'Google Play'
+hostnames:
+ - 'play.google.com'
+class: 'google-play'
+icon: 'google-play'
+icon_style: 'brand'
+color: '#689F38'

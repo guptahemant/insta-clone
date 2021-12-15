@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: stumbleupon
+label: 'StumbleUpon'
+hostnames:
+ - 'stumbleupon.com'
+icon: 'stumbleupon'
+icon_style: 'brand'
+icon_circle: 'stumbleupon-circle'
+color: '#EA4B24'

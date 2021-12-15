@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: acast
+label: 'Acast'
+hostnames:
+ - 'acast.com'
+ - 'play.acast.com'
+icon: 'podcast'
+icon_style: 'solid'
+color: 'black'

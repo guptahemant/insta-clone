@@ -1,0 +1,138 @@
+<?php
+
+/**
+ * @file
+ * A module adding a field formatter for Link fields.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function link_icons_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.link_icons':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The <em>Link Icons</em> module provides the ability to format link fields with an additional configurable icon that represents the site that the link is to.') . '</p>';
+      $output .= '<h3>' . t('Uses') . '</h3>';
+      $output .= '<dl>';
+      $output .= '<dt>' . t('Displaying links') . '</dt>';
+      $output .= '<dd>' . t('Link fields can be displayed using the <em>Link Icons</em> field formatter on the field display settings page for any content type. If this formatter is used, you can configure how the icon is formatted around the link.') . '</dd>';
+      $output .= '</dl>';
+      $output .= '<h3>' . t('Configuration settings') . '</h3>';
+      $output .= '<dl>';
+      $output .= '<dt>' . t('Text alongside the icon') . '</dt>';
+      $output .= '<dd>' . t('Select what text should appear with each icon (if any). The options are:') . '<ul>';
+      $output .= '<li>' . t('link title, or else link URL') . '</li>';
+      $output .= '<li>' . t('link title') . '</li>';
+      $output .= '<li>' . t('link URL') . '</li>';
+      $output .= '<li>' . t('link title - link URL') . '</li>';
+      $output .= '<li>' . t('link title: link URL') . '</li>';
+      $output .= '<li>' . t('link URL (link title)') . '</li>';
+      $output .= '</ul></dd>';
+      $output .= '<dt>' . t('Hide the scheme from the URL?') . '</dt>';
+      $output .= '<dd>' . t("Should the scheme (ex. 'http://', 'https://', 'mailto:', 'tel:') be hidden from the URL, if it is used in the text?");
+      $output .= '</dd>';
+      $output .= '<dt>' . t('Order of icon and text') . '</dt>';
+      $output .= '<dd>' . t('Select the order of each icon and its text (if any). The options are:') . '<ul>';
+      $output .= '<li>' . t('icon first') . '</li>';
+      $output .= '<li>' . t('icon last') . '</li>';
+      $output .= '</ul></dd>';
+      $output .= '<dt>' . t('Size of the icon') . '</dt>';
+      $output .= '<dd>' . t('Select what size each icon should be. This is not used/supported if icons have a background (see the setting below). The options are:') . '<ul>';
+      $output .= '<li>' . t('100%') . '</li>';
+      $output .= '<li>' . t('133%') . '</li>';
+      $output .= '<li>' . t('200%') . '</li>';
+      $output .= '<li>' . t('300%') . '</li>';
+      $output .= '<li>' . t('400%') . '</li>';
+      $output .= '<li>' . t('500%') . '</li>';
+      $output .= '</ul></dd>';
+      $output .= '<dt>' . t('Width of icons') . '</dt>';
+      $output .= '<dd>' . t('Select whether each icon should have a fixed or variable width. This can help with horizontal alignment. The options are:') . '<ul>';
+      $output .= '<li>' . t('fixed width') . '</li>';
+      $output .= '<li>' . t('variable width') . '</li>';
+      $output .= '</ul></dd>';
+      $output .= '<dt>' . t('Coloured icons') . '</dt>';
+      $output .= '<dd>' . t("Select whether each service icon should be coloured correctly (if that's possible with a single colour). The options are:") . '<ul>';
+      $output .= '<li>' . t('coloured') . '</li>';
+      $output .= '<li>' . t('uncoloured') . '</li>';
+      $output .= '</ul></dd>';
+      $output .= '<dt>' . t('Pre-shaped icons') . '</dt>';
+      $output .= '<dd>' . t('Select whether each service icon should be the pre-squared or pre-circled version (if available). The options are:') . '<ul>';
+      $output .= '<li>' . t('squared') . '</li>';
+      $output .= '<li>' . t('circled') . '</li>';
+      $output .= '<li>' . t('squared, or else circled') . '</li>';
+      $output .= '<li>' . t('circled, or else squared') . '</li>';
+      $output .= '<li>' . t('natural') . '</li>';
+      $output .= '</ul></dd>';
+      $output .= '<dt>' . t('Background of the icons') . '</dt>';
+      $output .= '<dd>' . t('Select what background each icon should have (if any). The options are:') . '<ul>';
+      $output .= '<li>' . t('Square with rounded corners solid') . '</li>';
+      $output .= '<li>' . t('Square with rounded corners outline') . '</li>';
+      $output .= '<li>' . t('Square solid') . '</li>';
+      $output .= '<li>' . t('Triangle pointing right (play symbol) solid') . '</li>';
+      $output .= '<li>' . t('Circle solid') . '</li>';
+      $output .= '<li>' . t('Circle outline') . '</li>';
+      $output .= '<li>' . t('Circle outline with notch at the top') . '</li>';
+      $output .= '<li>' . t('Circle outline hairline') . '</li>';
+      $output .= '<li>' . t('Circle outline with centre dot') . '</li>';
+      $output .= '<li>' . t('Cloud solid') . '</li>';
+      $output .= '<li>' . t('Sun outline') . '</li>';
+      $output .= '<li>' . t('Folder solid') . '</li>';
+      $output .= '<li>' . t('Folder outline') . '</li>';
+      $output .= '<li>' . t('File solid') . '</li>';
+      $output .= '<li>' . t('File outline') . '</li>';
+      $output .= '<li>' . t('Heart solid') . '</li>';
+      $output .= '<li>' . t('Heart outline') . '</li>';
+      $output .= '<li>' . t('Laptop') . '</li>';
+      $output .= '<li>' . t('Tablet') . '</li>';
+      $output .= '</ul></dl>';
+
+      $output .= '<h3>' . t('Service configuration') . '</h3>';
+      $output .= '<p>' . t("When using this formatter, you can manage the services (URL formats) that should or shouldn't have their own specific icons, on the <a href=\":link_icon_service_list\">Link icon services</a> configuration page. The services each have the following settings:", [':link_icon_service_list' => \Drupal\Core\Url::fromRoute('entity.link_icon_service.collection')->toString()]) . '</p';
+      $output .= '<dl>';
+      $output .= '<dt>' . t('Hostname(s)') . '</dt>';
+      $output .= '<dd>' . t("The domain name(s) to look for at the end of the hostname within the URL of the link - ex. 'google.com'.") . '</dd>';
+      $output .= '<dt>' . t('Class') . '</dt>';
+      $output .= '<dd>' . t("The HTML class to use for the generated link icon (ex. 'google').") . '</dd>';
+      $output .= '<dt>' . t('Icon name') . '</dt>';
+      $output .= '<dd>' . t("The main Font Awesome icon ID to use when generating the link icon, without any preceeding 'fa-', ex. 'google'") . '</dd>';
+      $output .= '<dt>' . t('Icon style') . '</dt>';
+      $output .= '<dd>' . t("The main Font Awesome icon style to use when generating the link icon, ex. 'solid' or 'brand'.") . '</dd>';
+      $output .= '<dt>' . t('Square icon name') . '</dt>';
+      $output .= '<dd>' . t("A square Font Awesome icon ID to use when generating the link icon, without any preceeding 'fa-', ex. 'google-plus-square'.") . '</dd>';
+      $output .= '<dt>' . t('Circular icon name') . '</dt>';
+      $output .= '<dd>' . t("A circular Font Awesome icon ID to use when generating the link icon, without any preceeding 'fa-', ex. 'google-plus-circle'.") . '</dd>';
+      $output .= '<dt>' . t('Icon colour') . '</dt>';
+      $output .= '<dd>' . t("The CSS 'color' to use when generating the link icon, ex. 'black', '#000000' or 'rgb(0, 0, 0)'") . '</dd>';
+      $output .= '</dl>';
+
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function link_icons_field_formatter_info() {
+  return [
+    'link_icons_icon' => [
+      'label' => t('Service icon (with options)'),
+      'description' => t('Displays an icon for the service being linked to - ex. Facebook, Twitter or LinkedIn'),
+      'field types' => ['link_field'],
+      'settings' => [
+        'text' => 'title',
+        'hideURLscheme' => TRUE,
+        'order' => 'first',
+        'size' => '1x',
+        'width' => 'fixed',
+        'coloured' => 'coloured',
+        'shaped' => 'natural',
+        'background' => 'none',
+      ],
+    ],
+  ];
+}

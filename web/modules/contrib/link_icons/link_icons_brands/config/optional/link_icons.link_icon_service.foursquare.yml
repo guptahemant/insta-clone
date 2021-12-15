@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: foursquare
+label: 'Foursquare'
+hostnames:
+ - 'foursquare.com'
+icon: 'foursquare'
+icon_style: 'brand'
+color: '#38AAE1'

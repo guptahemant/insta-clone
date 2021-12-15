@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: reddit
+label: 'Reddit'
+hostnames:
+ - 'reddit.com'
+icon: 'reddit-alien'
+icon_style: 'brand'
+icon_square: 'reddit-square'
+icon_circle: 'reddit'
+color: '#FF4500'

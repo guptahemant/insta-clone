@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: kickstarter
+label: 'Kickstarter'
+hostnames:
+ - 'kickstarter.com'
+icon: 'kickstarter-k'
+icon_style: 'brand'
+icon_square: 'kickstarter'
+color: '#05CE78'

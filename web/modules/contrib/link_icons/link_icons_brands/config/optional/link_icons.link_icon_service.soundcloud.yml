@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: soundcloud
+label: 'Soundcloud'
+hostnames:
+ - 'soundcloud.com'
+icon: 'soundcloud'
+icon_style: 'brand'
+color: '#FE4E00'

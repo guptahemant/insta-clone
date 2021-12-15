@@ -1,0 +1,22 @@
+uuid: c53f743f-d334-46d1-a42e-f33e7bd78726
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - instagram
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: instagram_messages
+theme: instagram
+region: header
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: paypal
+label: 'Paypal'
+hostnames:
+ - 'paypal.com'
+ - 'paypal.me'
+icon: 'paypal'
+icon_style: 'brand'
+color: '#012069'

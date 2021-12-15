@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: imdb
+label: 'IMDb'
+hostnames:
+ - 'imdb.com'
+ - 'imdbpro.com'
+icon: 'imdb'
+icon_style: 'brand'
+color: '#E4BB36'

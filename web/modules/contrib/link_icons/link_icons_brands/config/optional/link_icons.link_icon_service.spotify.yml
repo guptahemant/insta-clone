@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: spotify
+label: 'Spotify'
+hostnames:
+ - 'spotify.com'
+icon: 'spotify'
+icon_style: 'brand'
+color: '#8EBD05'

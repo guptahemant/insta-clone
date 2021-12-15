@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: stackexchange
+label: 'Stack Exchange'
+hostnames:
+ - 'stackexchange.com'
+class: 'stack-exchange'
+icon: 'stack-exchange'
+icon_style: 'brand'
+color: '#195398'

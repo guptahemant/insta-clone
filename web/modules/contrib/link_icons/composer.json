@@ -1,0 +1,28 @@
+{
+    "name": "drupal/link_icons",
+    "description": "Field formatter for Link field to render a Font Awesome icon for the service being linked to (ex. Facebook, Twitter or LinkedIn), with various display options",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Dave Nattriss",
+            "email": "dave@natts.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "homepage": "https://drupal.org/project/link_icons",
+    "support": {
+        "issues": "https://drupal.org/project/issues/link_icons",
+        "source": "https://git.drupalcode.org/project/link_icons"
+    },
+    "require": {
+        "drupal/link": "^8.0",
+        "drupal/fontawesome": "^2.0"
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    }
+}

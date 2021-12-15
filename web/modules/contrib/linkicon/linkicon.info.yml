@@ -1,0 +1,16 @@
+name: 'Link Icon'
+type: module
+description: 'A link field formatter to create icon classes based on predefined titles'
+package: 'Field types'
+core_version_requirement: ^8 || ^9
+configure: linkicon.settings
+dependencies:
+  - drupal:link
+
+# Add a fake version so local drush and Git checkouts do not fail dependencies.
+# version: 8.x-1.x
+
+# Information added by Drupal.org packaging script on 2021-06-18
+version: '8.x-1.6'
+project: 'linkicon'
+datestamp: 1623988020

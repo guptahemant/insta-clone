@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: twitch
+label: 'Twitch'
+hostnames:
+ - 'twitch.tv'
+icon: 'twitch'
+icon_style: 'brand'
+color: '#4B367C'

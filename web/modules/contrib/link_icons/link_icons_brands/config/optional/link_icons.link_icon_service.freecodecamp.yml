@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: freecodecamp
+label: 'freeCodeCamp'
+hostnames:
+ - 'freecodecamp.com'
+icon: 'free-code-camp'
+icon_style: 'brand'
+color: 'black'

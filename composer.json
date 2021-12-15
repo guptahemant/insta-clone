@@ -20,7 +20,9 @@
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
-        "drupal/lang_dropdown": "^2.0@beta"
+        "drupal/lang_dropdown": "^2.0@beta",
+        "drupal/link_icons": "^3.0",
+        "drupal/linkicon": "^1.6"
     },
     "conflict": {
         "drupal/drupal": "*"

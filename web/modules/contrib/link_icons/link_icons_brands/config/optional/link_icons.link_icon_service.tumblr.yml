@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: tumblr
+label: 'Tumblr'
+hostnames:
+ - 'tumblr.com'
+icon: 'tumblr'
+icon_style: 'brand'
+icon_square: 'tumblr-square'
+color: '#2C4762'

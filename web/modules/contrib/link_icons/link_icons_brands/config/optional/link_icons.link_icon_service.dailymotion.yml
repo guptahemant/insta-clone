@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: dailymotion
+label: 'Dailymotion'
+hostnames:
+ - 'dailymotion.com'
+icon: 'dailymotion'
+icon_style: 'brand'
+color: '#56C7FF'

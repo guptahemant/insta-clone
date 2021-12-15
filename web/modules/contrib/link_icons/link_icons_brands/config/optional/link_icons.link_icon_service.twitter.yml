@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: twitter
+label: 'Twitter'
+hostnames:
+ - 'twitter.com'
+icon: 'twitter'
+icon_style: 'brand'
+icon_square: 'twitter-square'
+color: '#00ACEE'

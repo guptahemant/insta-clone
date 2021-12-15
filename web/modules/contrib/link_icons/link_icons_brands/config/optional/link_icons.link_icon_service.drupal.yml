@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: drupal
+label: 'Drupal'
+hostnames:
+ - 'drupal.org'
+ - 'drupalcode.org'
+icon: 'drupal'
+icon_style: 'brand'
+color: '#0073BA'

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: dribbble
+label: 'Dribbble'
+hostnames:
+ - 'dribbble.com'
+icon: 'dribbble'
+icon_style: 'brand'
+color: '#CA2A68'

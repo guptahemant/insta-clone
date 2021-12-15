@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: google
+label: 'Google'
+hostnames:
+ - 'google.ca'
+ - 'google.com'
+ - 'google.co.uk'
+icon: 'google'
+icon_style: 'brand'
+color: '#4285F4'

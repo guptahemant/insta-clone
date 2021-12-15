@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ravelry
+label: 'Ravelry'
+hostnames:
+ - 'ravelry.com'
+icon: 'ravelry'
+icon_style: 'brand'
+color: '#C5154F'

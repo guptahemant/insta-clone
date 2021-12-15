@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: googlechrome
+label: 'Google Chrome'
+hostnames:
+ - 'chrome.google.com'
+class: 'google-chrome'
+icon: 'chrome'
+icon_style: 'brand'
+color: '#E04B40'

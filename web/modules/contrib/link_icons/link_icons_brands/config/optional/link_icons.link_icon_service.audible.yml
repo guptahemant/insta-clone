@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: audible
+label: 'Audible'
+hostnames:
+ - 'audible.com'
+ - 'audible.co.uk'
+icon: 'audible'
+icon_style: 'brand'
+color: '#F7991C'

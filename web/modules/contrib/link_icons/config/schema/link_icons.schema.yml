@@ -1,0 +1,65 @@
+# Schema for the link_icon_service configuration entity
+link_icons.link_icon_service.*:
+  type: config_entity
+  label: 'Link icon service'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    hostnames:
+      type: sequence
+      label: 'Hostnames (ex. google.com)'
+      sequence:
+        type: string
+        label: 'Hostname (ex. google.com)'
+    class:
+      type: string
+      label: 'The HTML class to use for the generated link icon (ex. google), will default to the ID (machine name)'
+    icon:
+      type: string
+      label: 'Font Awesome icon ID (ex. google)'
+    icon_style:
+      type: string
+      label: 'Font Awesome icon style'
+    icon_square:
+      type: string
+      label: 'Square Font Awesome icon ID (optional, ex. google-plus-square)'
+    icon_circle:
+      type: string
+      label: 'Circle Font Awesome icon ID (optional, ex. google-plus-circle)'
+    color:
+      type: string
+      label: 'CSS color to use (#hexcode or string)'
+
+# Schema for the link_icons_formatter field formatter settings
+field.formatter.settings.[link_icons_formatter]:
+  type: mapping
+  label: 'Link Icons settings'
+  mapping:
+    text:
+      type: string
+      label: 'Text alongside the icon'
+    hideURLscheme:
+      type: boolean
+      label: 'Hide the scheme from the URL?'
+    order:
+      type: string
+      label: 'Order of icon and text'
+    size:
+      type: string
+      label: 'Size of the icon'
+    width:
+      type: string
+      label: 'Width of icons'
+    coloured:
+      type: string
+      label: 'Coloured icons'
+    shaped:
+      type: string
+      label: 'Pre-shaped icons'
+    background:
+      type: string
+      label: 'Background of the icons'

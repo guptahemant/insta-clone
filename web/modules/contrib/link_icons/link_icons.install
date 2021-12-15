@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for link_icons.
+ */
+
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_install().
+ */
+function link_icons_install() {
+  \Drupal::messenger()->addMessage(t('Thanks for installing Link Icons!'));
+
+  // @var \Drupal\Core\Routing\RouteBuilderInterface $routeBuilder $route_builder
+  $route_builder = \Drupal::service('router.builder');
+
+  // Makes the 'link_icons.config' route available here, see hook_install doc.
+  $route_builder->rebuild();
+
+  \Drupal::messenger()->addMessage(t('To use Link Icons:
+    <ul>
+      <li>Head to a <a href="@url_types">content type</a> display management tab where you have a link field/fields. In the format column for the link field that you want to use this formatter, select the \'Service icon (with options)\' format, and save the form to put it into use.</li>
+      <li>Click the settings cog/gear button to view and edit the (hopefully) self-explanatory options for how the links should be displayed. These exploit <a href="https://fontawesome.com/how-to-use/on-the-web/styling/" target="_blank">many of the Font Awesome feature</a>.</li>
+      <li>To customise the icons further, just theme your pages as usual. With the icons rendered as text characters using Font Awesome, you can style them with CSS as you wish.</li>
+    </ul>', [
+      '@url_types' => \Drupal\Core\Url::fromRoute('entity.node_type.collection')->toString(),
+    ]
+  ));
+
+  \Drupal::messenger()->addMessage(t('To customise which hostnames result in which icons being used (including the colour, HTML class and more), use the services configuration page at <a href="@url_settings">Home &raquo; Admin &raquo; Configuration &raquo; Search &amp; Metadata &raquo; Link icon entities</a> (<a href="@url_settings">@url_settings</a>) to add, modify and remove service configurations. See <a href="@url_help">the module help page</a> for explanations of each service configuration field.', [
+    '@url_settings' => \Drupal\Core\Url::fromRoute('entity.link_icon_service.collection')->toString(),
+    '@url_help' => \Drupal\Core\Url::fromRoute('help.page', ['name' => 'link_icons'])->toString(),
+  ]));
+
+  if (!\Drupal::moduleHandler()->moduleExists('link_icons_brand')) {
+    \Drupal::messenger()->addMessage(t('<a href="@url_modules">Install the link_icons_brands submodule</a>, if you haven\'t already, to add service configurations for many popular brand services.', [
+      '@url_modules' => \Drupal\Core\Url::fromRoute('system.modules_list')->toString(),
+    ]));
+  }
+}
+
+/**
+ * Update the schema for link_icon_service entity.
+ */
+function link_icons_update_8001() {
+  \Drupal::service('entity.definition_update_manager')->applyUpdates();
+}

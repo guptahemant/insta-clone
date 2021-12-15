@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: viadeo
+label: 'Viadeo'
+hostnames:
+ - 'viadeo.com'
+icon: 'viadeo'
+icon_style: 'brand'
+icon_square: 'viadeo-square'
+color: '#EA6725'

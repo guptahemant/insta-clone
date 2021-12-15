@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: codepen
+label: 'Codepen'
+hostnames:
+ - 'codepen.io'
+icon: 'codepen'
+icon_style: 'brand'
+color: 'black'

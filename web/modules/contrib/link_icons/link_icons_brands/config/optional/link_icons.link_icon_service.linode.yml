@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: linode
+label: 'Linode'
+hostnames:
+ - 'linode.com'
+icon: 'linode'
+icon_style: 'brand'
+color: '#00B259'

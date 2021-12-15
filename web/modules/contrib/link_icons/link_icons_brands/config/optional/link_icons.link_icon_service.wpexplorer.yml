@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: wpexplorer
+label: 'WPExplorer'
+hostnames:
+ - 'wpexplorer.com'
+icon: 'wpexplorer'
+icon_style: 'brand'
+color: '#1796C6'

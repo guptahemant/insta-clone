@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: blogger
+label: 'Blogger'
+hostnames:
+ - 'blogger.com'
+icon: 'blogger-b'
+icon_style: 'brand'
+icon_square: 'blogger'
+color: '#F57C00'

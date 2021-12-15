@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: quora
+label: 'Quora'
+hostnames:
+ - 'quora.com'
+icon: 'quora'
+icon_style: 'brand'
+color: '#B92B27'
