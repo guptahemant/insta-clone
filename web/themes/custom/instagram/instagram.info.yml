@@ -11,4 +11,5 @@ libraries:
 regions:
   header: header
   content: Content
+  slideshow: slider
   footer: Footer 
