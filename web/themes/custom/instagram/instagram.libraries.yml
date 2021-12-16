@@ -3,8 +3,7 @@ global-styling:
   css:
     theme:
       css/all/style.css: {}
-      css/all/footer.css: {}
-      css/my profile/my_profile_block.css: {}
+      css/all/footer.css: {} 
   js:
     js/instagram.js: {}
   dependencies:
