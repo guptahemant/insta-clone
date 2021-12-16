@@ -4,7 +4,7 @@ global-styling:
     theme:
       css/all/style.css: {}
       css/all/footer.css: {}
-      css/my profile/my_profile_block.css: {}
+      
   js:
     js/instagram.js: {}
   dependencies:
