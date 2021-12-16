@@ -1,0 +1,8 @@
+<?php
+
+
+
+function instagram_preprocess_region(&$variables) {
+  if (isset($variables['region']) && $variables['region'] == 'content') {
+    $variables['attributes']['class'][] = 'slide';
+  }}

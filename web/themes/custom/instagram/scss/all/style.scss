@@ -1,3 +1,11 @@
-body{
-    background-color: rgb(202, 208, 226);
-}
+.layout-content{
+  .slide{
+  // display: flex;
+  position: absolute;
+    }}
+    .slider-view{
+      position: absolute;
+      top: 10%;
+      left: 36%;
+      border: 3px solid rgb(0, 0, 0);
+    }
