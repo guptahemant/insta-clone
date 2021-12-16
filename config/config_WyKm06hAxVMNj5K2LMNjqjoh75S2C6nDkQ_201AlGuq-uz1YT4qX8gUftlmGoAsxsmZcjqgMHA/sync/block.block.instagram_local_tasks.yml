@@ -9,7 +9,7 @@ _core:
 id: instagram_local_tasks
 theme: instagram
 region: content
-weight: -40
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

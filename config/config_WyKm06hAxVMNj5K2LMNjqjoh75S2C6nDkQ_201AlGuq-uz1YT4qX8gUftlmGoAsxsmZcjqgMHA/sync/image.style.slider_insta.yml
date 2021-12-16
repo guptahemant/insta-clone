@@ -1,0 +1,15 @@
+uuid: c8c555b9-4594-4539-b8df-4ad97392541c
+langcode: en
+status: true
+dependencies: {  }
+name: slider_insta
+label: 'slider(240*427)'
+effects:
+  5e6e655f-3db3-4fba-87fc-dfeb592c50cc:
+    uuid: 5e6e655f-3db3-4fba-87fc-dfeb592c50cc
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 238
+      height: 407
+      anchor: center-center

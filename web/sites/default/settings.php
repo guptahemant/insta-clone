@@ -804,5 +804,5 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  }
 
 
-$settings['config_sync_directory'] = '../config/config_WyKm06hAxVMNj5K2LMNjqjoh75S2C6nDkQ_201AlGuq-uz1YT4qX8gUftlmGoAsxsmZcjqgMHA/sync';
+$settings['config_sync_directory'] = '../config/sync';
 

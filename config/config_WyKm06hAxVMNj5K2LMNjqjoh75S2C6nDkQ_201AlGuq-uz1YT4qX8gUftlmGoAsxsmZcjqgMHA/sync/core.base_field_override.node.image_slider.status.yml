@@ -1,0 +1,22 @@
+uuid: 31cf5ec1-bfc6-4a38-a635-4e50321db45e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.image_slider
+id: node.image_slider.status
+field_name: status
+entity_type: node
+bundle: image_slider
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

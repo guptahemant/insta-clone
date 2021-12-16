@@ -1,0 +1,30 @@
+uuid: 69d3b6c4-5c5b-442e-a6b4-1ea7a583b150
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.image_slider.field_image
+    - node.type.image_slider
+  module:
+    - image
+    - user
+id: node.image_slider.default
+targetEntityType: node
+bundle: image_slider
+mode: default
+content:
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: ebfc93b5-f250-410f-81d4-194220320414
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.image_slider.field_image
+    - node.type.image_slider
+  module:
+    - user
+id: node.image_slider.teaser
+targetEntityType: node
+bundle: image_slider
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image: true

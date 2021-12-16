@@ -1,0 +1,38 @@
+uuid: 94e743fd-060d-4caa-b9f8-4a8b71ebbfdb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a9f082e0-3673-4e51-8b06-e458f10297fa'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - instagram
+id: backgroundimage
+theme: instagram
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:a9f082e0-3673-4e51-8b06-e458f10297fa'
+settings:
+  id: 'block_content:a9f082e0-3673-4e51-8b06-e458f10297fa'
+  label: 'background image'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /user/login
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,0 +1,17 @@
+uuid: ae480e30-5f56-4458-a267-27b669423d03
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: image_slider
+type: image_slider
+description: ''
+help: ''
+new_revision: false
+preview_mode: 2
+display_submitted: false
