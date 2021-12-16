@@ -4,4 +4,5 @@ web/sites/default/settings.local.php
 libraries/
 modules/contrib
 web/themes/custom/instagram/node_modules
-
+web/themes/custom/instagram/css/*
+web/modules/contrib
