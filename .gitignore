@@ -2,7 +2,10 @@ vendor/
 web/sites/default/files
 web/sites/default/settings.local.php
 libraries/
-modules/contrib
+web/modules/*
 web/themes/custom/instagram/node_modules
 web/themes/custom/instagram/css/*
+<<<<<<< HEAD
 web/modules/contrib
+=======
+>>>>>>> 0276a5d47af690005c6ea26faa9122342e8b0016
