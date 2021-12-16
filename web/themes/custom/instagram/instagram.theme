@@ -1,7 +1,0 @@
-<?php
- 
-use Drupal\node\Entity\Node;
-
-function instagram_preprocess_page(&$variables) {
- print_r($variables);
-}
