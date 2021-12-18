@@ -7,3 +7,14 @@ global-styling:
     js/instagram.js: {}
   dependencies:
     - core/jquery
+
+login:
+  version: VERSION
+  css:
+    theme:
+      css/login/style.css: {}
+
+googlefontscdn:
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Open+Sans|Poppins|Roboto: { type: external }

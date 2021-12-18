@@ -282,7 +282,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '3OCbgi9MuYGUy19BZ7xNCUwU6gZbFhFe52WPWeAeue0Jhp2ESyIe_ZRB4XBF171HS2WH8ceEmw';
+$settings['hash_salt'] = 'P-UNvKCPD6rPCIf1luFxIW2BtagQO60j7-Dd4D_ENxqTN2AsOkxiVHImZjY_MbrI-m96IzewaQ';
 
 /**
  * Deployment identifier.
@@ -804,5 +804,6 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  }
 
 
-$settings['config_sync_directory'] = '../config/config_WyKm06hAxVMNj5K2LMNjqjoh75S2C6nDkQ_201AlGuq-uz1YT4qX8gUftlmGoAsxsmZcjqgMHA/sync';
+$settings['config_sync_directory'] = '../config/sync';
+
 

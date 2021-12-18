@@ -18,7 +18,15 @@
         "composer/installers": "^1.9",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
-        "drupal/core-recommended": "^9.2"
+        "drupal/core-recommended": "^9.2",
+        "drupal/default_content": "^2.0@alpha",
+        "drupal/devel": "^4.1",
+        "drupal/flag": "^4.0@beta",
+        "drupal/fontawesome_menu_icons": "^1.9",
+        "drupal/simple_menu_icons": "^2.3",
+        "drupal/suggestion": "^3.0",
+        "drupal/user_menu_avatar": "^6.0@RC",
+        "drupal/user_registrationpassword": "^1.0@alpha"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -90,4 +98,3 @@
         "drush/drush": "^10.6"
     }
 }
-

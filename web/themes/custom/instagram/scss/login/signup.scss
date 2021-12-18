@@ -1,0 +1,51 @@
+div#block-instagram-local-tasks {
+    display: none;
+}
+
+.description {
+    display: none;
+}
+
+label {
+    position: absolute;
+    left: 19%;
+    margin-top: 9px;
+    color: gray;
+}
+
+main {
+    text-align: center;
+    input {
+        width: 58%;
+        height: 16px;
+        margin: 2px;
+        padding: 7px 13px;
+        background-color: #fafafa;
+        border: none;
+    }
+    input#edit-submit {
+        width: 67%;
+        height: 20%;
+        background-color: #0095f6;
+        color: white;
+        margin-top: 4px;
+    }
+    .layout-content {
+        background: white;
+        width: 26%;
+        position: relative;
+        left: 35%;
+        height: 550px;
+        border: 1px solid #dbdbdb;
+        border-radius: 1px;
+        div#block-instagram-page-title {
+            width: fit-content;
+            margin: 14px 101px;
+            padding-top: 10px;
+        }
+    }
+}
+
+.password-confirm-message {
+    display: none;
+}

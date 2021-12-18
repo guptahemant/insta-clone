@@ -1,0 +1,36 @@
+<?php
+
+function instagram_preprocess_page_title(&$variables) {
+
+    $variables['title'] = t('Instagram');
+  
+}
+
+function instagram_preprocess_html__user__register(&$variables) {
+    // dpm($variables);
+    $variables['#attached']['library'][] = 'instagram/login';
+    
+   
+  
+}
+
+function instagram_form_alter(&$form, $form_state, $form_id) {
+  
+    if ( $form['#form_id'] == 'search_block_form' ) {
+       
+        $form['keys']['#attributes']['placeholder'] = t('&#xF002;'.'Search');
+  
+      
+    }
+    
+}
+function instagram_form_user_register_form_elements(&$vars) {
+    
+    dpm($vars);
+  }
+  
+
+function instagram_preprocess_region__header(&$variables) {
+      $variables['attributes']['class'][] = 'main_header';
+    
+}
