@@ -1,0 +1,25 @@
+uuid: 1cb71f31-b463-4c51-bf72-46500f3c036c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.mobilecamera
+  module:
+    - system
+  theme:
+    - instagram
+id: mobilecamera
+theme: instagram
+region: header
+weight: -5
+provider: null
+plugin: 'system_menu_block:mobilecamera'
+settings:
+  id: 'system_menu_block:mobilecamera'
+  label: mobilecamera
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

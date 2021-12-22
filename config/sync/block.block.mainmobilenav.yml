@@ -1,0 +1,25 @@
+uuid: 81768355-e4e8-4ec5-888e-abd4f8567f8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.mainmobilenav
+  module:
+    - system
+  theme:
+    - instagram
+id: mainmobilenav
+theme: instagram
+region: header
+weight: 1
+provider: null
+plugin: 'system_menu_block:mainmobilenav'
+settings:
+  id: 'system_menu_block:mainmobilenav'
+  label: mainmobilenav
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

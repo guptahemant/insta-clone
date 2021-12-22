@@ -8,6 +8,7 @@ url:
     mr: mr
     fr: fr
     ko: ko
+    '': null
   domains:
     en: ''
     hi: ''

@@ -5,3 +5,4 @@ libraries/
 web/modules/*
 web/themes/custom/instagram/node_modules
 web/themes/custom/instagram/css/*
+web/core/*

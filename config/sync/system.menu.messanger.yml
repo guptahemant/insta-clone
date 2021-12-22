@@ -1,0 +1,8 @@
+uuid: 58f91ca6-6f00-4125-911d-a7b03be6d7d8
+langcode: en
+status: true
+dependencies: {  }
+id: messanger
+label: messanger
+description: ''
+locked: false

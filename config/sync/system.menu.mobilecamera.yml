@@ -1,0 +1,8 @@
+uuid: b0f7e663-60a4-4cc5-bc72-f704d2dcb43d
+langcode: en
+status: true
+dependencies: {  }
+id: mobilecamera
+label: mobilecamera
+description: ''
+locked: false

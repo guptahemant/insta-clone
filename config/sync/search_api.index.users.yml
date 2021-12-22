@@ -1,0 +1,65 @@
+uuid: 26f4f7d5-4e98-4783-9662-3aab5ac35ced
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+    - search_api
+  config:
+    - field.storage.user.user_picture
+    - search_api.server.default_server
+id: users
+name: users
+description: ''
+read_only: false
+field_settings:
+  name:
+    label: Name
+    datasource_id: 'entity:user'
+    property_path: name
+    type: text
+    dependencies:
+      module:
+        - user
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+  user_picture:
+    label: Picture
+    datasource_id: 'entity:user'
+    property_path: user_picture
+    type: text
+    dependencies:
+      config:
+        - field.storage.user.user_picture
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:user':
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  index_directly: true
+  track_changes_in_references: true
+  cron_limit: 50
+server: default_server
