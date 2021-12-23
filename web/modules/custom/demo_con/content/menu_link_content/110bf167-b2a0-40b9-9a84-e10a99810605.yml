@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 110bf167-b2a0-40b9-9a84-e10a99810605
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: createpost
+  menu_name:
+    -
+      value: mainmobilenav
+  link:
+    -
+      uri: 'internal:/createpost'
+      title: ''
+      options:
+        fa_icon: 'far fa-plus-square'
+        fa_icon_prefix: fa
+        fa_icon_tag: i
+        fa_icon_appearance: only
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -48
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

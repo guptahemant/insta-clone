@@ -1,0 +1,7 @@
+name: 'demo_con'
+type: module
+description: 'Default content export'
+core_version_requirement: ^8 || ^9
+package: "SDNN"
+dependencies:
+  - default_content:default_content

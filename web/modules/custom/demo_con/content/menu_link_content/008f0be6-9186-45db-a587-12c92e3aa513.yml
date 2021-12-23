@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 008f0be6-9186-45db-a587-12c92e3aa513
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Saved
+  menu_name:
+    -
+      value: userfacemenu
+  link:
+    -
+      uri: 'internal:/bookmark'
+      title: ''
+      options:
+        fa_icon: 'far fa-bookmark'
+        fa_icon_prefix: fa
+        fa_icon_tag: i
+        fa_icon_appearance: before
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -49
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

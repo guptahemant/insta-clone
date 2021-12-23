@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   module:
-    - node
     - user
+    - node
     - search_api
   config:
     - field.storage.user.user_picture

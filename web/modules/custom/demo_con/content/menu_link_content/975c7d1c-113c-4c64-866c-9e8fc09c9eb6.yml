@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 975c7d1c-113c-4c64-866c-9e8fc09c9eb6
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: search
+  menu_name:
+    -
+      value: mainmobilenav
+  link:
+    -
+      uri: 'internal:/search'
+      title: ''
+      options:
+        fa_icon: 'fas fa-search'
+        fa_icon_prefix: fa
+        fa_icon_tag: i
+        fa_icon_appearance: only
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -49
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
