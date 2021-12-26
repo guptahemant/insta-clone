@@ -2,10 +2,13 @@ uuid: ac6ab316-97fd-4ad7-8fc6-d299f6bf05d6
 langcode: en
 status: true
 dependencies:
+<<<<<<< HEAD:config/sync/block.block.copyright_2.yml
   content:
     - 'block_content:basic:0bca0b8e-c528-4fef-ba5c-cfae1089f5f9'
   module:
     - block_content
+=======
+>>>>>>> push code of login form:config/sync/block.block.copyright.yml
   theme:
     - instagram
 id: copyright_2
@@ -17,7 +20,7 @@ plugin: 'block_content:0bca0b8e-c528-4fef-ba5c-cfae1089f5f9'
 settings:
   id: 'block_content:0bca0b8e-c528-4fef-ba5c-cfae1089f5f9'
   label: Copyright
-  provider: block_content
+  provider: core
   label_display: '0'
   status: true
   info: ''

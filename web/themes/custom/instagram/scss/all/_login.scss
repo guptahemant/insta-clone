@@ -1,0 +1,231 @@
+@import 'mixin';
+.layout-content{
+    width: 100%;
+   
+    .login_blog{
+        width: 28%;
+        margin: auto;
+        margin-top: 5%;
+        
+        @include responsive(laptop){
+            width: 35%;
+        }
+        @include responsive(tablet){
+            width: 45%;
+        }
+        @include responsive(mobile_M){
+            width: 98%;
+        }     
+    
+        #block-instagram-page-title{
+            display: none;
+        }
+
+        #block-instagram-local-tasks{
+            display: none;
+        }
+
+        form{
+            margin: auto;
+            padding: 10%;
+            padding-top: 30px;
+            border: 1px solid #e9e1e1;
+
+            @include responsive(mobile_M){
+                border: none;
+                padding: 6%;
+                padding-top: 15px;
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+            
+            .insta_head{
+                padding-bottom: 10%;
+                text-align: center;
+                font-size: 2.5em;
+                font-weight: bold;
+            }
+
+            label{
+                display: none;
+            }
+            .description{
+                display: none;
+            }
+            input{
+                width: 100%;
+                font-size: 14px;
+                padding: 9px 17px;
+                margin-top: 6px;
+                box-sizing: border-box;
+                border: 1px solid #e9e1e1;
+                border-radius: 3px;
+
+                @include responsive(tablet){
+                    font-size: 12px;
+                }
+            }
+
+            #edit-submit{
+                color: white;
+                background: #b8e4ef;
+                border: none;
+                width: 100%;
+                margin: 12px 0;
+                font-weight: bold;
+                font-size: 16px;
+
+                @include responsive(tablet){
+                    font-size: 14px;
+                    padding: 8px 17px;
+                }
+            }
+
+            .icon-block{
+                text-align: center;
+                svg{
+                    color: #385185;
+                    padding: 0 6px;
+                    font-size: 18px;
+                }
+                .facebook{
+                    color: #385185;
+                    text-align: center;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+                .password{
+                    margin-top: 12px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #385185;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                    display: block;
+                   
+                }
+            }
+            
+
+            .my-class{
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                display: flex;
+                margin: 10px 0px 18px;
+
+                label{
+                    display: block;
+                }
+
+                #edit-left{
+                    height: 1px;
+                    width: 48%;
+                    position: relative;
+                    top: 0.45em;
+                    background-color: #e9e1e1;
+                }
+                #edit-child{
+                    padding: 0 4%;
+                    color: gray;
+                    font-size: 12px;
+                }
+                #edit-right{
+                    height: 1px;
+                    width: 48%;
+                    position: relative;
+                    top: 0.45em;
+                    background-color: #e9e1e1;
+                }
+            }
+
+            .login_app_block{
+                width: 100%;
+                margin: auto;
+                text-align: center;
+            }
+                .blank{
+                    display: flex;
+                    width: 100%;
+                    margin: 10px 0px 18px;
+                }
+                .s311c{
+                        height: 1px;
+                        width: 48%;
+                        position: relative;
+                        top: 0.45em;
+                        background-color: #e9e1e1;
+                }
+                ._0tv-g{
+                        padding: 0 4%;
+                        color: gray;
+                }
+                
+            
+            
+           
+        }
+
+      
+
+        #block-signup-link{
+            
+            margin: auto;
+            text-align: center;
+            margin-top: 4px;
+
+            .no_account{
+                border: 1px solid #e9e1e1;
+                padding: 26px 0;
+                width: 100%;
+                margin: auto;
+                margin-top: 17px;
+                box-sizing: border-box;
+
+                @include responsive(mobile_M){
+                    border: none;
+                    padding: 16px 0;
+                    margin-top: 0;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: #0095f6;
+                font-size: 15px;
+                font-weight: bold;
+                margin-left: 6px;
+            }
+        }
+
+        .get_app_div{
+            text-align: center;
+
+            .get_app{
+                font-size: 16px;
+                margin: 20px 0;
+            }
+            .get_image{
+                display: flex;
+                justify-content: space-evenly;
+
+                @include responsive(mobile_M){
+                    justify-content: center;
+                }
+
+                .appstore{
+                    width: 136px;
+                    height: 40px;
+
+                    padding:0 4px ;
+                }
+
+                .googleplay{
+                    width: 136px;
+                    height: 40px;
+                    padding:0 4px ;
+                }
+            }
+        }
+    }
+}

@@ -20,6 +20,7 @@
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
+<<<<<<< HEAD
         "drupal/default_content": "^2.0@alpha",
         "drupal/flag": "^4.0@beta",
         "drupal/fontawesome_menu_icons": "^1.9",
@@ -28,6 +29,10 @@
         "drupal/search_api_autocomplete": "^1.5",
         "drupal/search_api_page": "^1.0@beta",
         "drupal/user_menu_avatar": "^6.0@RC"
+=======
+        "drupal/fontawesome": "^2.19",
+        "drupal/lang_dropdown": "^2.0@beta"
+>>>>>>> push code of login form
     },
     "conflict": {
         "drupal/drupal": "*"

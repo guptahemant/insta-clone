@@ -1,0 +1,20 @@
+uuid: 94ae3273-9176-4e21-839f-5859bcb1bd46
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - instagram
+id: mainpagecontent
+theme: instagram
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

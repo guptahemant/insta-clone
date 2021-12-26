@@ -2,7 +2,15 @@ vendor/
 web/sites/default/files
 web/sites/default/settings.local.php
 libraries/
+<<<<<<< HEAD
 web/modules/contrib/*
 web/themes/custom/instagram/node_modules
 web/themes/custom/instagram/css/*
 web/core/*
+=======
+web/modules/*
+web/modules/contrib/*
+web/themes/custom/instagram/node_modules
+web/themes/custom/instagram/css/*
+web/core/*
+>>>>>>> push code of login form

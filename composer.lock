@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "64af753038d26c97f91103bff88ffa07",
+=======
+    "content-hash": "9b19b967e0a3a80b1b63c2391d35c26f",
+>>>>>>> push code of login form
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1006,6 +1010,7 @@
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core."
         },
         {
+<<<<<<< HEAD
             "name": "drupal/default_content",
             "version": "2.0.0-alpha1",
             "source": {
@@ -1158,6 +1163,8 @@
             }
         },
         {
+=======
+>>>>>>> push code of login form
             "name": "drupal/fontawesome",
             "version": "2.19.0",
             "source": {
@@ -1220,6 +1227,7 @@
             }
         },
         {
+<<<<<<< HEAD
             "name": "drupal/fontawesome_menu_icons",
             "version": "1.9.0",
             "source": {
@@ -1265,6 +1273,8 @@
             }
         },
         {
+=======
+>>>>>>> push code of login form
             "name": "drupal/lang_dropdown",
             "version": "2.0.0-beta4",
             "source": {
@@ -6730,5 +6740,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "1.1.0"
 }
