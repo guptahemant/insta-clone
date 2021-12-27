@@ -1,0 +1,28 @@
+uuid: e17f3faa-ba1b-4a1f-9f8a-b34cffb1dc8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.users
+id: userpost
+label: userpost
+path: user
+clean_url: true
+show_all_when_no_keys: false
+index: users
+limit: 5
+searched_fields:
+  user_picture: user_picture
+style: view_modes
+view_mode_configuration:
+  'entity:node':
+    default: search_index
+    overrides:
+      article: search_index
+      page: search_index
+  'entity:user':
+    default: full
+    overrides:
+      user: full
+show_search_form: true
+parse_mode: direct

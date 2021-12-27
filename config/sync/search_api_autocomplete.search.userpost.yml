@@ -1,0 +1,37 @@
+uuid: 948a3f03-b1bb-4980-af98-4e061feeda41
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.users
+    - search_api_page.search_api_page.userpost
+  module:
+    - search_api_page
+    - search_api_autocomplete
+id: userpost
+label: userpost
+index_id: users
+suggester_settings:
+  live_results:
+    fields: {  }
+    view_modes:
+      'entity:node':
+        article: ''
+        page: ''
+      'entity:user':
+        user: ''
+    highlight:
+      enabled: false
+      field: ''
+suggester_weights:
+  live_results: 0
+suggester_limits: {  }
+search_settings:
+  'page:userpost': {  }
+options:
+  limit: 5
+  min_length: 1
+  show_count: false
+  autosubmit: true
+  submit_button_selector: ':submit'
+  delay: null

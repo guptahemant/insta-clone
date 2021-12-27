@@ -13,7 +13,6 @@ display:
           label: शीर्षक
         type:
           label: 'सामग्री प्रकार'
-          separator: ', '
         name:
           label: लेखक
         status:

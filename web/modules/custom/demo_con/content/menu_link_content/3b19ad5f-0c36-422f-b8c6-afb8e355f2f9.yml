@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 3b19ad5f-0c36-422f-b8c6-afb8e355f2f9
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Jobs
+  menu_name:
+    -
+      value: footer
+  link:
+    -
+      uri: 'internal:#'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -46
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

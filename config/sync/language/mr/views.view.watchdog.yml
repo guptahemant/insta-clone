@@ -16,7 +16,6 @@ display:
           label: संदेश
         name:
           label: सदस्य
-          separator: ', '
         link:
           label: कृती
       filters:

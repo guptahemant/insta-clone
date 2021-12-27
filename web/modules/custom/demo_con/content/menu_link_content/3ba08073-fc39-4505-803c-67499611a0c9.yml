@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 3ba08073-fc39-4505-803c-67499611a0c9
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Feed
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/feedpost'
+      title: ''
+      options:
+        fa_icon: 'far fa-compass'
+        fa_icon_prefix: fa
+        fa_icon_tag: i
+        fa_icon_appearance: only
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -47
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

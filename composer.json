@@ -20,7 +20,14 @@
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
-        "drupal/lang_dropdown": "^2.0@beta"
+        "drupal/default_content": "^2.0@alpha",
+        "drupal/flag": "^4.0@beta",
+        "drupal/fontawesome_menu_icons": "^1.9",
+        "drupal/lang_dropdown": "^2.0@beta",
+        "drupal/search_api": "^1.21",
+        "drupal/search_api_autocomplete": "^1.5",
+        "drupal/search_api_page": "^1.0@beta",
+        "drupal/user_menu_avatar": "^6.0@RC"
     },
     "conflict": {
         "drupal/drupal": "*"

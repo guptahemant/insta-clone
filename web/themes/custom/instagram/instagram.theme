@@ -1,0 +1,14 @@
+<?php
+
+function instagram_preprocess_region__header(&$variables) {
+      $variables['attributes']['class'][] = 'main_header';
+    
+}
+
+
+function instagram_form_alter(&$form, &$form_state, $form_id) {
+      if ($form_id == 'search_api_page_block_form_userpost') {
+        $form['keys']['#attributes']['placeholder'] = t('Search');
+        
+      }
+}

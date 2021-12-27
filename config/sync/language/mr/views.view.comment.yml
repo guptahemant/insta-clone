@@ -24,21 +24,12 @@ display:
             विषय
             #-#-#-#-#  pvtmsg.po (contributions)  #-#-#-#-#
             विषय:
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: लेखक
-          separator: ', '
-        entity_id:
-          separator: ', '
         changed:
           label: सुधारित
-          separator: ', '
         operations:
           label: कृती
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:
@@ -82,18 +73,9 @@ display:
             विषय
             #-#-#-#-#  pvtmsg.po (contributions)  #-#-#-#-#
             विषय:
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: लेखक
-          separator: ', '
-        entity_id:
-          separator: ', '
         changed:
           label: सुधारित
-          separator: ', '
         operations:
           label: कृती
-        name_1:
-          separator: ', '

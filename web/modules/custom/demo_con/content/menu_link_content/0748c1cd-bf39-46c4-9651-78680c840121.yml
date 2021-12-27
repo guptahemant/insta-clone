@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 0748c1cd-bf39-46c4-9651-78680c840121
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: like
+  menu_name:
+    -
+      value: mainmobilenav
+  link:
+    -
+      uri: 'internal:/likeactivity'
+      title: ''
+      options:
+        fa_icon: 'far fa-heart'
+        fa_icon_prefix: fa
+        fa_icon_tag: i
+        fa_icon_appearance: only
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

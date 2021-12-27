@@ -282,7 +282,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'zH8_I1WwsedakdwRf_HGpNCoGMynKKFOkZYbRioGokrnEkui5qBeIlIClwhsszJAhWfzwIu3wg';
+$settings['hash_salt'] = 'Ydu1pCljo_PpPF3j9Xmtu8GQLNkijUfh1ZqQaXPaIam4jU_xcRtmC8LYnkltaH4J3YF1znMxyw';
 
 /**
  * Deployment identifier.
@@ -549,7 +549,7 @@ $settings['update_free_access'] = FALSE;
  *
  * @see \Drupal\Component\FileSystem\FileSystem::getOsTemporaryDirectory()
  */
-# $settings['file_temp_path'] = '/tmp';
+ $settings['file_temp_path'] = '/tmp';
 
 /**
  * Session write interval:
@@ -804,4 +804,3 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  }
 
 
-$settings['config_sync_directory'] = '../config/sync';

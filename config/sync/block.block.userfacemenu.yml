@@ -1,0 +1,25 @@
+uuid: 931f928a-a622-4030-b12c-8e6a4c7b3e9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.userfacemenu
+  module:
+    - system
+  theme:
+    - instagram
+id: userfacemenu
+theme: instagram
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:userfacemenu'
+settings:
+  id: 'system_menu_block:userfacemenu'
+  label: userfacemenu
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

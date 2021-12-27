@@ -2,6 +2,7 @@ vendor/
 web/sites/default/files
 web/sites/default/settings.local.php
 libraries/
-web/modules/*
+web/modules/contrib/*
 web/themes/custom/instagram/node_modules
 web/themes/custom/instagram/css/*
+web/core/*

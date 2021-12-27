@@ -1,0 +1,25 @@
+uuid: 3d04cb65-0d26-417e-a0d7-9f8df2813dd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.messanger
+  module:
+    - system
+  theme:
+    - instagram
+id: messanger
+theme: instagram
+region: header
+weight: -3
+provider: null
+plugin: 'system_menu_block:messanger'
+settings:
+  id: 'system_menu_block:messanger'
+  label: messanger
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Rechercher
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
+      pager:
+        options:
+          tags:
+            previous: "‹\_précédent"
+            next: "suivant\_›"
+          expose:
+            items_per_page_label: 'Éléments par page'
+            items_per_page_options_all_label: '- Tout -'
+            offset_label: Décalage
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Rechercher

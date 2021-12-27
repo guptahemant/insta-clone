@@ -22,8 +22,6 @@ display:
           label: 'च्यासाठी सभासद'
         operations:
           label: कृती
-        mail:
-          separator: ', '
       filters:
         status:
           group_info:
