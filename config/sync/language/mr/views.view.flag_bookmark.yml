@@ -1,0 +1,27 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
+      pager:
+        options:
+          tags:
+            previous: '‹ मागे'
+            next: 'पुढे ›'
+            first: '« प्रथम'
+            last: 'अंतिम »'
+      fields:
+        flagging_bulk_form:
+          action_title: कृती
+        type:
+          label: प्रकार
+        title:
+          label: शीर्षक
+        name:
+          label: लेखक
+        created:
+          separator: ', '
+  page_1:
+    display_title: पान

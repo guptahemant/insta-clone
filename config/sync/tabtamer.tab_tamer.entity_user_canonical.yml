@@ -1,0 +1,47 @@
+uuid: 5b5de752-3cd0-43a5-8409-1a6d2fe462ba
+langcode: en
+status: false
+dependencies: {  }
+id: entity_user_canonical
+label: entity.user.canonical
+tabs:
+  -
+    link: Contact
+    access: true
+    weight: 2
+    label: entity.user.contact_form
+  -
+    link: Shortcuts
+    access: true
+    weight: -10
+    label: shortcut.set_switch
+  -
+    link: View
+    access: true
+    weight: -10
+    label: entity.user.canonical
+  -
+    link: Edit
+    access: true
+    weight: -10
+    label: entity.user.edit_form
+  -
+    link: Translate
+    access: true
+    weight: 100
+    label: content_translation.local_tasks
+  -
+    link: ' Followers'
+    weight: 0
+    label: views_view
+    access: false
+  -
+    link: following
+    weight: 0
+    label: views_view
+    access: false
+  -
+    link: Posts
+    weight: 0
+    label: views_view
+    access: false

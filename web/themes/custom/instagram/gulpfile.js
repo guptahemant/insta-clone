@@ -5,4 +5,12 @@ gulp.task('sass', function() {
     return gulp.src('scss/*/style.scss')
         .pipe(sass())
         .pipe(gulp.dest('css/'));
+ 
+});
+
+gulp.task('default', gulp.series('sass')); 
+
+gulp.task('watch', function(){ 
+   gulp.watch('scss/*',gulp.series('sass'));
+ 
 });
