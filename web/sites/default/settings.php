@@ -803,4 +803,4 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
    include $app_root . '/' . $site_path . '/settings.local.php';
  }
 
-
+ $settings['config_sync_directory'] = '../config/sync';

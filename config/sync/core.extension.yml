@@ -25,12 +25,9 @@ module:
   file: 0
   filter: 0
   fontawesome: 0
-<<<<<<< HEAD
   fontawesome_menu_icons: 0
   hal: 0
-=======
   fontawesome_iconpicker_widget: 0
->>>>>>> push code of login form
   help: 0
   history: 0
   image: 0

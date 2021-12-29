@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-uuid: 4c150b52-bf5e-4da7-9b24-646f928ec388
-=======
 uuid: 993cff2a-e715-4083-bf7a-9d14ec4dcfeb
->>>>>>> push code of login form
 langcode: en
 status: true
 dependencies:
@@ -10,20 +6,13 @@ dependencies:
     - system.menu.main
   module:
     - system
-<<<<<<< HEAD
-=======
     - user
->>>>>>> push code of login form
   theme:
     - instagram
 id: mainnavigation
 theme: instagram
 region: header
-<<<<<<< HEAD
-weight: -1
-=======
 weight: 0
->>>>>>> push code of login form
 provider: null
 plugin: 'system_menu_block:main'
 settings:
@@ -34,9 +23,6 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-<<<<<<< HEAD
-visibility: {  }
-=======
 visibility:
   request_path:
     id: request_path
@@ -50,4 +36,3 @@ visibility:
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
->>>>>>> push code of login form

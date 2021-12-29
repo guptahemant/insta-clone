@@ -1,23 +1,9 @@
 definitions:
   contact__site_page:
-<<<<<<< HEAD
-    weight: -50
-    menu_name: footer
-    parent: ''
-    enabled: false
-    expanded: false
-  standard__front_page:
-    weight: -50
-    menu_name: main
-    parent: ''
-    expanded: false
-    enabled: true
-=======
     enabled: true
     menu_name: footer
     parent: ''
     expanded: false
     weight: -38
->>>>>>> push code of login form
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
