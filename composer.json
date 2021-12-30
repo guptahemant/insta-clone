@@ -21,12 +21,17 @@
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
         "drupal/default_content": "^2.0@alpha",
+        "drupal/devel": "^4.1",
         "drupal/flag": "^4.0@beta",
         "drupal/fontawesome_menu_icons": "^1.9",
         "drupal/lang_dropdown": "^2.0@beta",
+        "drupal/libraries": "^3.0@beta",
+        "drupal/linkicon": "^1.7",
         "drupal/search_api": "^1.21",
         "drupal/search_api_autocomplete": "^1.5",
         "drupal/search_api_page": "^1.0@beta",
+        "drupal/svg_image": "^1.15",
+        "drupal/tabtamer": "^2.0@beta",
         "drupal/user_menu_avatar": "^6.0@RC"
     },
     "conflict": {

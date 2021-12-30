@@ -804,3 +804,4 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  }
 
 
+ $settings['config_sync_directory'] = '../config/sync';
