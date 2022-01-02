@@ -1,4 +1,3 @@
- 
 <?php
 
 function instagram_preprocess_region__header(&$variables) {
@@ -13,3 +12,4 @@ function instagram_form_alter(&$form, &$form_state, $form_id) {
         
       }
 } 
+ 

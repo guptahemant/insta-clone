@@ -43,6 +43,8 @@
  * @see html.html.twig
  */
 #}
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 <div class="layout-container">
 
   <header role="banner">
@@ -59,6 +61,8 @@
   {{ page.help }}
 
   <main role="main">
+
+  <div class="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
@@ -76,7 +80,8 @@
         {{ page.sidebar_second }}
       </aside>
     {% endif %}
-
+  </div>
+  
   </main>
 
     <footer class="pC2e0">
