@@ -14,15 +14,15 @@ index_id: users
 suggester_settings:
   live_results:
     fields: {  }
+    highlight:
+      enabled: false
+      field: ''
     view_modes:
       'entity:node':
         article: ''
         page: ''
       'entity:user':
         user: ''
-    highlight:
-      enabled: false
-      field: ''
 suggester_weights:
   live_results: 0
 suggester_limits: {  }
@@ -32,6 +32,6 @@ options:
   limit: 5
   min_length: 1
   show_count: false
-  autosubmit: true
-  submit_button_selector: ':submit'
   delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true

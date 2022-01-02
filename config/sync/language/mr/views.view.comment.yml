@@ -3,18 +3,7 @@ display:
   default:
     display_title: मुळस्वरुप
     display_options:
-      exposed_form:
-        options:
-          submit_button: गाळणी
-          reset_button_label: पुर्ववत
-          exposed_sorts_label: 'क्रमवारी नुसार लावा'
-      pager:
-        options:
-          tags:
-            previous: '‹ मागे'
-            next: 'पुढे ›'
-            first: '« प्रथम'
-            last: 'अंतिम »'
+      title: प्रतिक्रिया
       fields:
         comment_bulk_form:
           action_title: कृती
@@ -24,12 +13,36 @@ display:
             विषय
             #-#-#-#-#  pvtmsg.po (contributions)  #-#-#-#-#
             विषय:
+          separator: ', '
+        uid:
+          separator: ', '
         name:
           label: लेखक
+          separator: ', '
+        entity_id:
+          separator: ', '
         changed:
           label: सुधारित
+          separator: ', '
         operations:
           label: कृती
+        name_1:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'पुढे ›'
+            previous: '‹ मागे'
+            first: '« प्रथम'
+            last: 'अंतिम »'
+      exposed_form:
+        options:
+          submit_button: गाळणी
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
+      empty:
+        area_text_custom:
+          content: 'टिप्पणी उपलब्ध नाही'
       filters:
         subject:
           expose:
@@ -41,10 +54,6 @@ display:
         langcode:
           expose:
             label: भाषा
-      title: प्रतिक्रिया
-      empty:
-        area_text_custom:
-          content: 'टिप्पणी उपलब्ध नाही'
       use_more_text: आणखी
   page_published:
     display_title: 'प्रकाशित प्रतिक्रिया'
@@ -53,6 +62,30 @@ display:
         title: प्रतिक्रिया
   page_unapproved:
     display_options:
+      fields:
+        comment_bulk_form:
+          action_title: कृती
+        subject:
+          label: |-
+            #-#-#-#-#  general.po (PROJECT VERSION)  #-#-#-#-#
+            विषय
+            #-#-#-#-#  pvtmsg.po (contributions)  #-#-#-#-#
+            विषय:
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: लेखक
+          separator: ', '
+        entity_id:
+          separator: ', '
+        changed:
+          label: सुधारित
+          separator: ', '
+        operations:
+          label: कृती
+        name_1:
+          separator: ', '
       filters:
         subject:
           expose:
@@ -64,18 +97,3 @@ display:
         langcode:
           expose:
             label: भाषा
-      fields:
-        comment_bulk_form:
-          action_title: कृती
-        subject:
-          label: |-
-            #-#-#-#-#  general.po (PROJECT VERSION)  #-#-#-#-#
-            विषय
-            #-#-#-#-#  pvtmsg.po (contributions)  #-#-#-#-#
-            विषय:
-        name:
-          label: लेखक
-        changed:
-          label: सुधारित
-        operations:
-          label: कृती

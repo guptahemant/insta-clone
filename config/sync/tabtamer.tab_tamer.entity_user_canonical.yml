@@ -6,42 +6,42 @@ id: entity_user_canonical
 label: entity.user.canonical
 tabs:
   -
-    link: Contact
-    access: true
-    weight: 2
     label: entity.user.contact_form
-  -
-    link: Shortcuts
+    link: Contact
+    weight: 2
     access: true
-    weight: -10
+  -
     label: shortcut.set_switch
-  -
-    link: View
-    access: true
+    link: Shortcuts
     weight: -10
+    access: true
+  -
     label: entity.user.canonical
-  -
-    link: Edit
-    access: true
+    link: View
     weight: -10
-    label: entity.user.edit_form
-  -
-    link: Translate
     access: true
-    weight: 100
-    label: content_translation.local_tasks
   -
+    label: entity.user.edit_form
+    link: Edit
+    weight: -10
+    access: true
+  -
+    label: content_translation.local_tasks
+    link: Translate
+    weight: 100
+    access: true
+  -
+    label: views_view
     link: ' Followers'
     weight: 0
-    label: views_view
     access: false
   -
+    label: views_view
     link: following
     weight: 0
-    label: views_view
     access: false
   -
+    label: views_view
     link: Posts
     weight: 0
-    label: views_view
     access: false

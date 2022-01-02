@@ -1,4 +1,4 @@
-uuid: f51ef7b4-586e-4c82-bc39-552eb21c7b20
+uuid: 2e5cfb0e-654a-4fdd-9571-806c5c597f98
 langcode: en
 status: true
 dependencies:
@@ -11,13 +11,13 @@ dependencies:
 id: searchapipagesearchblockform
 theme: instagram
 region: header
-weight: -2
+weight: -4
 provider: null
 plugin: search_api_page_form_block
 settings:
   id: search_api_page_form_block
   label: 'Search Api Page search block form'
-  provider: search_api_page
   label_display: '0'
+  provider: search_api_page
   search_api_page: userpost
 visibility: {  }

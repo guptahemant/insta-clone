@@ -3,21 +3,7 @@ display:
   default:
     display_title: 기본값
     display_options:
-      exposed_form:
-        options:
-          submit_button: 필터
-          reset_button_label: 재설정
-          exposed_sorts_label: 정렬기준
-          sort_desc_label: 설명
-      pager:
-        options:
-          tags:
-            previous: '‹ 이전'
-            next: '다음 ›'
-          expose:
-            items_per_page_label: '페이지 당 항목 수'
-            items_per_page_options_all_label: '- 모두 -'
-            offset_label: 건너뛰기
+      title: 파일
       fields:
         filename:
           label: 이름
@@ -36,6 +22,25 @@ display:
           label: '변경 날짜'
         count:
           label: '사용 위치'
+      pager:
+        options:
+          tags:
+            next: '다음 ›'
+            previous: '‹ 이전'
+          expose:
+            items_per_page_label: '페이지 당 항목 수'
+            items_per_page_options_all_label: '- 모두 -'
+            offset_label: 건너뛰기
+      exposed_form:
+        options:
+          submit_button: 필터
+          reset_button_label: 재설정
+          exposed_sorts_label: 정렬기준
+          sort_asc_label: Asc
+          sort_desc_label: 설명
+      empty:
+        area_text_custom:
+          content: '사용할 수 있는 파일이 없습니다.'
       filters:
         filename:
           expose:
@@ -46,10 +51,6 @@ display:
         status:
           expose:
             label: 상태
-      title: 파일
-      empty:
-        area_text_custom:
-          content: '사용할 수 있는 파일이 없습니다.'
   page_1:
     display_options:
       menu:
@@ -57,15 +58,7 @@ display:
   page_2:
     display_title: '파일 사용량'
     display_options:
-      pager:
-        options:
-          tags:
-            previous: '‹ 이전'
-            next: '다음 ›'
-          expose:
-            items_per_page_label: '페이지 당 항목 수'
-            items_per_page_options_all_label: '- 모두 -'
-            offset_label: 건너뛰기
+      title: '파일 사용량'
       fields:
         entity_label:
           label: 엔터티
@@ -75,7 +68,15 @@ display:
           label: '등록 모듈'
         count:
           label: '사용 횟수'
-      title: '파일 사용량'
+      pager:
+        options:
+          tags:
+            next: '다음 ›'
+            previous: '‹ 이전'
+          expose:
+            items_per_page_label: '페이지 당 항목 수'
+            items_per_page_options_all_label: '- 모두 -'
+            offset_label: 건너뛰기
       arguments:
         fid:
           exception:

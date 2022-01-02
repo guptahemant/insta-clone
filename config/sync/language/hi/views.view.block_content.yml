@@ -4,26 +4,32 @@ display:
   default:
     display_title: डीफॉल्ट
     display_options:
+      title: 'कस्टम ब्लॉक पुस्तकालय'
+      fields:
+        info:
+          label: 'ब्लॉक की व्याख्या'
+          separator: ', '
+        type:
+          label: 'ब्लॉक प्रकार'
+          separator: ', '
+        changed:
+          label: अद्यतित
+        operations:
+          label: कार्यवाही
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'विषय प्रति पृष्ठ'
+            items_per_page_options_all_label: '-सभी-'
       exposed_form:
         options:
           submit_button: 'लागू करें'
           reset_button_label: 'दोबारा से स्थापित करें|'
           exposed_sorts_label: 'क्रमबद्ध द्वारा'
           sort_desc_label: अवरोही
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'विषय प्रति पृष्ठ'
-            items_per_page_options_all_label: '-सभी-'
-      fields:
-        info:
-          label: 'ब्लॉक की व्याख्या'
-        type:
-          label: 'ब्लॉक प्रकार'
-        changed:
-          label: अद्यतित
-        operations:
-          label: कार्यवाही
+      empty:
+        area_text_custom:
+          content: 'कोई कस्टम ब्लॉक उपलब्ध नहीं हैं।'
       filters:
         info:
           expose:
@@ -31,10 +37,6 @@ display:
         type:
           expose:
             label: 'ब्लॉक प्रकार'
-      title: 'कस्टम ब्लॉक पुस्तकालय'
-      empty:
-        area_text_custom:
-          content: 'कोई कस्टम ब्लॉक उपलब्ध नहीं हैं।'
   page_1:
     display_title: पृष्ठ
     display_options:

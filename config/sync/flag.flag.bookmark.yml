@@ -1,12 +1,12 @@
-uuid: bd077eb6-a295-4e4a-9a30-4ded0fd3ad26
+uuid: 2be1232d-a078-4ee7-8fff-b1055a9bc463
 langcode: en
 status: true
 dependencies:
+  module:
+    - node
   enforced:
     module:
       - flag_bookmark
-  module:
-    - node
 _core:
   default_config_hash: vuzrLaRZ3xV-FmT127t2gLy_p8JDLMWtsKsnCwdWR2Y
 id: bookmark

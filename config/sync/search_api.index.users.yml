@@ -2,13 +2,13 @@ uuid: 26f4f7d5-4e98-4783-9662-3aab5ac35ced
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.storage.user.user_picture
+    - search_api.server.default_server
   module:
     - user
     - node
     - search_api
-  config:
-    - field.storage.user.user_picture
-    - search_api.server.default_server
 id: users
 name: users
 description: ''
@@ -59,7 +59,7 @@ tracker_settings:
   default:
     indexing_order: lifo
 options:
+  cron_limit: 50
   index_directly: true
   track_changes_in_references: true
-  cron_limit: 50
 server: default_server

@@ -3,6 +3,9 @@ display:
   default:
     display_title: डीफॉल्ट
     display_options:
+      fields:
+        changed:
+          separator: ', '
       exposed_form:
         options:
           submit_button: 'लागू करें'

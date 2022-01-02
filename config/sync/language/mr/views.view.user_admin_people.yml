@@ -3,25 +3,28 @@ display:
   default:
     display_title: मुळस्वरुप
     display_options:
-      exposed_form:
-        options:
-          submit_button: गाळणी
-          reset_button_label: पुर्ववत
-          exposed_sorts_label: 'क्रमवारी नुसार लावा'
+      title: लोक
       fields:
         name:
           label: सदस्यनाम
         status:
           label: वर्तमानस्थिती
           settings:
-            format_custom_true: सक्रिय
             format_custom_false: प्रतिबंधीत
+            format_custom_true: सक्रिय
         roles_target_id:
           label: वर्तनमर्यादा
         created:
           label: 'च्यासाठी सभासद'
         operations:
           label: कृती
+        mail:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: गाळणी
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
       filters:
         status:
           group_info:
@@ -31,7 +34,6 @@ display:
                 title: सक्रिय
               2:
                 title: प्रतिबंधीत
-      title: लोक
       use_more_text: आणखी
   page_1:
     display_title: पान

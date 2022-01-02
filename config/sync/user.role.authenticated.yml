@@ -1,7 +1,24 @@
 uuid: 09fd93e5-818f-4a5c-ad02-3f4c7d31ade4
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.article
+    - node.type.page
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contact
+    - field_ui
+    - filter
+    - node
+    - search_api_autocomplete
+    - search_api_page
+    - shortcut
+    - system
+    - taxonomy
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
@@ -14,20 +31,16 @@ permissions:
   - 'access content overview'
   - 'access shortcuts'
   - 'access site-wide contact form'
-  - 'access user profiles' 
-  - 'administer search_api_autocomplete'  
-  - 'create terms in tags'  
+  - 'access user profiles'
   - 'administer display modes'
-  - 'administer flagging display'
-  - 'administer flagging fields'
-  - 'administer flaggings'
-  - 'administer flags'
+  - 'administer search_api_autocomplete'
   - 'administer user display'
   - 'administer user fields'
   - 'cancel account'
   - 'change own username'
   - 'create article content'
   - 'create page content'
+  - 'create terms in tags'
   - 'delete article revisions'
   - 'delete own article content'
   - 'delete page revisions'
@@ -35,18 +48,17 @@ permissions:
   - 'edit own comments'
   - 'edit own page content'
   - 'flag bookmark'
-  - 'flag following' 
+  - 'flag following'
   - 'post comments'
   - 'revert article revisions'
   - 'revert page revisions'
-  - 'search content'
-  - 'skip comment approval' 
-  - 'use search_api_autocomplete for userpost'
-  - 'use text format basic_html'
-  - 'use text format full_html'
-  - 'view search api pages' 
+  - 'skip comment approval'
   - 'unflag bookmark'
   - 'unflag following'
+  - 'use search_api_autocomplete for userpost'
   - 'use text format basic_html'
+  - 'use text format basic_html'
+  - 'use text format full_html'
   - 'view article revisions'
-  - 'view page revisions' 
+  - 'view page revisions'
+  - 'view search api pages'

@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -25,6 +27,22 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_bio:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_name:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   language:
     weight: 4
     region: content
@@ -37,11 +55,11 @@ content:
     third_party_settings: {  }
   user_picture:
     type: image_image
+    weight: 3
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: 3
-    region: content
 hidden:
   langcode: true

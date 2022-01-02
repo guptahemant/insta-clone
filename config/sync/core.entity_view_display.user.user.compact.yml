@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -17,19 +19,22 @@ bundle: user
 mode: compact
 content:
   flag_following:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   user_picture:
     type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+    third_party_settings: {  }
     weight: 0
     region: content
-    settings:
-      image_style: thumbnail
-      image_link: content
-    third_party_settings: {  }
-    label: hidden
 hidden:
+  field_bio: true
+  field_name: true
   langcode: true
   member_for: true
+  search_api_excerpt: true
