@@ -10,12 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
-<<<<<<< HEAD
     "gulp-sass": "^4.0.0"
-=======
-    "gulp-sass": "^4.1.1",
-    "sass": "^1.45.1"
->>>>>>> push code of login form
   },
   "dependencies": {
     "node-sass": "^7.0.0"
