@@ -10,6 +10,11 @@ function instagram_preprocess_region__header(&$variables) {
     
 }
 
+   function instagram_preprocess_menu__menu_insta(&$variables) {
+   
+    $variables['attributes']['class'][] = 'list_post';
+  }
+
 
 function instagram_form_alter(&$form, &$form_state, $form_id) {
       if ($form_id == 'search_api_page_block_form_userpost') {
