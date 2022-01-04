@@ -1,0 +1,29 @@
+uuid: 2d598cc1-03e7-4bbe-9b76-bcf8e917136c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-insta
+  module:
+    - system
+  theme:
+    - instagram
+id: menu_insta
+theme: instagram
+region: content
+weight: -7
+provider: null
+plugin: 'system_menu_block:menu-insta'
+settings:
+  id: 'system_menu_block:menu-insta'
+  label: menu_insta
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/saved\r\n/posts\r\n/tagged"
+    negate: false

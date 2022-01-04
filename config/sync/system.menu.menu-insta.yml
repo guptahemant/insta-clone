@@ -1,0 +1,8 @@
+uuid: b0fc8291-19bd-4a75-87a5-17cab694ee64
+langcode: en
+status: true
+dependencies: {  }
+id: menu-insta
+label: menu_insta
+description: ''
+locked: false

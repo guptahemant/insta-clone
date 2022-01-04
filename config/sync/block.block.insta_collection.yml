@@ -1,24 +1,24 @@
-uuid: 117e3a82-af33-417c-aeca-1b9fb1ae1713
+uuid: cdf0f040-1c70-42af-ab3a-5a56f7e141d6
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:37e79a6a-02b7-45b9-9a64-60d34ed57653'
+    - 'block_content:basic:4edfbaa8-04a1-4771-a9ff-e2a6b88b84e9'
   module:
     - block_content
     - system
     - user
   theme:
     - instagram
-id: mobileframeforinsta
+id: insta_collection
 theme: instagram
 region: content
-weight: -5
+weight: -6
 provider: null
-plugin: 'block_content:37e79a6a-02b7-45b9-9a64-60d34ed57653'
+plugin: 'block_content:4edfbaa8-04a1-4771-a9ff-e2a6b88b84e9'
 settings:
-  id: 'block_content:37e79a6a-02b7-45b9-9a64-60d34ed57653'
-  label: 'mobile frame for insta'
+  id: 'block_content:4edfbaa8-04a1-4771-a9ff-e2a6b88b84e9'
+  label: insta_collection
   provider: block_content
   label_display: '0'
   status: true
@@ -27,12 +27,13 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /node
+    pages: /saved
     negate: false
   user_role:
     id: user_role
     roles:
-      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'

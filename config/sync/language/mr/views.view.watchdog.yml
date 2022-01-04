@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      fields:
+        timestamp:
+          label: दिनांक
+        name:
+          label: सदस्य

@@ -20,8 +20,11 @@ module:
   dblog: 0
   default_content: 0
   demo_con: 0
+<<<<<<< HEAD
   devel: 0
   devel_kint_extras: 0
+=======
+>>>>>>> test3
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -43,6 +46,7 @@ module:
   language: 0
   link: 0
   locale: 0
+  mentions: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0

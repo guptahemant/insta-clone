@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: 재설정
+          exposed_sorts_label: 정렬기준
+      pager:
+        options:
+          tags:
+            previous: '‹ 이전'
+            next: '다음 ›'
+            first: '« 처음 페이지'
+            last: '마지막 페이지 »'
+      fields:
+        flagging_bulk_form:
+          action_title: 액션
+        type:
+          label: 종류
+        title:
+          label: 제목
+        name:
+          label: 작성자
+  page_1:
+    display_title: 쪽

@@ -1,0 +1,6 @@
+display:
+  default:
+    display_options:
+      fields:
+        title:
+          label: शीर्षक

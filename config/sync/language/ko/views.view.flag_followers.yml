@@ -1,0 +1,12 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: 재설정
+          exposed_sorts_label: 정렬기준
+      fields:
+        name:
+          label: 아이디
+  page_1:
+    display_title: 쪽

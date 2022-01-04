@@ -11,5 +11,17 @@ definitions:
     parent: ''
     expanded: false
     enabled: true
+  user__page:
+    enabled: false
+    menu_name: account
+    parent: ''
+    expanded: false
+    weight: -10
+  user__logout:
+    enabled: false
+    menu_name: account
+    parent: ''
+    weight: 10
+    expanded: false
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ

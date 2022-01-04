@@ -1,0 +1,35 @@
+description: 'Recent log messages'
+display:
+  default:
+    display_title: 'Par défaut'
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+      fields:
+        nothing:
+          admin_label: Icon
+        severity:
+          label: Severity
+        timestamp:
+          label: Date
+        name:
+          label: Utilisateur
+        link:
+          label: Actions
+      filters:
+        severity:
+          expose:
+            label: Severity
+      title: 'Recent log messages'
+      empty:
+        area:
+          admin_label: 'No log messages available.'
+          content: 'No log messages available.'

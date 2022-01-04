@@ -1,0 +1,5 @@
+supported_entity_types:
+  mentions: mentions
+  node: node
+  user: user
+suggestions_amount: ''

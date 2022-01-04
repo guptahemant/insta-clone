@@ -1,0 +1,48 @@
+label: 파일
+display:
+  default:
+    display_title: 기본값
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 필터
+          reset_button_label: 재설정
+          exposed_sorts_label: 정렬기준
+      fields:
+        filename:
+          label: 이름
+        filesize:
+          label: '파일 크기'
+        status:
+          label: 상태
+        created:
+          label: '올린 날짜'
+        changed:
+          label: '변경 날짜'
+        count:
+          label: '사용 위치'
+      filters:
+        filename:
+          expose:
+            label: 파일명
+        status:
+          expose:
+            label: 상태
+      title: 파일
+  page_1:
+    display_options:
+      menu:
+        title: 파일
+  page_2:
+    display_options:
+      fields:
+        entity_label:
+          label: 엔터티
+        type:
+          label: '엔터티 유형'
+        count:
+          label: '사용 횟수'
+      arguments:
+        fid:
+          exception:
+            title: 전체
