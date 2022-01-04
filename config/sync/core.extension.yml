@@ -67,6 +67,8 @@ module:
   update: 0
   user: 0
   user_menu_avatar: 0
+  views_slideshow: 0
+  views_slideshow_cycle: 0
   views_ui: 0
   content_translation: 10
   views: 10

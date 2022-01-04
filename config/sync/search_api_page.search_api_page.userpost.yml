@@ -20,6 +20,7 @@ view_mode_configuration:
     overrides:
       article: search_index
       page: search_index
+      slider_insta: ''
   'entity:user':
     default: full
     overrides:

@@ -1,0 +1,11 @@
+uuid: 16e7afd9-efac-4b16-86b7-c0915b3f1975
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slider_insta
+id: node.slider_insta
+target_entity_type_id: node
+target_bundle: slider_insta
+default_langcode: site_default
+language_alterable: false
