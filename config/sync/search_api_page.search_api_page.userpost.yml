@@ -6,7 +6,7 @@ dependencies:
     - search_api.index.users
 id: userpost
 label: userpost
-path: user
+path: users
 clean_url: true
 show_all_when_no_keys: false
 index: users
@@ -20,6 +20,7 @@ view_mode_configuration:
     overrides:
       article: search_index
       page: search_index
+      slider_insta: ''
   'entity:user':
     default: full
     overrides:

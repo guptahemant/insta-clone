@@ -282,7 +282,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'Ydu1pCljo_PpPF3j9Xmtu8GQLNkijUfh1ZqQaXPaIam4jU_xcRtmC8LYnkltaH4J3YF1znMxyw';
+$settings['hash_salt'] = 'yK1HLBmsC6FmHr9czs9OT1TZ8C4eApB8306FinqajsJ7F-5zLHO35lHXY8n9lIImnlltkXNt7Q';
 
 /**
  * Deployment identifier.
@@ -803,4 +803,5 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
    include $app_root . '/' . $site_path . '/settings.local.php';
  }
 
+//  $config['system.logging']['error_level'] = 'verbose';
 

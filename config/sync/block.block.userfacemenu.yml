@@ -1,6 +1,6 @@
 uuid: 931f928a-a622-4030-b12c-8e6a4c7b3e9f
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.userfacemenu

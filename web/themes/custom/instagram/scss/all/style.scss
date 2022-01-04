@@ -22,5 +22,19 @@ main {
     }
 }
 
+.layout-content{
+    .slide{
+    // display: flex;
+    // position: absolute;
+      }}
+      .slider-view{
+        margin-top: -494px;
+            margin-left: 132px;
+            padding-bottom: 69px;
+        img{
+        border: 3px solid rgb(0, 0, 0);
+        }
+      }
+    
 @import "footer.scss";
 @import "header.scss";

@@ -1,0 +1,15 @@
+uuid: dfd78d62-15c1-4844-b5c3-7f9ec729b69f
+langcode: en
+status: true
+dependencies: {  }
+name: insta_slider
+label: insta_slider
+effects:
+  c9c53119-3364-43fc-a685-c90520bc735b:
+    uuid: c9c53119-3364-43fc-a685-c90520bc735b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 214
+      height: 390
+      anchor: center-center

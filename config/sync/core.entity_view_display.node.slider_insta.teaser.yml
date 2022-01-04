@@ -1,0 +1,24 @@
+uuid: 60bcaab2-eae1-4a8d-bcd2-c44b780dfb30
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_insta.field_image1
+    - node.type.slider_insta
+  module:
+    - user
+id: node.slider_insta.teaser
+targetEntityType: node
+bundle: slider_insta
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image1: true
+  langcode: true
+  search_api_excerpt: true
