@@ -6,6 +6,8 @@ display:
           submit_button: Rechercher
           reset_button_label: Réinitialiser
           exposed_sorts_label: 'Trier par'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -19,3 +21,5 @@ display:
         search_api_fulltext:
           expose:
             label: Rechercher
+  page_1:
+    display_title: Page

@@ -95,42 +95,42 @@ display:
                 weight: '1'
                 hide_on_single_slide: '0'
                 type: views_slideshow_controls_text
-              views_slideshow_slide_counter:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
               views_slideshow_pager:
                 enable: false
                 weight: '1'
                 hide_on_single_slide: '0'
                 type: views_slideshow_pager_bullets
-                views_slideshow_pager_bullets:
-                  views_slideshow_pager_bullets_hover: 0
                 views_slideshow_pager_fields:
                   views_slideshow_pager_fields_fields:
-                    title: 0
+                    field_image1: 0
                   views_slideshow_pager_fields_hover: 0
+                views_slideshow_pager_bullets:
+                  views_slideshow_pager_bullets_hover: 0
+              views_slideshow_slide_counter:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
             bottom:
               views_slideshow_controls:
                 enable: false
                 weight: '1'
                 hide_on_single_slide: '0'
                 type: views_slideshow_controls_text
-              views_slideshow_slide_counter:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
               views_slideshow_pager:
                 enable: false
                 weight: '1'
                 hide_on_single_slide: '0'
                 type: views_slideshow_pager_bullets
-                views_slideshow_pager_bullets:
-                  views_slideshow_pager_bullets_hover: 0
                 views_slideshow_pager_fields:
                   views_slideshow_pager_fields_fields:
-                    title: 0
+                    field_image1: 0
                   views_slideshow_pager_fields_hover: 0
+                views_slideshow_pager_bullets:
+                  views_slideshow_pager_bullets_hover: 0
+              views_slideshow_slide_counter:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
       row:
         type: fields
         options:
@@ -212,7 +212,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: '0'
+          value: '1'
           group: 1
           exposed: false
           expose:

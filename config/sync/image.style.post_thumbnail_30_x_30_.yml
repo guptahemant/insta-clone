@@ -1,0 +1,15 @@
+uuid: 2e5aa599-2f19-42c5-8d25-1c19203e9608
+langcode: en
+status: true
+dependencies: {  }
+name: post_thumbnail_30_x_30_
+label: 'Post_thumbnail ( 30 x 30)'
+effects:
+  c1df7e55-ccd8-4816-a930-383418b7609c:
+    uuid: c1df7e55-ccd8-4816-a930-383418b7609c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 30
+      height: 30
+      anchor: center-center

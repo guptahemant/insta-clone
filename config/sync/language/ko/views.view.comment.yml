@@ -8,6 +8,7 @@ display:
           submit_button: 필터
           reset_button_label: 재설정
           exposed_sorts_label: 정렬기준
+          sort_asc_label: Asc
           sort_desc_label: 설명
       pager:
         options:
