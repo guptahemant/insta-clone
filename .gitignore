@@ -6,3 +6,4 @@ web/modules/contrib/*
 web/themes/custom/instagram/node_modules
 web/themes/custom/instagram/css/*
 web/core/
+node_modules/
