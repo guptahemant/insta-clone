@@ -31,6 +31,8 @@ display:
           label: 'अंतिम पहुंच'
         operations:
           label: कार्यवाही
+        mail:
+          separator: ', '
       filters:
         combine:
           expose:

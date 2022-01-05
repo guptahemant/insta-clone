@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d86ad59b-830c-47c7-93b9-04417c4e3b8b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: insta-slide2_1.jpg
+  uri:
+    -
+      value: 'public://2022-01/insta-slide2_1.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 55647
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641305124

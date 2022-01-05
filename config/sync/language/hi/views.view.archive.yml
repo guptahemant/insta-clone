@@ -16,7 +16,17 @@ display:
           expose:
             items_per_page_label: 'विषय प्रति पृष्ठ'
             items_per_page_options_all_label: '-सभी-'
+          tags:
+            previous: ‹‹
+            next: ››
+      arguments:
+        created_year_month:
+          title: '{{ arguments.created_year_month }}'
   block_1:
     display_title: ब्लॉक
+    display_options:
+      arguments:
+        created_year_month:
+          title: '{{ arguments.created_year_month }}'
   page_1:
     display_title: पृष्ठ

@@ -1,12 +1,13 @@
-uuid: 73e724ec-5fa6-4efc-8ee9-a63d40adf93c
+uuid: 59c77557-f58c-4408-99fb-02433c30c6f3
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:cef92996-7719-4030-95ec-dde548ba4b99'
+    - 'block_content:basic:d55abd00-4ad2-4cdc-975c-1b7e23336778'
   module:
     - block_content
     - system
+    - user
   theme:
     - instagram
 id: mobileframeforinsta
@@ -14,9 +15,9 @@ theme: instagram
 region: content
 weight: 0
 provider: null
-plugin: 'block_content:cef92996-7719-4030-95ec-dde548ba4b99'
+plugin: 'block_content:d55abd00-4ad2-4cdc-975c-1b7e23336778'
 settings:
-  id: 'block_content:cef92996-7719-4030-95ec-dde548ba4b99'
+  id: 'block_content:d55abd00-4ad2-4cdc-975c-1b7e23336778'
   label: 'mobile frame for insta'
   provider: block_content
   label_display: '0'
@@ -26,5 +27,12 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /node
     negate: false
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

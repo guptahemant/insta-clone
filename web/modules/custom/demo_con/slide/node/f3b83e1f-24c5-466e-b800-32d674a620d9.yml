@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f3b83e1f-24c5-466e-b800-32d674a620d9
+  bundle: slider_insta
+  default_langcode: en
+  depends:
+    d86ad59b-830c-47c7-93b9-04417c4e3b8b: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: '2'
+  created:
+    -
+      value: 1641305124
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_image1:
+    -
+      entity: d86ad59b-830c-47c7-93b9-04417c4e3b8b
+      alt: '2'
+      title: ''
+      width: 480
+      height: 854
