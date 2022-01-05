@@ -11,15 +11,15 @@ dependencies:
 id: views_block__myprofile_top_block_1
 theme: instagram
 region: content
-weight: -7
+weight: -8
 provider: null
 plugin: 'views_block:myprofile_top-block_1'
 settings:
   id: 'views_block:myprofile_top-block_1'
   label: ''
-  label_display: '0'
   provider: views
-  context_mapping: {  }
+  label_display: '0'
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility: {  }

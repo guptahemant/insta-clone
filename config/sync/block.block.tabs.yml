@@ -1,4 +1,4 @@
-uuid: 5e076180-85eb-433a-902f-17a6687cf1aa
+uuid: b05b3afe-31bb-46dc-855f-1fd80238bb47
 langcode: en
 status: true
 dependencies:
@@ -7,14 +7,14 @@ dependencies:
 id: tabs
 theme: instagram
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
   label: Tabs
-  label_display: '0'
   provider: core
+  label_display: '0'
   primary: true
   secondary: true
 visibility: {  }

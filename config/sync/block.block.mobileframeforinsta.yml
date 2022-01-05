@@ -2,24 +2,21 @@ uuid: 73e724ec-5fa6-4efc-8ee9-a63d40adf93c
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:cef92996-7719-4030-95ec-dde548ba4b99'
   module:
-    - block_content
     - system
   theme:
     - instagram
 id: mobileframeforinsta
 theme: instagram
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: 'block_content:cef92996-7719-4030-95ec-dde548ba4b99'
 settings:
   id: 'block_content:cef92996-7719-4030-95ec-dde548ba4b99'
   label: 'mobile frame for insta'
-  label_display: '0'
   provider: block_content
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
