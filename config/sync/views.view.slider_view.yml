@@ -20,124 +20,12 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Default
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: none
-        options:
-          items_per_page: null
-          offset: 0
-      style:
-        type: slideshow
-        options:
-          row_class: ''
-          default_row_class: true
-          slideshow_skin: default
-          slideshow_type: views_slideshow_cycle
-          views_slideshow_cycle:
-            effect: fade
-            transition_advanced: 0
-            timeout: '5000'
-            speed: '700'
-            delay: '0'
-            sync: 1
-            random: 0
-            pause: 1
-            pause_on_click: 0
-            action_advanced: 0
-            start_paused: 0
-            remember_slide: 0
-            remember_slide_days: '1'
-            pause_when_hidden: 0
-            pause_when_hidden_type: full
-            amount_allowed_visible: ''
-            nowrap: 0
-            fixed_height: 1
-            items_per_slide: '1'
-            items_per_slide_first: 0
-            items_per_slide_first_number: '1'
-            wait_for_image_load: 1
-            wait_for_image_load_timeout: '3000'
-            cleartype: 0
-            cleartypenobg: 0
-          widgets:
-            top:
-              views_slideshow_controls:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-                type: views_slideshow_controls_text
-              views_slideshow_slide_counter:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-              views_slideshow_pager:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-                type: views_slideshow_pager_bullets
-                views_slideshow_pager_bullets:
-                  views_slideshow_pager_bullets_hover: 0
-                views_slideshow_pager_fields:
-                  views_slideshow_pager_fields_fields:
-                    title: 0
-                  views_slideshow_pager_fields_hover: 0
-            bottom:
-              views_slideshow_controls:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-                type: views_slideshow_controls_text
-              views_slideshow_slide_counter:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-              views_slideshow_pager:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-                type: views_slideshow_pager_bullets
-                views_slideshow_pager_bullets:
-                  views_slideshow_pager_bullets_hover: 0
-                views_slideshow_pager_fields:
-                  views_slideshow_pager_fields_fields:
-                    title: 0
-                  views_slideshow_pager_fields_hover: 0
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+      title: slider_view
       fields:
         field_image1:
           id: field_image1
@@ -146,6 +34,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -190,8 +79,8 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: insta_slider
             image_link: ''
+            image_style: insta_slider
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -202,7 +91,47 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
+      pager:
+        type: none
+        options:
+          offset: 0
+          items_per_page: null
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+      arguments: {  }
       filters:
         status:
           id: status
@@ -211,6 +140,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
           operator: '='
           value: '0'
           group: 1
@@ -241,45 +173,114 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            slider_insta: slider_insta
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            slider_insta: slider_insta
           expose:
             operator_limit_selection: false
             operator_list: {  }
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-      title: slider_view
+      style:
+        type: slideshow
+        options:
+          row_class: ''
+          default_row_class: true
+          slideshow_skin: default
+          slideshow_type: views_slideshow_cycle
+          widgets:
+            top:
+              views_slideshow_controls:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+                type: views_slideshow_controls_text
+              views_slideshow_slide_counter:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+              views_slideshow_pager:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+                type: views_slideshow_pager_bullets
+                views_slideshow_pager_bullets:
+                  views_slideshow_pager_bullets_hover: 0
+                views_slideshow_pager_fields:
+                  views_slideshow_pager_fields_fields:
+                    title: 0
+                  views_slideshow_pager_fields_hover: 0
+            bottom:
+              views_slideshow_controls:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+                type: views_slideshow_controls_text
+              views_slideshow_slide_counter:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+              views_slideshow_pager:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+                type: views_slideshow_pager_bullets
+                views_slideshow_pager_bullets:
+                  views_slideshow_pager_bullets_hover: 0
+                views_slideshow_pager_fields:
+                  views_slideshow_pager_fields_fields:
+                    title: 0
+                  views_slideshow_pager_fields_hover: 0
+          views_slideshow_cycle:
+            effect: fade
+            transition_advanced: 0
+            timeout: '5000'
+            speed: '700'
+            delay: '0'
+            sync: 1
+            random: 0
+            pause: 1
+            pause_on_click: 0
+            action_advanced: 0
+            start_paused: 0
+            remember_slide: 0
+            remember_slide_days: '1'
+            pause_when_hidden: 0
+            pause_when_hidden_type: full
+            amount_allowed_visible: ''
+            nowrap: 0
+            fixed_height: 1
+            items_per_slide: '1'
+            items_per_slide_first: 0
+            items_per_slide_first_number: '1'
+            wait_for_image_load: 1
+            wait_for_image_load_timeout: '3000'
+            cleartype: 0
+            cleartypenobg: 0
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      css_class: slider_view
       header: {  }
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
       display_extenders: {  }
-      css_class: slider_view
     cache_metadata:
       max-age: -1
       contexts:
@@ -290,9 +291,9 @@ display:
       tags:
         - 'config:field.storage.node.field_image1'
   block_1:
-    display_plugin: block
     id: block_1
     display_title: Block
+    display_plugin: block
     position: 1
     display_options:
       display_extenders: {  }

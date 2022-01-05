@@ -18,13 +18,13 @@ plugin: 'block_content:cef92996-7719-4030-95ec-dde548ba4b99'
 settings:
   id: 'block_content:cef92996-7719-4030-95ec-dde548ba4b99'
   label: 'mobile frame for insta'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

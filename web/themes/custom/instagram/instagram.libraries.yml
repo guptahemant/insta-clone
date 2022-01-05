@@ -1,11 +1,13 @@
 global-styling:
   version: VERSION
   css:
-    theme:
-      css/all/style.css: {}
+    theme: 
+      css/style.css: {}
      
       
   js:
     js/instagram.js: {}
+    js/myprofile_wrapper.js: {}
+    
   dependencies:
     - core/jquery

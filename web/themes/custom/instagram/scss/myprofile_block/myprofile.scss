@@ -1,0 +1,283 @@
+.main{
+    padding: 30px 20px 0;
+}
+
+.wrapper{
+    width: 100%;
+    margin-bottom: 44px;
+    display: flex;
+    flex-direction: row;
+ 
+    & #block-views-block-myprofile-image-block-1{
+
+        width: 25%;
+        justify-content: space-around;
+        display: flex;
+        margin-right: 30px;
+        padding-left: 11%;  
+
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 100px; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.wrapright{
+
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+    & #block-views-block-myprofile-top-block-1{
+        height: 23%;
+    
+    & .views-row{
+        margin-bottom: 20px;
+        display: flex; 
+
+        & .views-field-name{
+            padding-top: 5px;
+        }
+
+        & .field-content, a{
+            font-weight: 300; 
+            font-size: 28px;
+            line-height: 32px;
+            margin: -5px 0 -6px;
+            text-decoration: none;
+            color: #262626;  
+        }
+
+        & .views-field-edit-user a{    
+                background-color: transparent;
+                border: 1px solid #dbdbdb; 
+                margin-left: 20px;
+                border-radius: 4px; 
+                font-weight: 600;
+                padding: 6px 9px;
+                font-size: 14px;
+        }
+        
+        & .views-field-nothing{ 
+            margin-top: 5px;
+            margin-left: 6px;
+
+            & .field-content a { 
+                background-image: url('/insta-clone2/web/sites/default/files/pictures/2021-12/instagram-settings-icon.jpg');
+                background-repeat: no-repeat;
+                color: transparent;
+                background-position: left center;
+                padding-left: 16px;
+                background-size: 36px 40px;
+            }
+        }
+    }
+}
+
+
+    & #block-tabs{
+        display: flex;
+        & ul{
+            margin-left: 110px;
+            list-style-type: none;
+            display: flex;
+            padding-left: 0;
+            margin-bottom: 20px;
+            flex-direction: row-reverse;
+
+            & li{
+                margin-right: 15px;
+        
+                & a{
+                    font-size: 16px;
+                    margin-right: 40px; 
+                    text-decoration: none;
+                    color: #262626;  
+                }
+            }
+        }
+        & .contextual-links{
+            display: none;
+        }
+    }
+
+    & .wrapcount{
+
+        display: flex;
+        margin-top: -38px;
+        height: 20%;
+
+        & #block-views-block-posts-count-block-1{
+            margin-right: 6.5%;
+
+            & .views-row{
+                display: flex;
+
+                & .views-field-name{
+                    margin-right: 10%;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        & #block-views-block-following-count-block-1{
+            margin-right: 14.7%;
+        }
+
+        & #block-views-block-following-count-block-1, #block-views-block-followers-count-block-1{
+  
+            & .views-row{
+                font-weight: 600;
+            }
+        } 
+    }
+
+    & #block-views-block-myprofile-bottom-block-1{
+
+        & .field-content{
+            margin: 5px 0;
+        }
+
+        & .views-field-field-name{
+            font-weight: 600;
+            font-size: 16px;
+        }
+    } 
+}
+
+@media (max-width: 768px) {
+    .wrapright .wrapcount{
+
+        & #block-views-block-posts-count-block-1{
+            margin-right: 10.7%;
+        }
+
+        & #block-views-block-following-count-block-1{
+            margin-right: 23.5%;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .main {
+        padding: 30px 0;
+    }
+
+    #block-tabs, .wrapcount{
+        visibility: hidden;
+    }
+
+    .wrapper425{
+        margin-left: 16px;
+        margin-top: 25px; 
+        margin-bottom: 24px;
+        display: flex;
+
+        & #block-views-block-myprofile-image-block-1{ 
+            margin-right: 28px;
+            
+            img{
+                width: 77px;
+                height: 77px;
+                border-radius: 100px;  
+            }
+        }
+
+        & #block-views-block-myprofile-top-block-1{ 
+        
+            & .views-row{
+                width: 150%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); 
+                grid-auto-rows: minmax(25px, auto);
+
+                & .views-field-name{
+                    grid-column: 1;
+                    grid-row: 1 / 2;
+                }
+
+                & .views-field-nothing{
+                    display: none; 
+                }
+
+                & .views-field-edit-user{
+                    grid-column: 1 / 3;
+                    grid-row: 2 / 2;
+                }
+
+                & .views-field-field-user-settings{
+                    grid-column: 2;
+                    grid-row: 1 / 2;
+                }
+
+                & .views-field-name{
+                    padding-top: 5px;
+                }
+
+                & .field-content, a{
+                    font-weight: 300; 
+                    font-size: 28px;
+                    line-height: 32px;
+                    margin: -5px 0 -6px;
+                    text-decoration: none;
+                    color: #262626;  
+                }
+
+                & .views-field-edit-user a{    
+                        background-color: transparent;
+                        border: 1px solid #dbdbdb;  
+                        border-radius: 4px; 
+                        font-weight: 600;
+                        padding: 6px 30%;
+                        font-size: 14px;
+                }
+
+                & .views-field-field-user-settings{
+                    padding-top: 10px; 
+                }
+            }
+        } 
+    }
+
+    #block-views-block-myprofile-bottom-block-1{ 
+        padding: 0 16px 21px;
+        margin-top: -130px; 
+
+        & .field-content{
+            margin: 5px 0;
+        }
+
+        & .views-field-field-name{
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+}
+ 
+
+@media (max-width: 375px) {
+    .wrapper425{ 
+        & #block-views-block-myprofile-top-block-1{  
+            & .views-row{     
+                width: 112%;
+            }
+        } 
+    }
+ 
+}
+ 
+
+@media (max-width: 320px) {
+    .wrapper425{ 
+        & #block-views-block-myprofile-top-block-1{  
+            & .views-row .views-field-edit-user a{     
+                padding: 6px 25.5%;  
+            }
+        } 
+    }
+ 
+}

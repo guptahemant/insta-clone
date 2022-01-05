@@ -29,7 +29,9 @@
         "drupal/search_api_autocomplete": "^1.5",
         "drupal/search_api_page": "^1.0@beta",
         "drupal/user_menu_avatar": "^6.0@RC",
-        "drupal/views_slideshow": "^4.8"
+        "drupal/views_slideshow": "^4.8",
+        "drupal/tabtamer":"^2.0@beta",
+        "drupal/devel":"^4.1"
     },
     "conflict": {
         "drupal/drupal": "*"

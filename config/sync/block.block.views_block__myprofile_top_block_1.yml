@@ -1,0 +1,25 @@
+uuid: 51e63912-143f-4b60-a2de-11c9d74c7f25
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.myprofile_top
+  module:
+    - views
+  theme:
+    - instagram
+id: views_block__myprofile_top_block_1
+theme: instagram
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:myprofile_top-block_1'
+settings:
+  id: 'views_block:myprofile_top-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

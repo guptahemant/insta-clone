@@ -1,0 +1,25 @@
+uuid: 4c37c470-04a0-4a5d-b405-a0cbb0441563
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.myprofile_image
+  module:
+    - views
+  theme:
+    - instagram
+id: views_block__myprofile_image_block_1
+theme: instagram
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:myprofile_image-block_1'
+settings:
+  id: 'views_block:myprofile_image-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

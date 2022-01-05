@@ -11,14 +11,14 @@ dependencies:
 id: mainmobilenav
 theme: instagram
 region: header
-weight: 1
+weight: 0
 provider: null
 plugin: 'system_menu_block:mainmobilenav'
 settings:
   id: 'system_menu_block:mainmobilenav'
   label: mainmobilenav
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false

@@ -1,14 +1,14 @@
+_core:
+  default_config_hash: pmCrpi5LRMuzzbkQYa6zW_-6wTpJS1jzmy8LUBlmDwk
+langcode: en
 link_text: prof
 custom_anonymous_text: ''
-langcode: en
 dependencies:
   module:
     - user_menu_avatar
   enforced:
     module:
       - user_menu_avatar
-_core:
-  default_config_hash: pmCrpi5LRMuzzbkQYa6zW_-6wTpJS1jzmy8LUBlmDwk
 avatar_shape: circle
 avatar_size: '25'
 avatar_image_field: user_picture
