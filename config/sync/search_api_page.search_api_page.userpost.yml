@@ -6,20 +6,15 @@ dependencies:
     - search_api.index.users
 id: userpost
 label: userpost
-path: user
+path: users
 clean_url: true
 show_all_when_no_keys: false
 index: users
 limit: 5
 searched_fields:
-  user_picture: user_picture
+  name: name
 style: view_modes
 view_mode_configuration:
-  'entity:node':
-    default: search_index
-    overrides:
-      article: search_index
-      page: search_index
   'entity:user':
     default: full
     overrides:

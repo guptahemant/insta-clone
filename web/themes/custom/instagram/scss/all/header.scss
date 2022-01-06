@@ -110,3 +110,37 @@ header {
         }
     }
 }
+
+.ui-menu-item {
+    article {
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        div {
+            width: fit-content;
+            padding: 0px 10px;
+            img {
+                border-radius: 50px;
+                height: 44px;
+                width: 44px;
+                border: 1px solid #dad5d5;
+            }
+        }
+        .userfield {
+            position: absolute;
+            left: 5.1rem;
+            bottom: -1.9rem;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .em {
+            position: relative;
+            top: 0.3rem;
+            em {
+                font-size: 13px;
+                font-style: normal;
+                color: darkgrey;
+            }
+        }
+    }
+}

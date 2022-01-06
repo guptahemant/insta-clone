@@ -10,6 +10,8 @@ display:
       fields:
         title:
           label: शीर्षक
+        type:
+          separator: ', '
         name:
           label: लेखक
         status:

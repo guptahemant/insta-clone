@@ -15,9 +15,11 @@ module:
   config_translation: 0
   contact: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   default_content: 0
+  demo_con: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -25,6 +27,7 @@ module:
   file: 0
   filter: 0
   fontawesome: 0
+  fontawesome_iconpicker_widget: 0
   fontawesome_menu_icons: 0
   hal: 0
   fontawesome_iconpicker_widget: 0
@@ -43,6 +46,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  pseudo: 0
   quickedit: 0
   rdf: 0
   search_api: 0
@@ -55,12 +59,16 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0
   user: 0
   user_menu_avatar: 0
+  views_slideshow: 0
+  views_slideshow_cycle: 0
   views_ui: 0
+  pathauto: 1
   content_translation: 10
   views: 10
   minimal: 1000

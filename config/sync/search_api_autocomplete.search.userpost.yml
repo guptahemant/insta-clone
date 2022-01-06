@@ -15,11 +15,8 @@ suggester_settings:
   live_results:
     fields: {  }
     view_modes:
-      'entity:node':
-        article: ''
-        page: ''
       'entity:user':
-        user: ''
+        user: default
     highlight:
       enabled: false
       field: ''

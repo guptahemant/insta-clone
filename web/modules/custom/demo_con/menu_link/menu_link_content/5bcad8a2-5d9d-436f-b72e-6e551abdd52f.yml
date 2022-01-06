@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: menu_link_content
-  uuid: 78bd61cf-8c8c-4940-8e1b-b1e05d24046c
+  uuid: 5bcad8a2-5d9d-436f-b72e-6e551abdd52f
   bundle: menu_link_content
   default_langcode: en
 default:
@@ -10,28 +10,28 @@ default:
       value: true
   title:
     -
-      value: prof
+      value: Home
   menu_name:
     -
       value: main
   link:
     -
-      uri: 'route:<nolink>'
+      uri: 'internal:/'
       title: ''
       options:
-        fa_icon: ''
+        fa_icon: 'fas fa-home'
         fa_icon_prefix: fa
         fa_icon_tag: i
-        fa_icon_appearance: before
+        fa_icon_appearance: only
   external:
     -
       value: false
   rediscover:
     -
-      value: false
+      value: true
   weight:
     -
-      value: 0
+      value: -50
   expanded:
     -
       value: false

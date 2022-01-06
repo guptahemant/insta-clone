@@ -11,6 +11,7 @@ display:
       fields:
         filename:
           label: नाव
+          separator: ', '
         filesize:
           label: आकार
         status:

@@ -8,6 +8,7 @@ display:
           submit_button: 필터
           reset_button_label: 재설정
           exposed_sorts_label: 정렬기준
+          sort_asc_label: Asc
           sort_desc_label: 설명
       pager:
         options:
@@ -15,9 +16,14 @@ display:
             items_per_page_label: '페이지 당 항목 수'
             items_per_page_options_all_label: '- 모두 -'
             offset_label: 건너뛰기
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         nothing:
           admin_label: 아이콘
+        wid:
+          label: WID
         severity:
           label: 심각성
         type:

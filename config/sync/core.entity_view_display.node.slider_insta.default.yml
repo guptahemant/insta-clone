@@ -1,0 +1,32 @@
+uuid: 90b3bb6b-9e45-4cdb-b1fe-a3e96028a0b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slider_insta.field_image1
+    - node.type.slider_insta
+  module:
+    - image
+    - user
+id: node.slider_insta.default
+targetEntityType: node
+bundle: slider_insta
+mode: default
+content:
+  field_image1:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

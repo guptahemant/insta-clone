@@ -1,3 +1,5 @@
 tips:
   search-api-index-status:
     label: 상태
+  search-api-index-tracker:
+    label: 추적

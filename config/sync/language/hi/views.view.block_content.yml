@@ -18,8 +18,10 @@ display:
       fields:
         info:
           label: 'ब्लॉक की व्याख्या'
+          separator: ', '
         type:
           label: 'ब्लॉक प्रकार'
+          separator: ', '
         changed:
           label: अद्यतित
         operations:

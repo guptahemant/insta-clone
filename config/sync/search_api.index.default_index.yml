@@ -70,7 +70,7 @@ field_settings:
     type: text
     datasource_id: 'entity:node'
     property_path: title
-    boost: 8
+    boost: !!float 8
   type:
     label: 'Content type'
     type: string
@@ -108,11 +108,11 @@ processor_settings:
     title: true
     alt: true
     tags:
+      b: 2
       h1: 5
       h2: 3
       h3: 2
       string: 2
-      b: 2
   ignorecase:
     weights:
       preprocess_index: -5
@@ -126,8 +126,8 @@ processor_settings:
       pre_index_save: -10
   stopwords:
     weights:
-      preprocess_query: -10
       postprocess_query: -10
+      preprocess_query: -10
     fields:
       - rendered_item
       - title

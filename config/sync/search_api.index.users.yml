@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - user
-    - node
     - search_api
   config:
     - field.storage.user.user_picture
@@ -22,30 +21,15 @@ field_settings:
     dependencies:
       module:
         - user
-  title:
-    label: Title
-    datasource_id: 'entity:node'
-    property_path: title
-    type: text
-    dependencies:
-      module:
-        - node
   user_picture:
     label: Picture
     datasource_id: 'entity:user'
     property_path: user_picture
-    type: text
+    type: string
     dependencies:
       config:
         - field.storage.user.user_picture
 datasource_settings:
-  'entity:node':
-    bundles:
-      default: true
-      selected: {  }
-    languages:
-      default: true
-      selected: {  }
   'entity:user':
     languages:
       default: true
@@ -55,6 +39,7 @@ processor_settings:
   aggregated_field: {  }
   language_with_fallback: {  }
   rendered_item: {  }
+  reverse_entity_references: {  }
 tracker_settings:
   default:
     indexing_order: lifo

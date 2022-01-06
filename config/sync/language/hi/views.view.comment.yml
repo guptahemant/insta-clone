@@ -25,14 +25,22 @@ display:
           action_title: कार्रवाई
         subject:
           label: विषय
+          separator: ', '
+        uid:
+          separator: ', '
         name:
           label: लेखक
+          separator: ', '
         entity_id:
           label: 'में प्रकाशित किया गया था'
+          separator: ', '
         changed:
           label: अद्यतित
+          separator: ', '
         operations:
           label: कार्यवाही
+        name_1:
+          separator: ', '
       filters:
         subject:
           expose:
@@ -72,11 +80,19 @@ display:
           action_title: कार्रवाई
         subject:
           label: विषय
+          separator: ', '
+        uid:
+          separator: ', '
         name:
           label: लेखक
+          separator: ', '
         entity_id:
           label: 'में प्रकाशित किया गया था'
+          separator: ', '
         changed:
           label: अद्यतित
+          separator: ', '
         operations:
           label: कार्यवाही
+        name_1:
+          separator: ', '
