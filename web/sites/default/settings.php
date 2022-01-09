@@ -283,7 +283,7 @@ $databases = [];
  * @endcode
  */
 $settings['hash_salt'] =
-    'JuwHlW33m8KHTRcFSj9laT73EgxwqlhEZuKjtDTmBFSqT0-kILY32TpCzN1OqaRACnnnXRVghg';
+    'ePwvWXDUOS4MkJXu8zMURFQAYE3g9pexPVqyf0F6AirNGSES0g_6S7Aj_TME386pv11yVld7dQ';
 
 /**
  * Deployment identifier.
@@ -805,3 +805,13 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 $settings['config_sync_directory'] = '../config/sync';
 
 $config['system.logging']['error_level'] = 'verbose';
+$databases['default']['default'] = array (
+  'database' => 'newinsta',
+  'username' => 'sharayu',
+  'password' => 'Sharayu@1998',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
