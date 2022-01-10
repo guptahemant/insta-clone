@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 2db36f90-5b8b-4cc1-b30b-6d5c0e1e9ac1
+  bundle: basic
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: Copyright
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<p>&nbsp;</p>\r\n\r\n<p>© 2022 INSTAGRAM FROM META</p>\r\n"
+      format: basic_html
+      summary: ''

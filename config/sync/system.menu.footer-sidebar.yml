@@ -1,0 +1,8 @@
+uuid: 67c383d1-bf3b-497e-8cca-9eaa69547c50
+langcode: en
+status: true
+dependencies: {  }
+id: footer-sidebar
+label: 'Footer sidebar'
+description: ''
+locked: false

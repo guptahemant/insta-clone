@@ -20,12 +20,18 @@ module:
   dblog: 0
   default_content: 0
   demo_con: 0
+  devel: 0
+  devel_kint_extras: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  flag: 0
+  flag_bookmark: 0
+  flag_count: 0
+  flag_follower: 0
   fontawesome: 0
   fontawesome_iconpicker_widget: 0
   fontawesome_menu_icons: 0

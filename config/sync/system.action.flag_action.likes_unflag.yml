@@ -1,0 +1,15 @@
+uuid: 8b5318fb-66ee-4391-842c-7086b06c220f
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.likes
+  module:
+    - flag
+id: flag_action.likes_unflag
+label: '<i class="fas fa-heart"></i>'
+type: node
+plugin: 'flag_action:likes_unflag'
+configuration:
+  flag_id: likes
+  flag_action: unflag

@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 78b86ed8-26ca-462e-8d7d-b73ca81163dd
+  bundle: slider_insta
+  default_langcode: en
+  depends:
+    b6e1c3e4-87eb-4177-8cf7-a88810adc5e3: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: instaslide5
+  created:
+    -
+      value: 1641461111
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_image1:
+    -
+      entity: b6e1c3e4-87eb-4177-8cf7-a88810adc5e3
+      alt: '5'
+      title: ''
+      width: 480
+      height: 854

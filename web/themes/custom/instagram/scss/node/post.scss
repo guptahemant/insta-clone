@@ -1,0 +1,136 @@
+.views-row {
+    margin-bottom: 28px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    .layout-content {
+        width: 45.6%;
+        @include mobile {
+            width: 100%;
+        }
+        @include tablet {
+            width: 78.4%;
+        }
+    }
+    .layout-sidebar {
+        width: 23%;
+        @include mobile {
+            display: none;
+        }
+    }
+    .main {
+        border: 1px solid #cec9c9;
+        @include mobile {
+            border: 0px solid #fff;
+        }
+        background-color: white;
+        .up_post {
+            display: flex;
+            align-items: center;
+            .image {
+                padding: 10px;
+                img {
+                    border-radius: 50px;
+                    border: 1px solid #d4d2d2;
+                }
+            }
+            .name {
+                padding: 10px;
+                padding-left: 2px;
+                a {
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+        .down_post {
+            a {
+                color: black;
+            }
+            .js-flag-message {
+                display: none;
+            }
+            img {
+                width: 100%;
+                height: 0%;
+            }
+            .operations {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                font-size: 24px;
+                padding-bottom: 46px;
+                .btns {
+                    width: 19%;
+                    display: flex;
+                    justify-content: space-between;
+                    @include mobile {
+                        width: 28%;
+                    }
+                    .flag.flag-likes {
+                        position: relative;
+                    }
+                    .action-flag span {
+                        position: absolute;
+                        top: 3rem;
+                        font-size: 14px;
+                        font-weight: 800;
+                        left: 2px;
+                        width: 43px;
+                    }
+                    .action-unflag {
+                        span {
+                            position: absolute;
+                            top: 3rem;
+                            font-size: 14px;
+                            font-weight: 800;
+                            left: 2px;
+                            width: 43px;
+                        }
+                        svg {
+                            color: rgb(237, 73, 86);
+                        }
+                    }
+                }
+            }
+            .operation2 {
+                padding: 0px 10px 10px 11px;
+                .name2 {
+                    font-size: 14px;
+                    a {
+                        text-decoration: none;
+                        font-weight: 600;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    p {
+                        display: inline;
+                        a {
+                            color: #00376b;
+                        }
+                    }
+                }
+                .comment {
+                    font-size: 14px;
+                    padding-top: 5px;
+                    padding-bottom: 7px;
+                    color: #8e8e8e;
+                }
+                .time {
+                    font-size: 10px;
+                    color: #8e8e8e;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+.ajax-progress-throbber {
+    display: none
+}

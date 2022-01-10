@@ -1,0 +1,59 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 616366e0-c0a8-414f-8aec-e7ab2b3a44f4
+  bundle: article
+  default_langcode: en
+  depends:
+    4e8c6b86-b30a-419b-bdf7-c4364e18c0e6: user
+    48e178bf-0a65-409e-a6dd-af1ab1501f88: file
+default:
+  revision_uid:
+    -
+      entity: 4e8c6b86-b30a-419b-bdf7-c4364e18c0e6
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 4e8c6b86-b30a-419b-bdf7-c4364e18c0e6
+  title:
+    -
+      value: narendra
+  created:
+    -
+      value: 1641468022
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  body:
+    -
+      value: "<p><a href=\"https://www.instagram.com/explore/tags/peoplespadma/\">#PeoplesPadma</a>.<br />\r\n<br />\r\nHonouring India’s talent.</p>\r\n"
+      format: full_html
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1641468032
+      last_comment_name: ''
+      last_comment_uid: 7
+      comment_count: 0
+  field_image:
+    -
+      entity: 48e178bf-0a65-409e-a6dd-af1ab1501f88
+      alt: narendra
+      title: ''
+      width: 640
+      height: 800

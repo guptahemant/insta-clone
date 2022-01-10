@@ -1,0 +1,25 @@
+uuid: 3b8c4402-57d1-43d3-81f7-34510126d26e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2db36f90-5b8b-4cc1-b30b-6d5c0e1e9ac1'
+  module:
+    - block_content
+  theme:
+    - instagram
+id: copyright
+theme: instagram
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:2db36f90-5b8b-4cc1-b30b-6d5c0e1e9ac1'
+settings:
+  id: 'block_content:2db36f90-5b8b-4cc1-b30b-6d5c0e1e9ac1'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

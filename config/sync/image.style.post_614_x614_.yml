@@ -1,0 +1,15 @@
+uuid: 5bddfbe9-cd26-4cdf-b6b3-7f65bf184e70
+langcode: en
+status: true
+dependencies: {  }
+name: post_614_x614_
+label: 'Post (614 x614)'
+effects:
+  3c23578c-2ac2-420e-b009-5faea2a5a1c2:
+    uuid: 3c23578c-2ac2-420e-b009-5faea2a5a1c2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 614
+      height: 614
+      anchor: center-center

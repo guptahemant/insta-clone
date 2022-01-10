@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 48e178bf-0a65-409e-a6dd-af1ab1501f88
+  default_langcode: en
+  depends:
+    4e8c6b86-b30a-419b-bdf7-c4364e18c0e6: user
+default:
+  uid:
+    -
+      entity: 4e8c6b86-b30a-419b-bdf7-c4364e18c0e6
+  filename:
+    -
+      value: 254846258_1940268326141762_7481917089598005611_n_0.jpg
+  uri:
+    -
+      value: 'public://2022-01/254846258_1940268326141762_7481917089598005611_n_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 103054
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641468022

@@ -3,9 +3,15 @@ global-styling:
   css:
     theme:
       css/all/style.css: {}
-     
-      
+
   js:
     js/instagram.js: {}
   dependencies:
     - core/jquery
+
+# nodepage a library that should only work on page that displays post as in frontpage
+nodepage:
+  version: VERSION
+  css:
+    theme:
+      css/node/style.css: {}

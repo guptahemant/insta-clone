@@ -1,0 +1,15 @@
+uuid: 148aab52-b381-4db7-a47c-c722cb33d8b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.likes
+  module:
+    - flag
+id: flag_action.likes_flag
+label: '<i class="far fa-heart"></i>'
+type: node
+plugin: 'flag_action:likes_flag'
+configuration:
+  flag_id: likes
+  flag_action: flag

@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 9fdace56-1d4d-449a-a97e-f47a265580bb
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Messanger
+  menu_name:
+    -
+      value: messanger
+  link:
+    -
+      uri: 'internal:/messages'
+      title: ''
+      options:
+        fa_icon: 'fab fa-facebook-messenger'
+        fa_icon_prefix: fa
+        fa_icon_tag: i
+        fa_icon_appearance: only
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

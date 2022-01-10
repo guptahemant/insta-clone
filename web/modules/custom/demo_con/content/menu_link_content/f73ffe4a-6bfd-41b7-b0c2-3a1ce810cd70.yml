@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: f73ffe4a-6bfd-41b7-b0c2-3a1ce810cd70
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Privacy
+  menu_name:
+    -
+      value: footer-sidebar
+  link:
+    -
+      uri: 'route:<nolink>'
+      title: ''
+      options:
+        fa_icon: ''
+        fa_icon_prefix: fa
+        fa_icon_tag: i
+        fa_icon_appearance: before
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -44
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

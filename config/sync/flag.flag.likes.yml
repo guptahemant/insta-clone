@@ -1,0 +1,31 @@
+uuid: 0d2c5bbd-a4b9-4b15-a7e2-675b2b4c323d
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag_count
+    - node
+id: likes
+label: Likes
+bundles:
+  - article
+entity_type: node
+global: false
+weight: 0
+flag_short: '<i class="far fa-heart"></i>'
+flag_long: ''
+flag_message: ''
+unflag_short: '<i class="fas fa-heart"></i>'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: count_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

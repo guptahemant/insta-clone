@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 96d82e0d-b5ff-4ec3-93e4-1eb8ef11af02
+  default_langcode: en
+  depends:
+    a852bc09-6e11-4027-aa36-0c532ebca22f: user
+default:
+  uid:
+    -
+      entity: a852bc09-6e11-4027-aa36-0c532ebca22f
+  filename:
+    -
+      value: 265337104_924193211616806_7171023103853918457_n.jpg
+  uri:
+    -
+      value: 'public://2022-01/265337104_924193211616806_7171023103853918457_n.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 198170
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641468119

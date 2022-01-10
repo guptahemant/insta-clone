@@ -1,0 +1,58 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: a852bc09-6e11-4027-aa36-0c532ebca22f
+  default_langcode: en
+  depends:
+    f2068482-8ebe-46d6-9162-c66c8fc5d47a: file
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: akshaykumar
+  pass:
+    -
+      value: $S$EBFB5vnv7XuKaqw6io0qEhCbS.50tYDAyzUKEDv39SSB0rvGw/Wt
+      existing: ''
+      pre_hashed: false
+  mail:
+    -
+      value: akshay@gmail.com
+  timezone:
+    -
+      value: Asia/Kolkata
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641416266
+  access:
+    -
+      value: 1641472458
+  login:
+    -
+      value: 1641468076
+  init:
+    -
+      value: akshay@gmail.com
+  path:
+    -
+      alias: /users/akshaykumar
+      langcode: en
+      pathauto: 1
+  field_full_name:
+    -
+      value: 'Akshay Kumar'
+  user_picture:
+    -
+      entity: f2068482-8ebe-46d6-9162-c66c8fc5d47a
+      alt: ''
+      title: ''
+      width: 150
+      height: 150
