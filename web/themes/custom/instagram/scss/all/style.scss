@@ -1,6 +1,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
+    background-color: #fafafa;
 }
 
 @mixin mobile {
@@ -20,21 +21,26 @@ main {
     @include mobile {
         margin-top: 23%;
     }
+    @include tablet {
+        margin-top: 10%;
+    }
 }
 
-.layout-content{
-    .slide{
-    // display: flex;
-    // position: absolute;
-      }}
-      .slider-view{
-        margin-top: -494px;
-            margin-left: 132px;
-            padding-bottom: 69px;
-        img{
+.layout-content {
+    .slide {
+        // display: flex;
+        // position: absolute;
+    }
+}
+
+.slider-view {
+    margin-top: -494px;
+    margin-left: 132px;
+    padding-bottom: 69px;
+    img {
         border: 3px solid rgb(0, 0, 0);
-        }
-      }
-    
+    }
+}
+
 @import "footer.scss";
 @import "header.scss";

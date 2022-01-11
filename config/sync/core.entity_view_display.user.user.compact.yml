@@ -22,6 +22,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  my_name:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   user_picture:
     type: image
     weight: 0

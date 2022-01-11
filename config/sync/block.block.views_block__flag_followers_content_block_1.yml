@@ -1,0 +1,29 @@
+uuid: b24b2e1b-2662-4e00-a79e-1de9d024a9ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.flag_followers_content
+  module:
+    - system
+    - views
+  theme:
+    - instagram
+id: views_block__flag_followers_content_block_1
+theme: instagram
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:flag_followers_content-block_1'
+settings:
+  id: 'views_block:flag_followers_content-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node
+    negate: false

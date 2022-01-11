@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - system
+    - user
   theme:
     - instagram
 id: sitebranding
@@ -20,4 +21,12 @@ settings:
   use_site_logo: true
   use_site_name: false
   use_site_slogan: false
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

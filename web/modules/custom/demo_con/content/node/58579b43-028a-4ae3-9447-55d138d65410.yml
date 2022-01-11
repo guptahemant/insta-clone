@@ -1,0 +1,59 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 58579b43-028a-4ae3-9447-55d138d65410
+  bundle: article
+  default_langcode: en
+  depends:
+    4e8c6b86-b30a-419b-bdf7-c4364e18c0e6: user
+    96661d78-1b18-4bff-96df-7a4890bf8391: file
+default:
+  revision_uid:
+    -
+      entity: 4e8c6b86-b30a-419b-bdf7-c4364e18c0e6
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 4e8c6b86-b30a-419b-bdf7-c4364e18c0e6
+  title:
+    -
+      value: bipin
+  created:
+    -
+      value: 1641468057
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  body:
+    -
+      value: "<p>Gen Bipin Rawat was an outstanding soldier. A true patriot, he greatly contributed to modernising our armed forces and security apparatus. His insights and perspectives on strategic matters were exceptional. His passing away has saddened me deeply. Om Shanti.</p>\r\n"
+      format: full_html
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1641468062
+      last_comment_name: ''
+      last_comment_uid: 7
+      comment_count: 0
+  field_image:
+    -
+      entity: 96661d78-1b18-4bff-96df-7a4890bf8391
+      alt: bipin
+      title: ''
+      width: 640
+      height: 636

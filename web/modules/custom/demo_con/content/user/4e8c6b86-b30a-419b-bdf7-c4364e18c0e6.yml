@@ -1,0 +1,58 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: 4e8c6b86-b30a-419b-bdf7-c4364e18c0e6
+  default_langcode: en
+  depends:
+    0ec26d6b-45d7-40b6-aa43-460719d17be9: file
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: narendramodi
+  pass:
+    -
+      value: $S$Ec2LMUXZ55jsE5BaY27uJ7D4IH9.KfvJrb7vDjE2bjUuexEAqjFD
+      existing: ''
+      pre_hashed: false
+  mail:
+    -
+      value: modi@gmail.com
+  timezone:
+    -
+      value: Asia/Kolkata
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641467446
+  access:
+    -
+      value: 1641467921
+  login:
+    -
+      value: 1641467921
+  init:
+    -
+      value: modi@gmail.com
+  path:
+    -
+      alias: /users/narendramodi
+      langcode: en
+      pathauto: 1
+  field_full_name:
+    -
+      value: 'Narendra Modi'
+  user_picture:
+    -
+      entity: 0ec26d6b-45d7-40b6-aa43-460719d17be9
+      alt: ''
+      title: ''
+      width: 150
+      height: 150

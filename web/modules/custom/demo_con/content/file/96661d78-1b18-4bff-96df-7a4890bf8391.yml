@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 96661d78-1b18-4bff-96df-7a4890bf8391
+  default_langcode: en
+  depends:
+    4e8c6b86-b30a-419b-bdf7-c4364e18c0e6: user
+default:
+  uid:
+    -
+      entity: 4e8c6b86-b30a-419b-bdf7-c4364e18c0e6
+  filename:
+    -
+      value: my_0.jpg
+  uri:
+    -
+      value: 'public://2022-01/my_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 63075
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641468057

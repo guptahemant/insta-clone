@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f2068482-8ebe-46d6-9162-c66c8fc5d47a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 97927970_2654689338121384_6955699402728013824_n.jpg
+  uri:
+    -
+      value: 'public://pictures/2022-01/97927970_2654689338121384_6955699402728013824_n.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 4447
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641416266

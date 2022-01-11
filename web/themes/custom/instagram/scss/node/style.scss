@@ -1,0 +1,13 @@
+@mixin mobile {
+    @media screen and (max-width: 426px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and(min-width: 427px) and(max-width: 769px) {
+        @content;
+    }
+}
+
+@import "post.scss";

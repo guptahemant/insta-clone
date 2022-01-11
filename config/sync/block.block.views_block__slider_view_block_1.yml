@@ -6,6 +6,7 @@ dependencies:
     - views.view.slider_view
   module:
     - system
+    - user
     - views
   theme:
     - instagram
@@ -27,3 +28,10 @@ visibility:
     id: request_path
     pages: '<front>'
     negate: false
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
