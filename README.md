@@ -5,6 +5,9 @@
 4. "**drush updb**" will install all recent updates if their are some.
 5. "**drush cim** " will import the configuration.
 6. look at *Frontend* section for **frontend setup**.
+
+# Install site through existing config
+1. drush si --existing-config
  
 # Before taking fresh pull
 1. In your **feature branch** check all current changes work is been **commited**.
