@@ -1,0 +1,42 @@
+label: People
+display:
+  default:
+    display_title: Default
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      fields:
+        name:
+          label: Username
+        status:
+          label: Status
+          settings:
+            format_custom_true: Active
+            format_custom_false: Blocked
+        roles_target_id:
+          label: Roles
+        created:
+          label: 'Member for'
+        operations:
+          label: Operations
+      filters:
+        status:
+          group_info:
+            label: Status
+            group_items:
+              1:
+                title: Active
+              2:
+                title: Blocked
+      title: People
+      use_more_text: more
+  page_1:
+    display_title: Page
+    display_options:
+      menu:
+        title: List
+      tab_options:
+        title: People

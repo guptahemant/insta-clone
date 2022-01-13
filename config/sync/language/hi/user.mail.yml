@@ -1,0 +1,23 @@
+register_pending_approval_admin:
+  body: |-
+    [user:display-name] has applied for an account.
+
+    [user:edit-url]
+status_activated:
+  subject: 'Account details for [user:display-name] at [site:name] (approved)'
+status_blocked:
+  body: |-
+    [user:display-name],
+
+    Your account on [site:name] has been blocked.
+
+    --  [site:name] team
+  subject: 'Account details for [user:display-name] at [site:name] (blocked)'
+status_canceled:
+  body: |-
+    [user:display-name],
+
+    Your account on [site:name] has been canceled.
+
+    --  [site:name] team
+  subject: 'Account details for [user:display-name] at [site:name] (canceled)'

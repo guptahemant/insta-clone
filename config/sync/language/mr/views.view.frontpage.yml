@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+    display_title: Default
+  page_1:
+    display_title: Page
