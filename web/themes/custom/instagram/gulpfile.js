@@ -6,3 +6,9 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(gulp.dest('css/'));
 });
+
+gulp.task('sass', function() {
+    return gulp.src('scss/*/login.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('css/'));
+});

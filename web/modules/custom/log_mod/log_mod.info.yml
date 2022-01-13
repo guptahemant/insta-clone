@@ -1,0 +1,6 @@
+name: log_mod
+description: A module for Login
+type: module
+package: Login Module
+core: 8.x
+core_version_requirement: ^8 || ^9

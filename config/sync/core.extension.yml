@@ -23,7 +23,6 @@ module:
   dynamic_page_cache: 0
   editor: 0
   field: 0
-  field_ui: 0
   file: 0
   filter: 0
   fontawesome: 0
@@ -33,10 +32,12 @@ module:
   help: 0
   history: 0
   image: 0
+  image_slider: 0
   lang_dropdown: 0
   language: 0
   link: 0
   locale: 0
+  log_mod: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0

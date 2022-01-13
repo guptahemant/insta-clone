@@ -3,9 +3,15 @@ global-styling:
   css:
     theme:
       css/all/style.css: {}
-     
-      
+         
   js:
     js/instagram.js: {}
   dependencies:
     - core/jquery
+
+loginpage:
+  css:
+    theme:
+      css/all/login.css: {}
+
+

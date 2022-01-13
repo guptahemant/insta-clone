@@ -1,0 +1,25 @@
+uuid: 0986d1d0-cfec-4f5d-aa2a-c1140a1df11b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4vC8ldAfiqWZnX-4xJ8tUJS1lscQRfNajm5OUvJki3Y
+name: image_slider_vertical_thumb_gallery
+label: 'Image slider vertical thumb gallery'
+effects:
+  6458ede8-ed88-489a-aa73-5966abadce08:
+    uuid: 6458ede8-ed88-489a-aa73-5966abadce08
+    id: image_scale
+    weight: 1
+    data:
+      width: 99
+      height: null
+      upscale: true
+  7bd0a4c2-5f50-46d3-83fd-f3a45201d245:
+    uuid: 7bd0a4c2-5f50-46d3-83fd-f3a45201d245
+    id: image_crop
+    weight: 2
+    data:
+      width: 99
+      height: 66
+      anchor: center-center

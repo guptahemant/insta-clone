@@ -1,0 +1,25 @@
+uuid: e9b57f6b-07e2-4835-a4df-4b1d051e4672
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lRMbZHcTIca_Yfz1KtB5aS8uT-ys8Is8McN5KuIR4rQ
+name: image_slider_gallery
+label: 'Image slider gallery'
+effects:
+  7abb08ae-7145-4b42-832c-e02029903fcb:
+    uuid: 7abb08ae-7145-4b42-832c-e02029903fcb
+    id: image_scale
+    weight: 1
+    data:
+      width: 190
+      height: null
+      upscale: true
+  aa66355e-a67a-467d-9cf5-a552a4ca6fe1:
+    uuid: aa66355e-a67a-467d-9cf5-a552a4ca6fe1
+    id: image_crop
+    weight: 2
+    data:
+      width: 200
+      height: 90
+      anchor: center-center

@@ -6,13 +6,14 @@ dependencies:
     - views.view.slider_view
   module:
     - system
+    - user
     - views
   theme:
     - instagram
 id: views_block__slider_view_block_1
 theme: instagram
 region: content
-weight: 0
+weight: -7
 provider: null
 plugin: 'views_block:slider_view-block_1'
 settings:
@@ -25,5 +26,12 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /node
     negate: false
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

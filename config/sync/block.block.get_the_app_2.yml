@@ -1,23 +1,23 @@
-uuid: 356d430a-a7ec-46fc-b449-8a1d50c96858
+uuid: 5c024317-115c-4606-a720-7034547a67f3
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:e5ad2315-2d78-40ce-86a4-e9985ed6aacb'
+    - 'block_content:basic:63891519-df9b-40cc-bf22-c2f9ae25b103'
   module:
     - block_content
     - user
   theme:
     - instagram
-id: mobileframeforinsta
+id: get_the_app_2
 theme: instagram
-region: content
-weight: -8
+region: sidebar
+weight: -7
 provider: null
-plugin: 'block_content:e5ad2315-2d78-40ce-86a4-e9985ed6aacb'
+plugin: 'block_content:63891519-df9b-40cc-bf22-c2f9ae25b103'
 settings:
-  id: 'block_content:e5ad2315-2d78-40ce-86a4-e9985ed6aacb'
-  label: 'mobile frame for insta'
+  id: 'block_content:63891519-df9b-40cc-bf22-c2f9ae25b103'
+  label: get_the_app
   provider: block_content
   label_display: '0'
   status: true

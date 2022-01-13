@@ -1,16 +1,16 @@
-uuid: 0b102b4e-bf40-4f11-890f-7e87f6614b23
+uuid: 33165c13-71a0-48a6-8b17-8ad1e974ffae
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
     - user
   theme:
     - instagram
-id: userlogin
+id: userlogin_2
 theme: instagram
-region: content
-weight: -6
+region: sidebar
+weight: -9
 provider: null
 plugin: user_login_block
 settings:

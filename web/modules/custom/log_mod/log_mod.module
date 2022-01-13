@@ -1,0 +1,98 @@
+<?php
+
+function log_mod_theme() {
+    return [
+        'cust-block' => [
+            'variables' => [
+                'data' => NULL,
+            ],
+        ],
+    ]; 
+}
+
+
+function log_mod_form_alter(&$form, $form_state, $form_id) {
+    if ( $form['#form_id'] == 'user_login_form' ) {
+
+        $form['name']['#attributes']['placeholder'] = t('Phone number, username or email address');
+        $form['pass']['#attributes']['placeholder'] = t('Password');
+
+        $form['Heading'] = [
+            '#markup' => '<div class="insta_head">' . '</div>',   
+        ];
+
+        
+        $form['my-empty-container'] = [
+            '#type' => 'container',
+            '#attributes' => [
+                'class' => 'my-class',
+            ],
+
+            'left' => [
+                '#type' => 'item',
+                'sub' => [],
+            ],
+
+            'child' => [
+                '#type' => 'item',
+                '#title' => t('OR'),
+            ],
+
+            'right' => [
+                '#type' => 'item',
+                'sub' => [],
+            ],
+        ];
+        
+         $form['icon-block'] = [
+            '#type' => 'container',
+            '#attributes' => [
+                'class' => 'icon-block',
+            ],
+
+            'facebook' => [
+                '#type' => 'link',
+                '#attributes' => [
+                'class' => 'facebook',
+                ],
+                '#prefix' => '<i class="fab fa-facebook-square"></i>',
+                '#title' => t('Log in with Facebook'),
+                '#url' => \Drupal\Core\Url::fromUri('https://www.facebook.com/'),
+            ],
+
+            'password' => [
+                '#type' => 'link',
+                '#attributes' => [
+                    'class' => 'password',
+                ],
+                '#title' => t('Forgotten your password?'),
+                '#url' => \Drupal\Core\Url::fromUri('http://localhost/insta-clone/web/user/password'),
+            ],
+        ];
+       
+        
+       
+        $order = array('Heading' , 'name', 'pass','actions', 'my-empty-container', 'icon-block', 'password');
+            foreach($order as $key => $field) {
+                $form[$field]['#weight'] = $key;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
