@@ -1,0 +1,54 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 00b4f581-7338-4b0c-a9b2-9560a0a184d8
+  bundle: article
+  default_langcode: en
+  depends:
+    24ce90c1-87ad-4412-9dff-9faaef3f54bd: user
+    337478e6-9ef2-4669-947d-d65573bb1b42: file
+default:
+  revision_uid:
+    -
+      entity: 24ce90c1-87ad-4412-9dff-9faaef3f54bd
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 24ce90c1-87ad-4412-9dff-9faaef3f54bd
+  title:
+    -
+      value: 'city Night'
+  created:
+    -
+      value: 1641998737
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1641998811
+      last_comment_name: ''
+      last_comment_uid: 4
+      comment_count: 0
+  field_image:
+    -
+      entity: 337478e6-9ef2-4669-947d-d65573bb1b42
+      alt: 'city night'
+      title: ''
+      width: 3840
+      height: 2102

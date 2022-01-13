@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f3aa0585-0d8f-430b-ba86-697ba1715ae3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: anjoe-paul-TzASnAPSugc-unsplash.jpg
+  uri:
+    -
+      value: 'public://pictures/2022-01/anjoe-paul-TzASnAPSugc-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1577639
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641998447

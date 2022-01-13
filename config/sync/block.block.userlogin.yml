@@ -10,7 +10,7 @@ dependencies:
 id: userlogin
 theme: instagram
 region: content
-weight: 0
+weight: -6
 provider: null
 plugin: user_login_block
 settings:

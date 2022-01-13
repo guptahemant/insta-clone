@@ -1,0 +1,54 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4c6333f7-42e2-4fe3-88de-57c93e990e01
+  bundle: article
+  default_langcode: en
+  depends:
+    caa86740-dc70-486b-83ff-c9350631cd22: user
+    fe48833c-e250-4975-96a6-f916c26d69cf: file
+default:
+  revision_uid:
+    -
+      entity: caa86740-dc70-486b-83ff-c9350631cd22
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: caa86740-dc70-486b-83ff-c9350631cd22
+  title:
+    -
+      value: Car
+  created:
+    -
+      value: 1641998662
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1641998675
+      last_comment_name: ''
+      last_comment_uid: 6
+      comment_count: 0
+  field_image:
+    -
+      entity: fe48833c-e250-4975-96a6-f916c26d69cf
+      alt: car
+      title: ''
+      width: 640
+      height: 427

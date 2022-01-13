@@ -1,0 +1,90 @@
+.ui-widget-content{
+    border-radius: 12px;
+    border: 0;
+    padding: 0;
+    
+    .ui-widget-header{
+        border: none;
+        border-bottom: 1px solid #dbdbdb;
+        background: none;
+        padding: 0.7em 1em;
+
+        span{
+            text-align: center;
+            width: 100%;
+        }
+
+        .ui-button{
+            border: none;
+            background: none;
+            width: 40px;
+            height: 16px;
+
+            .ui-icon{
+                background-image: url(/insta-clone/web/themes/custom/instagram/images/cancel-X-icon.png);
+                background-repeat: no-repeat; 
+                            color: transparent;
+                            background-position: left center;
+                            padding: 2px;
+                            background-size: 20px 20px;  
+            }
+        }
+    }
+
+    #drupal-modal{
+        padding: 0;
+
+        & .views-row{
+            margin: 8px 16px;
+            display: grid;
+            grid-template-columns: 45px auto auto;
+
+            & .views-field-user-picture{
+                grid-column: 1;
+                grid-row: 1 / 3;
+                
+                & img{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 100px;
+                }
+            }
+
+            & .views-field-name{
+                grid-column: 2;
+                grid-row: 1 / 3;
+                 
+            }
+
+            & .views-field-field-full-name{
+                grid-column: 2;
+                grid-row: 2 / 3;
+                padding-bottom: 2px;
+                 
+                & .field-content{
+                    color: #8e8e8e;
+                    font-size: 14px;
+                }
+            }
+
+            & .views-field-nothing{
+                grid-column: 3;
+                grid-row: 1 / 3;
+
+                & span a{
+                    border: 1px solid #dbdbdb; 
+                    padding: 5px 9px;
+                    border-radius: 4px; 
+                    float: right;
+                }
+            }
+
+            & span a{
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+}

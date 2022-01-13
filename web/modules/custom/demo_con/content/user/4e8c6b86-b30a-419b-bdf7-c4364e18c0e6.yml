@@ -17,7 +17,7 @@ default:
       value: narendramodi
   pass:
     -
-      value: $S$Ec2LMUXZ55jsE5BaY27uJ7D4IH9.KfvJrb7vDjE2bjUuexEAqjFD
+      value: $S$EtAmz5Qdsc/0QOiH14LFKsoe0CKwR.xxMduNl5vZHziZExAP8u5g
       existing: ''
       pre_hashed: false
   mail:
@@ -46,6 +46,9 @@ default:
       alias: /users/narendramodi
       langcode: en
       pathauto: 1
+  field_bio:
+    -
+      value: 'Bio of narendramodi '
   field_full_name:
     -
       value: 'Narendra Modi'

@@ -17,7 +17,7 @@ default:
       value: akshaykumar
   pass:
     -
-      value: $S$EBFB5vnv7XuKaqw6io0qEhCbS.50tYDAyzUKEDv39SSB0rvGw/Wt
+      value: $S$Ed30ldQU4BTA4RZ2kyNSKe/73lNYczXXiXvTZoFi7TiAPc6TMkz.
       existing: ''
       pre_hashed: false
   mail:
@@ -46,6 +46,9 @@ default:
       alias: /users/akshaykumar
       langcode: en
       pathauto: 1
+  field_bio:
+    -
+      value: 'Bio of akshaykumar '
   field_full_name:
     -
       value: 'Akshay Kumar'

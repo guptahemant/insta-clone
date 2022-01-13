@@ -13,7 +13,7 @@ dependencies:
 id: mobileframeforinsta
 theme: instagram
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:37e79a6a-02b7-45b9-9a64-60d34ed57653'
 settings:

@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 337478e6-9ef2-4669-947d-d65573bb1b42
+  default_langcode: en
+  depends:
+    24ce90c1-87ad-4412-9dff-9faaef3f54bd: user
+default:
+  uid:
+    -
+      entity: 24ce90c1-87ad-4412-9dff-9faaef3f54bd
+  filename:
+    -
+      value: ethan-brooke-hK-GrdE3FAQ-unsplash.jpg
+  uri:
+    -
+      value: 'public://2022-01/ethan-brooke-hK-GrdE3FAQ-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 790744
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641998737

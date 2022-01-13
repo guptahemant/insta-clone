@@ -1,0 +1,58 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: caa86740-dc70-486b-83ff-c9350631cd22
+  default_langcode: en
+  depends:
+    316543fa-5aaf-4b74-b174-e02e8dcf31e7: file
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: atul
+  pass:
+    -
+      value: $S$EQ6LoYUbP..cw.zOjr0ZZ7ibS0.MHMKhSflYRs9ibkv8j7IEqXMA
+      existing: ''
+      pre_hashed: false
+  timezone:
+    -
+      value: Asia/Kolkata
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641998573
+  access:
+    -
+      value: 1641998626
+  login:
+    -
+      value: 1641998626
+  roles:
+    -
+      target_id: administrator
+  path:
+    -
+      alias: /users/atul
+      langcode: en
+      pathauto: 1
+  field_bio:
+    -
+      value: 'Bio of atul '
+  field_full_name:
+    -
+      value: 'Atul Ghate'
+  user_picture:
+    -
+      entity: 316543fa-5aaf-4b74-b174-e02e8dcf31e7
+      alt: ''
+      title: ''
+      width: 640
+      height: 427

@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: fe48833c-e250-4975-96a6-f916c26d69cf
+  default_langcode: en
+  depends:
+    caa86740-dc70-486b-83ff-c9350631cd22: user
+default:
+  uid:
+    -
+      entity: caa86740-dc70-486b-83ff-c9350631cd22
+  filename:
+    -
+      value: erik-mclean-ZRns2R5azu0-unsplash.jpg
+  uri:
+    -
+      value: 'public://2022-01/erik-mclean-ZRns2R5azu0-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 66640
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641998662

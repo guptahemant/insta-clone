@@ -1,0 +1,180 @@
+.main{
+    padding: 30px 20px 0;
+}
+
+.wrapper{
+    width: 100%;
+    margin-bottom: 44px;
+    display: flex;
+    flex-direction: row-reverse;
+
+    article img{
+        margin-right: 105px;
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        margin-left: auto; 
+    }
+
+    .wrapright {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+
+        .top{
+            display: flex;
+            
+            .uname h4{ 
+                font-weight: 300;
+                font-size: 28px;
+                line-height: 32px;
+                margin: 0;
+            }
+
+            .set_tab{
+                padding-top: 6px;
+
+                .edit_profile{  
+                    text-decoration: none;
+                    text-align: center;
+                    color: #262626;
+                    background-color: transparent;
+                    border: 1px solid #dbdbdb;
+                    margin-left: 20px;
+                    border-radius: 4px;
+                    font-weight: 600;
+                    padding: 6px 9px;
+                    font-size: 14px;
+                    height: 16px;
+                }
+    
+                .settings{
+                    background-image: url(/insta-clone/web/themes/custom/instagram/images/instagram-settings-icon.jpg);
+                    background-repeat: no-repeat; 
+                    color: transparent;
+                    background-position: left center;
+                    padding: 5px 0 8px 16px;
+                    background-size: 36px 40px; 
+                    margin-top: 2px;
+                    margin-left: 7px;
+                }
+            }
+
+        }
+
+        .wrapcount{
+            display: flex;
+            width: 235px;
+            justify-content: space-between;
+            margin-top: 10px;
+            height: 24%;
+
+            ul{
+                padding-left: 0;
+
+                li, span{
+                    display: flex;
+                    margin-right: 45px;
+                    font-weight: 600;
+
+                    a{
+                        margin-left: 4px;
+                        color: #000;
+                        text-decoration: none;
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
+
+        .bottom{
+            ul{
+                list-style-type: none;
+                padding-left: 0;
+
+                p{
+                    margin: 5px 0; 
+                }
+
+                .name{
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 425px) { 
+
+    .wrapper{ 
+        margin: 16px;
+        justify-content: left;
+
+            article img{
+                width: 77px;
+                height: 77px;
+                border-radius: 100px;
+                margin-right: 25px;
+            }
+
+            .wrapright{
+                width: 65%;
+
+                .top{  
+                    flex-wrap: wrap;
+                    flex-direction: column;
+
+                    .wraptop{
+                        display: flex;
+
+                        .settings{ 
+                            background-image: url(/insta-clone/web/themes/custom/instagram/images/instagram-settings-icon.jpg);
+                            background-repeat: no-repeat; 
+                            color: transparent;
+                            background-position: left center;
+                            padding: 5px 0 8px 16px;
+                            background-size: 36px 40px; 
+                            margin-top: 2px;
+                            margin-left: 7px;
+                        }
+                    }
+
+                    .set_tab{
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column-reverse;
+
+                        .edit_profile{  
+                            width: 240px;
+                            margin-left: 0;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+
+                .wrapcount{
+                    display: none; 
+                }
+                
+                .bottom{
+                    margin-left: -102px;
+                }
+            }
+     }
+}
+
+
+@media (max-width: 375px) { 
+    .wrapper .wrapright .top .set_tab .edit_profile{  
+        width: 220px; 
+    }
+}
+
+
+@media (max-width: 320px) { 
+    .wrapper .wrapright .top .set_tab .edit_profile{  
+        width: 167px; 
+    }
+}

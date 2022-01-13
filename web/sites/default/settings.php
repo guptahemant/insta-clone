@@ -283,7 +283,7 @@ $databases = [];
  * @endcode
  */
 $settings['hash_salt'] =
-    'dugkOR-994LnY13yutbTFCNx7bHh_d_J56JdrB2ei9DJwjqPi5VxW_5WS12ocetKWz2F4MAtmQ';
+    'QTZ5UmK0aR0-SC3mfL5bPMa_511omOhBHCYgdZ-T3f5-E2WKGXBqoRboi_Peg3mO8YUPTjX3fw';
 
 /**
  * Deployment identifier.
@@ -804,4 +804,3 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 
 $settings['config_sync_directory'] = '../config/sync';
 
-$config['system.logging']['error_level'] = 'verbose';

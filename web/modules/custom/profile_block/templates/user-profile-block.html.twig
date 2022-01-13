@@ -1,0 +1,22 @@
+ 
+<div class='wrapright'>
+    <div class='top'> 
+            {% for key,title in profile_top %}
+            {{ title[key] }} 
+            {% endfor %}  
+    </div>
+    <div class='wrapcount'>
+        <ul> 
+            {% for key,title in profile_flag %}
+                <li>{{ title[key] }}</li>
+            {% endfor %} 
+        </ul>
+    </div>
+    <div class='bottom'>
+        <ul> 
+            {% for key,title in profile_bottom %}
+                <li>{{ title[key] }}</li>
+            {% endfor %} 
+        </ul>
+    </div>
+</div>

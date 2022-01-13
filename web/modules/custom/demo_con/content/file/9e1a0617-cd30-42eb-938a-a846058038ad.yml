@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9e1a0617-cd30-42eb-938a-a846058038ad
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: dan-gold-N7RiDzfF2iw-unsplash.jpg
+  uri:
+    -
+      value: 'public://pictures/2022-01/dan-gold-N7RiDzfF2iw-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 49593
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641998519

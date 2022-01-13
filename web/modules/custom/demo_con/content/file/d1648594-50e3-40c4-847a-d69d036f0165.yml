@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d1648594-50e3-40c4-847a-d69d036f0165
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: kaushik-murali-5TFbVLmY_zw-unsplash.jpg
+  uri:
+    -
+      value: 'public://2022-01/kaushik-murali-5TFbVLmY_zw-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1835444
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641998254

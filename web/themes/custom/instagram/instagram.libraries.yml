@@ -3,9 +3,12 @@ global-styling:
   css:
     theme:
       css/all/style.css: {}
+      css/myprofile_block/style.css: {}
+      css/node/style.css: {}
 
   js:
     js/instagram.js: {}
+    js/myprofile_wrapper.js: {}
   dependencies:
     - core/jquery
 
@@ -15,3 +18,11 @@ nodepage:
   css:
     theme:
       css/node/style.css: {}
+
+
+# userpage a library for profile block in userpage
+userpage:
+  version: VERSION
+  css:
+    theme:
+      css/myprofile_block/style.css: {}

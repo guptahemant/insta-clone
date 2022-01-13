@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 316543fa-5aaf-4b74-b174-e02e8dcf31e7
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: daniel-58TJ5U21byY-unsplash.jpg
+  uri:
+    -
+      value: 'public://pictures/2022-01/daniel-58TJ5U21byY-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 29843
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1641998573
