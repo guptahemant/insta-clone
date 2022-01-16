@@ -1,0 +1,14 @@
+name: jatin
+type: theme
+description: 'JATIN THEME'
+package: Other
+core_version_requirement: 9.x
+libraries:
+  - jatin/global-styling
+ 
+base theme: classy
+#Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
+
+regions:
+  header: Header
+  primary_menu: Primary menu

@@ -1,0 +1,5 @@
+name: 'mumodule'
+type: module
+description: 'My Mooduleeee'
+core_version_requirement: 9.x
+package: 'Custom'

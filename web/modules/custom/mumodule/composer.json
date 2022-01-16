@@ -1,0 +1,13 @@
+{
+    "name": "mumodule",
+    "type": "drupal-module",
+    "description": "My Mooduleeee",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/mumodule",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/mumodule",
+        "source": "http://cgit.drupalcode.org/mumodule",
+    },
+}

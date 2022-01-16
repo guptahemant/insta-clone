@@ -1,0 +1,27 @@
+name: retroo
+type: theme
+description: 'My Awesome custom retroo theme'
+package: Other
+core_version_requirement: 9.x
+base theme: false
+# If we want to make the font file global, meansfor each page.
+libraries:
+  - retroo/retroo
+  - retroo/rainbow
+ 
+regions:
+  header: 'Header'
+  content: 'Content' 
+  content_bottom: 'Content (bottom)'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary Menu'
+  Highlighted: 'Highlighted'
+  Featured_top: 'Featured Top'
+  banner_top: 'Banner (top)'
+  banner_bottom: 'Banner (bottom)'
+  help: 'Help'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom' 

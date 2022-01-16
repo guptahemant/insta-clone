@@ -1,0 +1,18 @@
+rainbow:
+  version: 1.0
+  license: MIT
+  js:
+    js/rainbow.js : { }
+  dependencies:
+    core/jquery: { } 
+
+retroo:
+  version: 1.0
+  css:
+   theme:
+     css/fonts.css : { weight: -10 }
+  js:
+    js/rainbow-heading.js: { }
+  dependencies:
+     - retroo/rainbow-heading   
+

@@ -1,0 +1,6 @@
+jatin.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width: 560px) and (max-width: 850px)'
+  weight: '20'
+  multipliers:
+    - '1x'
