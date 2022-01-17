@@ -53,6 +53,7 @@ class user_profile_block extends BlockBase {
       $query3->fields('f'); 
       $followers = $query3->execute()->fetchAll();
 
+      $followers_count = 0;
       foreach($followers as $row){
         $followers_count = $row->count;
       }  
