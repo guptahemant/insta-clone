@@ -6,3 +6,11 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(gulp.dest('css/'));
 });
+
+gulp.task('default', gulp.series('sass')); 
+
+gulp.task('watch', function(){ 
+ 
+   gulp.watch('scss/*/*',gulp.series('sass'));
+ 
+});

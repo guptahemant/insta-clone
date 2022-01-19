@@ -2,9 +2,7 @@ global-styling:
   version: VERSION
   css:
     theme:
-      css/all/style.css: {}
-      css/myprofile_block/style.css: {}
-      css/node/style.css: {}
+      css/all/style.css: {} 
 
   js:
     js/instagram.js: {}
