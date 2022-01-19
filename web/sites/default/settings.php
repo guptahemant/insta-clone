@@ -805,13 +805,3 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 $settings['config_sync_directory'] = '../config/sync';
 
 $config['system.logging']['error_level'] = 'verbose';
-$databases['default']['default'] = array (
-  'database' => 'testDB',
-  'username' => 'atul',
-  'password' => 'Atul$291098',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
