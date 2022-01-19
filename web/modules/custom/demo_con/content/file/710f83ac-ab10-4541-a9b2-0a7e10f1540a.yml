@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 710f83ac-ab10-4541-a9b2-0a7e10f1540a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 16-12-23-Tree-Stephens-Green-600x400_2.jpg
+  uri:
+    -
+      value: 'public://2022-01/16-12-23-Tree-Stephens-Green-600x400_2.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 238856
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1642165638

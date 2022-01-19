@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 82e45bfe-ea80-4cbf-8f85-2bb71764a82c
+  bundle: article
+  default_langcode: en
+  depends:
+    710f83ac-ab10-4541-a9b2-0a7e10f1540a: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: test
+  created:
+    -
+      value: 1642165638
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1642165645
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: 710f83ac-ab10-4541-a9b2-0a7e10f1540a
+      alt: img
+      title: ''
+      width: 600
+      height: 400

@@ -1,0 +1,58 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ddf4bbae-8d7d-4a4c-ba94-bf3fa33361f8
+  bundle: article
+  default_langcode: en
+  depends:
+    3bd575e3-8f5a-481e-946b-2c7e9961079b: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: test
+  created:
+    -
+      value: 1642165791
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  body:
+    -
+      value: "<p>@atul</p>\r\n"
+      format: basic_html
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1642165795
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: 3bd575e3-8f5a-481e-946b-2c7e9961079b
+      alt: image
+      title: ''
+      width: 717
+      height: 404

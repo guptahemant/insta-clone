@@ -10,7 +10,7 @@ _meta:
 default:
   revision_uid:
     -
-      entity: a852bc09-6e11-4027-aa36-0c532ebca22f
+      target_id: 1
   status:
     -
       value: true
@@ -39,16 +39,16 @@ default:
       pathauto: 0
   body:
     -
-      value: "<p>&nbsp;</p>\r\n\r\n<p>Today my&nbsp;<a href=\"https://www.instagram.com/explore/tags/atrangire/\">#AtrangiRe</a>&nbsp;co-star&nbsp;<a href=\"https://www.instagram.com/dhanushkraja/\">@dhanushkraja</a>&nbsp;came calling. ‘Sir, I always look up to you,’ he said. I replied, ‘I look up to your amazing talent.’ Then we both looked up. And this happened 😊</p>\r\n"
+      value: "<p>&nbsp;</p>\r\n\r\n<p>Today my&nbsp;<a href=\"https://www.instagram.com/explore/tags/atrangire/\">#AtrangiRe</a>&nbsp;co-star&nbsp;<a href=\"https://www.instagram.com/dhanushkraja/\">@dhanushkraja</a>&nbsp;came calling. ‘Sir, I always look up to you,’ he said. I replied, ‘I look up to your amazing talent.’ Then we both looked up. And this happened 😊 @atul</p>\r\n"
       format: full_html
       summary: ''
   comment:
     -
       status: 2
       cid: 0
-      last_comment_timestamp: 1641468124
+      last_comment_timestamp: 1642152578
       last_comment_name: ''
-      last_comment_uid: 6
+      last_comment_uid: 2
       comment_count: 0
   field_image:
     -

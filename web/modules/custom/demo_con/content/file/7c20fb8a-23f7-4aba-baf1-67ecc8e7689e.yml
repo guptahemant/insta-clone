@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7c20fb8a-23f7-4aba-baf1-67ecc8e7689e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Madden-22-MUT-1536x864.jpg
+  uri:
+    -
+      value: 'public://2022-01/Madden-22-MUT-1536x864.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 179860
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1642496938

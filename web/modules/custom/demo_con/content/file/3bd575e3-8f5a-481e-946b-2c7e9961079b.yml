@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3bd575e3-8f5a-481e-946b-2c7e9961079b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: savings-account.jpg
+  uri:
+    -
+      value: 'public://2022-01/savings-account.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 84853
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1642165791
