@@ -283,7 +283,7 @@ $databases = [];
  * @endcode
  */
 $settings['hash_salt'] =
-    'dugkOR-994LnY13yutbTFCNx7bHh_d_J56JdrB2ei9DJwjqPi5VxW_5WS12ocetKWz2F4MAtmQ';
+    '5sVdqOwc1pqjrRvbeicE5APpyulJDvSNb-TwAX1ifPg_xD0EX9dG3CZVuZWIZxcfy81tuyklJQ';
 
 /**
  * Deployment identifier.
@@ -805,3 +805,13 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 $settings['config_sync_directory'] = '../config/sync';
 
 $config['system.logging']['error_level'] = 'verbose';
+$databases['default']['default'] = array (
+  'database' => 'testDB',
+  'username' => 'atul',
+  'password' => 'Atul$291098',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);

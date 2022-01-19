@@ -10,16 +10,16 @@ dependencies:
 id: userlogin
 theme: instagram
 region: content
-weight: 0
+weight: -3
 provider: null
 plugin: user_login_block
 settings:
   id: user_login_block
   label: 'User login'
-  provider: user
   label_display: visible
+  provider: user
 visibility:
   request_path:
     id: request_path
-    pages: /node
     negate: false
+    pages: /node

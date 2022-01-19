@@ -17,13 +17,13 @@ plugin: 'system_menu_block:topics'
 settings:
   id: 'system_menu_block:topics'
   label: Topics
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: /node
     negate: true
+    pages: /node

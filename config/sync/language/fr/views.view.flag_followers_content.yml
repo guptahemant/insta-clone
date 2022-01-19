@@ -11,7 +11,3 @@ display:
           expose:
             items_per_page_label: 'Items per page'
             items_per_page_options_all_label: '- All -'
-  page_1:
-    display_options:
-      menu:
-        title: Contenu

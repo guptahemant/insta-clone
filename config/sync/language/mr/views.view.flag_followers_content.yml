@@ -7,6 +7,3 @@ display:
           exposed_sorts_label: 'Sort by'
   page_1:
     display_title: Page
-    display_options:
-      menu:
-        title: Content

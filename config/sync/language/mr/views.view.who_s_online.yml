@@ -1,17 +1,17 @@
 display:
   default:
-    display_title: Default
+    display_title: मुळस्वरुप
     display_options:
+      title: 'सध्या कोण कोण आलेले आहे?'
       exposed_form:
         options:
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
       filters:
         access:
           expose:
-            description: 'A user is considered online for this long after they have last viewed a page.'
-      title: 'Who''s online'
+            description: 'सद्स्याने शेवटची कृती केल्यापासून या वेळे पर्यंत त्याला ऒनलाईन समजल्या जाईल.'
   who_s_online_block:
-    display_title: 'Who''s online'
+    display_title: 'सध्या कोण कोण आलेले आहे?'
     display_options:
-      block_description: 'Who''s online'
+      block_description: 'सध्या कोण कोण आलेले आहे?'

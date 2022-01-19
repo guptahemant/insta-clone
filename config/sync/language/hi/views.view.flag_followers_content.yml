@@ -14,6 +14,3 @@ display:
             items_per_page_options_all_label: '- All -'
   page_1:
     display_title: पृष्ठ
-    display_options:
-      menu:
-        title: सामग्री

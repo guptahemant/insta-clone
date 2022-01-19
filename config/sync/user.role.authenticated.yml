@@ -1,7 +1,26 @@
 uuid: 09fd93e5-818f-4a5c-ad02-3f4c7d31ade4
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.article
+    - node.type.page
+    - node.type.slider_insta
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - filter
+    - flag
+    - image
+    - mentions
+    - node
+    - search_api_page
+    - shortcut
+    - system
+    - taxonomy
+    - tour
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
@@ -9,64 +28,36 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access administration pages'
   - 'access comments'
   - 'access content'
   - 'access mentions'
-  - 'access shortcuts'
-  - 'access site-wide contact form'
-  - 'access toolbar'
   - 'access tour'
   - 'access user profiles'
-  - 'administer block_content form display'
-  - 'administer content translation'
-  - 'administer display modes'
   - 'administer image styles'
-  - 'administer mentions'
-  - 'administer mentions display'
-  - 'administer mentions form display'
-  - 'administer menu'
-  - 'administer modules'
-  - 'administer node display'
-  - 'administer node fields'
-  - 'administer node form display'
-  - 'administer search_api_autocomplete'
-  - 'administer shortcuts'
-  - 'administer site configuration'
-  - 'administer software updates'
   - 'change own username'
   - 'create article content'
-  - 'create content translations'
   - 'create page content'
   - 'create slider_insta content'
   - 'create terms in tags'
-  - 'create url aliases'
-  - 'customize shortcut links'
-  - 'delete content translations'
   - 'delete own article content'
   - 'delete own page content'
   - 'delete own slider_insta content'
   - 'delete terms in tags'
   - 'edit own article content'
-  - 'flag bookmark'
-  - 'flag following'
-  - 'flag likes'
   - 'edit own page content'
   - 'edit own slider_insta content'
   - 'edit terms in tags'
+  - 'flag bookmark'
+  - 'flag following'
+  - 'flag likes'
   - 'post comments'
   - 'revert article revisions'
   - 'search content'
   - 'skip comment approval'
+  - 'switch shortcut sets'
   - 'unflag bookmark'
   - 'unflag following'
   - 'unflag likes'
-  - 'switch shortcut sets'
-  - 'update content translations'
-  - 'use admin toolbar search'
-  - 'use search_api_autocomplete for userpost'
   - 'use text format basic_html'
   - 'use text format full_html'
-  - 'view article revisions'
-  - 'view page revisions'
   - 'view search api pages'

@@ -1,4 +1,4 @@
-uuid: 4c150b52-bf5e-4da7-9b24-646f928ec388
+uuid: d449749e-175d-47c6-90ba-40f0ef45204a
 langcode: en
 status: true
 dependencies:
@@ -9,26 +9,26 @@ dependencies:
     - user
   theme:
     - instagram
-id: mainnavigation
+id: mainnavigation_2
 theme: instagram
 region: header
-weight: -1
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
   label: 'Main navigation'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   user_role:
     id: user_role
-    roles:
-      authenticated: authenticated
-      administrator: administrator
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator

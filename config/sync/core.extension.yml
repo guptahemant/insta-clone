@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
@@ -20,11 +22,8 @@ module:
   dblog: 0
   default_content: 0
   demo_con: 0
-<<<<<<< HEAD
   devel: 0
   devel_kint_extras: 0
-=======
->>>>>>> test3
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -86,5 +85,3 @@ theme:
   stable9: 0
   instagram: 0
 profile: minimal
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

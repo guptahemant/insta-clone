@@ -1,39 +1,30 @@
-uuid: cdf0f040-1c70-42af-ab3a-5a56f7e141d6
+uuid: fcf8caf1-7d17-49d8-a88d-ee395c9e9959
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:4edfbaa8-04a1-4771-a9ff-e2a6b88b84e9'
+    - 'block_content:basic:63064134-a249-4051-be90-a63dbe040b59'
   module:
     - block_content
     - system
-    - user
   theme:
     - instagram
 id: insta_collection
 theme: instagram
 region: content
-weight: -6
+weight: -8
 provider: null
-plugin: 'block_content:4edfbaa8-04a1-4771-a9ff-e2a6b88b84e9'
+plugin: 'block_content:63064134-a249-4051-be90-a63dbe040b59'
 settings:
-  id: 'block_content:4edfbaa8-04a1-4771-a9ff-e2a6b88b84e9'
+  id: 'block_content:63064134-a249-4051-be90-a63dbe040b59'
   label: insta_collection
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
+    negate: false
     pages: /saved
-    negate: false
-  user_role:
-    id: user_role
-    roles:
-      authenticated: authenticated
-      administrator: administrator
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'

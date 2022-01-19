@@ -17,32 +17,32 @@ bundle: user
 mode: default
 content:
   field_full_name:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   flag_following:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   my_name:
-    weight: 2
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
   user_picture:
     type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: post_thumbnail_30_x_30_
+    third_party_settings: {  }
     weight: 0
     region: content
-    settings:
-      image_style: post_thumbnail_30_x_30_
-      image_link: content
-    third_party_settings: {  }
-    label: hidden
 hidden:
   langcode: true
   member_for: true
