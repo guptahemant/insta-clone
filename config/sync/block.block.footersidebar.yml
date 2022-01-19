@@ -1,0 +1,29 @@
+uuid: e96b0f7f-8ca4-4ebf-aa38-51744e1abcab
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer-sidebar
+  module:
+    - system
+  theme:
+    - instagram
+id: footersidebar
+theme: instagram
+region: sidebar
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-sidebar'
+settings:
+  id: 'system_menu_block:footer-sidebar'
+  label: 'Footer sidebar'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /node
+    negate: false

@@ -16,7 +16,7 @@ default:
       value: main
   link:
     -
-      uri: 'internal:/createpost'
+      uri: 'internal:/node/add/article'
       title: ''
       options:
         fa_icon: 'far fa-plus-square'

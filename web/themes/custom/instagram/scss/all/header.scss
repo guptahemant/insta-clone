@@ -5,6 +5,8 @@ header {
     position: fixed;
     top: 0;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
     .main_header {
         display: flex;
         flex-wrap: wrap;
@@ -12,6 +14,13 @@ header {
         height: 60px;
         align-content: center;
         align-items: center;
+        width: 77%;
+        @include mobile {
+            width: unset;
+        }
+        @include tablet {
+            width: 100%;
+        }
         ul {
             display: inline-flex;
             list-style: none;
@@ -46,10 +55,13 @@ header {
             }
         }
         div#block-sitebranding {
-            width: 13.5%;
+            width: 24.5%;
             @include mobile {
                 width: fit-content;
                 margin: 0px 63px;
+            }
+            @include tablet {
+                width: 16.5%;
             }
         }
         nav#block-mobilecamera {
@@ -66,11 +78,15 @@ header {
         }
         input#edit-keys {
             height: 35px;
-            width: 260px;
-            background-color: #fafafa;
+            width: 220px;
+            background-color: #efefef;
             border: none;
-            outline: 1px solid #dad5d5;
+            outline: none;
             padding: 0px 20px;
+            border-radius: 10px;
+            .ajax-progress-throbber {
+                display: none
+            }
         }
         #search-api-page-block-form-userpost {
             @include mobile {
@@ -90,6 +106,9 @@ header {
             display: none;
             &.show {
                 display: block;
+                @include tablet {
+                    width: 31%;
+                }
                 @include mobile {
                     display: none;
                 }

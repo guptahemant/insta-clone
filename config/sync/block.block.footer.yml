@@ -6,6 +6,7 @@ dependencies:
     - system.menu.footer
   module:
     - system
+    - user
   theme:
     - instagram
 id: footer
@@ -22,4 +23,16 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /node
+    negate: true
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

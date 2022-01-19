@@ -1,8 +1,9 @@
 name: instagram
 type: theme
-description: 'Custom Theme for instagram.'
+description: "Custom Theme for instagram."
 package: Drupar
 base theme: stable9
+screenshot: "/screenshot.png"
 core_version_requirement: ^8 || ^9
 
 libraries:
@@ -11,5 +12,6 @@ libraries:
 regions:
   header: header
   content: Content
+  sidebar: Sidebar
   footer_top: Footer Top
   footer_bottom: Footer Bottom

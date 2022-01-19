@@ -1,9 +1,9 @@
-uuid: 59c77557-f58c-4408-99fb-02433c30c6f3
+uuid: 117e3a82-af33-417c-aeca-1b9fb1ae1713
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:d55abd00-4ad2-4cdc-975c-1b7e23336778'
+    - 'block_content:basic:37e79a6a-02b7-45b9-9a64-60d34ed57653'
   module:
     - block_content
     - system
@@ -15,9 +15,9 @@ theme: instagram
 region: content
 weight: 0
 provider: null
-plugin: 'block_content:d55abd00-4ad2-4cdc-975c-1b7e23336778'
+plugin: 'block_content:37e79a6a-02b7-45b9-9a64-60d34ed57653'
 settings:
-  id: 'block_content:d55abd00-4ad2-4cdc-975c-1b7e23336778'
+  id: 'block_content:37e79a6a-02b7-45b9-9a64-60d34ed57653'
   label: 'mobile frame for insta'
   provider: block_content
   label_display: '0'
