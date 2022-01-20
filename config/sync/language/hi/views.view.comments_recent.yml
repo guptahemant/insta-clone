@@ -1,14 +1,14 @@
-label: 'Recent comments'
-description: 'Recent comments.'
+label: 'हाल के कमेन्ट'
+description: 'हाल की टिप्पणियाँ'
 display:
   default:
-    display_title: Default
+    display_title: डीफॉल्ट
     display_options:
-      title: 'Recent comments'
+      title: 'हाल के कमेन्ट'
       empty:
         area_text_custom:
-          content: 'No comments available.'
+          content: 'कोई कमेन्ट उपलब्ध नहीं है|'
   block_1:
-    display_title: Block
+    display_title: ब्लॉक
     display_options:
-      block_description: 'Recent comments'
+      block_description: 'हाल के कमेन्ट'

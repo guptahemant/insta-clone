@@ -1,19 +1,19 @@
 tips:
   search-api-index-fields-add:
-    label: 'Add fields'
+    label: 'Ajouter des champs'
   search-api-index-fields-label:
-    label: Label
+    label: Libellé
   search-api-index-fields-machine-name:
-    label: 'Machine name'
+    label: 'Nom système'
   search-api-index-fields-type:
     label: Type
   search-api-index-fields-boost:
     label: Boost
   search-api-index-fields-edit:
-    label: 'Edit field'
+    label: 'Modifier le champ'
   search-api-index-fields-remove:
-    label: 'Remove field'
+    label: 'Retirer le champ'
   search-api-index-fields-submit:
-    label: 'Save changes'
+    label: 'Enregistrer les modifications'
   search-api-index-fields-cancel:
-    label: 'Cancel changes'
+    label: 'Annuler les modifications'

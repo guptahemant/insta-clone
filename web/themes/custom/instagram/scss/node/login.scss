@@ -1,0 +1,382 @@
+@import 'mixin';
+html{
+    background-color: #fafafa;
+}
+
+.anonymous{
+    
+    .layout-container{
+        width: 100%;
+    
+        main{
+            display: flex;
+            width: 100%;
+            margin-top: 1.4%;
+            justify-content: center;
+            
+            .layout-content{
+    
+                @include tablet {
+                    display: none;
+                }
+    
+                .slide{
+                   
+                    @include laptop {
+                       
+                    }
+    
+                    #block-mobileframeforinsta{
+    
+                        img{
+                            width: 454px;
+                            height: 618px;
+                        }
+                    }
+    
+                    #block-views-block-slider-view-block-1{
+                        position: absolute;
+                        top: 130px;
+                        left: 381px;
+    
+                        @include laptop{
+                            top: 126px;
+                            left: 254px;                    
+                        }
+    
+                        .slider-view{
+    
+                            img{
+                                border: 2px solid black;
+                                width: 242px;
+                                height: 431px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .layout-sidebar{
+                width: 28%;
+                margin-top: 4%;
+    
+                @include laptop {
+                    width: 35%;
+                }
+                @include tablet {
+                    width: 45%;
+                  
+                }
+                @include mobile {
+                    width: 100%;
+                }   
+    
+                #block-userlogin{
+    
+                    form{
+                        margin: auto;
+                        padding: 10%;
+                        padding-top: 30px;
+                        border: 1px solid #e9e1e1;
+                        background-color: #fff;
+            
+                        @include mobile {
+                            border: none;
+                            padding: 6%;
+                            padding-top: 15px;
+                            padding-left: 15%;
+                            padding-right: 15%;
+                        }
+                        
+                        .insta_head{
+                            
+                            padding-bottom: 10%;
+                            width: 174px;
+                            height: 26px;
+                            margin: auto;
+                            margin-top: 0px;
+                            margin-bottom: 25px;
+                            background-image: url(/sites/default/files/inline-images/735145cfe0a4.png);
+                            background-repeat: no-repeat;  
+                            background-size: 159px 50px;
+                        }
+            
+                        .form-item-name{
+                            position: relative;
+    
+                            .js-form-required{
+                                color: #979595;
+                                font-size: 12px;
+                                width: 90%;
+                                position: absolute;
+                                top: 16px;
+                                left: 9px;
+                                white-space: nowrap; 
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                            .focused{
+                                font-size: 10px;
+                                top: 10px;
+                            }
+                        }
+    
+                        .form-item-pass{
+                            position: relative;
+    
+                            .js-form-required{
+                                color: #979595;
+                                font-size: 12px;
+                                position: absolute;
+                                top: 16px;
+                                left: 9px;
+                            }
+                            .focused{
+                                font-size: 10px;
+                                top: 10px;
+                            }
+                        }
+    
+                        
+                        .description{
+                            display: none;
+                        }
+                        input{
+                            width: 100%;
+                            height: 36px;
+                            font-size: 12px;
+                            padding: 9px 9px 0px 9px;
+                            margin-top: 6px;
+                            box-sizing: border-box;
+                            border: 1px solid #e9e1e1;
+                            border-radius: 3px;
+                            background-color: #fafafa;
+            
+                            @include tablet {
+                                font-size: 12px;
+                            }
+                        }
+                        .pass-toggle{
+                            color: black;
+                            position: absolute;
+                            font-weight: bold;
+                            top: 236px;
+                            font-size: 14px;
+                            z-index: 1;
+                            right: 277px;
+
+                            @include laptop {
+                                top: 223px;
+                                right: 155px;
+                            }
+
+                            @include tablet {
+                                top: 209px;
+                                right: 256px;
+                            }
+                            @include mobile {
+                                top: 177px;
+                                right: 75px;
+                            }
+                            @include mobile_M {
+                                top: 170px;
+                                right: 67px;
+                            }
+                            @include mobile_S {
+                                top: 163px;
+                                right: 59px;
+                            }
+                            &.show{
+                                display: none;
+                            }                            
+                        }
+                    
+                        
+                        .js-form-submit{
+                            color: white;
+                            background: #b8e4ef;
+                            border: none;
+                            width: 100%;
+                            margin: 12px 0;
+                            font-weight: bold;
+                            font-size: 14px;
+                            padding: 7px 17px;
+            
+                            @include tablet {
+                                font-size: 14px;
+                                padding: 8px 17px;
+                            }
+                        }
+                        .active {
+                            background-color: #0095f6;
+                            cursor: pointer;
+                            pointer-events: initial;
+                        }
+            
+                        .icon-block{
+                            text-align: center;
+                            svg{
+                                color: #385185;
+                                padding: 0 6px;
+                                font-size: 18px;
+                            }
+                            .facebook{
+                                color: #385185;
+                                text-align: center;
+                                text-decoration: none;
+                                font-weight: bold;
+                                font-size: 14px;
+                            }
+                            .password{
+                                margin-top: 20px;
+                                margin-bottom: -17px;
+                                text-align: center;
+                                text-decoration: none;
+                                color: #385185;
+                                font-size: 12px;
+                                line-height: 16px;
+                                text-align: center;
+                                display: block;   
+                            }
+                        }
+                        
+            
+                        .my-class{
+                            width: 100%;
+                            margin: auto;
+                            text-align: center;
+                            display: flex;
+                            margin: 2px 0px 24px;
+            
+                            label{
+                                display: block;
+                                font-weight: bold;
+                            }
+            
+                            #edit-left{
+                                height: 1px;
+                                width: 48%;
+                                position: relative;
+                                top: 0.45em;
+                                background-color: #e9e1e1;
+                            }
+                            #edit-child{
+                                padding: 0 4%;
+                                color: gray;
+                                font-size: 12px;
+                            }
+                            #edit-right{
+                                height: 1px;
+                                width: 48%;
+                                position: relative;
+                                top: 0.45em;
+                                background-color: #e9e1e1;
+                            }
+                        }
+            
+                        .login_app_block{
+                            width: 100%;
+                            margin: auto;
+                            text-align: center;
+                        }
+                        .blank{
+                            display: flex;
+                            width: 100%;
+                            margin: 10px 0px 18px;
+                        }
+                        .s311c{
+                            height: 1px;
+                            width: 48%;
+                            position: relative;
+                            top: 0.45em;
+                            background-color: #e9e1e1;
+                        }
+                        ._0tv-g{
+                            padding: 0 4%;
+                            color: gray;
+                        }
+                               
+                    }
+    
+                    ul{
+                        display: none;
+                    }
+    
+                }
+    
+                
+                #block-signup-link{
+                
+                    margin: auto;
+                    text-align: center;
+                    margin-top: 4px;
+        
+                    .no_account{
+                        border: 1px solid #e9e1e1;
+                        padding: 26px 0;
+                        width: 100%;
+                        font-size: 14px;
+                        margin: auto;
+                        margin-top: 17px;
+                        box-sizing: border-box;
+                        background-color: #fff;
+        
+                        @include mobile {
+                            border: none;
+                            padding: 16px 0;
+                            margin-top: 0;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #0095f6;
+                        font-size: 14px;
+                        font-weight: bold;
+                        margin-left: 6px;
+                    }
+                }
+        
+                .get_app_div{
+                    text-align: center;
+        
+                    .get_app{
+                        font-size: 14px;
+                        margin: 20px 0;
+                    }
+                    .get_image{
+                        display: flex;
+                        justify-content: space-evenly;
+        
+                        @include mobile {
+                            justify-content: center;
+                        }
+        
+                        .appstore{
+                            width: 136px;
+                            height: 40px;
+                            padding:0 4px ;
+
+                            @include mobile_M {
+                                width: 130px;
+                            }
+                        }
+        
+                        .googleplay{
+                            width: 136px;
+                            height: 40px;
+                            padding:0 4px ;
+
+                            @include mobile_M {
+                                width: 130px;
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+
+

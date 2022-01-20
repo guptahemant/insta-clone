@@ -1,0 +1,33 @@
+uuid: 59f57fd0-bbff-4e2a-948d-8315d9b65950
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9467f16e-13a9-4016-848b-54be7290888d'
+  module:
+    - block_content
+    - user
+  theme:
+    - instagram
+id: get_the_app
+theme: instagram
+region: sidebar
+weight: -8
+provider: null
+plugin: 'block_content:9467f16e-13a9-4016-848b-54be7290888d'
+settings:
+  id: 'block_content:9467f16e-13a9-4016-848b-54be7290888d'
+  label: get_the_app
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

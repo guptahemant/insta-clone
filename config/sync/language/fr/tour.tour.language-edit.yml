@@ -1,17 +1,17 @@
-label: 'Editing languages'
+label: 'Modification des langues'
 tips:
   language-edit-overview:
-    label: 'Editing languages'
-    body: '<p>This page provides the ability to edit a language on your site, including custom languages.</p>'
+    label: 'Modification des langues'
+    body: '<p> Cette page donne la possibilité de modifier une langue sur votre site, y compris les langues personnalisées</p>'
   language-edit-langcode:
-    label: 'Language code'
-    body: '<p>You cannot change the code of a language on the site, since it is used by the system to keep track of the language.</p>'
+    label: 'Code de la langue'
+    body: '<p>Vous ne pouvez pas changer le code d''une langue du site, dès lors qu''elle est utilisée par le système pour garder trace de cette langue</p>'
   language-edit-label:
-    label: 'Language name'
-    body: '<p>The language name is used throughout the site for all users and is written in English. Names of built-in languages can be translated using the Interface Translation module, and names of both built-in and custom languages can be translated using the Configuration Translation module.</p>'
+    label: 'Nom de la langue'
+    body: '<p>Le nom de la langue est utilisé à travers le site pour tous les utilisateurs et est écrite en anglais. Les noms des langues prédéfinies peuvent être traduites en utilisant le module Interface Translation et les noms des langues prédéfinies et des langues personnalisées peuvent être traduits en utilisant le module Configuration Translation.</p>'
   language-edit-direction:
-    label: 'Language direction'
-    body: '<p>Choose if the language is a "Left to right" or "Right to left" language.</p><p>Note that not all themes support "Right to left" layouts, so test your theme if you are using "Right to left".</p>'
+    label: 'Direction de la langue'
+    body: '<p>Choisir si la langue se lit "de gauche à droite" ou "de droite à gauche".</p><p>Notez que tous les thèmes ne supportent pas la mise en page "de droite à gauche" alors testez votre thème si vous utilisez "de droite à gauche".</p>'
   language-edit-continue:
-    label: 'Continuing on'
-    body: '<p>Now that you have an overview of the "Edit language" feature, you can continue by:<ul><li>Editing a language</li><li><a href="[site:url]admin/config/regional/language">Viewing configured languages</a></li></ul></p>'
+    label: 'Continuant sur'
+    body: '<p>Maintenant que vous avez une vue d''ensemble de la fonctionnalité "Modifier une langue", vous pouvez continuer par : <ul><li>Modifier une langue</li><li><a href="[site:url]admin/config/regional/language">Afficher les langues configurées</a></li></ul></p>'

@@ -1,6 +1,6 @@
-label: 'Adding languages'
+label: '언어 추가'
 tips:
   language-add-overview:
-    label: 'Adding languages'
+    label: '언어 추가'
   language-add-choose:
-    label: 'Select language'
+    label: '언어 선택하기'

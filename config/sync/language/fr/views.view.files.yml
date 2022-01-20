@@ -1,90 +1,90 @@
-label: Files
-description: 'Find and manage files.'
+label: Fichiers
+description: 'Trouver et gérer les fichiers.'
 display:
   default:
-    display_title: Default
+    display_title: 'Par défaut'
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          submit_button: Filtrer
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: '‹ Précédent'
+            next: 'Suivant ›'
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
-            offset_label: Offset
+            items_per_page_label: 'Éléments par page'
+            items_per_page_options_all_label: '- Tout -'
+            offset_label: Décalage
       fields:
         fid:
-          label: Fid
+          label: 'Identifiant (FID)'
         filename:
-          label: Name
+          label: Nom
           separator: ', '
         filemime:
-          label: 'MIME type'
+          label: 'Type MIME'
         filesize:
-          label: Size
+          label: Taille
         status:
-          label: Status
+          label: État
           settings:
-            format_custom_false: Temporary
+            format_custom_false: Temporaire
             format_custom_true: Permanent
         created:
-          label: 'Upload date'
+          label: 'Date de transfert'
         changed:
-          label: 'Changed date'
+          label: 'Date de modification'
         count:
-          label: 'Used in'
+          label: 'Utilisé dans'
       filters:
         filename:
           expose:
-            label: Filename
+            label: 'Nom du fichier'
         filemime:
           expose:
-            label: 'MIME type'
+            label: 'Type MIME'
         status:
           expose:
-            label: Status
-      title: Files
+            label: État
+      title: Fichiers
       empty:
         area_text_custom:
-          content: 'No files available.'
+          content: 'Aucun fichier disponible.'
   page_1:
-    display_title: 'Files overview'
+    display_title: 'Vue d''ensemble des fichiers'
     display_options:
       menu:
-        title: Files
+        title: Fichiers
   page_2:
-    display_title: 'File usage'
+    display_title: 'Utilisation du fichier'
     display_options:
       pager:
         options:
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: '‹ Précédent'
+            next: 'Suivant ›'
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
-            offset_label: Offset
+            items_per_page_label: 'Éléments par page'
+            items_per_page_options_all_label: '- Tout -'
+            offset_label: Décalage
       fields:
         entity_label:
-          label: Entity
+          label: Entité
         type:
-          label: 'Entity type'
+          label: 'Type d''entité'
         module:
-          label: 'Registering module'
+          label: 'Enregistrement du module'
         count:
-          label: 'Use count'
+          label: 'Nombre d''utilisations'
           format_plural_string: !!binary MQNAY291bnQ=
-      title: 'File usage'
+      title: 'Utilisation du fichier'
       arguments:
         fid:
           exception:
-            title: All
-          title: 'File usage information for {{ arguments.fid }}'
+            title: Tout
+          title: 'Information d''utilisation du fichier {{ arguments.fid }}'

@@ -1,0 +1,63 @@
+@mixin mobile_S {
+    @media only screen and (max-width:320px)
+    {    @content   };
+}
+
+@mixin mobile_M {
+    @media only screen and (max-width:375px)
+        {    @content   };
+}
+
+@mixin mobile {
+    @media only screen and (max-width:425px)
+        {    @content   };
+}
+
+@mixin tablet {
+    @media only screen and (max-width:768px)
+    {    @content   };
+}
+
+@mixin laptop {
+    @media only screen and (max-width:1024px)
+    {    @content   };
+}
+
+@mixin laptop_M {
+    @media only screen and (max-width:1200px)
+    {    @content   };
+}
+
+
+
+
+
+// @mixin responsive($breakpoint){
+//     @if $breakpoint == mobile_S {
+//         @media only screen and (max-width:320px)
+//         {    @content   };
+//     }
+//     @if $breakpoint == mobile {
+//         @media only screen and (max-width:375px)
+//         {    @content   };
+//     }
+
+//     @if $breakpoint == mobile_M {
+//         @media only screen and (max-width:425px)
+//         {    @content   };
+//     }
+//     @if $breakpoint == tablet {
+//         @media only screen and (max-width:768px)
+//         {    @content   };
+//     }
+//     @if $breakpoint == laptop {
+//         @media only screen and (max-width:1024px)
+//         {    @content   };
+//     }
+//     @if $breakpoint == laptop_M {
+//         @media only screen and (max-width:1200px)
+//         {    @content   };
+//     }
+
+// }
+

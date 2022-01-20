@@ -1,0 +1,6 @@
+log_mod.testroute:
+  path: '/mypage/page'
+  defaults:
+    _controller: '\Drupal\log_mod\Controller\TestController::logtest'
+  requirements:
+    _permission: 'access content'

@@ -1,15 +1,15 @@
 display:
   default:
-    display_title: Default
+    display_title: मुळस्वरुप
     display_options:
       exposed_form:
         options:
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
       fields:
         title:
-          label: Title
+          label: शीर्षक
         name:
-          label: Author
+          label: लेखक
   page_1:
-    display_title: Page
+    display_title: पान

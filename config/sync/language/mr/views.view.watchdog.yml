@@ -1,27 +1,27 @@
 display:
   default:
-    display_title: Default
+    display_title: मुळस्वरुप
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          submit_button: गाळणी
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
       fields:
         type:
-          label: Type
+          label: प्रकार
         timestamp:
-          label: Date
+          label: दिनांक
         message:
-          label: Message
+          label: संदेश
         name:
-          label: User
+          label: सदस्य
           separator: ', '
         link:
-          label: Operations
+          label: कृती
       filters:
         type:
           expose:
-            label: Type
+            label: प्रकार
   page:
-    display_title: Page
+    display_title: पान

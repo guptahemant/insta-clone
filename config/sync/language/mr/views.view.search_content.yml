@@ -3,17 +3,17 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Search
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          submit_button: शोध
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
+            previous: '‹ मागे'
+            next: 'पुढे ›'
       filters:
         search_api_fulltext:
           expose:
-            label: Search
+            label: शोध
   page_1:
-    display_title: Page
+    display_title: पान

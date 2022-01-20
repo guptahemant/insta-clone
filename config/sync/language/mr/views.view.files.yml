@@ -1,48 +1,48 @@
-label: Files
+label: फाईल्स
 display:
   default:
-    display_title: Default
+    display_title: मुळस्वरुप
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          submit_button: गाळणी
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
       fields:
         filename:
-          label: Name
+          label: नाव
           separator: ', '
         filesize:
-          label: Size
+          label: आकार
         status:
-          label: Status
+          label: वर्तमानस्थिती
         created:
-          label: 'Upload date'
+          label: 'अपलोड केल्याची तारीख'
         changed:
-          label: 'Changed date'
+          label: 'बदल केल्याची तारीख'
         count:
-          label: 'Used in'
+          label: 'कोठे वापरली आहे'
       filters:
         filename:
           expose:
-            label: Filename
+            label: 'फाईलचे नाव'
         status:
           expose:
-            label: Status
-      title: Files
+            label: वर्तमानस्थिती
+      title: फाईल्स
   page_1:
-    display_title: 'Files overview'
+    display_title: 'फाईल्सचा आढावा'
     display_options:
       menu:
-        title: Files
+        title: फाईल्स
   page_2:
     display_options:
       fields:
         type:
-          label: 'Entity type'
+          label: 'एंटिटीचा प्रकार'
         count:
-          label: 'Use count'
+          label: 'उपयोगकर्त्यांची संख्या'
       arguments:
         fid:
           exception:
-            title: All
+            title: सर्व

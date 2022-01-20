@@ -1,83 +1,83 @@
-label: Files
+label: 파일
 display:
   default:
-    display_title: Default
+    display_title: 기본값
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          submit_button: 필터
+          reset_button_label: 재설정
+          exposed_sorts_label: 정렬기준
           sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_desc_label: 설명
       pager:
         options:
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: '‹ 이전'
+            next: '다음 ›'
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
-            offset_label: Offset
+            items_per_page_label: '페이지 당 항목 수'
+            items_per_page_options_all_label: '- 모두 -'
+            offset_label: 건너뛰기
       fields:
         filename:
-          label: Name
+          label: 이름
         filemime:
-          label: 'MIME type'
+          label: 'MIME 유형'
         filesize:
-          label: Size
+          label: '파일 크기'
         status:
-          label: Status
+          label: 상태
           settings:
-            format_custom_false: Temporary
-            format_custom_true: Permanent
+            format_custom_false: 임시
+            format_custom_true: 영구
         created:
-          label: 'Upload date'
+          label: '올린 날짜'
         changed:
-          label: 'Changed date'
+          label: '변경 날짜'
         count:
-          label: 'Used in'
+          label: '사용 위치'
       filters:
         filename:
           expose:
-            label: Filename
+            label: 파일명
         filemime:
           expose:
-            label: 'MIME type'
+            label: 'MIME 유형'
         status:
           expose:
-            label: Status
-      title: Files
+            label: 상태
+      title: 파일
       empty:
         area_text_custom:
-          content: 'No files available.'
+          content: '사용할 수 있는 파일이 없습니다.'
   page_1:
     display_options:
       menu:
-        title: Files
+        title: 파일
   page_2:
-    display_title: 'File usage'
+    display_title: '파일 사용량'
     display_options:
       pager:
         options:
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: '‹ 이전'
+            next: '다음 ›'
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
-            offset_label: Offset
+            items_per_page_label: '페이지 당 항목 수'
+            items_per_page_options_all_label: '- 모두 -'
+            offset_label: 건너뛰기
       fields:
         entity_label:
-          label: Entity
+          label: 엔터티
         type:
-          label: 'Entity type'
+          label: '엔터티 유형'
         module:
-          label: 'Registering module'
+          label: '등록 모듈'
         count:
-          label: 'Use count'
-      title: 'File usage'
+          label: '사용 횟수'
+      title: '파일 사용량'
       arguments:
         fid:
           exception:
-            title: All
+            title: 전체
