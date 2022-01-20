@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/instagram.co\/sites\/default\/files\/2022-01\/265337104_924193211616806_7171023103853918457_n.jpg"
+        },
+        "type": {
+            "href": "http:\/\/instagram.co\/rest\/type\/file\/file"
+        },
+        "http:\/\/instagram.co\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/instagram.co\/users\/akshaykumar?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 9
+        }
+    ],
+    "uuid": [
+        {
+            "value": "96d82e0d-b5ff-4ec3-93e4-1eb8ef11af02"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/instagram.co\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.co\/users\/akshaykumar?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.co\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "a852bc09-6e11-4027-aa36-0c532ebca22f"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "265337104_924193211616806_7171023103853918457_n.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2022-01\/265337104_924193211616806_7171023103853918457_n.jpg",
+            "url": "\/sites\/default\/files\/2022-01\/265337104_924193211616806_7171023103853918457_n.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 198170
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-01-06T11:21:59+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-01-19T14:49:50+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

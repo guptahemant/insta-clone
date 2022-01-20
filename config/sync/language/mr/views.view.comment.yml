@@ -1,0 +1,83 @@
+label: Comments
+display:
+  default:
+    display_title: Default
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+      fields:
+        comment_bulk_form:
+          action_title: Action
+        subject:
+          label: Subject
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Author
+          separator: ', '
+        entity_id:
+          separator: ', '
+        changed:
+          label: Updated
+          separator: ', '
+        operations:
+          label: Operations
+        name_1:
+          separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Subject
+        langcode:
+          expose:
+            label: Language
+      title: Comments
+      empty:
+        area_text_custom:
+          content: 'No comments available.'
+      use_more_text: more
+  page_published:
+    display_title: 'Published comments'
+    display_options:
+      menu:
+        title: Comments
+  page_unapproved:
+    display_options:
+      filters:
+        subject:
+          expose:
+            label: Subject
+        langcode:
+          expose:
+            label: Language
+      fields:
+        comment_bulk_form:
+          action_title: Action
+        subject:
+          label: Subject
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Author
+          separator: ', '
+        entity_id:
+          separator: ', '
+        changed:
+          label: Updated
+          separator: ', '
+        operations:
+          label: Operations
+        name_1:
+          separator: ', '

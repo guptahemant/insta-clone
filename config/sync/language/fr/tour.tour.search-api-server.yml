@@ -1,0 +1,5 @@
+tips:
+  search-api-server-status:
+    label: Status
+  search-api-server-indexes:
+    label: 'Search indexes'

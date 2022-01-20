@@ -6,12 +6,13 @@ dependencies:
     - system.menu.footer-sidebar
   module:
     - system
+    - user
   theme:
     - instagram
 id: footersidebar
 theme: instagram
 region: sidebar
-weight: 0
+weight: -7
 provider: null
 plugin: 'system_menu_block:footer-sidebar'
 settings:
@@ -27,3 +28,11 @@ visibility:
     id: request_path
     pages: /node
     negate: false
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

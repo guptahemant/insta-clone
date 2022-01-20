@@ -21,6 +21,7 @@
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
         "drupal/default_content": "^2.0@alpha",
+        "drupal/default_content_deploy": "^2.0",
         "drupal/devel": "^4.1",
         "drupal/devel_kint_extras": "^1.0",
         "drupal/flag": "^4.0@beta",

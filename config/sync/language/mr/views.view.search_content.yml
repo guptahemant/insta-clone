@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Search
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Search
+  page_1:
+    display_title: Page

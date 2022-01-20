@@ -1,0 +1,104 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/instagram.co\/admin\/structure\/menu\/item\/41\/edit?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/instagram.co\/rest\/type\/menu_link_content\/menu_link_content"
+        }
+    },
+    "id": [
+        {
+            "value": 41
+        }
+    ],
+    "uuid": [
+        {
+            "value": "02948fa3-e50c-4afb-8f36-2a3deead2ddd"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "bundle": [
+        {
+            "value": "menu_link_content"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2022-01-19T14:49:50+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "enabled": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Help",
+            "lang": "en"
+        }
+    ],
+    "menu_name": [
+        {
+            "value": "footer-sidebar"
+        }
+    ],
+    "link": [
+        {
+            "uri": "route:<nolink>",
+            "title": "",
+            "options": {
+                "fa_icon": "",
+                "fa_icon_prefix": "fa",
+                "fa_icon_tag": "i",
+                "fa_icon_appearance": "before"
+            }
+        }
+    ],
+    "external": [
+        {
+            "value": false
+        }
+    ],
+    "rediscover": [
+        {
+            "value": false
+        }
+    ],
+    "weight": [
+        {
+            "value": -49
+        }
+    ],
+    "expanded": [
+        {
+            "value": false
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-01-19T14:49:50+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ]
+}

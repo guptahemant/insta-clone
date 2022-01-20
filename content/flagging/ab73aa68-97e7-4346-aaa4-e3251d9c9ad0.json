@@ -1,0 +1,92 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/instagram.co\/rest\/type\/flagging\/following"
+        },
+        "http:\/\/instagram.co\/rest\/relation\/flagging\/following\/flagged_entity": [
+            {
+                "href": "http:\/\/instagram.co\/users\/narendramodi?_format=hal_json"
+            }
+        ],
+        "http:\/\/instagram.co\/rest\/relation\/flagging\/following\/uid": [
+            {
+                "href": "http:\/\/instagram.co\/users\/admin?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "ab73aa68-97e7-4346-aaa4-e3251d9c9ad0"
+        }
+    ],
+    "flag_id": [
+        {
+            "target_id": "following"
+        }
+    ],
+    "entity_type": [
+        {
+            "value": "user"
+        }
+    ],
+    "entity_id": [
+        {
+            "value": "3"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/instagram.co\/rest\/relation\/flagging\/following\/flagged_entity": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.co\/users\/narendramodi?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.co\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4e8c6b86-b30a-419b-bdf7-c4364e18c0e6"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/instagram.co\/rest\/relation\/flagging\/following\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.co\/users\/admin?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.co\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77f5cca8-4e9f-4de8-91bc-f5b9c9f87609"
+                    }
+                ]
+            }
+        ]
+    },
+    "global": [
+        {
+            "value": false
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-01-19T14:58:22+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

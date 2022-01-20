@@ -1,0 +1,19 @@
+tips:
+  search-api-index-index-status:
+    label: 'Index status'
+  search-api-index-status:
+    label: Status
+  search-api-index-tracker:
+    label: Tracker
+  search-api-index-server:
+    label: Server
+  search-api-index-server-index-status:
+    label: 'Server index status'
+  search-api-index-cron-batch-size:
+    label: 'Cron batch size'
+  search-api-index-index-now:
+    label: 'Start indexing now'
+  search-api-index-reindex:
+    label: 'Queue all items for reindexing'
+  search-api-index-clear:
+    label: 'Clear all indexed data'

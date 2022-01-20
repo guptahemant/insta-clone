@@ -17,7 +17,7 @@ bundle: user
 mode: default
 content:
   field_full_name:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
@@ -25,12 +25,12 @@ content:
     type: string
     region: content
   flag_following:
-    weight: 10
+    weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   my_name:
-    weight: 2
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
