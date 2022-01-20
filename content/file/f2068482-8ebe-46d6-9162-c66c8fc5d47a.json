@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/instagram.co\/sites\/default\/files\/pictures\/2022-01\/97927970_2654689338121384_6955699402728013824_n.jpg"
+        },
+        "type": {
+            "href": "http:\/\/instagram.co\/rest\/type\/file\/file"
+        },
+        "http:\/\/instagram.co\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/instagram.co\/users\/admin?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 5
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f2068482-8ebe-46d6-9162-c66c8fc5d47a"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/instagram.co\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.co\/users\/admin?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.co\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77f5cca8-4e9f-4de8-91bc-f5b9c9f87609"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "97927970_2654689338121384_6955699402728013824_n.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/pictures\/2022-01\/97927970_2654689338121384_6955699402728013824_n.jpg",
+            "url": "\/sites\/default\/files\/pictures\/2022-01\/97927970_2654689338121384_6955699402728013824_n.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 4447
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-01-05T20:57:46+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-01-19T14:49:50+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

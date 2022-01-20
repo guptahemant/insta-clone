@@ -1,0 +1,38 @@
+uuid: 27d6c9aa-cdbc-4418-8c0f-297d3e73c2f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.current_user
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - instagram
+id: views_block_current_user_block_1
+theme: instagram
+region: sidebar
+weight: -9
+provider: null
+plugin: 'views_block:current_user-block_1'
+settings:
+  id: 'views_block:current_user-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

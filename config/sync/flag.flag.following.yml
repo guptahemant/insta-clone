@@ -15,12 +15,12 @@ bundles: {  }
 entity_type: user
 global: false
 weight: 0
-flag_short: 'Follow this user'
-flag_long: 'Click the link to follow this user'
-flag_message: 'You are following the user'
-unflag_short: 'Unfollow this user'
-unflag_long: 'Click the link to unfollow this user'
-unflag_message: 'You have unfollowed the user'
+flag_short: 'Follow '
+flag_long: ''
+flag_message: ''
+unflag_short: Following
+unflag_long: ''
+unflag_message: ''
 unflag_denied_text: ''
 flag_type: 'entity:user'
 link_type: ajax_link
@@ -29,6 +29,7 @@ flagTypeConfig:
   show_as_field: true
   show_on_form: false
   show_contextual_link: false
-  extra_permissions: {  }
+  extra_permissions:
+    owner: '0'
   show_on_profile: false
 linkTypeConfig: {  }
