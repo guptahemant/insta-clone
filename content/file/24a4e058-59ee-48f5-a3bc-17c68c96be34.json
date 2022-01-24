@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/instagram.co\/sites\/default\/files\/2022-01\/insta-slide4_0.jpg"
+        },
+        "type": {
+            "href": "http:\/\/instagram.co\/rest\/type\/file\/file"
+        },
+        "http:\/\/instagram.co\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/instagram.co\/users\/admin?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 7
+        }
+    ],
+    "uuid": [
+        {
+            "value": "24a4e058-59ee-48f5-a3bc-17c68c96be34"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/instagram.co\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.co\/users\/admin?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.co\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77f5cca8-4e9f-4de8-91bc-f5b9c9f87609"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "insta-slide4_0.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2022-01\/insta-slide4_0.jpg",
+            "url": "\/sites\/default\/files\/2022-01\/insta-slide4_0.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 40344
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-01-06T09:24:47+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-01-19T14:49:50+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/instagram.co\/sites\/default\/files\/2022-01\/my_0.jpg"
+        },
+        "type": {
+            "href": "http:\/\/instagram.co\/rest\/type\/file\/file"
+        },
+        "http:\/\/instagram.co\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/instagram.co\/users\/narendramodi?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 10
+        }
+    ],
+    "uuid": [
+        {
+            "value": "96661d78-1b18-4bff-96df-7a4890bf8391"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/instagram.co\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.co\/users\/narendramodi?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.co\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4e8c6b86-b30a-419b-bdf7-c4364e18c0e6"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "my_0.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2022-01\/my_0.jpg",
+            "url": "\/sites\/default\/files\/2022-01\/my_0.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 63075
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-01-06T11:20:57+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-01-19T14:49:50+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

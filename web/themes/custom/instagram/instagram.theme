@@ -3,6 +3,10 @@
 function instagram_preprocess_region(&$variables) {
   if (isset($variables['region']) && $variables['region'] == 'content') {
     $variables['attributes']['class'][] = 'slide';
+  }
+
+  if (isset($variables['region']) && $variables['region'] == 'sidebar') {
+    $variables['attributes']['class'][] = 'header';
   }}
 
 function instagram_preprocess_region__header(&$variables) {

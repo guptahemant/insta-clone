@@ -1,0 +1,92 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/instagram.co\/rest\/type\/flagging\/following"
+        },
+        "http:\/\/instagram.co\/rest\/relation\/flagging\/following\/flagged_entity": [
+            {
+                "href": "http:\/\/instagram.co\/users\/akshaykumar?_format=hal_json"
+            }
+        ],
+        "http:\/\/instagram.co\/rest\/relation\/flagging\/following\/uid": [
+            {
+                "href": "http:\/\/instagram.co\/users\/admin?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 2
+        }
+    ],
+    "uuid": [
+        {
+            "value": "a2f1a524-9dbc-44a8-a408-78f506c45000"
+        }
+    ],
+    "flag_id": [
+        {
+            "target_id": "following"
+        }
+    ],
+    "entity_type": [
+        {
+            "value": "user"
+        }
+    ],
+    "entity_id": [
+        {
+            "value": "2"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/instagram.co\/rest\/relation\/flagging\/following\/flagged_entity": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.co\/users\/akshaykumar?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.co\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "a852bc09-6e11-4027-aa36-0c532ebca22f"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/instagram.co\/rest\/relation\/flagging\/following\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.co\/users\/admin?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.co\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "77f5cca8-4e9f-4de8-91bc-f5b9c9f87609"
+                    }
+                ]
+            }
+        ]
+    },
+    "global": [
+        {
+            "value": false
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-01-19T14:58:25+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

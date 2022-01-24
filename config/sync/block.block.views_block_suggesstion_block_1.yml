@@ -1,0 +1,38 @@
+uuid: 9a65ba99-82e6-4718-beed-255c9eb32b9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.suggesstion
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - instagram
+id: views_block_suggesstion_block_1
+theme: instagram
+region: sidebar
+weight: -8
+provider: null
+plugin: 'views_block:suggesstion-block_1'
+settings:
+  id: 'views_block:suggesstion-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

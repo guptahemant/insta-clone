@@ -1,0 +1,12 @@
+label: Language
+tips:
+  language-overview:
+    label: Languages
+  language-reorder:
+    label: 'Reordering languages'
+  language-default:
+    label: 'Set a language as default'
+  language-operations:
+    label: 'Modifying languages'
+  language-continue:
+    label: 'Continuing on'

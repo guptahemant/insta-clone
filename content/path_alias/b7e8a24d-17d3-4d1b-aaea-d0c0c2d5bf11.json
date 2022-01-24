@@ -1,0 +1,40 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/instagram.co\/rest\/type\/path_alias\/path_alias"
+        }
+    },
+    "id": [
+        {
+            "value": 3
+        }
+    ],
+    "uuid": [
+        {
+            "value": "b7e8a24d-17d3-4d1b-aaea-d0c0c2d5bf11"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/user\/1"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/users\/admin"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

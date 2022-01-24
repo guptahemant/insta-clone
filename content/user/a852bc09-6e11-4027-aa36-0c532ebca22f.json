@@ -1,0 +1,136 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/instagram.co\/users\/akshaykumar?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/instagram.co\/rest\/type\/user\/user"
+        },
+        "http:\/\/instagram.co\/rest\/relation\/user\/user\/user_picture": [
+            {
+                "href": "http:\/\/instagram.co\/sites\/default\/files\/pictures\/2022-01\/97927970_2654689338121384_6955699402728013824_n.jpg",
+                "lang": "en"
+            }
+        ]
+    },
+    "uid": [
+        {
+            "value": 2
+        }
+    ],
+    "uuid": [
+        {
+            "value": "a852bc09-6e11-4027-aa36-0c532ebca22f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "preferred_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_admin_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "akshaykumar"
+        }
+    ],
+    "mail": [
+        {
+            "value": "akshay@gmail.com"
+        }
+    ],
+    "timezone": [
+        {
+            "value": "Asia\/Kolkata"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-01-05T20:57:46+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-01-19T14:49:50+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "access": [
+        {
+            "value": "2022-01-06T12:34:18+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "login": [
+        {
+            "value": "2022-01-06T11:21:16+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "init": [
+        {
+            "value": "akshay@gmail.com"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/users\/akshaykumar",
+            "pid": 1,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "field_full_name": [
+        {
+            "value": "Akshay Kumar"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/instagram.co\/rest\/relation\/user\/user\/user_picture": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.co\/sites\/default\/files\/pictures\/2022-01\/97927970_2654689338121384_6955699402728013824_n.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.co\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f2068482-8ebe-46d6-9162-c66c8fc5d47a"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "pass": [
+        {
+            "value": "$S$EKZB.smuAVtC1wuI6uU.igCRX7V.AneS1PmEvW1xqsbX6wa0W3xq"
+        }
+    ]
+}

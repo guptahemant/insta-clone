@@ -1,0 +1,15 @@
+uuid: d02004d7-6ac9-4bda-bc27-eee466c3c632
+langcode: en
+status: true
+dependencies: {  }
+name: current_thumbmail_56_x_56_
+label: 'current_thumbmail (56 x 56)'
+effects:
+  1d42c4d5-1d57-4d03-97d5-eaf1810f3787:
+    uuid: 1d42c4d5-1d57-4d03-97d5-eaf1810f3787
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 56
+      height: 56
+      anchor: center-center

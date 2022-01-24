@@ -1,0 +1,48 @@
+label: Files
+display:
+  default:
+    display_title: Default
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      fields:
+        filename:
+          label: Name
+          separator: ', '
+        filesize:
+          label: Size
+        status:
+          label: Status
+        created:
+          label: 'Upload date'
+        changed:
+          label: 'Changed date'
+        count:
+          label: 'Used in'
+      filters:
+        filename:
+          expose:
+            label: Filename
+        status:
+          expose:
+            label: Status
+      title: Files
+  page_1:
+    display_title: 'Files overview'
+    display_options:
+      menu:
+        title: Files
+  page_2:
+    display_options:
+      fields:
+        type:
+          label: 'Entity type'
+        count:
+          label: 'Use count'
+      arguments:
+        fid:
+          exception:
+            title: All

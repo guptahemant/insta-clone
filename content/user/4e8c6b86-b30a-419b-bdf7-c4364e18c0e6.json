@@ -1,0 +1,136 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/instagram.co\/users\/narendramodi?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/instagram.co\/rest\/type\/user\/user"
+        },
+        "http:\/\/instagram.co\/rest\/relation\/user\/user\/user_picture": [
+            {
+                "href": "http:\/\/instagram.co\/sites\/default\/files\/pictures\/2022-01\/66307368_903679046677498_9126641955940335616_n.jpg",
+                "lang": "en"
+            }
+        ]
+    },
+    "uid": [
+        {
+            "value": 3
+        }
+    ],
+    "uuid": [
+        {
+            "value": "4e8c6b86-b30a-419b-bdf7-c4364e18c0e6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "preferred_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_admin_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "narendramodi"
+        }
+    ],
+    "mail": [
+        {
+            "value": "modi@gmail.com"
+        }
+    ],
+    "timezone": [
+        {
+            "value": "Asia\/Kolkata"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-01-06T11:10:46+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-01-19T14:58:07+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "access": [
+        {
+            "value": "2022-01-19T16:00:36+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "login": [
+        {
+            "value": "2022-01-19T15:12:18+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "init": [
+        {
+            "value": "modi@gmail.com"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/users\/narendramodi",
+            "pid": 2,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "field_full_name": [
+        {
+            "value": "Narendra Modi"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/instagram.co\/rest\/relation\/user\/user\/user_picture": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.co\/sites\/default\/files\/pictures\/2022-01\/66307368_903679046677498_9126641955940335616_n.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.co\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0ec26d6b-45d7-40b6-aa43-460719d17be9"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "pass": [
+        {
+            "value": "$S$E3gdMLcIfTXreaMcdIRBUGQcttVkim9hf6QUrk.ycTfA4BltREkG"
+        }
+    ]
+}

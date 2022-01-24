@@ -1,0 +1,5 @@
+tips:
+  language-edit-langcode:
+    label: 'Language code'
+  language-edit-label:
+    label: 'Language name'

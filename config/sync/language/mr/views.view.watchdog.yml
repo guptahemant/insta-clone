@@ -1,0 +1,27 @@
+display:
+  default:
+    display_title: Default
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      fields:
+        type:
+          label: Type
+        timestamp:
+          label: Date
+        message:
+          label: Message
+        name:
+          label: User
+          separator: ', '
+        link:
+          label: Operations
+      filters:
+        type:
+          expose:
+            label: Type
+  page:
+    display_title: Page
