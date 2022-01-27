@@ -1,0 +1,82 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/instagram.in\/block\/7?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/instagram.in\/rest\/type\/block_content\/basic"
+        }
+    },
+    "id": [
+        {
+            "value": 7
+        }
+    ],
+    "uuid": [
+        {
+            "value": "b2890edf-8585-40f5-aa30-ed5159fb10f4"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2022-01-27T12:14:16+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "info": [
+        {
+            "value": "mobile frame for insta",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-01-27T12:20:03+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "reusable": [
+        {
+            "value": true
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<div id=\"block-mobileframeforinsta\">\r\n<drupal-media data-align=\"center\" data-entity-type=\"media\" data-entity-uuid=\"8487fece-706d-47db-b9ad-b9f592c2de2f\"><\/drupal-media>\r\n<\/div>\r\n",
+            "format": "full_html",
+            "processed": "<div id=\"block-mobileframeforinsta\">\n\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'media' -->\n<!-- FILE NAME SUGGESTIONS:\n   * media--source-image.html.twig\n   * media--images--default.html.twig\n   * media--images.html.twig\n   * media--default.html.twig\n   x media.html.twig\n-->\n<!-- BEGIN OUTPUT from 'core\/themes\/seven\/templates\/classy\/content\/media.html.twig' -->\n<article class=\"align-center media media--type-images media--view-mode-default\">\n  \n      \n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'field' -->\n<!-- FILE NAME SUGGESTIONS:\n   * field--media--field-media-image--images.html.twig\n   * field--media--field-media-image.html.twig\n   * field--media--images.html.twig\n   * field--field-media-image.html.twig\n   * field--image.html.twig\n   x field.html.twig\n-->\n<!-- BEGIN OUTPUT from 'core\/themes\/seven\/templates\/classy\/field\/field.html.twig' -->\n\n  <div data-quickedit-field-id=\"media\/8\/field_media_image\/en\/default\" class=\"field field--name-field-media-image field--type-image field--label-visually_hidden\">\n    <div class=\"field__label visually-hidden\">Image<\/div>\n              <div class=\"field__item\">\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'image_formatter' -->\n<!-- BEGIN OUTPUT from 'core\/modules\/image\/templates\/image-formatter.html.twig' -->\n  <a href=\"\/media\/8\/edit\" hreflang=\"en\">\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'image_style' -->\n<!-- BEGIN OUTPUT from 'core\/modules\/image\/templates\/image-style.html.twig' -->\n\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'image' -->\n<!-- BEGIN OUTPUT from 'core\/themes\/seven\/templates\/classy\/field\/image.html.twig' -->\n<img src=\"\/sites\/default\/files\/styles\/large\/public\/2022-01\/back-mobile-img.png?itok=QTKc1ixF\" width=\"353\" height=\"480\" alt=\"img\" loading=\"lazy\" typeof=\"foaf:Image\" class=\"image-style-large\" \/>\n\n<!-- END OUTPUT from 'core\/themes\/seven\/templates\/classy\/field\/image.html.twig' -->\n\n\n\n<!-- END OUTPUT from 'core\/modules\/image\/templates\/image-style.html.twig' -->\n\n<\/a>\n\n<!-- END OUTPUT from 'core\/modules\/image\/templates\/image-formatter.html.twig' -->\n\n<\/div>\n          <\/div>\n\n<!-- END OUTPUT from 'core\/themes\/seven\/templates\/classy\/field\/field.html.twig' -->\n\n\n  <\/article>\n\n<!-- END OUTPUT from 'core\/themes\/seven\/templates\/classy\/content\/media.html.twig' -->\n\n\n<\/div>\n",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}

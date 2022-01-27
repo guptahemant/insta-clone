@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_images
     - field.field.node.article.field_tags
+    - field.field.node.article.field_video
     - image.style.thumbnail
     - node.type.article
   module:
@@ -55,6 +57,8 @@ content:
     region: content
 hidden:
   comment: true
+  field_images: true
   field_tags: true
+  field_video: true
   langcode: true
   search_api_excerpt: true

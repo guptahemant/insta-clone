@@ -1,0 +1,157 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/instagram.in\/media\/6\/edit?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/instagram.in\/rest\/type\/media\/images"
+        },
+        "http:\/\/instagram.in\/rest\/relation\/media\/images\/uid": [
+            {
+                "href": "http:\/\/instagram.in\/users\/sharayu?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/instagram.in\/rest\/relation\/media\/images\/thumbnail": [
+            {
+                "href": "http:\/\/instagram.in\/sites\/default\/files\/2022-01\/Ranveersingh_0.jpeg",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/instagram.in\/rest\/relation\/media\/images\/field_media_image": [
+            {
+                "href": "http:\/\/instagram.in\/sites\/default\/files\/2022-01\/Ranveersingh_0.jpeg",
+                "lang": "en"
+            }
+        ]
+    },
+    "mid": [
+        {
+            "value": 6
+        }
+    ],
+    "uuid": [
+        {
+            "value": "98c4acf0-3ed1-4d99-968f-4c28ccbd4bf5"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "bundle": [
+        {
+            "target_id": "images"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2022-01-27T11:53:40+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/instagram.in\/rest\/relation\/media\/images\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.in\/users\/sharayu?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.in\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6603ee09-7459-4886-863e-84b1690c8ae6"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/instagram.in\/rest\/relation\/media\/images\/thumbnail": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.in\/sites\/default\/files\/2022-01\/Ranveersingh_0.jpeg"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.in\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "af69e008-9cec-4652-bc53-35bcf00ad2b3"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/instagram.in\/rest\/relation\/media\/images\/field_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.in\/sites\/default\/files\/2022-01\/Ranveersingh_0.jpeg"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.in\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "af69e008-9cec-4652-bc53-35bcf00ad2b3"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "name": [
+        {
+            "value": "Ranveersingh.jpeg",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-01-27T11:53:25+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-01-27T11:53:25+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+uuid: 405ffc07-a902-4db2-b8fb-5821824218aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.most_viewed
+  module:
+    - system
+    - views
+  theme:
+    - instagram
+id: views_block__most_viewed_block_1
+theme: instagram
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:most_viewed-block_1'
+settings:
+  id: 'views_block:most_viewed-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /feedpost
+    negate: false

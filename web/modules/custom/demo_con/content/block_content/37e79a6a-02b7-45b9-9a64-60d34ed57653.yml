@@ -19,6 +19,6 @@ default:
       value: true
   body:
     -
-      value: "<p><img alt=\"img\" data-entity-type=\"file\" data-entity-uuid=\"8b03ca85-cd43-489a-9e3c-debc7b2ffa3f\" src=\"/insta-clone/web/sites/default/files/inline-images/back-mobile-img_0.png\" /></p>\r\n"
+      value: "<p><img alt=\"img\" data-entity-type=\"file\" data-entity-uuid=\"fb615d7d-2d92-435c-a7e6-e7c40e188503\" src=\"/sites/default/files/inline-images/back-mobile-img.png\" /></p>\r\n"
       format: basic_html
       summary: ''

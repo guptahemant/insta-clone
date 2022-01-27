@@ -1,0 +1,19 @@
+.mostviewed {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    width: max-content;
+    grid-gap: 28px;
+    margin: auto;
+
+    .views-row{
+        width: 293px;
+        height: 293px;
+    }
+}
+
+
+video{
+    width: 293px;
+    height: 293px;
+}

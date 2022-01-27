@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: b2890edf-8585-40f5-aa30-ed5159fb10f4
+  bundle: basic
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'mobile frame for insta'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<div id=\"block-mobileframeforinsta\">\r\n<drupal-media data-align=\"center\" data-entity-type=\"media\" data-entity-uuid=\"8487fece-706d-47db-b9ad-b9f592c2de2f\"></drupal-media>\r\n</div>\r\n"
+      format: full_html
+      summary: ''

@@ -1,0 +1,14 @@
+uuid: 347bed95-944b-452e-b0a2-6c19d52e0656
+langcode: en
+status: true
+dependencies: {  }
+name: feed_293_x_293_
+label: 'Feed(293 x 293)'
+effects:
+  f0f858ef-a3bc-4c0b-a8fa-a989e4d8696a:
+    uuid: f0f858ef-a3bc-4c0b-a8fa-a989e4d8696a
+    id: image_resize
+    weight: 1
+    data:
+      width: 293
+      height: 293

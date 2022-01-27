@@ -1,9 +1,9 @@
-uuid: 59f57fd0-bbff-4e2a-948d-8315d9b65950
+uuid: 559e3350-24c2-493b-9434-93294af57b5e
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:9467f16e-13a9-4016-848b-54be7290888d'
+    - 'block_content:basic:2c4ddaac-d151-4383-921e-50f7fe74c9b1'
   module:
     - block_content
     - user
@@ -12,11 +12,11 @@ dependencies:
 id: get_the_app
 theme: instagram
 region: sidebar
-weight: -8
+weight: 0
 provider: null
-plugin: 'block_content:9467f16e-13a9-4016-848b-54be7290888d'
+plugin: 'block_content:2c4ddaac-d151-4383-921e-50f7fe74c9b1'
 settings:
-  id: 'block_content:9467f16e-13a9-4016-848b-54be7290888d'
+  id: 'block_content:2c4ddaac-d151-4383-921e-50f7fe74c9b1'
   label: get_the_app
   provider: block_content
   label_display: '0'

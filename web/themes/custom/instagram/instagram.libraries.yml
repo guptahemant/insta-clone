@@ -15,3 +15,11 @@ nodepage:
   css:
     theme:
       css/node/style.css: {}
+
+# feed a library that should only work on feedpost page
+feed:
+  version: VERSION
+  css:
+    theme:
+      css/feed/style.css: {}
+

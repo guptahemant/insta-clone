@@ -39,3 +39,8 @@ function instagram_user_login(&$variables) {
   $body_classes = array();
   $body_classes[] = ($vars['logged_in']) ? 'logged-in' : 'not-logged-in';
 }
+
+function instagram_preprocess_page__feedpost(&$variables) {
+  $variables['#attached']['library'][] = 'instagram/feed';
+
+}

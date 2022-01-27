@@ -6,11 +6,14 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_images
     - field.field.node.article.field_tags
+    - field.field.node.article.field_video
     - image.style.thumbnail
     - node.type.article
   module:
     - image
+    - media_library
     - path
     - text
 _core:
@@ -30,17 +33,24 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  field_image:
-    type: image_image
-    weight: 2
-    region: content
+  field_images:
+    weight: 6
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    type: image_image
+    region: content
+  field_video:
+    type: media_library_widget
+    weight: 5
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   path:
     type: path
-    weight: 4
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -48,7 +58,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 4
     region: content
     third_party_settings: {  }
   title:
@@ -61,7 +71,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 2
     region: content
     settings:
       match_operator: CONTAINS
@@ -72,6 +82,7 @@ content:
 hidden:
   comment: true
   created: true
+  field_image: true
   field_tags: true
   langcode: true
   promote: true

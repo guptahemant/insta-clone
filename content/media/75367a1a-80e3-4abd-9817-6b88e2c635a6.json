@@ -1,0 +1,157 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/instagram.in\/media\/10\/edit?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/instagram.in\/rest\/type\/media\/images"
+        },
+        "http:\/\/instagram.in\/rest\/relation\/media\/images\/uid": [
+            {
+                "href": "http:\/\/instagram.in\/users\/sharayu?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/instagram.in\/rest\/relation\/media\/images\/thumbnail": [
+            {
+                "href": "http:\/\/instagram.in\/sites\/default\/files\/2022-01\/googleplay.png",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/instagram.in\/rest\/relation\/media\/images\/field_media_image": [
+            {
+                "href": "http:\/\/instagram.in\/sites\/default\/files\/2022-01\/googleplay.png",
+                "lang": "en"
+            }
+        ]
+    },
+    "mid": [
+        {
+            "value": 10
+        }
+    ],
+    "uuid": [
+        {
+            "value": "75367a1a-80e3-4abd-9817-6b88e2c635a6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "bundle": [
+        {
+            "target_id": "images"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2022-01-27T12:35:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/instagram.in\/rest\/relation\/media\/images\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.in\/users\/sharayu?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.in\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6603ee09-7459-4886-863e-84b1690c8ae6"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/instagram.in\/rest\/relation\/media\/images\/thumbnail": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.in\/sites\/default\/files\/2022-01\/googleplay.png"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.in\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f8848de6-f968-47e2-bd3c-6d818327ac80"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/instagram.in\/rest\/relation\/media\/images\/field_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/instagram.in\/sites\/default\/files\/2022-01\/googleplay.png"
+                    },
+                    "type": {
+                        "href": "http:\/\/instagram.in\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f8848de6-f968-47e2-bd3c-6d818327ac80"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "name": [
+        {
+            "value": "googleplay.png",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-01-27T12:35:41+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-01-27T12:35:41+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ]
+}
