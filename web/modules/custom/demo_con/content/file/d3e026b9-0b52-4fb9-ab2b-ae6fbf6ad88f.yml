@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d3e026b9-0b52-4fb9-ab2b-ae6fbf6ad88f
+  default_langcode: en
+  depends:
+    cc44afca-b628-4cbd-8de9-598514174654: user
+default:
+  uid:
+    -
+      entity: cc44afca-b628-4cbd-8de9-598514174654
+  filename:
+    -
+      value: 'production ID_4524137.mp4'
+  uri:
+    -
+      value: 'public://2022-01/production ID_4524137_0.mp4'
+  filemime:
+    -
+      value: video/mp4
+  filesize:
+    -
+      value: 4162120
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1643277272

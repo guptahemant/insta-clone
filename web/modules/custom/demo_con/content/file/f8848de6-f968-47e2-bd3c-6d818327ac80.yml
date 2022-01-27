@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f8848de6-f968-47e2-bd3c-6d818327ac80
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: googleplay.png
+  uri:
+    -
+      value: 'public://2022-01/googleplay.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 10071
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1643286941

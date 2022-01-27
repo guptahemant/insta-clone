@@ -1,0 +1,34 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 76d2d4d4-9259-48e0-95b3-6b2f3be2094a
+  bundle: video
+  default_langcode: en
+  depends:
+    caaa76bf-3c68-4da3-aa7f-2ff97a681b4c: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'production ID_4019911.mp4'
+  created:
+    -
+      value: 1643006533
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_video_file:
+    -
+      entity: caaa76bf-3c68-4da3-aa7f-2ff97a681b4c
+      display: false
+      description: ''

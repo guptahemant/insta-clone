@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 14fdeaf8-a420-426d-8e7f-7229361fcb5a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Desh-Mere-Republic-Day-4K-Full-Screen-Status-Video-1.mp4
+  uri:
+    -
+      value: 'public://2022-01/Desh-Mere-Republic-Day-4K-Full-Screen-Status-Video-1_0.mp4'
+  filemime:
+    -
+      value: video/mp4
+  filesize:
+    -
+      value: 6206140
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1643277432

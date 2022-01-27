@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e838ca99-c304-46ee-ac9a-0fd57fd2647f
+  bundle: video
+  default_langcode: en
+  depends:
+    cc44afca-b628-4cbd-8de9-598514174654: user
+    d3e026b9-0b52-4fb9-ab2b-ae6fbf6ad88f: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: cc44afca-b628-4cbd-8de9-598514174654
+  name:
+    -
+      value: 'production ID_4524137.mp4'
+  created:
+    -
+      value: 1643277272
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_video_file:
+    -
+      entity: d3e026b9-0b52-4fb9-ab2b-ae6fbf6ad88f
+      display: false
+      description: ''

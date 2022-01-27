@@ -1,0 +1,34 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7519bb48-db3c-4306-9da1-e71a3e15dacf
+  bundle: video
+  default_langcode: en
+  depends:
+    14fdeaf8-a420-426d-8e7f-7229361fcb5a: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: Desh-Mere-Republic-Day-4K-Full-Screen-Status-Video-1.mp4
+  created:
+    -
+      value: 1643277432
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_video_file:
+    -
+      entity: 14fdeaf8-a420-426d-8e7f-7229361fcb5a
+      display: false
+      description: ''

@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 98c4acf0-3ed1-4d99-968f-4c28ccbd4bf5
+  bundle: images
+  default_langcode: en
+  depends:
+    af69e008-9cec-4652-bc53-35bcf00ad2b3: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: Ranveersingh.jpeg
+  created:
+    -
+      value: 1643284405
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: af69e008-9cec-4652-bc53-35bcf00ad2b3
+      alt: Ranveersingh
+      title: ''
+      width: 650
+      height: 400

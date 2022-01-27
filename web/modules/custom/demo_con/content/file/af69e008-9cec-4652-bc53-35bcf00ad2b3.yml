@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: af69e008-9cec-4652-bc53-35bcf00ad2b3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Ranveersingh.jpeg
+  uri:
+    -
+      value: 'public://2022-01/Ranveersingh_0.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 48600
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1643284405

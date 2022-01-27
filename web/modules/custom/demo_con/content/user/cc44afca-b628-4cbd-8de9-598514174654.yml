@@ -1,0 +1,58 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: cc44afca-b628-4cbd-8de9-598514174654
+  default_langcode: en
+  depends:
+    b139eebf-a5da-4228-8246-670e84c575a3: file
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: jay
+  pass:
+    -
+      value: $S$EveisJG/WQPfJc9I9oPJKM9EUcCcubytdj6RXAY4Bf3OYUedUqgC
+      existing: ''
+      pre_hashed: false
+  mail:
+    -
+      value: jay@gmail.com
+  timezone:
+    -
+      value: Asia/Kolkata
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1642706852
+  access:
+    -
+      value: 1643291170
+  login:
+    -
+      value: 1643291170
+  init:
+    -
+      value: jay@gmail.com
+  path:
+    -
+      alias: /users/jay
+      langcode: en
+      pathauto: 1
+  field_full_name:
+    -
+      value: Jay
+  user_picture:
+    -
+      entity: b139eebf-a5da-4228-8246-670e84c575a3
+      alt: ''
+      title: ''
+      width: 768
+      height: 438

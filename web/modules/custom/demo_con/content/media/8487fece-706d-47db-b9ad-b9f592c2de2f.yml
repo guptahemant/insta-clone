@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 8487fece-706d-47db-b9ad-b9f592c2de2f
+  bundle: images
+  default_langcode: en
+  depends:
+    f6f0331d-93ce-4471-95a3-5050f4a1ab0f: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: back-mobile-img.png
+  created:
+    -
+      value: 1643285582
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: f6f0331d-93ce-4471-95a3-5050f4a1ab0f
+      alt: img
+      title: ''
+      width: 908
+      height: 1236

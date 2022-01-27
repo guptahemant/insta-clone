@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 75367a1a-80e3-4abd-9817-6b88e2c635a6
+  bundle: images
+  default_langcode: en
+  depends:
+    f8848de6-f968-47e2-bd3c-6d818327ac80: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: googleplay.png
+  created:
+    -
+      value: 1643286941
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: f8848de6-f968-47e2-bd3c-6d818327ac80
+      alt: googleplay
+      title: ''
+      width: 564
+      height: 168

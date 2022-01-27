@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f6f0331d-93ce-4471-95a3-5050f4a1ab0f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: back-mobile-img.png
+  uri:
+    -
+      value: 'public://2022-01/back-mobile-img.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 404646
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1643285582

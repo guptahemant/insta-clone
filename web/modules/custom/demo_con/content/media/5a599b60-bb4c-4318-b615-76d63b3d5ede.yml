@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 5a599b60-bb4c-4318-b615-76d63b3d5ede
+  bundle: images
+  default_langcode: en
+  depends:
+    41f1c022-9f03-496e-8209-8e744add3ad7: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: appstore.png
+  created:
+    -
+      value: 1643286913
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 41f1c022-9f03-496e-8209-8e744add3ad7
+      alt: appstore
+      title: ''
+      width: 306
+      height: 90
