@@ -1,0 +1,64 @@
+ 
+ <div class='roww'>
+    <p class='uimg'>
+        <a href='../users/{{ uname }}'>
+            <img src={{ uri }}>
+        </a>
+    </p>
+
+    <div class='all' id='all'>
+        <div class ='uname'>
+            <a href='../users/{{ uname }}' >{{ uname }}</a>
+
+            <div class='pop_outer' id='pop_outer'> 
+                <div class='pop' id='pop'> 
+                    <div class ='pop_top'>
+                        <p class='uimg'><a href='../users/{{ uname }}'><img src={{ uri }}></a></p>
+                        <div class ='_top'>
+                            <p><a href='../users/{{ uname }}'>{{ uname }}</a></p>
+                            <p class='name'>{{ name }}</p>
+                        </div>
+                    </div>
+
+                    <p class='count'>
+                        <span>
+                            <a class='_count'>{{ post_count }}</a>
+                            <a>posts</a>
+                        </span>
+                        <span>
+                            <a class='_count'>{{ followers_count }}</a>
+                            <a>followers</a> 
+                        </span>  
+                        <span>
+                            <a class='_count'>{{ following_count }}</a>
+                            <a>following</a> 
+                        </span>
+                    </p>
+
+                    <p class='pimg'>{{ post_uri_all|t }} 
+                    
+                    <div class='pop_end'>
+                        <a href='#'>Message</a>
+                        <a href='#'>Following</a>
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+        <div class='name'>{{ name }}</div>
+        <div class ='following_link'>
+            <a href='#following' class='following' id='following'>{{ link }}</a>
+            <div class='following_link_pop' id='following_link_pop'> 
+                <div class ='following_link_pop_top'>
+                    <p class='uimg'><img src={{ uri }}></p> 
+                        {{ flag_txt }}
+                    <div class = 'buttons'>
+                        {{ flag_link }} 
+                        <a class = 'cancel' >Cancel</a>
+                    </div> 
+                </div>
+            </div> 
+        </div>
+
+    </div>
+</div>

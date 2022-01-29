@@ -26,3 +26,8 @@ function instagram_preprocess_page__front(&$variables) {
   $variables['#attached']['library'][] = 'instagram/nodepage';
 
 }
+
+function instagram_preprocess_page__user(&$variables) {
+  $variables['#attached']['library'][] = 'instagram/userpage';
+
+}
