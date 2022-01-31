@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2a07f597-d68b-4a69-9161-8ebf08927c29
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: appstore_1.png
+  uri:
+    -
+      value: 'public://inline-images/appstore_1.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 3754
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1643379109

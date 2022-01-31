@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3037abc5-42a3-40c0-a993-0640a0b83155
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: googleplay_0.png
+  uri:
+    -
+      value: 'public://inline-images/googleplay_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 10071
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1643380426
