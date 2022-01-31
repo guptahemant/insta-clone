@@ -1,71 +1,71 @@
-label: People
-description: 'Find and manage people interacting with your site.'
+label: 사용자
+description: '사이트에서 활동하는 사람들을 찾고 관리합니다.'
 display:
   default:
-    display_title: Default
+    display_title: 기본값
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          submit_button: 필터
+          reset_button_label: 재설정
+          exposed_sorts_label: 정렬기준
           sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_desc_label: 설명
       pager:
         options:
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ 이전'
+            next: '다음 ›'
+            first: '« 처음'
+            last: '마지막 »'
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
-            offset_label: Offset
+            items_per_page_label: '페이지 당 항목 수'
+            items_per_page_options_all_label: '- 모두 -'
+            offset_label: 건너뛰기
       fields:
         user_bulk_form:
-          label: 'Bulk update'
+          label: '일괄 업데이트'
         name:
-          label: Username
+          label: 아이디
         status:
-          label: Status
+          label: 상태
           settings:
-            format_custom_true: Active
-            format_custom_false: Blocked
+            format_custom_true: 활동
+            format_custom_false: 차단됨
         roles_target_id:
-          label: Roles
+          label: 역할
         created:
-          label: 'Member for'
+          label: 가입한지
         access:
-          label: 'Last access'
+          label: '마지막 접속'
         operations:
-          label: Operations
+          label: 작업
       filters:
         status:
           group_info:
-            label: Status
+            label: 상태
             group_items:
               1:
-                title: Active
+                title: 활동
               2:
-                title: Blocked
+                title: 차단됨
         roles_target_id:
           expose:
-            label: Role
+            label: 역할
         permission:
           expose:
-            label: Permission
-      title: People
+            label: 권한
+      title: 사용자
       empty:
         area_text_custom:
-          content: 'No people available.'
-      use_more_text: more
+          content: '사용자가 없습니다.'
+      use_more_text: '더 보기'
   page_1:
-    display_title: Page
+    display_title: 쪽
     display_options:
       menu:
-        title: List
-        description: 'Find and manage people interacting with your site.'
+        title: 목록
+        description: '사이트에서 활동하는 사람들을 찾고 관리합니다.'
       tab_options:
-        title: People
-        description: 'Manage user accounts, roles, and permissions.'
+        title: 사용자
+        description: '사용자 계정, 역할, 권한을 관리합니다.'

@@ -1,74 +1,74 @@
-label: Files
-description: 'Find and manage files.'
+label: दस्तावेज
+description: 'फ़ाइलों को ढूंढें और प्रबंधित करें।'
 display:
   default:
-    display_title: Default
+    display_title: डीफॉल्ट
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_desc_label: Desc
+          submit_button: फिल्टर
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
       pager:
         options:
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
+            items_per_page_label: 'विषय प्रति पृष्ठ'
+            items_per_page_options_all_label: '-सभी-'
       fields:
         fid:
-          label: Fid
+          label: 'ऍफ़ आई डी'
         filename:
-          label: Name
+          label: नाम
           separator: ', '
         filemime:
-          label: 'MIME type'
+          label: 'माइम प्रकार'
         filesize:
-          label: Size
+          label: आकार
         status:
-          label: Status
+          label: अवस्था
           settings:
-            format_custom_false: Temporary
-            format_custom_true: Permanent
+            format_custom_false: अस्थाई
+            format_custom_true: स्थाई
         created:
-          label: 'Upload date'
+          label: 'अपलोड की तारीख'
       filters:
         filename:
           expose:
-            label: Filename
+            label: 'फ़ाइल का नाम'
         filemime:
           expose:
-            label: 'MIME type'
+            label: 'माइम प्रकार'
         status:
           expose:
-            label: Status
-      title: Files
+            label: अवस्था
+      title: दस्तावेज
       empty:
         area_text_custom:
-          content: 'No files available.'
+          content: 'कोई फाइल उपलब्ध नहीं  है'
   page_1:
-    display_title: 'Files overview'
+    display_title: 'फ़ाइलें अवलोकन'
     display_options:
       menu:
-        title: Files
+        title: दस्तावेज
   page_2:
     display_options:
       pager:
         options:
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
+            items_per_page_label: 'विषय प्रति पृष्ठ'
+            items_per_page_options_all_label: '-सभी-'
       fields:
         entity_label:
-          label: Entity
+          label: इकाई
         type:
-          label: 'Entity type'
+          label: 'इकाई का प्रकार'
         module:
-          label: 'Registering module'
+          label: 'पंजीकृत मॉड्यूल'
         count:
-          label: 'Use count'
+          label: 'प्रियोग संख्या'
       arguments:
         fid:
           exception:
-            title: All
-          title: 'File usage information for {{ arguments.fid }}'
+            title: सभी
+          title: '{{ arguments.fid }} के लिए फ़ाइल उपयोग जानकारी'

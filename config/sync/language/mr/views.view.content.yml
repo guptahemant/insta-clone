@@ -1,51 +1,51 @@
-label: Content
+label: साहित्य
 display:
   default:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          submit_button: गाळणी
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
       fields:
         title:
-          label: Title
+          label: शीर्षक
         type:
           separator: ', '
         name:
-          label: Author
+          label: लेखक
         status:
-          label: Status
+          label: वर्तमानस्थिती
           settings:
-            format_custom_true: Published
-            format_custom_false: Unpublished
+            format_custom_true: प्रकाशित
+            format_custom_false: अप्रकाशित
         changed:
-          label: Updated
+          label: सुधारित
         operations:
-          label: Operations
+          label: कृती
       filters:
         title:
           expose:
-            label: Title
+            label: शीर्षक
         status:
           expose:
-            label: Status
+            label: वर्तमानस्थिती
           group_info:
-            label: 'Published status'
+            label: 'प्रकाशन अवस्था'
             group_items:
               1:
-                title: Published
+                title: प्रकाशित
               2:
-                title: Unpublished
+                title: अप्रकाशित
         langcode:
           expose:
-            label: Language
-      title: Content
-    display_title: Default
+            label: भाषा
+      title: साहित्य
+    display_title: मुळस्वरुप
   page_1:
     display_options:
       menu:
-        title: Content
+        title: साहित्य
       tab_options:
-        title: Content
-    display_title: Page
+        title: साहित्य
+    display_title: पान

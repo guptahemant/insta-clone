@@ -1,21 +1,21 @@
-label: Archive
-description: 'All content, by month.'
+label: पुरालेख
+description: 'सभी सामग्री, महीने के हिसाब से।'
 display:
   default:
-    display_title: Default
+    display_title: डीफॉल्ट
     display_options:
-      title: 'Monthly archive'
+      title: 'मासिक पुरालेख'
       exposed_form:
         options:
-          submit_button: Apply
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_desc_label: Desc
+          submit_button: 'लागू करें'
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
       pager:
         options:
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
+            items_per_page_label: 'विषय प्रति पृष्ठ'
+            items_per_page_options_all_label: '-सभी-'
           tags:
             previous: ‹‹
             next: ››
@@ -23,10 +23,10 @@ display:
         created_year_month:
           title: '{{ arguments.created_year_month }}'
   block_1:
-    display_title: Block
+    display_title: ब्लॉक
     display_options:
       arguments:
         created_year_month:
           title: '{{ arguments.created_year_month }}'
   page_1:
-    display_title: Page
+    display_title: पृष्ठ

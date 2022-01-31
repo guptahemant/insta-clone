@@ -1,20 +1,20 @@
-label: Language
+label: Langue
 tips:
   language-overview:
-    label: Languages
-    body: '<p>The "Languages" page allows you to add, edit, delete, and reorder languages for the site.</p>'
+    label: Langues
+    body: '<p>La page "Langues" vous permet d''ajouter, de modifier, de supprimer et réordonner les langues sur le site.</p>'
   language-add:
-    label: 'Adding languages'
-    body: '<p>To add more languages to your site, click the "Add language" button.</p><p>Added languages will be displayed in the language list and can then be edited or deleted.</p>'
+    label: 'Ajout de langues'
+    body: '<p>Pour ajouter plus de langues à votre site, cliquer sur le bouton "Ajouter une langue".</p><p>Les langues ajoutées seront affichées dans la liste des langues et pourront ensuite être modifiées ou supprimées.</p>'
   language-reorder:
-    label: 'Reordering languages'
-    body: '<p>To reorder the languages on your site, use the drag icons next to each language.</p><p>The order shown here is the display order for language lists on the site such as in the language switcher blocks provided by the Interface Translation and Content Translation modules.</p><p>When you are done with reordering the languages, click the "Save configuration" button for the changes to take effect.</p>'
+    label: 'Réordonner les langues'
+    body: '<p>Pour réordonner les langues sur votre site, utilisez les icônes à côté de chaque langue.</p><p>L''ordre affiché ici est l''ordre d''affichage pour les listes de langue sur le site telles que le bloc de changement de langue fourni par les modules Interface Translation et Content Translation.</p><p>Lorsque vous avez terminé de réordonner les langues, cliquer sur le bouton "Enregistrer la configuration" pour que les changements prennent effet.</p>'
   language-default:
-    label: 'Set a language as default'
-    body: '<p>You can change the default language of the site by choosing one of your configured languages as default. The site will use the default language in situations where no choice is made but a language should be set, for example as the language of the displayed interface.</p>'
+    label: 'Définir une langue par défaut'
+    body: '<p>Vous pouvez changer la langue par défaut de votre site en choisissant une des langues configurées. Le site utilisera cette langue par défaut dans les cas où aucun choix n''a été fait mais que la langue doit être définie, par exemple pour la langue d''affichage de l''interface.</p>'
   language-operations:
-    label: 'Modifying languages'
-    body: '<p>Operations are provided for editing and deleting your languages.</p><p>You can edit the name and the direction of the language.</p><p>Deleted languages can be added back at a later time. Deleting a language will remove all interface translations associated with it, and content in this language will be set to be language neutral. Note that you cannot delete the default language of the site.</p>'
+    label: 'Modifie les langues'
+    body: '<p>Les actions pour éditer et supprimer vos langues sont fournies.</p><p>Vous pouvez modifier le nom et le sens de lecture de la langue.</p><p>Les langues supprimées peuvent être ré-ajoutées plus tard. Supprimer une langue retirera toutes les traductions d''interface associées et le contenu dans cette langue sera marqué comme indépendant de la langue. Notez que vous ne pouvez pas supprimer la langue par défaut du site.</p>'
   language-continue:
-    label: 'Continuing on'
-    body: '<p>Now that you have an overview of the "Languages" page, you can continue by:<ul><li><a href="[site:url]admin/config/regional/language/add">Adding a language</a></li><li>Reordering languages</li><li>Editing a language</li><li>Deleting a language</li></ul></p>'
+    label: 'Continuant sur'
+    body: '<p>Maintenant que vous avez une vue d''ensemble de la page "Langues", vous pouvez continuer par :<ul><li><a href="[site:url]admin/config/regional/language/add">Ajouter une langue</a></li><li>Réorganiser les langues</li><li>Modifier une langue</li><li>Supprimer une langue</li></ul></p>'

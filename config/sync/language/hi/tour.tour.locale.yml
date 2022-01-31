@@ -1,19 +1,19 @@
-label: Translation
+label: अनुवाद
 tips:
   locale-language:
-    body: 'Choose the language you want to translate.'
+    body: 'वह भाषा चुनें जिसका आप अनुवाद करना चाहते हैं।'
   locale-search:
-    label: Search
-    body: 'Enter the specific word or sentence you want to translate, you can also write just a part of a word.'
+    label: खोज
+    body: 'विशिष्ट शब्द या वाक्य जिसे आप अनुवाद करना चाहते हैं, दर्ज करें, आप केवल एक शब्द का एक हिस्सा भी लिख सकते हैं।'
   locale-filter:
-    label: 'Filter the search'
-    body: 'You can search for untranslated strings if you want to translate something that isn''t translated yet. If you want to modify an existing translation, you might want to search only for translated strings.'
+    label: 'खोज को छाने'
+    body: 'यदि आप किसी ऐसी चीज़ का अनुवाद करना चाहते हैं, जिसका अनुवाद आप अभी तक नहीं कर सकते हैं। यदि आप किसी मौजूदा अनुवाद को संशोधित करना चाहते हैं, तो आप केवल अनुवादित तारों की खोज करना चाहते हैं।'
   locale-submit:
-    label: 'Apply your search criteria'
+    label: 'अपनी खोज के मानदंड को लागू करे'
   locale-translate:
-    label: Translate
-    body: 'You can write your own translation in the text fields of the right column. Try to figure out in which context the text will be used in order to translate it in the appropriate way.'
+    label: अनुवाद
+    body: 'आप सही कॉलम के टेक्स्ट फ़ील्ड में अपना खुद का अनुवाद लिख सकते हैं। यह पता लगाने की कोशिश करें कि पाठ को किस संदर्भ में उपयुक्त तरीके से अनुवाद करने के लिए उपयोग किया जाएगा।'
   locale-validate:
-    label: 'Validate the translation'
+    label: 'अनुवाद को मान्य करें'
   locale-continue:
-    label: 'Continuing on'
+    label: 'पर जारी है'

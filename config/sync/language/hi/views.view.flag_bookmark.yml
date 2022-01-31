@@ -3,30 +3,30 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apply
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_desc_label: Desc
+          submit_button: 'लागू करें'
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ पिछले'
+            next: 'अगला >'
+            first: '« प्रथम'
+            last: 'अन्तिम »'
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
+            items_per_page_label: 'विषय प्रति पृष्ठ'
+            items_per_page_options_all_label: '-सभी-'
       fields:
         flagging_bulk_form:
-          action_title: Action
+          action_title: कार्रवाई
         type:
-          label: Type
+          label: प्रकार
         title:
-          label: Title
+          label: शीर्षक
         name:
-          label: Author
+          label: लेखक
         created:
           separator: ', '
   page_1:
-    display_title: Page
+    display_title: पृष्ठ

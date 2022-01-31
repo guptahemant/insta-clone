@@ -1,5 +1,5 @@
 tips:
   language-edit-langcode:
-    label: 'Language code'
+    label: '언어 코드'
   language-edit-label:
-    label: 'Language name'
+    label: '언어 이름'

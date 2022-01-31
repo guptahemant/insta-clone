@@ -1,76 +1,76 @@
-label: People
-description: 'Find and manage people interacting with your site.'
+label: Personnes
+description: 'Trouver et gérer les personnes interagissant avec votre site.'
 display:
   default:
-    display_title: Default
+    display_title: 'Par défaut'
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          submit_button: Filtrer
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ Précédent'
+            next: 'Suivant ›'
+            first: '« Premier'
+            last: 'Dernier »'
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
-            offset_label: Offset
+            items_per_page_label: 'Éléments par page'
+            items_per_page_options_all_label: '- Tout -'
+            offset_label: Décalage
       fields:
         user_bulk_form:
-          label: 'Bulk update'
+          label: 'Mise à jour en masse'
         name:
-          label: Username
+          label: 'Nom d''utilisateur'
         status:
-          label: Status
+          label: État
           settings:
-            format_custom_true: Active
-            format_custom_false: Blocked
+            format_custom_true: Actif
+            format_custom_false: Bloqué
         roles_target_id:
-          label: Roles
+          label: Rôles
         created:
-          label: 'Member for'
+          label: 'Membre depuis'
         access:
-          label: 'Last access'
+          label: 'Dernier accès'
         operations:
-          label: Operations
+          label: Actions
         mail:
           separator: ', '
       filters:
         combine:
           expose:
-            label: 'Name or email contains'
+            label: 'Nom ou courriel contenant'
         status:
           group_info:
-            label: Status
+            label: État
             group_items:
               1:
-                title: Active
+                title: Actif
               2:
-                title: Blocked
+                title: Bloqué
         roles_target_id:
           expose:
-            label: Role
+            label: Rôle
         permission:
           expose:
-            label: Permission
-      title: People
+            label: Droit
+      title: Personnes
       empty:
         area_text_custom:
-          content: 'No people available.'
-      use_more_text: more
+          content: 'Personne n''est disponible.'
+      use_more_text: plus
   page_1:
     display_title: Page
     display_options:
       menu:
-        title: List
-        description: 'Find and manage people interacting with your site.'
+        title: Lister
+        description: 'Trouver et gérer les personnes interagissant avec votre site.'
       tab_options:
-        title: People
-        description: 'Manage user accounts, roles, and permissions.'
+        title: Personnes
+        description: 'Gérer les comptes utilisateurs, les rôles et les droits.'
