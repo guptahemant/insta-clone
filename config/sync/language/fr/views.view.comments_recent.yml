@@ -1,15 +1,15 @@
-label: 'Recent comments'
-description: 'Recent comments.'
+label: 'Commentaires récents'
+description: 'Commentaires récents.'
 display:
   default:
-    display_title: Default
+    display_title: 'Par défaut'
     display_options:
-      title: 'Recent comments'
+      title: 'Commentaires récents'
       empty:
         area_text_custom:
-          content: 'No comments available.'
+          content: 'Aucun commentaire disponible.'
   block_1:
-    display_title: Block
+    display_title: Bloc
     display_options:
-      block_description: 'Recent comments'
-      block_category: 'Lists (Views)'
+      block_description: 'Commentaires récents'
+      block_category: 'Listes (Views)'

@@ -1,19 +1,19 @@
-label: 'Recent content'
+label: '최근 콘텐츠'
 display:
   default:
-    display_title: Default
+    display_title: 기본값
     display_options:
       exposed_form:
         options:
-          submit_button: Apply
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          submit_button: 적용
+          reset_button_label: 재설정
+          exposed_sorts_label: 정렬기준
           sort_asc_label: Asc
-          sort_desc_label: Desc
-      title: 'Recent content'
+          sort_desc_label: 설명
+      title: '최근 콘텐츠'
       empty:
         area_text_custom:
-          content: 'No content available.'
-      use_more_text: More
+          content: '콘텐츠가 없습니다.'
+      use_more_text: '더 보기'
   block_1:
-    display_title: Block
+    display_title: 블록

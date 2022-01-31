@@ -27,12 +27,11 @@ visibility:
   request_path:
     id: request_path
     pages: /node
-    negate: true
+    negate: false
   user_role:
     id: user_role
     roles:
-      authenticated: authenticated
-      administrator: administrator
+      anonymous: anonymous
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'

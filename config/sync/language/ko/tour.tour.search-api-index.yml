@@ -1,7 +1,7 @@
 tips:
   search-api-index-status:
-    label: Status
+    label: 상태
   search-api-index-tracker:
-    label: Tracker
+    label: 추적
   search-api-index-server:
-    label: Server
+    label: 서버

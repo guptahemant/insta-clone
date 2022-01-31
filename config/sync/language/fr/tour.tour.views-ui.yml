@@ -1,32 +1,32 @@
-label: 'View edit page'
+label: 'Voir la page de modification'
 tips:
   views-main:
-    label: 'Manage view settings'
-    body: 'View or edit the configuration.'
+    label: 'Gérer les paramètres d''affichage'
+    body: 'Voir ou modifier la configuration.'
   views-ui-displays:
-    label: 'Displays in this view'
-    body: 'A display is a way of outputting the results, e.g., as a page or a block. A view can contain multiple displays, which are listed here. The active display is highlighted.'
+    label: 'S''affiche dans cette vue'
+    body: 'Un affichage est une façon de rendre les résultats, par exemple comme une page ou un bloc. Une vue peut contenir plusieurs affichages, qui sont listés ici. L''affichage actif est mis en évidence.'
   views-ui-view-admin:
-    label: 'View administration'
-    body: 'Perform administrative tasks, including adding a description and creating a clone. Click the drop-down button to view the available options.'
+    label: 'Voir l''administration'
+    body: 'Réaliser des tâches d''administration, comme ajouter une description et créer un clone. Cliquer sur le bouton déroulant pour voir les options disponibles.'
   views-ui-format:
-    label: 'Output format'
-    body: 'Choose how to output results. E.g., choose <em>Content</em> to output each item completely, using your configured display settings. Or choose <em>Fields</em>, which allows you to output only specific fields for each result. Additional formats can be added by installing modules to <em>extend</em> Drupal''s base functionality.'
+    label: 'Format de sortie'
+    body: 'Choisir comment afficher les résultats. Par ex., choisir <em>Contenu</em> pour afficher chaque élément dans son intégralité, utilisant vos paramètres d''affichage. Ou choississez <em>Champs</em>, qui permet de n''afficher que les champs sélectionnés pour chaque résultat. Des formats supplémentaires peuvent être ajoutés en installant des modules qui <em>étendent</em> les fonctionnalités de base de Drupal.'
   views-ui-fields:
-    label: Fields
-    body: 'If this view uses fields, they are listed here. You can click on a field to configure it.'
+    label: Champs
+    body: 'Si cette vue utilise des champs, alors ils sont listés ici. Vous pouvez cliquer sur un champ pour le configurer.'
   views-ui-filter:
-    label: 'Filter your view'
-    body: 'Add filters to limit the results in the output. E.g., to only show content that is <em>published</em>, you would add a filter for <em>Published</em> and select <em>Yes</em>.'
+    label: 'Filtrer votre vue'
+    body: 'Ajouter des filtres pour limiter le nombre de résultats affichés. Par ex., pour ne montrer que le contenu <em>publié</em>, il faudrait ajouter le filtrer <em>Publié</em> et selectionner <em>Oui</em>.'
   views-ui-filter-operations:
-    label: 'Filter actions'
-    body: 'Add, rearrange or remove filters.'
+    label: 'Filtrer les actions'
+    body: 'Ajouter, réarranger ou supprimer les filtres.'
   views-ui-sorts:
-    label: 'Sort Criteria'
-    body: 'Control the order in which the results are output. Click on an active sort rule to configure it.'
+    label: 'Critère de tri'
+    body: 'Contrôler l''ordre dans lequel les résultats sont affichés. Cliquer sur une une règle de tri active pour la configurer.'
   views-ui-sorts-operations:
-    label: 'Sort actions'
-    body: 'Add, rearrange or remove sorting rules.'
+    label: 'Trier les actions'
+    body: 'Ajouter, réarranger ou supprimer les règles de tri.'
   views-ui-preview:
-    label: Preview
-    body: 'Show a preview of the view output.'
+    label: Aperçu
+    body: 'Afficher un aperçu du résultat de la vue.'

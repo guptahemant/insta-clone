@@ -1,44 +1,44 @@
-label: People
+label: लोक
 display:
   default:
-    display_title: Default
+    display_title: मुळस्वरुप
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          submit_button: गाळणी
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
       fields:
         name:
-          label: Username
+          label: सदस्यनाम
         status:
-          label: Status
+          label: वर्तमानस्थिती
           settings:
-            format_custom_true: Active
-            format_custom_false: Blocked
+            format_custom_true: सक्रिय
+            format_custom_false: प्रतिबंधीत
         roles_target_id:
-          label: Roles
+          label: वर्तनमर्यादा
         created:
-          label: 'Member for'
+          label: 'च्यासाठी सभासद'
         operations:
-          label: Operations
+          label: कृती
         mail:
           separator: ', '
       filters:
         status:
           group_info:
-            label: Status
+            label: वर्तमानस्थिती
             group_items:
               1:
-                title: Active
+                title: सक्रिय
               2:
-                title: Blocked
-      title: People
-      use_more_text: more
+                title: प्रतिबंधीत
+      title: लोक
+      use_more_text: आणखी
   page_1:
-    display_title: Page
+    display_title: पान
     display_options:
       menu:
-        title: List
+        title: यादी
       tab_options:
-        title: People
+        title: लोक

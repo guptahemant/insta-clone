@@ -1,26 +1,26 @@
-label: Translation
+label: Traduction
 tips:
   locale-overview:
-    label: 'User interface translation'
-    body: 'This page allows you to translate the user interface or modify existing translations. If you have installed your site initially in English, you must first add another language on the <a href="[site:url]admin/config/regional/language">Languages page</a>, in order to use this page.'
+    label: 'Traduction de l''interface utilisateur'
+    body: 'Cette page vous permet de traduire l''interface utilisateur ou de modifier des traductions existantes. Si vous avez installé votre site initialement en anglais, vous devez d''abord ajouter une autre langue dans la <a href="[site:url]admin/config/regional/language"> page des Langues </a>, afin d''utiliser cette page.'
   locale-language:
-    label: 'Translation language'
-    body: 'Choose the language you want to translate.'
+    label: 'Langue de traduction'
+    body: 'Choisir la langue que vous souhaitez traduire.'
   locale-search:
-    label: Search
-    body: 'Enter the specific word or sentence you want to translate, you can also write just a part of a word.'
+    label: Rechercher
+    body: 'Saisir le mot ou la phrase précise que vous souhaitez traduire, vous pouvez aussi écrire seulement une partie d''un mot.'
   locale-filter:
-    label: 'Filter the search'
-    body: 'You can search for untranslated strings if you want to translate something that isn''t translated yet. If you want to modify an existing translation, you might want to search only for translated strings.'
+    label: 'Filtrer la recherche'
+    body: 'Vous pouvez chercher les chaînes non traduites si vous voulez traduire quelque chose qui n''a pas encore été traduit. Si vous voulez modifier une traduction existante, vous pouvez ne rechercher que les chaînes traduites.'
   locale-submit:
-    label: 'Apply your search criteria'
-    body: 'To apply your search criteria, click on the <em>Filter</em> button.'
+    label: 'Appliquer vos critères de recherche'
+    body: 'Pour appliquer vos critères de recherche, cliquer sur le bouton <em>Filtrer</em>.'
   locale-translate:
-    label: Translate
-    body: 'You can write your own translation in the text fields of the right column. Try to figure out in which context the text will be used in order to translate it in the appropriate way.'
+    label: Traduire
+    body: 'Vous pouvez écrire votre propre traduction dans les champs texte de la colonne de droite. Essayez de savoir dans quel contexte le texte sera utilisé pour le traduire de façon appropriée.'
   locale-validate:
-    label: 'Validate the translation'
-    body: 'When you have finished your translations, click on the <em>Save translations</em> button. You must save your translations, each time before changing the page or making a new search.'
+    label: 'Valider la traduction'
+    body: 'Lorsque vous avez terminé vos traductions, cliquer sur le bouton <em>Enregistrer vos traductions</em>. Vous devez enregistrer vos traductions à chaque fois que vous souhaitez changer de page ou faire une nouvelle recherche.'
   locale-continue:
-    label: 'Continuing on'
-    body: 'The translations you have made here will be used on your site''s user interface. If you want to use them on another site or modify them on an external translation editor, you can <a href="[site:url]admin/config/regional/translate/export">export them</a> to a .po file and <a href="[site:url]admin/config/regional/translate/import">import them</a> later.'
+    label: 'Continuant sur'
+    body: 'Les traductions que vous avez faites ici seront utilisées sur l''interface utilisateur de votre site. Si vous souhaitez les utiliser sur un autre site ou les modifier sur un éditeur de traduction externe, vous pouvez les <a href="[site:url]admin/config/regional/translate/export"> exporter </a> vers un fichier .po et les <a href="[site:url]admin/config/regional/translate/import"> importer </a> plus tard.'

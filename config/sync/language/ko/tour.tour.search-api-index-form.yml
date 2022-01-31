@@ -1,7 +1,7 @@
 tips:
   search-api-index-form-tracker:
-    label: Tracker
+    label: 추적
   search-api-index-form-server:
-    label: Server
+    label: 서버
   search-api-index-form-options:
-    label: 'Advanced options'
+    label: '고급 선택사항'

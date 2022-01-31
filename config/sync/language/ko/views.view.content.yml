@@ -1,67 +1,67 @@
-label: Content
-description: 'Find and manage content.'
+label: 콘텐츠
+description: '콘텐츠 검색 및 관리'
 display:
   default:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          submit_button: 필터
+          reset_button_label: 재설정
+          exposed_sorts_label: 정렬기준
           sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_desc_label: 설명
       pager:
         options:
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ 이전'
+            next: '다음 ›'
+            first: '« 처음'
+            last: '마지막 »'
       fields:
         title:
-          label: Title
+          label: 제목
         type:
-          label: 'Content type'
+          label: '콘텐츠 형식'
         name:
-          label: Author
+          label: 작성자
         status:
-          label: Status
+          label: 상태
           settings:
-            format_custom_true: Published
-            format_custom_false: Unpublished
+            format_custom_true: 공개
+            format_custom_false: 비공개
         changed:
-          label: Updated
+          label: 갱신됨
         operations:
-          label: Operations
+          label: 작업
       filters:
         title:
           expose:
-            label: Title
+            label: 제목
         type:
           expose:
-            label: 'Content type'
+            label: '콘텐츠 형식'
         status:
           expose:
-            label: Status
+            label: 상태
           group_info:
-            label: 'Published status'
+            label: '공개 상태'
             group_items:
               1:
-                title: Published
+                title: 공개
               2:
-                title: Unpublished
+                title: 비공개
         langcode:
           expose:
-            label: Language
-      title: Content
+            label: 언어
+      title: 콘텐츠
       empty:
         area_text_custom:
-          content: 'No content available.'
-    display_title: Default
+          content: '콘텐츠가 없습니다.'
+    display_title: 기본값
   page_1:
     display_options:
       menu:
-        title: Content
+        title: 콘텐츠
       tab_options:
-        title: Content
-    display_title: Page
+        title: 콘텐츠
+    display_title: 쪽
