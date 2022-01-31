@@ -19,6 +19,6 @@ default:
       value: true
   body:
     -
-      value: "<div class=\"get_app_div\">\r\n<div class=\"get_app\">Get the app</div>\r\n\r\n<div class=\"get_image\"><img alt=\"appstore\" class=\"appstore\" data-entity-type=\"file\" data-entity-uuid=\"c8b1f1c6-29e8-434e-9dc8-056d3c4752a9\" src=\"/insta-clone/web/sites/default/files/inline-images/appstore_1.png\" /> <img alt=\"googleplay\" class=\"googleplay\" data-entity-type=\"file\" data-entity-uuid=\"b7b382ee-91ee-48ee-9cc0-067734f0ca0d\" src=\"/insta-clone/web/sites/default/files/inline-images/googleplay_1.png\" /></div>\r\n</div>\r\n"
+      value: "<div class=\"get_app_div\">\r\n<div class=\"get_app\">Get the app</div>\r\n\r\n<div class=\"get_image\"><img alt=\"appstore\" class=\"appstore\" data-entity-type=\"file\" data-entity-uuid=\"2a07f597-d68b-4a69-9161-8ebf08927c29\" src=\"/sites/default/files/inline-images/appstore_1.png\" /> <img alt=\"googleplay\" class=\"googleplay\" data-entity-type=\"file\" data-entity-uuid=\"3037abc5-42a3-40c0-a993-0640a0b83155\" src=\"/sites/default/files/inline-images/googleplay_0.png\" /></div>\r\n</div>\r\n"
       format: full_html
       summary: ''
