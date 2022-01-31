@@ -1,3 +1,5 @@
+@import 'mixin';
+
 .mostviewed {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -5,6 +7,12 @@
     width: max-content;
     grid-gap: 28px;
     margin: auto;
+
+    @include mobile {
+        grid-gap: 3px;
+    }
+
+
 
     .views-row{
         width: 293px;
