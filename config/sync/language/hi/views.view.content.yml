@@ -1,13 +1,9 @@
 label: सामग्री
 display:
   default:
+    display_title: डीफॉल्ट
     display_options:
-      exposed_form:
-        options:
-          submit_button: फिल्टर
-          reset_button_label: 'दोबारा से स्थापित करें|'
-          exposed_sorts_label: 'क्रमबद्ध द्वारा'
-          sort_desc_label: अवरोही
+      title: सामग्री
       fields:
         title:
           label: शीर्षक
@@ -19,12 +15,18 @@ display:
         status:
           label: अवस्था
           settings:
-            format_custom_true: प्रकाशित
             format_custom_false: अप्रकाशित
+            format_custom_true: प्रकाशित
         changed:
           label: अद्यतित
         operations:
           label: कार्यवाही
+      exposed_form:
+        options:
+          submit_button: फिल्टर
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
       filters:
         title:
           expose:
@@ -44,13 +46,11 @@ display:
         langcode:
           expose:
             label: भाषा
-      title: सामग्री
-    display_title: डीफॉल्ट
   page_1:
+    display_title: पृष्ठ
     display_options:
       menu:
         title: सामग्री
       tab_options:
         title: सामग्री
         description: 'सामग्री ढूंढें और प्रबंधित करें'
-    display_title: पृष्ठ

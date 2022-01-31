@@ -1,0 +1,47 @@
+profile_block.following_modal:
+  path: '/user/{user_id}/following/modal'
+  defaults:
+    _title: 'Modal'
+    _controller: '\Drupal\profile_block\Controller\CustomModalController::following_modal'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      user_id:
+        type: entity:user
+
+profile_block.unfollow:
+  path: '/user/{user_id}/unfollow'
+  defaults:
+    _title: 'Modal'
+    _controller: '\Drupal\profile_block\Controller\CustomModalController::unfollow'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      user_id:
+        type: entity:user
+
+profile_block.followers_modal:
+  path: '/user/{user_id}/followers/modal'
+  defaults:
+    _title: 'Modal'
+    _controller: '\Drupal\profile_block\Controller\controller::followers_modal'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      user_id:
+        type: entity:user
+
+profile_block.remove_follower:
+  path: '/user/{user_id}/remove_follower'
+  defaults:
+    _title: 'Modal'
+    _controller: '\Drupal\profile_block\Controller\controller::remove_follower'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      user_id:
+        type: entity:user

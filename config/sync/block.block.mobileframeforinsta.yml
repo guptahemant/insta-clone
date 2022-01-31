@@ -18,16 +18,16 @@ plugin: 'block_content:37e79a6a-02b7-45b9-9a64-60d34ed57653'
 settings:
   id: 'block_content:37e79a6a-02b7-45b9-9a64-60d34ed57653'
   label: 'mobile frame for insta'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   user_role:
     id: user_role
-    roles:
-      anonymous: anonymous
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

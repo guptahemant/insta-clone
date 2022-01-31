@@ -18,15 +18,15 @@ plugin: search_api_page_form_block
 settings:
   id: search_api_page_form_block
   label: 'Search Api Page search block form'
-  provider: search_api_page
   label_display: '0'
+  provider: search_api_page
   search_api_page: userpost
 visibility:
   user_role:
     id: user_role
-    roles:
-      authenticated: authenticated
-      administrator: administrator
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator

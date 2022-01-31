@@ -1,0 +1,25 @@
+uuid: e3615db9-a822-418f-a2b8-14151cc0552c
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile_block
+    - system
+  theme:
+    - instagram
+id: userprofileblock
+theme: instagram
+region: content
+weight: 0
+provider: null
+plugin: user_profile_block
+settings:
+  id: user_profile_block
+  label: 'user profile block'
+  label_display: '0'
+  provider: profile_block
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'

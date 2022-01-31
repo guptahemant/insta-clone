@@ -27,6 +27,10 @@ function instagram_preprocess_page__front(&$variables) {
 
 }
 
+function instagram_preprocess_page__user(&$variables) {
+  $variables['#attached']['library'][] = 'instagram/userpage';
+}
+
 function instagram_user_login(&$variables) {
   if ($user->uid > 0) {
     // The user is logged in.

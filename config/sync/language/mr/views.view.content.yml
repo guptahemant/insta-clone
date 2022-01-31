@@ -1,12 +1,9 @@
 label: साहित्य
 display:
   default:
+    display_title: मुळस्वरुप
     display_options:
-      exposed_form:
-        options:
-          submit_button: गाळणी
-          reset_button_label: पुर्ववत
-          exposed_sorts_label: 'क्रमवारी नुसार लावा'
+      title: साहित्य
       fields:
         title:
           label: शीर्षक
@@ -17,12 +14,17 @@ display:
         status:
           label: वर्तमानस्थिती
           settings:
-            format_custom_true: प्रकाशित
             format_custom_false: अप्रकाशित
+            format_custom_true: प्रकाशित
         changed:
           label: सुधारित
         operations:
           label: कृती
+      exposed_form:
+        options:
+          submit_button: गाळणी
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
       filters:
         title:
           expose:
@@ -40,12 +42,10 @@ display:
         langcode:
           expose:
             label: भाषा
-      title: साहित्य
-    display_title: मुळस्वरुप
   page_1:
+    display_title: पान
     display_options:
       menu:
         title: साहित्य
       tab_options:
         title: साहित्य
-    display_title: पान
