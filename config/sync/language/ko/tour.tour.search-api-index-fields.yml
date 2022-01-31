@@ -1,0 +1,15 @@
+tips:
+  search-api-index-fields-label:
+    label: 레이블
+  search-api-index-fields-machine-name:
+    label: 기계명
+  search-api-index-fields-type:
+    label: 종류
+  search-api-index-fields-boost:
+    label: 부스트
+  search-api-index-fields-edit:
+    label: '항목 편집'
+  search-api-index-fields-remove:
+    label: '필드 삭제하기'
+  search-api-index-fields-submit:
+    label: '변경 사항 저장'

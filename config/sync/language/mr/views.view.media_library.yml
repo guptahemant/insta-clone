@@ -1,0 +1,65 @@
+display:
+  default:
+    display_title: मुळस्वरुप
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
+      fields:
+        media_bulk_form:
+          action_title: कृती
+      filters:
+        status:
+          group_info:
+            label: प्रकाशित
+            group_items:
+              1:
+                title: प्रकाशित
+              2:
+                title: अप्रकाशित
+        name:
+          expose:
+            label: नाव
+        langcode:
+          expose:
+            label: भाषा
+  page:
+    display_title: पान
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: कृती
+        name:
+          separator: ', '
+        edit_media:
+          text: संपादन
+        delete_media:
+          text: मिटवा
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: नाव
+      arguments:
+        bundle:
+          exception:
+            title: सर्व
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: नाव
+        uid:
+          label: लेखक
+        changed:
+          label: सुधारित
+      filters:
+        name:
+          expose:
+            label: नाव
+      arguments:
+        bundle:
+          exception:
+            title: सर्व

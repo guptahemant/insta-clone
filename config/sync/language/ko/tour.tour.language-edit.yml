@@ -1,0 +1,5 @@
+tips:
+  language-edit-langcode:
+    label: '언어 코드'
+  language-edit-label:
+    label: '언어 이름'
