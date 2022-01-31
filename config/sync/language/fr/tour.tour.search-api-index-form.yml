@@ -1,11 +1,11 @@
 tips:
   search-api-index-form-name:
-    label: 'Index name'
+    label: 'Nom de l''index'
   search-api-index-form-tracker:
-    label: Tracker
+    label: Suivi
   search-api-index-form-server:
-    label: Server
+    label: Serveur
   search-api-index-form-description:
-    label: 'Index description'
+    label: 'Description de l''index'
   search-api-index-form-options:
-    label: 'Advanced options'
+    label: 'Options avancées'

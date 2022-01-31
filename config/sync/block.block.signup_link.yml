@@ -1,0 +1,33 @@
+uuid: b44e9b1e-9878-4148-bce0-1cd7272fca7c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:59a6bfbb-227f-4b62-86cd-c4868f3595f0'
+  module:
+    - block_content
+    - user
+  theme:
+    - instagram
+id: signup_link
+theme: instagram
+region: sidebar
+weight: -9
+provider: null
+plugin: 'block_content:59a6bfbb-227f-4b62-86cd-c4868f3595f0'
+settings:
+  id: 'block_content:59a6bfbb-227f-4b62-86cd-c4868f3595f0'
+  label: signup_link
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

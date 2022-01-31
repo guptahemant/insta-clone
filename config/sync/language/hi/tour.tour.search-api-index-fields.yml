@@ -1,7 +1,7 @@
 tips:
   search-api-index-fields-label:
-    label: Label
+    label: लेबल
   search-api-index-fields-machine-name:
-    label: 'Machine name'
+    label: 'मशीन नाम'
   search-api-index-fields-type:
-    label: Type
+    label: प्रकार

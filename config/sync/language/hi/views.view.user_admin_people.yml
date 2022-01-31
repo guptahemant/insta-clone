@@ -1,64 +1,64 @@
-label: People
-description: 'Find and manage people interacting with your site.'
+label: कर्मचारी
+description: 'अपनी साइट के साथ सहभागिता करने वाले लोगों को ढूंढें और प्रबंधित करें।'
 display:
   default:
-    display_title: Default
+    display_title: डीफॉल्ट
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_desc_label: Desc
+          submit_button: फिल्टर
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
       pager:
         options:
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
+            items_per_page_label: 'विषय प्रति पृष्ठ'
+            items_per_page_options_all_label: '-सभी-'
       fields:
         name:
-          label: Username
+          label: 'प्रयोक्ता का नाम'
         status:
-          label: Status
+          label: अवस्था
           settings:
-            format_custom_true: Active
-            format_custom_false: Blocked
+            format_custom_true: सक्रिय
+            format_custom_false: बंद
         roles_target_id:
-          label: Roles
+          label: भूमिका
         created:
-          label: 'Member for'
+          label: 'के लिये सदस्य'
         access:
-          label: 'Last access'
+          label: 'अंतिम पहुंच'
         operations:
-          label: Operations
+          label: कार्यवाही
         mail:
           separator: ', '
       filters:
         combine:
           expose:
-            label: 'Name or email contains'
+            label: 'नाम या ईमेल में है'
         status:
           group_info:
-            label: Status
+            label: अवस्था
             group_items:
               1:
-                title: Active
+                title: सक्रिय
               2:
-                title: Blocked
+                title: बंद
         roles_target_id:
           expose:
-            label: Role
+            label: भूमिका
         permission:
           expose:
-            label: Permission
-      title: People
-      use_more_text: more
+            label: अनुमति
+      title: कर्मचारी
+      use_more_text: 'और भी'
   page_1:
-    display_title: Page
+    display_title: पृष्ठ
     display_options:
       menu:
-        title: List
-        description: 'Find and manage people interacting with your site.'
+        title: सूची
+        description: 'अपनी साइट के साथ सहभागिता करने वाले लोगों को ढूंढें और प्रबंधित करें।'
       tab_options:
-        title: People
-        description: 'Manage user accounts, roles, and permissions.'
+        title: कर्मचारी
+        description: 'उपयोगकर्ता खातों, भूमिकाओं और अनुमतियों का प्रबंधन करें.'

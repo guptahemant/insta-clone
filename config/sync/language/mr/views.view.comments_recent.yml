@@ -1,14 +1,14 @@
-label: 'Recent comments'
+label: 'नव्या प्रतिक्रिया'
 display:
   default:
-    display_title: Default
+    display_title: मुळस्वरुप
     display_options:
-      title: 'Recent comments'
+      title: 'नव्या प्रतिक्रिया'
       empty:
         area_text_custom:
-          content: 'No comments available.'
+          content: 'टिप्पणी उपलब्ध नाही'
   block_1:
-    display_title: Block
+    display_title: भाग
     display_options:
-      block_description: 'Recent comments'
-      block_category: 'Lists (Views)'
+      block_description: 'नव्या प्रतिक्रिया'
+      block_category: 'याद्या (व्ह्यूज)'

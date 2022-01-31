@@ -1,5 +1,5 @@
 tips:
   language-edit-langcode:
-    label: 'Language code'
+    label: 'भाषेची संकेताक्षरं'
   language-edit-label:
-    label: 'Language name'
+    label: 'भाषेचे नाव'

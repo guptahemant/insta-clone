@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: bf234738-1082-4e91-99bd-d513039fc430
+  bundle: basic
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'mobile frame for insta'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<p><img alt=\"img\" data-entity-type=\"file\" data-entity-uuid=\"c55182a3-8448-4071-a94d-4402146ee4df\" src=\"/sites/default/files/inline-images/back-mobile-img_1.png\" /></p>\r\n"
+      format: full_html
+      summary: ''

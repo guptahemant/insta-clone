@@ -1,56 +1,56 @@
-label: Content
+label: सामग्री
 display:
   default:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_desc_label: Desc
+          submit_button: फिल्टर
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
       fields:
         title:
-          label: Title
+          label: शीर्षक
         type:
-          label: 'Content type'
+          label: 'सामग्री प्रकार'
           separator: ', '
         name:
-          label: Author
+          label: लेखक
         status:
-          label: Status
+          label: अवस्था
           settings:
-            format_custom_true: Published
-            format_custom_false: Unpublished
+            format_custom_true: प्रकाशित
+            format_custom_false: अप्रकाशित
         changed:
-          label: Updated
+          label: अद्यतित
         operations:
-          label: Operations
+          label: कार्यवाही
       filters:
         title:
           expose:
-            label: Title
+            label: शीर्षक
         type:
           expose:
-            label: 'Content type'
+            label: 'सामग्री प्रकार'
         status:
           expose:
-            label: Status
+            label: अवस्था
           group_info:
             group_items:
               1:
-                title: Published
+                title: प्रकाशित
               2:
-                title: Unpublished
+                title: अप्रकाशित
         langcode:
           expose:
-            label: Language
-      title: Content
-    display_title: Default
+            label: भाषा
+      title: सामग्री
+    display_title: डीफॉल्ट
   page_1:
     display_options:
       menu:
-        title: Content
+        title: सामग्री
       tab_options:
-        title: Content
-        description: 'Find and manage content'
-    display_title: Page
+        title: सामग्री
+        description: 'सामग्री ढूंढें और प्रबंधित करें'
+    display_title: पृष्ठ
