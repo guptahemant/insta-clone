@@ -2,11 +2,6 @@ display:
   default:
     display_title: मुळस्वरुप
     display_options:
-      exposed_form:
-        options:
-          submit_button: गाळणी
-          reset_button_label: पुर्ववत
-          exposed_sorts_label: 'क्रमवारी नुसार लावा'
       fields:
         type:
           label: प्रकार
@@ -19,6 +14,11 @@ display:
           separator: ', '
         link:
           label: कृती
+      exposed_form:
+        options:
+          submit_button: गाळणी
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
       filters:
         type:
           expose:

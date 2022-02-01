@@ -2,6 +2,7 @@ display:
   default:
     display_title: 기본값
     display_options:
+      title: '온라인 상황'
       exposed_form:
         options:
           submit_button: 적용
@@ -14,7 +15,6 @@ display:
           expose:
             label: '마지막 접속'
             description: '사용자가 마지막으로 페이지를 본 이후 다음 시간 만큼은 사용 중으로 보입니다.'
-      title: '온라인 상황'
   who_s_online_block:
     display_title: '온라인 상황'
     display_options:

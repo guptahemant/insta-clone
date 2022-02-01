@@ -4,24 +4,7 @@ display:
   default:
     display_title: 기본값
     display_options:
-      exposed_form:
-        options:
-          submit_button: 필터
-          reset_button_label: 재설정
-          exposed_sorts_label: 정렬기준
-          sort_asc_label: Asc
-          sort_desc_label: 설명
-      pager:
-        options:
-          tags:
-            previous: '‹ 이전'
-            next: '다음 ›'
-            first: '« 처음'
-            last: '마지막 »'
-          expose:
-            items_per_page_label: '페이지 당 항목 수'
-            items_per_page_options_all_label: '- 모두 -'
-            offset_label: 건너뛰기
+      title: 사용자
       fields:
         user_bulk_form:
           label: '일괄 업데이트'
@@ -30,8 +13,8 @@ display:
         status:
           label: 상태
           settings:
-            format_custom_true: 활동
             format_custom_false: 차단됨
+            format_custom_true: 활동
         roles_target_id:
           label: 역할
         created:
@@ -40,6 +23,27 @@ display:
           label: '마지막 접속'
         operations:
           label: 작업
+      pager:
+        options:
+          tags:
+            next: '다음 ›'
+            previous: '‹ 이전'
+            first: '« 처음'
+            last: '마지막 »'
+          expose:
+            items_per_page_label: '페이지 당 항목 수'
+            items_per_page_options_all_label: '- 모두 -'
+            offset_label: 건너뛰기
+      exposed_form:
+        options:
+          submit_button: 필터
+          reset_button_label: 재설정
+          exposed_sorts_label: 정렬기준
+          sort_asc_label: Asc
+          sort_desc_label: 설명
+      empty:
+        area_text_custom:
+          content: '사용자가 없습니다.'
       filters:
         status:
           group_info:
@@ -55,10 +59,6 @@ display:
         permission:
           expose:
             label: 권한
-      title: 사용자
-      empty:
-        area_text_custom:
-          content: '사용자가 없습니다.'
       use_more_text: '더 보기'
   page_1:
     display_title: 쪽

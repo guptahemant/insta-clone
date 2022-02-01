@@ -11,7 +11,6 @@ bundles:
   - article
 entity_type: node
 global: false
-weight: 0
 flag_short: '<i class="far fa-heart"></i>'
 flag_long: ''
 flag_message: ''
@@ -19,6 +18,7 @@ unflag_short: '<i class="fas fa-heart"></i>'
 unflag_long: ''
 unflag_message: ''
 unflag_denied_text: ''
+weight: 0
 flag_type: 'entity:node'
 link_type: count_link
 flagTypeConfig:

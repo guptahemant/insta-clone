@@ -2,11 +2,11 @@ uuid: 06802aaf-d10e-4bb7-b21f-a3cf0a6da6b5
 langcode: en
 status: true
 dependencies:
+  module:
+    - node
   enforced:
     module:
       - flag_bookmark
-  module:
-    - node
 _core:
   default_config_hash: vuzrLaRZ3xV-FmT127t2gLy_p8JDLMWtsKsnCwdWR2Y
 id: bookmark
@@ -16,7 +16,6 @@ bundles:
   - page
 entity_type: node
 global: false
-weight: 0
 flag_short: '<i class="far fa-bookmark"></i>'
 flag_long: ''
 flag_message: ''
@@ -24,6 +23,7 @@ unflag_short: '<i class="fas fa-bookmark"></i>'
 unflag_long: ''
 unflag_message: ''
 unflag_denied_text: ''
+weight: 0
 flag_type: 'entity:node'
 link_type: ajax_link
 flagTypeConfig:

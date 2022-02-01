@@ -19,14 +19,14 @@ bundle: article
 mode: rss
 content:
   flag_bookmark:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   flag_likes:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   links:
     weight: 100

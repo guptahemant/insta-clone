@@ -2,11 +2,11 @@ uuid: b3a4f08c-726a-4729-99db-b6c8ec586c48
 langcode: en
 status: true
 dependencies:
+  module:
+    - user
   enforced:
     module:
       - flag_follower
-  module:
-    - user
 _core:
   default_config_hash: ozODLTK7_5RZQRECnFKMJc0qeQL0G8_JZBM5DPIs-yk
 id: following
@@ -14,7 +14,6 @@ label: Following
 bundles: {  }
 entity_type: user
 global: false
-weight: 0
 flag_short: 'Follow '
 flag_long: ''
 flag_message: ''
@@ -22,6 +21,7 @@ unflag_short: Following
 unflag_long: ''
 unflag_message: ''
 unflag_denied_text: ''
+weight: 0
 flag_type: 'entity:user'
 link_type: ajax_link
 flagTypeConfig:
