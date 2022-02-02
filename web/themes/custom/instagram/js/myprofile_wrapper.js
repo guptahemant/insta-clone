@@ -1,30 +1,18 @@
-    var x = window.matchMedia("(max-width: 425px)") ;
-    x.addListener(myFun) ;// Attach listener function on state changes
-    
-    
-    function myFun(x) {
-      if (x.matches) { // If media query matches
-        
-        jQuery(document).ready(function($){
-   
-            $('article, .wrapright').wrapAll('<div class="wrapper" />');
-            $('.uname, .settings').wrapAll('<div class="wraptop" />');
-            $('.bottom, .wrapcount').wrapAll('<div class="bottomwrap" />');
-
-            }); 
-        } 
-        else{ 
-            jQuery(document).ready(function($){
-    
-            $('article, .wrapright').wrapAll('<div class="wrapper" />');
-
-            }); 
-        }
+var x = window.matchMedia("(max-width: 425px)");
+(function($, Drupal) {
+  Drupal.behaviors.user_profile_wrapper = {
+    attach: function(context, settings) 
+    {
+      if (x.matches)
+      {
+        $('article, .wrapright').once('user_profile_wrapper').each(function () {
+          $('article, .wrapright').wrapAll('<div class="wrapper" />');
+          $('.uname, .settings').wrapAll('<div class="wraptop" />');
+          $('.bottom, .wrapcount').wrapAll('<div class="bottomwrap" />');
+        });
+      }else{
+        $('article, .wrapright').wrapAll('<div class="wrapper" />');
+      }
     }
-    
-    let clock = setInterval(() => {
-        clearInterval(clock)
-        clock = null
-        myFun(x); 
-    }, 200)
-    
+  }
+})(jQuery, Drupal);

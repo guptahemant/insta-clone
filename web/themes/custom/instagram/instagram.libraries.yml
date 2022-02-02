@@ -6,10 +6,11 @@ global-styling:
 
   js:
     js/instagram.js: {}
+    js/followers_following_popup.js: {}
     js/myprofile_wrapper.js: {}
-    js/popup.js: {}
   dependencies:
     - core/jquery
+    - core/jquery.once
 
 # nodepage a library that should only work on page that displays post as in frontpage
 nodepage:

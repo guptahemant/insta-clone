@@ -7,24 +7,21 @@ function instagram_preprocess_region(&$variables) {
 
   if (isset($variables['region']) && $variables['region'] == 'sidebar') {
     $variables['attributes']['class'][] = 'header';
-  }}
-
-function instagram_preprocess_region__header(&$variables) {
-      $variables['attributes']['class'][] = 'main_header';
-    
+  }
 }
 
+function instagram_preprocess_region__header(&$variables) {
+  $variables['attributes']['class'][] = 'main_header';   
+}
 
 function instagram_form_alter(&$form, &$form_state, $form_id) {
-      if ($form_id == 'search_api_page_block_form_userpost') {
-        $form['keys']['#attributes']['placeholder'] = t('Search');
-       
-      }
+  if ($form_id == 'search_api_page_block_form_userpost') {
+    $form['keys']['#attributes']['placeholder'] = t('Search');      
+  }
 }
 
 function instagram_preprocess_page__front(&$variables) {
   $variables['#attached']['library'][] = 'instagram/nodepage';
-
 }
 
 function instagram_preprocess_page__user(&$variables) {

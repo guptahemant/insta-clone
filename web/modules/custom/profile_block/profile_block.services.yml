@@ -1,5 +1,5 @@
 services:
-      profile_block.CustomModalController:
-        class: Drupal\profile_block\Controller\CustomModalController
-        arguments: ['@database'] 
+  profile_block.CustomModalController:
+    class: Drupal\profile_block\Controller\CustomModalController
+    arguments: ['@database'] 
         
