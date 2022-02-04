@@ -6,20 +6,27 @@ global-styling:
 
   js:
     js/instagram.js: {}
+    js/myprofile_wrapper.js: {}
+    js/popup.js: {}
   dependencies:
     - core/jquery
 
-# nodepage a library that should only work on page that displays post as in frontpage
+
 nodepage:
   version: VERSION
   css:
     theme:
       css/node/style.css: {}
 
-# feed a library that should only work on feedpost page
 feed:
   version: VERSION
   css:
     theme:
       css/feed/style.css: {}
+
+userpage:
+  version: VERSION
+  css:
+    theme:
+      css/myprofile_block/style.css: {}
 

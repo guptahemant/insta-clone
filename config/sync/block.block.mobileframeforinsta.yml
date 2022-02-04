@@ -19,8 +19,8 @@ plugin: 'block_content:b2890edf-8585-40f5-aa30-ed5159fb10f4'
 settings:
   id: 'block_content:b2890edf-8585-40f5-aa30-ed5159fb10f4'
   label: 'mobile frame for insta'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
@@ -31,8 +31,8 @@ visibility:
     negate: false
   user_role:
     id: user_role
-    roles:
-      anonymous: anonymous
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

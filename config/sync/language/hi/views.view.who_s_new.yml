@@ -4,13 +4,13 @@ display:
   default:
     display_title: डीफॉल्ट
     display_options:
+      title: 'नए सदस्य'
       exposed_form:
         options:
           submit_button: 'लागू करें'
           reset_button_label: 'दोबारा से स्थापित करें|'
           exposed_sorts_label: 'क्रमबद्ध द्वारा'
           sort_desc_label: अवरोही
-      title: 'नए सदस्य'
   block_1:
     display_title: 'नए सदस्य'
     display_options:

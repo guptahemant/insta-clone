@@ -18,16 +18,16 @@ plugin: 'block_content:2c4ddaac-d151-4383-921e-50f7fe74c9b1'
 settings:
   id: 'block_content:2c4ddaac-d151-4383-921e-50f7fe74c9b1'
   label: get_the_app
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   user_role:
     id: user_role
-    roles:
-      anonymous: anonymous
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

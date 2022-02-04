@@ -3,6 +3,7 @@ display:
   default:
     display_title: 기본값
     display_options:
+      title: '새로 가입한 사용자'
       exposed_form:
         options:
           submit_button: 적용
@@ -10,7 +11,6 @@ display:
           exposed_sorts_label: 정렬기준
           sort_asc_label: Asc
           sort_desc_label: 설명
-      title: '새로 가입한 사용자'
   block_1:
     display_title: '새로 가입한 사용자'
     display_options:

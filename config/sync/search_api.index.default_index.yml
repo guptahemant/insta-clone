@@ -17,35 +17,35 @@ read_only: false
 field_settings:
   author:
     label: 'Author name'
-    type: string
     datasource_id: 'entity:node'
     property_path: 'uid:entity:name'
+    type: string
   changed:
     label: Changed
-    type: date
     datasource_id: 'entity:node'
     property_path: changed
+    type: date
   created:
     label: 'Authored on'
-    type: date
     datasource_id: 'entity:node'
     property_path: created
+    type: date
   field_tags:
     label: Tags
-    type: integer
     datasource_id: 'entity:node'
     property_path: field_tags
+    type: integer
   node_grants:
     label: 'Node access information'
-    type: string
     property_path: search_api_node_grants
+    type: string
     indexed_locked: true
     type_locked: true
     hidden: true
   rendered_item:
     label: 'Rendered item'
-    type: text
     property_path: rendered_item
+    type: text
     configuration:
       roles:
         anonymous: anonymous
@@ -55,32 +55,32 @@ field_settings:
           page: search_index
   status:
     label: 'Publishing status'
-    type: boolean
     datasource_id: 'entity:node'
     property_path: status
+    type: boolean
     indexed_locked: true
     type_locked: true
   sticky:
     label: 'Sticky at top of lists'
-    type: boolean
     datasource_id: 'entity:node'
     property_path: sticky
+    type: boolean
   title:
     label: Title
-    type: text
     datasource_id: 'entity:node'
     property_path: title
+    type: text
     boost: !!float 8
   type:
     label: 'Content type'
-    type: string
     datasource_id: 'entity:node'
     property_path: type
+    type: string
   uid:
     label: 'Author ID'
-    type: integer
     datasource_id: 'entity:node'
     property_path: uid
+    type: integer
     indexed_locked: true
     type_locked: true
 datasource_settings:

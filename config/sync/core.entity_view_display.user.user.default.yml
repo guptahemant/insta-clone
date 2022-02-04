@@ -3,9 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_bio
     - field.field.user.user.field_full_name
     - field.field.user.user.user_picture
-    - image.style.post_thumbnail_30_x_30_
   module:
     - image
     - user
@@ -17,33 +17,30 @@ bundle: user
 mode: default
 content:
   field_full_name:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
-  flag_following:
-    weight: 3
-    region: content
+  my_name:
     settings: {  }
     third_party_settings: {  }
-  my_name:
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
   user_picture:
     type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: ''
+    third_party_settings: {  }
     weight: 0
     region: content
-    settings:
-      image_style: post_thumbnail_30_x_30_
-      image_link: content
-    third_party_settings: {  }
-    label: hidden
 hidden:
+  field_bio: true
+  flag_following: true
   langcode: true
   member_for: true
   search_api_excerpt: true

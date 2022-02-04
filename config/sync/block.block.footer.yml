@@ -18,20 +18,20 @@ plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
   label: Footer
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: /node
     negate: false
+    pages: /node
   user_role:
     id: user_role
-    roles:
-      anonymous: anonymous
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
