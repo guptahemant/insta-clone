@@ -1,0 +1,7 @@
+uuid: fc77f73b-4ba8-4ecc-8530-5be781da0ed9
+langcode: en
+status: true
+dependencies: {  }
+name: main_image
+label: 'Main Image'
+effects: {  }

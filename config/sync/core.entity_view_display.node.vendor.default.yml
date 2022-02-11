@@ -1,0 +1,55 @@
+uuid: f2ab646b-541a-4034-83b2-1720826b59a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.vendor.body
+    - field.field.node.vendor.field_main_image
+    - field.field.node.vendor.field_vendor_url
+    - image.style.b_w
+    - node.type.vendor
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.vendor.default
+targetEntityType: node
+bundle: vendor
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: b_w
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_vendor_url:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: true
+      target: _blank
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,14 @@
+uuid: eab71570-e63c-4063-9439-0d554fd7387d
+langcode: en
+status: true
+dependencies: {  }
+id: vendor
+label: Vendor
+weight: 3
+is_admin: null
+permissions:
+  - 'access in-place editing'
+  - 'access user contact forms'
+  - 'create cars content'
+  - 'delete own cars content'
+  - 'use text format restricted_html'

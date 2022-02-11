@@ -1,0 +1,22 @@
+uuid: 31644afe-c476-4e7d-8f68-9070aabd35fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - autoarena
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: autoarena_help
+theme: autoarena
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

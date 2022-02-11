@@ -1,0 +1,25 @@
+uuid: 4b4000b9-2a0c-4a35-978a-42ba9927b2bc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ccde6a82-1b69-406b-882c-a5f9182f1291'
+  module:
+    - block_content
+  theme:
+    - retro
+id: retro_hoursandlocationblock
+theme: retro
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'block_content:ccde6a82-1b69-406b-882c-a5f9182f1291'
+settings:
+  id: 'block_content:ccde6a82-1b69-406b-882c-a5f9182f1291'
+  label: 'Hours and Location'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

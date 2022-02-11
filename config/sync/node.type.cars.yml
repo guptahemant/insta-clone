@@ -1,0 +1,17 @@
+uuid: 1db19fb1-672b-430b-9cd6-223494ce5798
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Cars
+type: cars
+description: 'Car provided by Vendor'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

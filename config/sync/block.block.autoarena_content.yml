@@ -1,0 +1,22 @@
+uuid: 71192d3f-f7b7-46ab-9cf7-c7594ecd24b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - autoarena
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: autoarena_content
+theme: autoarena
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

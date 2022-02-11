@@ -1,0 +1,22 @@
+uuid: 4d58e238-65f6-464c-b855-375a031bdd1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - autoarena
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: autoarena_breadcrumbs
+theme: autoarena
+region: content
+weight: -2
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

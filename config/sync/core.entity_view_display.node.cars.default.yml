@@ -1,0 +1,59 @@
+uuid: ec59b2e5-24dd-4589-9e0b-27d963f92d94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cars.body
+    - field.field.node.cars.field_main_image
+    - field.field.node.cars.field_submitted_by
+    - field.field.node.cars.field_types
+    - image.style.extra_medium_300_200_
+    - node.type.cars
+  module:
+    - image
+    - text
+    - user
+id: node.cars.default
+targetEntityType: node
+bundle: cars
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_main_image:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: extra_medium_300_200_
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_submitted_by:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_types:
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

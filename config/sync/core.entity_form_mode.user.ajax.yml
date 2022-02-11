@@ -1,0 +1,10 @@
+uuid: 5c122432-9a05-4220-ab53-41ebe2887b28
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.ajax
+label: Ajax
+targetEntityType: user
+cache: true

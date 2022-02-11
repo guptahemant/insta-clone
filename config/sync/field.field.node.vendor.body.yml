@@ -1,0 +1,23 @@
+uuid: 051ff99a-97df-46e5-8c45-edf7049793cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vendor
+  module:
+    - text
+id: node.vendor.body
+field_name: body
+entity_type: node
+bundle: vendor
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

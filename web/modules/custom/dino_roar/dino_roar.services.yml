@@ -1,0 +1,19 @@
+# Parameters are key value configuration system.
+parameters:
+  dino.roar.use_key_value_cache: true
+
+services:
+  dino_roar.roar_generator:
+    class: Drupal\dino_roar\Jurassic\RoarGenerator
+    arguments:
+      - '@keyvalue'
+      # Passing the parameter inside % for service configuration
+      - '%dino.roar.use_key_value_cache%'
+ 
+  dino_roar.roar_listener:
+    class: Drupal\dino_roar\Jurassic\DinoListener    
+    arguments: []
+    # Add Tags, to tell Drupal that this service is special and use it for something core purpose.
+    # tags:
+    #   - { name: event_subscriber }
+

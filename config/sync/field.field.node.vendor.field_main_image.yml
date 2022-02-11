@@ -1,0 +1,45 @@
+uuid: d08adcff-9c7a-4e78-a24a-0d3487983eec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_image
+    - node.type.vendor
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: node.vendor.field_main_image
+field_name: field_main_image
+entity_type: node
+bundle: vendor
+label: 'Main Image'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: vendors-image
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: '5 MB'
+  max_resolution: ''
+  min_resolution: 600x600
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

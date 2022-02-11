@@ -1,0 +1,7 @@
+# Name to be shown in the Drupal theming.
+name: 'Dino' 
+type: module
+description: 'My dinooo'
+core_version_requirement: ^8 || ^9
+# Custom is the category name, inside which this dino module is located.
+package: 'Custom'

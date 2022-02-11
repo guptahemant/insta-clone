@@ -1,0 +1,17 @@
+uuid: f5eaeaec-a6d9-4127-b6f5-61fd3a0b6511
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Vendor
+type: vendor
+description: ' Information about a Vendor'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

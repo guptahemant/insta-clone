@@ -1,0 +1,25 @@
+uuid: 39aae76d-13d5-4eb0-816a-dae8d3671eab
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ccde6a82-1b69-406b-882c-a5f9182f1291'
+  module:
+    - block_content
+  theme:
+    - autoarena
+id: autoarena_hoursandlocationblock
+theme: autoarena
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'block_content:ccde6a82-1b69-406b-882c-a5f9182f1291'
+settings:
+  id: 'block_content:ccde6a82-1b69-406b-882c-a5f9182f1291'
+  label: 'Hours and Location'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

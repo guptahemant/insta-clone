@@ -1,0 +1,22 @@
+uuid: 31920a42-40ea-4fef-8caf-8d01265b3dd5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - retroo
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: retroo_powered
+theme: retroo
+region: content
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

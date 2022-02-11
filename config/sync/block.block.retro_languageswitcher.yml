@@ -1,0 +1,30 @@
+uuid: 5a1202c5-c7c5-4551-9ed5-0aa06cb97992
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - retro
+id: retro_languageswitcher
+theme: retro
+region: header
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: visible
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      ar: ar
+      hi: hi
+      ur: ur
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

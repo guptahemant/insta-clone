@@ -1,0 +1,29 @@
+uuid: 5dc49a4a-51e2-4668-b409-e1398c3f2ee3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_submitted_by
+    - node.type.cars
+    - node.type.vendor
+id: node.cars.field_submitted_by
+field_name: field_submitted_by
+entity_type: node
+bundle: cars
+label: 'Submitted By'
+description: 'Choose the vendor that manufacture this CAR.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vendor: vendor
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

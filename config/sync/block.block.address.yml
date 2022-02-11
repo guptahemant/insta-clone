@@ -1,0 +1,45 @@
+uuid: 7915ab1b-4e89-485f-aa60-5aeb27c20232
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f8750b3a-ed03-421a-aef6-50c558f0ee9a'
+  module:
+    - block_content
+    - language
+    - node
+  theme:
+    - retroo
+id: address
+theme: retroo
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:f8750b3a-ed03-421a-aef6-50c558f0ee9a'
+settings:
+  id: 'block_content:f8750b3a-ed03-421a-aef6-50c558f0ee9a'
+  label: Address
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      ar: ar
+      hi: hi
+      ur: ur
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+      vendor: vendor
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,25 @@
+uuid: 112eb9e6-70a0-44a3-bc5f-74e2a0b84685
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ccde6a82-1b69-406b-882c-a5f9182f1291'
+  module:
+    - block_content
+  theme:
+    - retroo
+id: retroo_hoursandlocationblock
+theme: retroo
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:ccde6a82-1b69-406b-882c-a5f9182f1291'
+settings:
+  id: 'block_content:ccde6a82-1b69-406b-882c-a5f9182f1291'
+  label: 'Hours and Location'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

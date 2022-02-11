@@ -1,0 +1,22 @@
+uuid: 1b426c2e-a1f0-4a33-ad13-a68c75e435ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vendor
+id: node.vendor.status
+field_name: status
+entity_type: node
+bundle: vendor
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

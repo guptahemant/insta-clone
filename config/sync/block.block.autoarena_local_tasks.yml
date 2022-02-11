@@ -1,0 +1,22 @@
+uuid: d5a05d64-cabb-467a-ac40-36f5777ae846
+langcode: en
+status: true
+dependencies:
+  theme:
+    - autoarena
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: autoarena_local_tasks
+theme: autoarena
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

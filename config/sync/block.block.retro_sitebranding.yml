@@ -1,0 +1,23 @@
+uuid: bb61918a-f5c2-4472-b1a5-945dca86bd8e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - retro
+id: retro_sitebranding
+theme: retro
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

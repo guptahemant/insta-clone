@@ -1,0 +1,20 @@
+uuid: 9f9c7f2b-43da-41d0-9cba-2901fd40f78d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - autoarena
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: autoarena_local_actions
+theme: autoarena
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 39cf6ebf-73d1-4b76-befb-22ecc1d13dd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - retroo
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: retroo_breadcrumbs
+theme: retroo
+region: content
+weight: -2
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: cd899218-62da-4941-b52e-cc188040e521
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - retroo
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: retroo_messages
+theme: retroo
+region: content
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

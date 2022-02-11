@@ -1,0 +1,19 @@
+uuid: ac176cb0-1bdb-40a6-a0ff-c90de009461b
+langcode: en
+status: true
+dependencies: {  }
+name: b_w
+label: 'B&W'
+effects:
+  169a5971-c823-49ac-b6c2-486e21f54abe:
+    uuid: 169a5971-c823-49ac-b6c2-486e21f54abe
+    id: image_resize
+    weight: 1
+    data:
+      width: 300
+      height: 200
+  d75092d7-0ffd-4576-a647-b713ec0d3491:
+    uuid: d75092d7-0ffd-4576-a647-b713ec0d3491
+    id: image_desaturate
+    weight: 2
+    data: {  }

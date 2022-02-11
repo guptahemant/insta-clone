@@ -1,0 +1,8 @@
+dino_says:
+  path: /says/{count}
+  defaults:
+    _controller: 'Drupal\dino_roar\Controllers\RoarController::roar'
+  requirements:
+    _permission: 'access content'
+    
+       
