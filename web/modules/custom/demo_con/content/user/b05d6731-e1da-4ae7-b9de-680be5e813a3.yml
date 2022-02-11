@@ -1,10 +1,10 @@
 _meta:
   version: '1.0'
   entity_type: user
-  uuid: a852bc09-6e11-4027-aa36-0c532ebca22f
+  uuid: b05d6731-e1da-4ae7-b9de-680be5e813a3
   default_langcode: en
   depends:
-    f2068482-8ebe-46d6-9162-c66c8fc5d47a: file
+    f8fe723f-1688-48f6-9619-786437690d0f: file
 default:
   preferred_langcode:
     -
@@ -14,15 +14,15 @@ default:
       value: en
   name:
     -
-      value: akshaykumar
+      value: Deepika
   pass:
     -
-      value: $S$EYnNZfgvKiG7HneFvqdpQ048ppQperme/W6KVWnQHFJhhMgnp22f
+      value: $S$E.v/EB/m.KNfcf.51VsIXk6cpDW2dP4bUPeywEVFNiA5Tt1Cfv.B
       existing: ''
       pre_hashed: false
   mail:
     -
-      value: akshay@gmail.com
+      value: Deepika@gmail.com
   timezone:
     -
       value: Asia/Kolkata
@@ -31,28 +31,28 @@ default:
       value: true
   created:
     -
-      value: 1641416266
+      value: 1644587128
   access:
     -
-      value: 1641472458
+      value: 1644587622
   login:
     -
-      value: 1641468076
+      value: 1644587622
   init:
     -
-      value: akshay@gmail.com
+      value: Deepika@gmail.com
   path:
     -
-      alias: /users/akshaykumar
+      alias: /users/deepika
       langcode: en
       pathauto: 1
   field_full_name:
     -
-      value: 'Akshay Kumar'
+      value: Deepika
   user_picture:
     -
-      entity: f2068482-8ebe-46d6-9162-c66c8fc5d47a
+      entity: f8fe723f-1688-48f6-9619-786437690d0f
       alt: ''
       title: ''
-      width: 150
-      height: 150
+      width: 715
+      height: 865

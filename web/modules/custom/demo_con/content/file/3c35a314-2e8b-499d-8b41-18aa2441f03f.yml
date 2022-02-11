@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3c35a314-2e8b-499d-8b41-18aa2441f03f
+  default_langcode: en
+  depends:
+    625e1f0b-14d5-4832-b625-ad3d69e7b24b: user
+default:
+  uid:
+    -
+      entity: 625e1f0b-14d5-4832-b625-ad3d69e7b24b
+  filename:
+    -
+      value: Deepika.jpg
+  uri:
+    -
+      value: 'public://2022-02/Deepika.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 69393
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1644587513

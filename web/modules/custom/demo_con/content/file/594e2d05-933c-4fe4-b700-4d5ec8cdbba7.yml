@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 594e2d05-933c-4fe4-b700-4d5ec8cdbba7
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: shreya.jpeg
+  uri:
+    -
+      value: 'public://pictures/2022-02/shreya.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 116772
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1644587016

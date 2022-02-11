@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d75456b7-4db7-4858-893f-448295bc765f
+  default_langcode: en
+  depends:
+    b05d6731-e1da-4ae7-b9de-680be5e813a3: user
+default:
+  uid:
+    -
+      entity: b05d6731-e1da-4ae7-b9de-680be5e813a3
+  filename:
+    -
+      value: deepika1.jpeg
+  uri:
+    -
+      value: 'public://2022-02/deepika1.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 53672
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1644587644

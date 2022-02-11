@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3c55a416-0875-4248-85fb-470f9ee11007
+  default_langcode: en
+  depends:
+    e4bb8fce-b0f4-40bd-971e-2ef982136c26: user
+default:
+  uid:
+    -
+      entity: e4bb8fce-b0f4-40bd-971e-2ef982136c26
+  filename:
+    -
+      value: mahhi-vij-and-jay-bhanushali_1557814738.jpeg
+  uri:
+    -
+      value: 'public://2022-02/mahhi-vij-and-jay-bhanushali_1557814738.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 57933
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1644587694

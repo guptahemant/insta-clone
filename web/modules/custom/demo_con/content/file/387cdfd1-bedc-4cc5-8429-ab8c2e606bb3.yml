@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 387cdfd1-bedc-4cc5-8429-ab8c2e606bb3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: dp.jpg
+  uri:
+    -
+      value: 'public://pictures/2022-02/dp.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 221760
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1644587056

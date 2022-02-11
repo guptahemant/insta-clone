@@ -1,10 +1,10 @@
 _meta:
   version: '1.0'
   entity_type: user
-  uuid: a852bc09-6e11-4027-aa36-0c532ebca22f
+  uuid: e4bb8fce-b0f4-40bd-971e-2ef982136c26
   default_langcode: en
   depends:
-    f2068482-8ebe-46d6-9162-c66c8fc5d47a: file
+    2e261b07-2ce8-4eb1-a4bd-7265e148a952: file
 default:
   preferred_langcode:
     -
@@ -14,15 +14,15 @@ default:
       value: en
   name:
     -
-      value: akshaykumar
+      value: Jay
   pass:
     -
-      value: $S$EYnNZfgvKiG7HneFvqdpQ048ppQperme/W6KVWnQHFJhhMgnp22f
+      value: $S$E/sQoDi2DZvTrbZstJ8QKGNYuWDidWnS3DfOTR.CTWeMs9B9V16S
       existing: ''
       pre_hashed: false
   mail:
     -
-      value: akshay@gmail.com
+      value: jay@gmail.com
   timezone:
     -
       value: Asia/Kolkata
@@ -31,28 +31,28 @@ default:
       value: true
   created:
     -
-      value: 1641416266
+      value: 1644587092
   access:
     -
-      value: 1641472458
+      value: 1644589785
   login:
     -
-      value: 1641468076
+      value: 1644589785
   init:
     -
-      value: akshay@gmail.com
+      value: jay@gmail.com
   path:
     -
-      alias: /users/akshaykumar
+      alias: /users/jay
       langcode: en
       pathauto: 1
   field_full_name:
     -
-      value: 'Akshay Kumar'
+      value: Jay
   user_picture:
     -
-      entity: f2068482-8ebe-46d6-9162-c66c8fc5d47a
+      entity: 2e261b07-2ce8-4eb1-a4bd-7265e148a952
       alt: ''
       title: ''
-      width: 150
-      height: 150
+      width: 768
+      height: 438

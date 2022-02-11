@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e936b0f7-f5ca-48d0-913d-7e43f66efa9d
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: kerala-govt-imposes-fresh-restrictions-to-contain-cases.jpg
+  uri:
+    -
+      value: 'public://2022-02/kerala-govt-imposes-fresh-restrictions-to-contain-cases.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 42615
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1644587285
