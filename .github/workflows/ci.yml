@@ -1,0 +1,22 @@
+name: Test
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  code-standards:
+    runs-on: ubuntu-latest
+    container:
+      image: juampynr/drupal8ci:latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+      - name: Build project
+        run: |
+          echo "Validating composer files."
+          composer validate
+          composer install
+      - name: Check coding standards
+        run: vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml --encoding=utf-8 -n -p web/modules/custom web/themes/custom
+
