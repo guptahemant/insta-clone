@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * @file
+ * Theme file.
+ */
+
+/**
+ * Preprocess function to add class to regions.
+ */
 function instagram_preprocess_region(&$variables) {
   if (isset($variables['region']) && $variables['region'] == 'content') {
     $variables['attributes']['class'][] = 'slide';
@@ -7,30 +15,44 @@ function instagram_preprocess_region(&$variables) {
 
   if (isset($variables['region']) && $variables['region'] == 'sidebar') {
     $variables['attributes']['class'][] = 'header';
-  }}
+  }
+}
 
+/**
+ * Add class to Main Header.
+ */
 function instagram_preprocess_region__header(&$variables) {
-      $variables['attributes']['class'][] = 'main_header';
-    
+  $variables['attributes']['class'][] = 'main_header';
+
 }
 
-
+/**
+ * Implemented THEMENAME_form_alter to add placeholder to the SearchForm.
+ */
 function instagram_form_alter(&$form, &$form_state, $form_id) {
-      if ($form_id == 'search_api_page_block_form_userpost') {
-        $form['keys']['#attributes']['placeholder'] = t('Search');
-       
-      }
+  if ($form_id == 'search_api_page_block_form_userpost') {
+    $form['keys']['#attributes']['placeholder'] = t('Search');
+
+  }
 }
 
+/**
+ * Implemented THEMENAME_preprocess_HOOK() to add library to the Nodepage.
+ */
 function instagram_preprocess_page__front(&$variables) {
   $variables['#attached']['library'][] = 'instagram/nodepage';
-
 }
 
+/**
+ * Implemented THEMENAME_preprocess_HOOK() to add library to the Userpage.
+ */
 function instagram_preprocess_page__user(&$variables) {
   $variables['#attached']['library'][] = 'instagram/userpage';
 }
 
+/**
+ * Differentiate classes for Logged in and not-logged-in User.
+ */
 function instagram_user_login(&$variables) {
   if ($user->uid > 0) {
     // The user is logged in.
@@ -39,7 +61,7 @@ function instagram_user_login(&$variables) {
   else {
     // The user has logged out.
     $vars['logged_in'] = FALSE;
-  } 
-  $body_classes = array();
+  }
+  $body_classes = [];
   $body_classes[] = ($vars['logged_in']) ? 'logged-in' : 'not-logged-in';
 }

@@ -26,7 +26,7 @@ profile_block.followers_modal:
   path: '/user/{user_id}/followers/modal'
   defaults:
     _title: 'Modal'
-    _controller: '\Drupal\profile_block\Controller\controller::followers_modal'
+    _controller: '\Drupal\profile_block\Controller\Controller::followersmodal'
   requirements:
     _permission: 'access content'
   options:
@@ -38,7 +38,7 @@ profile_block.remove_follower:
   path: '/user/{user_id}/remove_follower'
   defaults:
     _title: 'Modal'
-    _controller: '\Drupal\profile_block\Controller\controller::remove_follower'
+    _controller: '\Drupal\profile_block\Controller\Controller::removefollower'
   requirements:
     _permission: 'access content'
   options:

@@ -1,24 +1,25 @@
 <?php
 
-use \Drupal\Core\Entity\EntityInterface;
-use \Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+/**
+ * @file
+ * To Add a extra field in the user page.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 
 /**
  * Implements hook_entity_extra_field_info().
  */
+function pseudo_entity_extra_field_info() {
+  $extra = [];
 
-function pseudo_entity_extra_field_info()
-{
-  $extra = array();
-
-
-  $extra['user']['user']['display']['my_name'] = array(
+  $extra['user']['user']['display']['my_name'] = [
     'label' => ('psudo_user'),
     'description' => ('This is the name of user'),
     'weight' => 100,
     'visible' => TRUE,
-  );
-
+  ];
 
   return $extra;
 }
@@ -26,28 +27,29 @@ function pseudo_entity_extra_field_info()
 /**
  * Implements hook_ENTITY_TYPE_view().
  */
-function pseudo_user_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode)
-{
-//   $co = get_class_methods($entity); 
-//   print_r($co);
-//  die;
+function pseudo_user_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  // $co = get_class_methods($entity);
+  // print_r($co);
+  // die;
   if ($display->getComponent('my_name')) {
-   
+
     $build['my_name'] = [
       '#type' => 'markup',
-    
-      '#markup' => t('<div class="em">'.'%name'.'</div>', [
-        
+
+      '#markup' => t('<div class="em">%name</div>', [
+
         '%name' => $entity->getDisplayName(),
 
-      ]) 
+      ])
     ];
- 
+
   }
-  
- 
+
 }
 
-function pseudo_preprocess_field__user__field_full_name__user(&$vars){
+/**
+ * Preprocess function to get the full name through database.
+ */
+function pseudo_preprocess_field__user__field_full_name__user(&$vars) {
   $vars['attributes']['class'][] = 'userfield';
 }
