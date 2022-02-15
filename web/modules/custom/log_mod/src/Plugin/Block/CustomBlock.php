@@ -19,14 +19,14 @@ class CustomBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-      
+
     $out = 'Hello, World!';
     dump($out);
-     
+
     return [
       '#theme' => 'cust-block',
-      '#data' =>  $out,
-      
+      '#data' => $out,
+
     ];
   }
 

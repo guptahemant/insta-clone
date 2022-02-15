@@ -1,12 +1,20 @@
 <?php
 
 namespace Drupal\log_mod\Controller;
+
+/**
+ * A Controller class.
+ */
 class TestController {
+
+  /**
+   * To initiate the the custom block.
+   */
   public function logtest() {
-    $element = array(
-        '#markup' => 'Hello World',
-    );
+    $element = [
+      '#markup' => 'Hello World',
+    ];
     return $element;
   }
+
 }
-?>

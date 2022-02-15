@@ -14,19 +14,18 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Entity;
 
 /**
- * A controller Class for the Follwing Modal.
+ * A controller class.
  */
-class CustomModalController extends ControllerBase {
-
+class Controller extends ControllerBase {
   /**
-   * A variable to create a connection.
+   * A connection class with database.
    *
    * @var \Drupal\Core\Database\Connection
    */
   private $connection;
 
   /**
-   * To initiate the database.
+   * The database connection to be used.
    *
    * @param \Drupal\Core\Database\Connection $connection
    *   The database connection to be used.
@@ -39,28 +38,27 @@ class CustomModalController extends ControllerBase {
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container) {
-    return new static(
-      $container->get('database')
-    );
+    return new static($container->get('database'));
   }
 
   /**
-   * To open the modal of the following userspage.
+   * To open the modal for th followers on userpage.
    */
-  public function followingmodal() {
+  public function followersmodal() {
     // For following.
     $user = \Drupal::routeMatch()->getParameter('user_id');
     $uid = $user->id();
 
     $query = $this->connection->select('flagging', 'f');
-    $query->condition('f.uid', $uid);
+    $query->condition('f.entity_id', $uid);
     $query->condition('f.flag_id', 'following');
+    $query->condition('f.entity_type', 'user');
     $query->fields('f');
     $fuid = $query->execute()->fetchAll();
 
     $userrec = [];
     foreach ($fuid as $row) {
-      $fid = $row->entity_id;
+      $fid = $row->uid;
 
       // For user profile img.
       $query0 = $this->connection->select('user__user_picture', 'i');
@@ -118,7 +116,10 @@ class CustomModalController extends ControllerBase {
       }
 
       // For username.
-      $uname = \Drupal::entityTypeManager()->getStorage('user')->load($fid)->get('name')->value;
+      $uname = \Drupal::entityTypeManager()
+        ->getStorage('user')
+        ->load($fid)
+        ->get('name')->value;
 
       // For full name.
       $query6 = $this->connection->select('user__field_full_name', 'fn');
@@ -141,6 +142,7 @@ class CustomModalController extends ControllerBase {
       $post_uri_all = '';
       foreach ($result7 as $row) {
         $img_nid = $row->nid;
+
         $query8 = $this->connection->select('node__field_image', 'ni');
         $query8->condition('ni.entity_id', $img_nid);
         $query8->fields('ni');
@@ -157,120 +159,65 @@ class CustomModalController extends ControllerBase {
 
           foreach ($result9 as $row) {
             $post_uri = file_create_url($row->uri);
-            $post_uri_all = t("<a href='../node/$img_nid' class='posts_img'><img src='$post_uri'></a>") . ' ' . $post_uri_all;
+
+            $post_uri_all =
+                            t(
+                      "<a href='../node/$img_nid' class='posts_img'><img src='$post_uri'></a>"
+                  ) .
+                            ' ' .
+                            $post_uri_all;
           }
         }
       }
 
-      $current_user = User::load(\Drupal::currentUser()->id());
-      $current_user_uid = $current_user->get('uid')->value;
+      $flag_txt =
+                'Instagram wont tell ' .
+                $uname .
+                ' they were removed from your followers';
 
-      if ($uid == $current_user_uid) {
-        $follow_link = Url::fromRoute('profile_block.unfollow', [
-          'user_id' => $fid
-]);
-        $follow_link->setOptions([
-          'attributes' => [
-            'class' => ['use-ajax', 'button', 'button--small'],
-            'data-dialog-type' => 'modal',
-            'data-dialog-options' => Json::encode([
-        'width' => 400,
-              'title' => 'unFollow'
-]),
-          ]
-        ]);
-
-        $lin = Link::fromTextAndUrl(t('following'), $follow_link)->toString();
-      }
-      else {
-
-        $query10 = $this->connection->select('flagging', 'f');
-        $query10->condition('f.uid', $current_user_uid);
-        $query10->condition('f.flag_id', 'following');
-        $query10->fields('f');
-        $current_fuid = $query10->execute()->fetchAll();
-
-        foreach ($current_fuid as $row) {
-          $current_fid = $row->entity_id;
-          if ($current_fid == $fid) {
-
-            $follow_link = Url::fromRoute('profile_block.unfollow', [
-              'user_id' => $fid
-]);
-            $follow_link->setOptions([
-              'attributes' => [
-                'class' => ['use-ajax', 'button', 'button--small'],
-                'data-dialog-type' => 'modal',
-                'data-dialog-options' => Json::encode([
-            'width' => 400,
-                  'title' => 'following'
-]),
-              ]
-            ]);
-
-            $lin = Link::fromTextAndUrl(t('following'), $follow_link)->toString();
-
-            break;
-          }
-          else {
-
-            $follow_link = Url::fromRoute('profile_block.follow', [
-              'user_id' => $fid
-          ]);
-            $follow_link->setOptions([
-                        'attributes' => [
-                          'class' => ['use-ajax', 'button', 'button--small'],
-                          'data-dialog-type' => 'modal',
-                          'data-dialog-options' => Json::encode([
-            'width' => 400,
-                            'title' => 'Follow'
-]),
-                        ]
-                      ]);
-
-            $lin = Link::fromTextAndUrl(t('follow'), $follow_link)->toString();
-          }
-        }
-      }
-
-      $flag_link = Url::fromRoute('profile_block.unfollow', [
-        'user_id' => $fid
-]);
-      $flag_link->setOptions([
+      $remove_link = Url::fromRoute('profile_block.remove_follower', [
+        'user_id' => $fid,
+      ]);
+      $remove_link->setOptions([
         'attributes' => [
           'class' => ['use-ajax', 'button', 'button--small'],
           'data-dialog-type' => 'modal',
           'data-dialog-options' => Json::encode([
-      'width' => 400,
-            'title' => 'Unfollow'
-]),
-        ]
+            'width' => 400,
+            'title' => 'Followers',
+          ]),
+        ],
       ]);
 
       $record = [
         '#theme' => 'flag-modal',
-        '#uri' => $uri,
         '#uname' => $uname,
+        '#uri' => $uri,
         '#name' => $name,
         '#post_count' => $post_count,
         '#followers_count' => $followers_count,
         '#following_count' => $following_count,
         '#post_uri_all' => $post_uri_all,
-        '#link' => 'Following',
-        '#flag_txt' => t("<p class='unfollow_txt'>If you change your mind, you'll have to request to follow @$uname again.</p>"),
-        '#flag_link' => Link::fromTextAndUrl(t('Unfollow'), $flag_link)->toString(),
+        '#link' => 'Remove',
+        '#flag_txt' => t(
+                "<h2>Remove Follower?</h2><p class='remove_txt'>$flag_txt</p>"
+        ),
+        '#flag_link' => Link::fromTextAndUrl(
+                t('Remove'),
+                $remove_link
+        )->toString(),
       ];
 
-      $userrec = [$userrec , $record];
+      $userrec = [$userrec, $record];
     }
 
     return $userrec;
   }
 
   /**
-   * To initiate the unfollow flag.
+   * To remove the follwers from the followers List.
    */
-  public function unfollow() {
+  public function removefollower() {
     $user = \Drupal::routeMatch()->getParameter('user_id');
     $uid = $user->id();
 
@@ -278,8 +225,8 @@ class CustomModalController extends ControllerBase {
     $current_user_uid = $current_user->get('uid')->value;
 
     $query10 = $this->connection->delete('flagging');
-    $query10->condition('uid', $current_user_uid);
-    $query10->condition('entity_id', $uid);
+    $query10->condition('uid', $uid);
+    $query10->condition('entity_id', $current_user_uid);
     $query10->execute();
   }
 

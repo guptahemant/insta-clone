@@ -1,103 +1,98 @@
 <?php
 
+/**
+ * @file
+ * To alter the Login form and add few more fields.
+ */
+
+use Drupal\Core\Url;
+
+/**
+ * Returns the variable from the custom block.
+ */
 function log_mod_theme() {
-    return [
-        'cust-block' => [
-            'variables' => [
-                'data' => NULL,
-            ],
-        ],
-    ]; 
+  return [
+    'cust-block' => [
+      'variables' => [
+        'data' => NULL,
+      ],
+    ],
+  ];
 }
 
-
+/**
+ * Alter the login form.
+ */
 function log_mod_form_alter(&$form, $form_state, $form_id) {
-    if ( $form['#form_id'] == 'user_login_form' ) {
+  if ($form['#form_id'] == 'user_login_form') {
 
-        $form['Heading'] = [
-            '#markup' => '<div class="insta_head">' . '</div>',   
-        ];
+    $form['Heading'] = [
+      '#markup' => '<div class="insta_head"></div>',
+    ];
 
-        $form['pass-toggle'] = [
-            '#type' => 'label',
-            '#label' => 'show',
-            '#attributes' => [
-                'class' => 'pass-toggle show',
-            ],
-            '#title' => t('Show'),
-        ];
-        
-        $form['my-empty-container'] = [
-            '#type' => 'container',
-            '#attributes' => [
-                'class' => 'my-class',
-            ],
+    $form['pass-toggle'] = [
+      '#type' => 'label',
+      '#label' => 'show',
+      '#attributes' => [
+        'class' => 'pass-toggle show',
+      ],
+      '#title' => t('Show'),
+    ];
 
-            'left' => [
-                '#type' => 'item',
-                'sub' => [],
-            ],
+    $form['my-empty-container'] = [
+      '#type' => 'container',
+      '#attributes' => [
+        'class' => 'my-class',
+      ],
 
-            'child' => [
-                '#type' => 'item',
-                '#title' => t('OR'),
-            ],
+      'left' => [
+        '#type' => 'item',
+        'sub' => [],
+      ],
 
-            'right' => [
-                '#type' => 'item',
-                'sub' => [],
-            ],
-        ];
-        
-         $form['icon-block'] = [
-            '#type' => 'container',
-            '#attributes' => [
-                'class' => 'icon-block',
-            ],
+      'child' => [
+        '#type' => 'item',
+        '#title' => t('OR'),
+      ],
 
-            'facebook' => [
-                '#type' => 'link',
-                '#attributes' => [
-                'class' => 'facebook',
-                ],
-                '#prefix' => '<i class="fab fa-facebook-square"></i>',
-                '#title' => t('Log in with Facebook'),
-                '#url' => \Drupal\Core\Url::fromUri('https://www.facebook.com/'),
-            ],
+      'right' => [
+        '#type' => 'item',
+        'sub' => [],
+      ],
+    ];
 
-            'password' => [
-                '#type' => 'link',
-                '#attributes' => [
-                    'class' => 'password',
-                ],
-                '#title' => t('Forgotten your password?'),
-                '#url' => \Drupal\Core\Url::fromUri('http://localhost/insta-clone/web/user/password'),
-            ],
-        ];
-       
-        
-       
-        $order = array('Heading' , 'pass-toggle' , 'name', 'pass','actions', 'my-empty-container', 'icon-block', 'password');
-            foreach($order as $key => $field) {
-                $form[$field]['#weight'] = $key;
-        }
+    $form['icon-block'] = [
+      '#type' => 'container',
+      '#attributes' => [
+        'class' => 'icon-block',
+      ],
 
+      'facebook' => [
+        '#type' => 'link',
+        '#attributes' => [
+          'class' => 'facebook',
+        ],
+        '#prefix' => '<i class="fab fa-facebook-square"></i>',
+        '#title' => t('Log in with Facebook'),
+        '#url' => Url::fromUri('https://www.facebook.com/'),
+      ],
+
+      'password' => [
+        '#type' => 'link',
+        '#attributes' => [
+          'class' => 'password',
+        ],
+        '#title' => t('Forgotten your password?'),
+        '#url' => Url::fromUri('http://localhost/insta-clone/web/user/password'),
+      ],
+    ];
+
+    $order = ['Heading', 'pass-toggle', 'name', 'pass',
+      'actions', 'my-empty-container', 'icon-block', 'password'
+];
+    foreach ($order as $key => $field) {
+      $form[$field]['#weight'] = $key;
     }
+
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
