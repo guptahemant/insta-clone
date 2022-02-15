@@ -808,13 +808,3 @@ $config['system.logging']['error_level'] = 'verbose';
 
 $settings['default_content_deploy_content_directory'] = '../content';
 
-$databases['default']['default'] = array (
-  'database' => 'instabase',
-  'username' => 'sharayu',
-  'password' => 'Sharayu@1998',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
