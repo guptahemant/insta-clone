@@ -51,7 +51,10 @@
             <div class='following_link_pop' id='following_link_pop'> 
                 <div class ='following_link_pop_top'>
                     <p class='uimg'><img src={{ uri }}></p> 
-                        {{ flag_txt }}
+                        <p class='unfollow_txt'>{{ flag_txt }}</p>
+                        {% if flag_txt2 %}
+                            <h2>Remove Follower?</h2><p class='remove_txt'>{{ flag_txt2 }}</p>
+                        {% endif %}
                     <div class = 'buttons'>
                         {{ flag_link }} 
                         <a class = 'cancel' >Cancel</a>

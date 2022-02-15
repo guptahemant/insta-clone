@@ -40,7 +40,7 @@ function pseudo_user_view(array &$build, EntityInterface $entity, EntityViewDisp
 
         '%name' => $entity->getDisplayName(),
 
-      ])
+      ]),
     ];
 
   }

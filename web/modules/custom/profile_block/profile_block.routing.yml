@@ -2,7 +2,7 @@ profile_block.following_modal:
   path: '/user/{user_id}/following/modal'
   defaults:
     _title: 'Modal'
-    _controller: '\Drupal\profile_block\Controller\CustomModalController::following_modal'
+    _controller: '\Drupal\profile_block\Controller\CustomModalController::followingmodal'
   requirements:
     _permission: 'access content'
   options:

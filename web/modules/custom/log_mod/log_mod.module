@@ -88,8 +88,8 @@ function log_mod_form_alter(&$form, $form_state, $form_id) {
     ];
 
     $order = ['Heading', 'pass-toggle', 'name', 'pass',
-      'actions', 'my-empty-container', 'icon-block', 'password'
-];
+      'actions', 'my-empty-container', 'icon-block', 'password',
+    ];
     foreach ($order as $key => $field) {
       $form[$field]['#weight'] = $key;
     }
