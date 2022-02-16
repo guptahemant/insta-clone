@@ -1,0 +1,88 @@
+uuid: 355ce2dd-5c07-4d9a-a567-5309f32bf62e
+langcode: en
+status: true
+dependencies: {  }
+id: quick_tab
+label: quick-tab
+renderer: quick_tabs
+hide_empty_tabs: true
+default_tab: 0
+options:
+  quick_tabs:
+    ajax: false
+    class: ''
+    style: tabsbar
+  accordion_tabs:
+    jquery_ui:
+      collapsible: false
+      heightStyle: auto
+configuration_data:
+  -
+    title: '<i class="fas fa-th"></i><div class="test8">POSTS</div>'
+    weight: 0
+    type: block_content
+    content:
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: user_post
+          display: default
+          args: ''
+      block_content:
+        options:
+          bid: 'views_block:user_post-block_1'
+          block_title: ''
+          display_title: false
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: ' <i class="far fa-bookmark"></i><div class="test8">SAVED</div>'
+    weight: 0
+    type: view_content
+    content:
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: bookmark
+          display: default
+          args: ''
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: '  <i class="far fa-id-badge"></i><div class="test8">TAGGED</div>'
+    weight: 0
+    type: block_content
+    content:
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''
+      block_content:
+        options:
+          bid: 'views_block:mention_view-block_1'
+          block_title: ''
+          display_title: false
+      qtabs_content:
+        options:
+          machine_name: ''
