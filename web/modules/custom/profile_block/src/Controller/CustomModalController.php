@@ -45,13 +45,13 @@ class CustomModalController extends ControllerBase implements ContainerInjection
    *   The database connection to be used.
    * @param \Drupal\Core\Routing\CurrentRouteMatch $currentRouteMatch
    *   The current route match.
-   * @param \Drupal\Core\Entity\EntityTypeManager $entity_type_manager
+   * @param \Drupal\Core\Entity\EntityTypeManager $entityTypeManager
    *   The entity type manager.
    */
-  public function __construct(Connection $connection, CurrentRouteMatch $currentRouteMatch, EntityTypeManager $entity_type_manager) {
+  public function __construct(Connection $connection, CurrentRouteMatch $currentRouteMatch, EntityTypeManager $entityTypeManager) {
     $this->connection = $connection;
     $this->currentRouteMatch = $currentRouteMatch;
-    $this->entity_type_manager = $entity_type_manager;
+    $this->entityTypeManager = $entityTypeManager;
   }
 
   /**
@@ -139,7 +139,7 @@ class CustomModalController extends ControllerBase implements ContainerInjection
       }
 
       // For username.
-      $uname = $this->entity_type_manager->getStorage('user')->load($fid)->get('name')->value;
+      $uname = $this->entityTypeManager->getStorage('user')->load($fid)->get('name')->value;
 
       // For full name.
       $query6 = $this->connection->select('user__field_full_name', 'fn');
@@ -184,7 +184,7 @@ class CustomModalController extends ControllerBase implements ContainerInjection
         }
       }
 
-      $current_user = $this->entity_type_manager->getStorage('user')->load($this->currentUser()->id());
+      $current_user = $this->entityTypeManager->getStorage('user')->load($this->currentUser()->id());
       $current_user_uid = $current_user->get('uid')->value;
 
       if ($uid == $current_user_uid) {
@@ -272,7 +272,7 @@ class CustomModalController extends ControllerBase implements ContainerInjection
         '#following_count' => $following_count,
         '#post_uri_all' => $post_uri_all,
         '#link' => 'Following',
-        '#flag_txt' => $this->t("If you change your mind, you'll have to request to follow @") . $uname . " " . $this->t("again."),
+        '#flag_txt' => $this->t("If you change your mind, you'll have to request to follow @@uname again.", ['@uname' => $uname]),
         '#flag_link' => Link::fromTextAndUrl($this->t('Unfollow'), $flag_link)->toString(),
       ];
 
@@ -289,7 +289,7 @@ class CustomModalController extends ControllerBase implements ContainerInjection
     $user = $this->currentRouteMatch->getParameter('user_id');
     $uid = $user->id();
 
-    $current_user = $this->entity_type_manager->getStorage('user')->load($this->currentUser()->id());
+    $current_user = $this->entityTypeManager->getStorage('user')->load($this->currentUser()->id());
     $current_user_uid = $current_user->get('uid')->value;
 
     $query10 = $this->connection->delete('flagging');

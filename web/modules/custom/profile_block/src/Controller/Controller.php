@@ -43,13 +43,13 @@ class Controller extends ControllerBase {
    *   The database connection to be used.
    * @param \Drupal\Core\Routing\CurrentRouteMatch $currentRouteMatch
    *   The current route match.
-   * @param \Drupal\Core\Entity\EntityTypeManager $entity_type_manager
+   * @param \Drupal\Core\Entity\EntityTypeManager $entityTypeManager
    *   The entity type manager.
    */
-  public function __construct(Connection $connection, CurrentRouteMatch $currentRouteMatch, EntityTypeManager $entity_type_manager) {
+  public function __construct(Connection $connection, CurrentRouteMatch $currentRouteMatch, EntityTypeManager $entityTypeManager) {
     $this->connection = $connection;
     $this->currentRouteMatch = $currentRouteMatch;
-    $this->entity_type_manager = $entity_type_manager;
+    $this->entityTypeManager = $entityTypeManager;
   }
 
   /**
@@ -138,7 +138,7 @@ class Controller extends ControllerBase {
       }
 
       // For username.
-      $uname = $this->entity_type_manager->getStorage('user')->load($fid)->get('name')->value;
+      $uname = $this->entityTypeManager->getStorage('user')->load($fid)->get('name')->value;
 
       // For full name.
       $query6 = $this->connection->select('user__field_full_name', 'fn');
@@ -208,7 +208,7 @@ class Controller extends ControllerBase {
         '#following_count' => $following_count,
         '#post_uri_all' => $post_uri_all,
         '#link' => 'Remove',
-        '#flag_txt2' => $this->t("Instagram wont tell") . " " . $uname . " " . $this->t("they were removed from your followers"),
+        '#flag_txt2' => $this->t('Instagram wont tell @uname they were removed from your followers', ['@uname' => $uname]),
         '#flag_link' => Link::fromTextAndUrl($this->t('Remove'), $remove_link)->toString(),
       ];
 
@@ -225,7 +225,7 @@ class Controller extends ControllerBase {
     $user = $this->currentRouteMatch->getParameter('user_id');
     $uid = $user->id();
 
-    $current_user = $this->entity_type_manager->getStorage('user')->load($this->currentUser()->id());
+    $current_user = $this->entityTypeManager->getStorage('user')->load($this->currentUser()->id());
     $current_user_uid = $current_user->get('uid')->value;
 
     $query10 = $this->connection->delete('flagging');
