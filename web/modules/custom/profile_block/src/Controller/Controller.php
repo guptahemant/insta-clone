@@ -2,16 +2,14 @@
 
 namespace Drupal\profile_block\Controller;
 
-use Drupal\user\Entity\User;
-use Drupal\Core\Ajax\AjaxResponse;
-use Drupal\Core\Ajax\OpenModalDialogCommand;
 use Drupal\Core\Url;
 use Drupal\Core\Link;
 use Drupal\Component\Serialization\Json;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Database\Connection;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\Entity;
+use Drupal\Core\Routing\CurrentRouteMatch;
+use Drupal\Core\Entity\EntityTypeManager;
 
 /**
  * A controller class.
@@ -25,20 +23,44 @@ class Controller extends ControllerBase {
   private $connection;
 
   /**
+   * The current route match.
+   *
+   * @var \Drupal\Core\Routing\CurrentRouteMatch
+   */
+  protected $currentRouteMatch;
+
+  /**
+   * The entity type manager.
+   *
+   * @var \Drupal\Core\Entity\EntityTypeManager
+   */
+  protected $entityTypeManager;
+
+  /**
    * The database connection to be used.
    *
    * @param \Drupal\Core\Database\Connection $connection
    *   The database connection to be used.
+   * @param \Drupal\Core\Routing\CurrentRouteMatch $currentRouteMatch
+   *   The current route match.
+   * @param \Drupal\Core\Entity\EntityTypeManager $entityTypeManager
+   *   The entity type manager.
    */
-  public function __construct(Connection $connection) {
+  public function __construct(Connection $connection, CurrentRouteMatch $currentRouteMatch, EntityTypeManager $entityTypeManager) {
     $this->connection = $connection;
+    $this->currentRouteMatch = $currentRouteMatch;
+    $this->entityTypeManager = $entityTypeManager;
   }
 
   /**
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container) {
-    return new static($container->get('database'));
+    return new static(
+      $container->get('database'),
+      $container->get('current_route_match'),
+      $container->get('entity_type.manager')
+    );
   }
 
   /**
@@ -46,7 +68,7 @@ class Controller extends ControllerBase {
    */
   public function followersmodal() {
     // For following.
-    $user = \Drupal::routeMatch()->getParameter('user_id');
+    $user = $this->currentRouteMatch->getParameter('user_id');
     $uid = $user->id();
 
     $query = $this->connection->select('flagging', 'f');
@@ -116,10 +138,7 @@ class Controller extends ControllerBase {
       }
 
       // For username.
-      $uname = \Drupal::entityTypeManager()
-        ->getStorage('user')
-        ->load($fid)
-        ->get('name')->value;
+      $uname = $this->entityTypeManager->getStorage('user')->load($fid)->get('name')->value;
 
       // For full name.
       $query6 = $this->connection->select('user__field_full_name', 'fn');
@@ -159,21 +178,11 @@ class Controller extends ControllerBase {
 
           foreach ($result9 as $row) {
             $post_uri = file_create_url($row->uri);
-
-            $post_uri_all =
-                            t(
-                      "<a href='../node/$img_nid' class='posts_img'><img src='$post_uri'></a>"
-                  ) .
-                            ' ' .
-                            $post_uri_all;
+            $str = "<a href='../node/" . $img_nid . "' class='posts_img'><img src='" . $post_uri . "'></a>";
+            $post_uri_all = $str . ' ' . $post_uri_all;
           }
         }
       }
-
-      $flag_txt =
-                'Instagram wont tell ' .
-                $uname .
-                ' they were removed from your followers';
 
       $remove_link = Url::fromRoute('profile_block.remove_follower', [
         'user_id' => $fid,
@@ -199,13 +208,8 @@ class Controller extends ControllerBase {
         '#following_count' => $following_count,
         '#post_uri_all' => $post_uri_all,
         '#link' => 'Remove',
-        '#flag_txt' => t(
-                "<h2>Remove Follower?</h2><p class='remove_txt'>$flag_txt</p>"
-        ),
-        '#flag_link' => Link::fromTextAndUrl(
-                t('Remove'),
-                $remove_link
-        )->toString(),
+        '#flag_txt2' => $this->t('Instagram wont tell @uname they were removed from your followers', ['@uname' => $uname]),
+        '#flag_link' => Link::fromTextAndUrl($this->t('Remove'), $remove_link)->toString(),
       ];
 
       $userrec = [$userrec, $record];
@@ -218,10 +222,10 @@ class Controller extends ControllerBase {
    * To remove the follwers from the followers List.
    */
   public function removefollower() {
-    $user = \Drupal::routeMatch()->getParameter('user_id');
+    $user = $this->currentRouteMatch->getParameter('user_id');
     $uid = $user->id();
 
-    $current_user = User::load(\Drupal::currentUser()->id());
+    $current_user = $this->entityTypeManager->getStorage('user')->load($this->currentUser()->id());
     $current_user_uid = $current_user->get('uid')->value;
 
     $query10 = $this->connection->delete('flagging');

@@ -7,15 +7,12 @@ use Drupal\Core\Url;
 use Drupal\Core\Link;
 use Drupal\Component\Serialization\Json;
 use Drupal\Core\Database\Connection;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\profile_block\Controller;
+use Drupal\Core\Routing\CurrentRouteMatch;
 
 /**
  * A block that holds the id and admin label for the logged in user.
- *
- * @package WordPress_Custom_Fields_Permalink
- * @author Module Block <username@example.com>
- * @copyright 2016 Your Name or Company Name
  *
  * @Block(
  *   id = "user_profile_block",
@@ -23,34 +20,66 @@ use Drupal\profile_block\Controller;
  *   category = @Translation("custom World"),
  * )
  */
-class UserProfileBlock extends BlockBase {
+class UserProfileBlock extends BlockBase implements ContainerFactoryPluginInterface {
+
   /**
-   * A variable to get the database connection.
+   * A connection class with database.
    *
    * @var \Drupal\Core\Database\Connection
    */
-  private $connection;
+  protected $connection = NULL;
 
   /**
-   * To store all data in a container.
+   * The current route match.
    *
-   * {@inheritdoc}
+   * @var \Drupal\Core\Routing\CurrentRouteMatch
    */
-  public static function create(ContainerInterface $container) {
-    return new static($container->get('database'));
+  protected $currentRouteMatch;
+
+  /**
+   * The database connection to be used.
+   *
+   * @param \Drupal\Core\Database\Connection $connection
+   *   The database connection to be used.
+   * @param \Drupal\Core\Routing\CurrentRouteMatch $currentRouteMatch
+   *   The current route match.
+   */
+
+  /**
+   * Constructor that's expecting the object provided by create().
+   */
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, Connection $connection, CurrentRouteMatch $currentRouteMatch) {
+    // Instantiate the BlockBase parent first.
+    parent::__construct($configuration, $plugin_id, $plugin_definition);
+    // Then save the store service passed to this constructor
+    // via dependency injection.
+    $this->connection = $connection;
+    $this->currentRouteMatch = $currentRouteMatch;
   }
 
   /**
    * {@inheritdoc}
    */
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
+    return new static(
+      $configuration,
+      $plugin_id,
+      $plugin_definition,
+      $container->get('database'),
+      $container->get('current_route_match')
+    );
+  }
+
+  /**
+   * To display user profile data.
+   */
   public function build() {
-    $db = \Drupal::database();
 
     // For username.
-    $user = \Drupal::routeMatch()->getParameter('user');
+    $user = $this->currentRouteMatch->getParameter('user');
     $uid = $user->id();
 
-    $query1 = $db->select('users_field_data', 'e');
+    $query1 = $this->connection->select('users_field_data', 'e');
     $query1->condition('e.uid', $uid);
     $query1->fields('e');
     $usrn = $query1->execute()->fetchAll();
@@ -62,7 +91,7 @@ class UserProfileBlock extends BlockBase {
     // For post count.
     $post_count = 0;
 
-    $query2 = $db->select('node_field_data', 'n');
+    $query2 = $this->connection->select('node_field_data', 'n');
     $query2->condition('n.uid', $uid);
     $query2->condition('n.status', 1);
     $query2->fields('n');
@@ -72,7 +101,7 @@ class UserProfileBlock extends BlockBase {
       $post_count++;
     }
 
-    $query3 = $db->select('flagging', 'f');
+    $query3 = $this->connection->select('flagging', 'f');
     $query3->condition('f.entity_id', $uid);
     $query3->condition('f.flag_id', 'following');
     $query3->fields('f');
@@ -86,7 +115,7 @@ class UserProfileBlock extends BlockBase {
     // For following count.
     $following_count = 0;
 
-    $query4 = $db->select('flagging', 'fl');
+    $query4 = $this->connection->select('flagging', 'fl');
     $query4->condition('fl.uid', $uid);
     $query4->condition('fl.flag_id', 'following');
     $query4->fields('fl');
@@ -97,7 +126,7 @@ class UserProfileBlock extends BlockBase {
     }
 
     // For bio.
-    $query5 = $db->select('user__field_bio', 'b');
+    $query5 = $this->connection->select('user__field_bio', 'b');
     $query5->condition('b.entity_id', $uid);
     $query5->fields('b');
     $result5 = $query5->execute()->fetchAll();
@@ -107,7 +136,7 @@ class UserProfileBlock extends BlockBase {
     }
 
     // For full name.
-    $query6 = $db->select('user__field_full_name', 'fn');
+    $query6 = $this->connection->select('user__field_full_name', 'fn');
     $query6->condition('fn.entity_id', $uid);
     $query6->fields('fn');
     $result6 = $query6->execute()->fetchAll();
@@ -154,11 +183,11 @@ class UserProfileBlock extends BlockBase {
       '#bio' => $bio,
 
       '#markup1' => Link::fromTextAndUrl(
-              t('following'),
+              $this->t('following'),
               $link_url1
       )->toString(),
       '#markup2' => Link::fromTextAndUrl(
-              t('followers'),
+              $this->t('followers'),
               $link_url2
       )->toString(),
       '#attached' => ['library' => ['core/drupal.dialog.ajax']],

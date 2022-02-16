@@ -36,6 +36,7 @@ function profile_block_theme($existing, $type, $theme, $path) {
         'post_uri_all' => NULL,
         'link' => NULL,
         'flag_txt' => NULL,
+        'flag_txt2' => NULL,
         'flag_link' => NULL,
       ],
     ],

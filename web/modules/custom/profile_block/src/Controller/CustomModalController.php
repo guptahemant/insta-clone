@@ -2,21 +2,20 @@
 
 namespace Drupal\profile_block\Controller;
 
-use Drupal\user\Entity\User;
-use Drupal\Core\Ajax\AjaxResponse;
-use Drupal\Core\Ajax\OpenModalDialogCommand;
 use Drupal\Core\Url;
 use Drupal\Core\Link;
 use Drupal\Component\Serialization\Json;
-use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Database\Connection;
+use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
+use Drupal\Core\Routing\CurrentRouteMatch;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\Entity;
+use Drupal\Core\Entity\EntityTypeManager;
 
 /**
  * A controller Class for the Follwing Modal.
  */
-class CustomModalController extends ControllerBase {
+class CustomModalController extends ControllerBase implements ContainerInjectionInterface {
 
   /**
    * A variable to create a connection.
@@ -26,13 +25,33 @@ class CustomModalController extends ControllerBase {
   private $connection;
 
   /**
+   * The current route match.
+   *
+   * @var \Drupal\Core\Routing\CurrentRouteMatch
+   */
+  protected $currentRouteMatch;
+
+  /**
+   * The entity type manager.
+   *
+   * @var \Drupal\Core\Entity\EntityTypeManager
+   */
+  protected $entityTypeManager;
+
+  /**
    * To initiate the database.
    *
    * @param \Drupal\Core\Database\Connection $connection
    *   The database connection to be used.
+   * @param \Drupal\Core\Routing\CurrentRouteMatch $currentRouteMatch
+   *   The current route match.
+   * @param \Drupal\Core\Entity\EntityTypeManager $entityTypeManager
+   *   The entity type manager.
    */
-  public function __construct(Connection $connection) {
+  public function __construct(Connection $connection, CurrentRouteMatch $currentRouteMatch, EntityTypeManager $entityTypeManager) {
     $this->connection = $connection;
+    $this->currentRouteMatch = $currentRouteMatch;
+    $this->entityTypeManager = $entityTypeManager;
   }
 
   /**
@@ -40,7 +59,9 @@ class CustomModalController extends ControllerBase {
    */
   public static function create(ContainerInterface $container) {
     return new static(
-      $container->get('database')
+      $container->get('database'),
+      $container->get('current_route_match'),
+      $container->get('entity_type.manager')
     );
   }
 
@@ -49,7 +70,7 @@ class CustomModalController extends ControllerBase {
    */
   public function followingmodal() {
     // For following.
-    $user = \Drupal::routeMatch()->getParameter('user_id');
+    $user = $this->currentRouteMatch->getParameter('user_id');
     $uid = $user->id();
 
     $query = $this->connection->select('flagging', 'f');
@@ -118,7 +139,7 @@ class CustomModalController extends ControllerBase {
       }
 
       // For username.
-      $uname = \Drupal::entityTypeManager()->getStorage('user')->load($fid)->get('name')->value;
+      $uname = $this->entityTypeManager->getStorage('user')->load($fid)->get('name')->value;
 
       // For full name.
       $query6 = $this->connection->select('user__field_full_name', 'fn');
@@ -157,30 +178,29 @@ class CustomModalController extends ControllerBase {
 
           foreach ($result9 as $row) {
             $post_uri = file_create_url($row->uri);
-            $post_uri_all = t("<a href='../node/$img_nid' class='posts_img'><img src='$post_uri'></a>") . ' ' . $post_uri_all;
+            $str = "<a href='../node/" . $img_nid . "' class='posts_img'><img src='" . $post_uri . "'></a>";
+            $post_uri_all = $str . ' ' . $post_uri_all;
           }
         }
       }
 
-      $current_user = User::load(\Drupal::currentUser()->id());
+      $current_user = $this->entityTypeManager->getStorage('user')->load($this->currentUser()->id());
       $current_user_uid = $current_user->get('uid')->value;
 
       if ($uid == $current_user_uid) {
         $follow_link = Url::fromRoute('profile_block.unfollow', [
-          'user_id' => $fid
-]);
+          'user_id' => $fid,
+        ]);
         $follow_link->setOptions([
           'attributes' => [
             'class' => ['use-ajax', 'button', 'button--small'],
             'data-dialog-type' => 'modal',
             'data-dialog-options' => Json::encode([
-        'width' => 400,
-              'title' => 'unFollow'
-]),
-          ]
+              'width' => 400,
+              'title' => 'unFollow',
+            ]),
+          ],
         ]);
-
-        $lin = Link::fromTextAndUrl(t('following'), $follow_link)->toString();
       }
       else {
 
@@ -195,56 +215,51 @@ class CustomModalController extends ControllerBase {
           if ($current_fid == $fid) {
 
             $follow_link = Url::fromRoute('profile_block.unfollow', [
-              'user_id' => $fid
-]);
+              'user_id' => $fid,
+            ]);
             $follow_link->setOptions([
               'attributes' => [
                 'class' => ['use-ajax', 'button', 'button--small'],
                 'data-dialog-type' => 'modal',
                 'data-dialog-options' => Json::encode([
-            'width' => 400,
-                  'title' => 'following'
-]),
-              ]
+                  'width' => 400,
+                  'title' => 'following',
+                ]),
+              ],
             ]);
-
-            $lin = Link::fromTextAndUrl(t('following'), $follow_link)->toString();
-
             break;
           }
           else {
 
             $follow_link = Url::fromRoute('profile_block.follow', [
-              'user_id' => $fid
-          ]);
+              'user_id' => $fid,
+            ]);
             $follow_link->setOptions([
-                        'attributes' => [
-                          'class' => ['use-ajax', 'button', 'button--small'],
-                          'data-dialog-type' => 'modal',
-                          'data-dialog-options' => Json::encode([
-            'width' => 400,
-                            'title' => 'Follow'
-]),
-                        ]
-                      ]);
-
-            $lin = Link::fromTextAndUrl(t('follow'), $follow_link)->toString();
+              'attributes' => [
+                'class' => ['use-ajax', 'button', 'button--small'],
+                'data-dialog-type' => 'modal',
+                'data-dialog-options' => Json::encode([
+                  'width' => 400,
+                  'title' => 'Follow',
+                ]),
+              ],
+            ]);
           }
         }
       }
 
       $flag_link = Url::fromRoute('profile_block.unfollow', [
-        'user_id' => $fid
-]);
+        'user_id' => $fid,
+      ]);
       $flag_link->setOptions([
         'attributes' => [
           'class' => ['use-ajax', 'button', 'button--small'],
           'data-dialog-type' => 'modal',
           'data-dialog-options' => Json::encode([
-      'width' => 400,
-            'title' => 'Unfollow'
-]),
-        ]
+            'width' => 400,
+            'title' => 'Unfollow',
+          ]),
+        ],
       ]);
 
       $record = [
@@ -257,8 +272,8 @@ class CustomModalController extends ControllerBase {
         '#following_count' => $following_count,
         '#post_uri_all' => $post_uri_all,
         '#link' => 'Following',
-        '#flag_txt' => t("<p class='unfollow_txt'>If you change your mind, you'll have to request to follow @$uname again.</p>"),
-        '#flag_link' => Link::fromTextAndUrl(t('Unfollow'), $flag_link)->toString(),
+        '#flag_txt' => $this->t("If you change your mind, you'll have to request to follow @@uname again.", ['@uname' => $uname]),
+        '#flag_link' => Link::fromTextAndUrl($this->t('Unfollow'), $flag_link)->toString(),
       ];
 
       $userrec = [$userrec , $record];
@@ -271,10 +286,10 @@ class CustomModalController extends ControllerBase {
    * To initiate the unfollow flag.
    */
   public function unfollow() {
-    $user = \Drupal::routeMatch()->getParameter('user_id');
+    $user = $this->currentRouteMatch->getParameter('user_id');
     $uid = $user->id();
 
-    $current_user = User::load(\Drupal::currentUser()->id());
+    $current_user = $this->entityTypeManager->getStorage('user')->load($this->currentUser()->id());
     $current_user_uid = $current_user->get('uid')->value;
 
     $query10 = $this->connection->delete('flagging');
