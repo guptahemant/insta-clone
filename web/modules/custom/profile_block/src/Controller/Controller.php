@@ -2,6 +2,7 @@
 
 namespace Drupal\profile_block\Controller;
 
+use Drupal\user\Entity\User;
 use Drupal\Core\Url;
 use Drupal\Core\Link;
 use Drupal\Component\Serialization\Json;

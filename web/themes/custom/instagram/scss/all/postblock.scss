@@ -62,70 +62,9 @@
      }// width: 50%;
      img:hover{
        opacity: 1.0;
-     }
-     .demo {
-       position: absolute;
-       top: 0;
-       bottom: 0;
-       left: 0;
-       right: 0;
-       height: 100%;
-       width: 100%;
-       opacity: 0;
-       transition: .5s ease;
-       // background-color: #008CBA;
-       background-color: transparent;
-       
-     }
-     
-     .hover-img:hover .demo {
-       opacity: 1;
-       
-     }
-     
-     .text {
-       color: white;
-       font-size: 20px;
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       -ms-transform: translate(-50%, -50%);
-     }
+     }   
    }
-   .flex_div{
-       display: flex;
-       flex-direction: column;
-       margin-bottom: 93px;
-        margin-top: 57px;
-       .nopost_icon{
-        margin: auto;
-       width: 76px;
-       height: 74px;
-        overflow: hidden;
-        position: relative;
-        margin-bottom: 13px;
-        img{
-         
-         width: -webkit-fill-available;
-         position: absolute;
-          top: -320px;
-         height: auto;
-         left: -211px;
-         right: -207px;
-         
-        }
-        .svg-inline--fa{
-         height: 100px;
-         width: 68px;
-        }
-       }
-       .text_post{
-         font-size: 28px;
-         font-weight: 300;
-         line-height: 32px;
-       }
-   }
+  
    .img-insta{
     margin-left: 10px;
     margin-right: 10px;
@@ -236,6 +175,7 @@
       height: 100%; 
       margin-left: 0;
       } 
+    }
     .hover-img {
       position: relative;
     }
@@ -253,6 +193,7 @@
       opacity: 0;
       transition: .5s ease;
       background-color: transparent;
+      background: rgba(0, 0, 0, 0.5);
       
     }
     
@@ -267,42 +208,38 @@
       position: absolute;
       top: 50%;
       left: 50%;
+      display: inline-flex;
+      justify-content: space-around;
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
+      @include tablet{
+          display: block;
+      }
+      @include mobile{
+          display: block;
+      }
+      .action-unflag svg{
+          color: white;
+           margin-right: 10px;
+      }
+      .action-unflag{
+          margin-right: 17px;
+          @include tablet{
+              margin-right: 0;
+          }
+          @include mobile{
+              margin-right: 0;
+          }
+      }
+      .svg-inline--fa{
+          margin-left: 8px;
+          margin-right: 8px;
+          @include mobile{
+              margin-left: 0;
+              margin-right: 0;
+          }
+      }
     }
-  }
-  .flex_div{
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 93px;
-       margin-top: 57px;
-      .nopost_icon{
-       margin: auto;
-      width: 76px;
-      height: 74px;
-       overflow: hidden;
-       position: relative;
-       margin-bottom: 13px;
-       img{
-        
-        width: -webkit-fill-available;
-        position: absolute;
-         top: -320px;
-        height: auto;
-        left: -211px;
-        right: -207px;
-        
-       }
-       .svg-inline--fa{
-        height: 100px;
-        width: 68px;
-       }
-      }
-      .text_post{
-        font-size: 28px;
-        font-weight: 300;
-        line-height: 32px;
-      }
   }
   .img-insta{
     margin-left: 10px;
@@ -317,7 +254,7 @@
     }
   } 
  
-  }
+  
   .new_class{
     display: flex;
     justify-content: space-between;

@@ -116,7 +116,20 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: "<div class=\"flex_div\"><div class=\"nopost_icon\"><img src=\"https://www.instagram.com/static/bundles/es6/sprite_core_2x_bcd90c1d4868.png/bcd90c1d4868.png\"/></div>\r\n <div class=\"text_post\">No Photos</div>\r\n</div>\r\n"
+            format: full_html
+          tokenize: false
       sorts:
         created:
           id: created
