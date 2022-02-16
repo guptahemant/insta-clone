@@ -22,6 +22,11 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 3
+    region: content
+  flag_following:
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
   my_name:
@@ -40,7 +45,6 @@ content:
     region: content
 hidden:
   field_bio: true
-  flag_following: true
   langcode: true
   member_for: true
   search_api_excerpt: true

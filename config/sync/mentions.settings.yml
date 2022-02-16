@@ -1,0 +1,5 @@
+supported_entity_types:
+  node: node
+  comment: comment
+  taxonomy_term: taxonomy_term
+  user: user
