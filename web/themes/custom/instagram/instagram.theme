@@ -65,3 +65,10 @@ function instagram_user_login(&$variables) {
   $body_classes = [];
   $body_classes[] = ($vars['logged_in']) ? 'logged-in' : 'not-logged-in';
 }
+
+/**
+ * Implemented THEMENAME_preprocess_HOOK() to add library to the Feedpost page.
+ */
+function instagram_preprocess_page__feedpost(&$variables) {
+  $variables['#attached']['library'][] = 'instagram/feed';
+}

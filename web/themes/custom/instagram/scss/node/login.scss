@@ -36,8 +36,8 @@ html{
     
                     #block-views-block-slider-view-block-1{
                         position: absolute;
-                        top: 130px;
-                        left: 381px;
+                        top: 131px;
+                        left: 422px;
     
                         @include laptop{
                             top: 126px;
@@ -57,7 +57,7 @@ html{
             }
     
             .layout-sidebar{
-                width: 28%;
+                width: 350px;
                 margin-top: 4%;
     
                 @include laptop {
@@ -160,10 +160,10 @@ html{
                             color: black;
                             position: absolute;
                             font-weight: bold;
-                            top: 236px;
+                            top: 242px;
                             font-size: 14px;
                             z-index: 1;
-                            right: 277px;
+                            right: 320px;
 
                             @include laptop {
                                 top: 223px;
@@ -197,6 +197,7 @@ html{
                             background: #b8e4ef;
                             border: none;
                             width: 100%;
+                            height: 31px;
                             margin: 12px 0;
                             font-weight: bold;
                             font-size: 14px;

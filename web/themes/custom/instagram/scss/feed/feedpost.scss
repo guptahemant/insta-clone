@@ -1,0 +1,27 @@
+@import 'mixin';
+
+.mostviewed {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    width: max-content;
+    grid-gap: 28px;
+    margin: auto;
+
+    @include mobile {
+        grid-gap: 3px;
+    }
+
+
+
+    .views-row{
+        width: 293px;
+        height: 293px;
+    }
+}
+
+
+video{
+    width: 293px;
+    height: 293px;
+}

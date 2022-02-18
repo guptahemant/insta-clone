@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2e261b07-2ce8-4eb1-a4bd-7265e148a952
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: ojrsgzghuqxge7yu_1594809851.jpeg
+  uri:
+    -
+      value: 'public://pictures/2022-02/ojrsgzghuqxge7yu_1594809851.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 38397
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1644587092

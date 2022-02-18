@@ -24,3 +24,9 @@ userpage:
   css:
     theme:
       css/myprofile_block/style.css: {}
+
+feed:
+  version: VERSION
+  css:
+    theme:
+      css/feed/style.css: {}
