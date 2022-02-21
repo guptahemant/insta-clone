@@ -1,4 +1,8 @@
+label: 'Ajouter ou modifier un serveur Search API'
 tips:
+  search-api-server-form-introduction:
+    label: 'Ajouter ou modifier un serveur'
+    body: 'Ce formulaire peut être utilisé pour modifier un serveur existant ou ajouter un nouveau serveur à votre site. Les serveurs conserveront vos données indexées.'
   search-api-server-form-name:
     label: 'Nom du serveur'
   search-api-server-form-description:

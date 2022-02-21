@@ -23,5 +23,8 @@ display:
         search_api_fulltext:
           expose:
             label: Rechercher
+      header:
+        result:
+          content: 'Affichage des résultats @start - @end sur @total'
   page_1:
     display_title: Page

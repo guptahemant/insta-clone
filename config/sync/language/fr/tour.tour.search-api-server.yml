@@ -1,5 +1,12 @@
+label: 'Informations sur un serveur'
 tips:
+  search-api-server-introduction:
+    label: 'Informations sur un serveur'
   search-api-server-status:
     label: État
   search-api-server-indexes:
     label: 'Indexes de recherche'
+    body: 'Répertorie tous les index de recherche qui sont rattachés à ce serveur.'
+  search-api-server-clear:
+    label: 'Supprimer toutes les données indexées'
+    body: 'Ceci retirera définitivement toutes les données actuellement indexées sur ce serveur pour les index qui ne sont pas en lecture seule. Les éléments sont mis en attente pour la réindexation. Jusqu''à ce que la réindexation se produise, les recherches pour les index concernés ne renverront aucun résultat.'
