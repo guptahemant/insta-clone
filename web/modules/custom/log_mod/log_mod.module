@@ -74,7 +74,7 @@ function log_mod_form_alter(&$form, $form_state, $form_id) {
         ],
         '#prefix' => '<i class="fab fa-facebook-square"></i>',
         '#title' => t('Log in with Facebook'),
-        '#url' => Url::fromUri('https://www.facebook.com/'),
+        '#url' => Url::fromUri('http://localhost/insta-clone/web/user/login/facebook'),
       ],
 
       'password' => [

@@ -33,6 +33,7 @@
         "drupal/search_api": "^1.21",
         "drupal/search_api_autocomplete": "^1.5",
         "drupal/search_api_page": "^1.0@beta",
+        "drupal/social_auth_facebook": "^3.0",
         "drupal/user_menu_avatar": "^6.0@RC",
         "drupal/views_slideshow": "^4.8"
     },

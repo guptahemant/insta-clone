@@ -283,7 +283,7 @@ $databases = [];
  * @endcode
  */
 $settings['hash_salt'] =
-    'MggkWqu7PsEDzcNIC1g8lpTVjkvg3936uJQkZcOpp84TH1wp2TdSNb1Fb9ECHGJdmOoWNk-jfQ';
+    'UBChSnjIOd0pWnN0BRVvLvQ22yUIg7mvyEXAEZXFR9rtxW9vFOYkYWN5C84K1n82yHEmELtQAQ';
 
 /**
  * Deployment identifier.
@@ -807,4 +807,3 @@ $settings['config_sync_directory'] = '../config/sync';
 $config['system.logging']['error_level'] = 'verbose';
 
 $settings['default_content_deploy_content_directory'] = '../content';
-
