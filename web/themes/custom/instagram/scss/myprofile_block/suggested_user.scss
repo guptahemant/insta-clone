@@ -153,4 +153,16 @@
       }
     }
   }
+} 
+
+@media (max-width: 768px) { 
+  main{
+    margin: 80px 20px;
+  }
+}
+
+@media (max-width: 425px) { 
+  main{
+    margin: 100px 0;
+  }
 }
