@@ -1,0 +1,13 @@
+createpost.createpost:
+  title: create
+  description: ""
+  route_name: createpost.open_modal_form
+  menu_name: main
+  options:
+    attributes:
+      class:
+        - use-ajax
+      data-dialog-type:
+        - modal
+      data-dialog-options:
+        - Json::encode(['width' => 400])

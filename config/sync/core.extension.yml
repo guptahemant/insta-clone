@@ -17,6 +17,7 @@ module:
   config_translation: 0
   contact: 0
   contextual: 0
+  createpost: 0
   ctools: 0
   datetime: 0
   dblog: 0
