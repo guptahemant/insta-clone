@@ -180,13 +180,14 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_image'
-  block_1:
-    id: block_1
-    display_title: Block
-    display_plugin: block
-    position: 1
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 2
     display_options:
       display_extenders: {  }
+      path: feedpost
     cache_metadata:
       max-age: -1
       contexts:
