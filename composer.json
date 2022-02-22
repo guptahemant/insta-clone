@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.0",
+        "drupal/blazy": "^2.5",
         "drupal/coder": "^8.3",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
@@ -33,6 +34,8 @@
         "drupal/search_api": "^1.21",
         "drupal/search_api_autocomplete": "^1.5",
         "drupal/search_api_page": "^1.0@beta",
+        "drupal/slick": "^2.5",
+        "drupal/slick_views": "^2.6",
         "drupal/user_menu_avatar": "^6.0@RC",
         "drupal/views_slideshow": "^4.8"
     },

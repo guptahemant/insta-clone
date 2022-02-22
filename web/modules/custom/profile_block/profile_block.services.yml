@@ -1,4 +1,4 @@
 services:
-      profile_block.CustomModalController:
-        class: Drupal\profile_block\Controller\CustomModalController
-        arguments: ['@database']
+  user_info:
+    class: '\Drupal\profile_block\Service\UserInfo'
+    arguments: ['@database', '@entity_type.manager']

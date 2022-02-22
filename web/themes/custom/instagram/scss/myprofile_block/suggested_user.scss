@@ -1,0 +1,156 @@
+.header{
+  position: relative;
+}
+
+#block-views-block-suggesstion-block-2--2 {
+  display: none;
+  padding: 20px;
+  padding-right: 0;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  position: relative;
+  background-color: #fff;
+  min-height: 179px;
+
+  .contextual-region {
+    position: initial;
+  }
+
+  header {
+    right: 0;
+    top: 20px;
+    position: absolute;
+    border-bottom: none;
+    background-color: transparent;
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #0095f6;
+      position: absolute;
+      right: 20px;
+    }
+  }
+
+  .slick-prev{
+    left: -20px;
+  }
+  
+  .slick-arrow::before {
+    color: #37465b;
+    opacity: 0.8;
+    font-size: 27px;
+  }
+
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color: transparent;
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: left;
+    font-size: 14px;
+    font-weight: 600;
+
+    &::after {
+      content: 'Suggested';
+      color: #8e8e8e;
+    }
+  }
+
+  .slick-track{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: flex-start;
+    width: 4000px !important;
+
+    .slick__slide {
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+      width: 176px !important;
+      height: 198px;
+      margin-right: 20px;
+      padding: 20px;
+
+      .views-field, .field-content, .suggest {
+        display: block;
+      }
+
+      .views-field{
+        font-size: 14px;
+
+        .field-content, .names {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-align: center;
+          
+          img {
+            margin: 0px 30%;
+            margin-bottom: 20px;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+          }
+
+          a {
+            text-decoration: none;
+            color: #262626;
+            white-space: nowrap;      
+          }
+        }
+
+        div.field-content{
+          position: absolute;
+          top: 116px;
+          width: 135px;
+          white-space: nowrap;
+
+          a {
+            color: #8e8e8e;
+          }
+        }
+        span.field-content{
+          height: 150px;
+        }
+
+        .flag-following {
+          text-align: center;
+          margin-top: 38px;
+
+          a {
+            background-color: #0095f6;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 5px 9px;
+            text-align: center;
+            margin-bottom: 0;
+            display: initial;
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .views-field-link-flag-1 {
+        height: 12px;
+        width: 12px;
+        position: absolute;
+        right: 8px;
+        top: 10px;
+        background-image: url(../../images/cancel-X-icon.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding: 2px;
+        background-size: 9px 9px;
+        opacity: 0.6;
+        cursor: pointer; 
+
+        a{
+          color: transparent !important;
+        }
+      }
+    }
+  }
+}

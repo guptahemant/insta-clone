@@ -1,7 +1,24 @@
 uuid: 09fd93e5-818f-4a5c-ad02-3f4c7d31ade4
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.article
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contact
+    - filter
+    - flag
+    - media
+    - node
+    - search_api_autocomplete
+    - search_api_page
+    - shortcut
+    - system
+    - taxonomy
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
@@ -23,6 +40,7 @@ permissions:
   - 'flag bookmark'
   - 'flag following'
   - 'flag likes'
+  - 'flag remove'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
@@ -32,4 +50,5 @@ permissions:
   - 'use search_api_autocomplete for userpost'
   - 'use text format basic_html'
   - 'use text format full_html'
+  - 'view media'
   - 'view search api pages'

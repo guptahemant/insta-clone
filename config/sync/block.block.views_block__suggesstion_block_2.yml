@@ -1,24 +1,24 @@
-uuid: b24b2e1b-2662-4e00-a79e-1de9d024a9ef
+uuid: 23d45331-1669-47a5-9a73-4a9e1f17af96
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.flag_followers_content
+    - views.view.suggesstion
   module:
     - system
     - views
   theme:
     - instagram
-id: views_block__flag_followers_content_block_1
+id: views_block__suggesstion_block_2
 theme: instagram
 region: content
-weight: -10
+weight: -5
 provider: null
-plugin: 'views_block:flag_followers_content-block_1'
+plugin: 'views_block:suggesstion-block_2'
 settings:
-  id: 'views_block:flag_followers_content-block_1'
+  id: 'views_block:suggesstion-block_2'
   label: ''
-  label_display: '0'
+  label_display: visible
   provider: views
   views_label: ''
   items_per_page: none
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /node
+    pages: '/user/*'

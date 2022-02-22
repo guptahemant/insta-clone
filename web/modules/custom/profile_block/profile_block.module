@@ -6,21 +6,22 @@
  */
 
 /**
- * To store the variable in the user profile block.
+ * Implements hook_theme().
  */
-function profile_block_theme($existing, $type, $theme, $path) {
+function profile_block_theme() {
   return [
-
     'user-profile-block' => [
       'variables' => [
         'uname' => NULL,
+        'display_current' => NULL,
+        'display_other' => NULL,
         'post_count' => NULL,
         'followers_count' => NULL,
         'following_count' => NULL,
         'name' => NULL,
         'bio' => NULL,
-        'markup1' => NULL,
-        'markup2' => NULL,
+        'followers_link' => NULL,
+        'following_link' => NULL,
         'attached' => NULL,
       ],
     ],
@@ -35,8 +36,8 @@ function profile_block_theme($existing, $type, $theme, $path) {
         'following_count' => NULL,
         'post_uri_all' => NULL,
         'link' => NULL,
-        'flag_txt' => NULL,
-        'flag_txt2' => NULL,
+        'flag_txt_unfollow' => NULL,
+        'flag_txt_remove' => NULL,
         'flag_link' => NULL,
       ],
     ],

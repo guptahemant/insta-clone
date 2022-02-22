@@ -1,0 +1,15 @@
+uuid: e013a64c-901c-4752-b7b2-875081e9bcd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.remove
+  module:
+    - flag
+id: flag_action.remove_unflag
+label: Keep
+type: user
+plugin: 'flag_action:remove_unflag'
+configuration:
+  flag_id: remove
+  flag_action: unflag

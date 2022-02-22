@@ -283,7 +283,7 @@ $databases = [];
  * @endcode
  */
 $settings['hash_salt'] =
-    'MggkWqu7PsEDzcNIC1g8lpTVjkvg3936uJQkZcOpp84TH1wp2TdSNb1Fb9ECHGJdmOoWNk-jfQ';
+    'XRHpNmI_8IKjfT1WPwc5WOKQbIfej54vU098JXuGwMY6ByFKnJ8qGr_wst50bQaqgKJf5coxnQ';
 
 /**
  * Deployment identifier.
@@ -808,3 +808,13 @@ $config['system.logging']['error_level'] = 'verbose';
 
 $settings['default_content_deploy_content_directory'] = '../content';
 
+$databases['default']['default'] = array (
+  'database' => 'instafeed',
+  'username' => 'root',
+  'password' => 'pritam28',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);

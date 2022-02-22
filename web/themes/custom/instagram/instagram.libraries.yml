@@ -6,8 +6,6 @@ global-styling:
 
   js:
     js/instagram.js: {}
-    js/myprofile_wrapper.js: {}
-    js/popup.js: {}
   dependencies:
     - core/jquery
 
@@ -24,6 +22,9 @@ userpage:
   css:
     theme:
       css/myprofile_block/style.css: {}
+  js:
+    js/followers_following_popup.js: {}
+    js/myprofile_wrapper.js: {}
 
 feed:
   version: VERSION

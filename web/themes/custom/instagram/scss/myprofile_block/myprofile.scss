@@ -1,205 +1,286 @@
-main .layout-content {
+main {
+  margin: 100px 170px;
+
+  .layout-content {
     width: 100%;
+  }
 }
 
 .wrapper{
-    width: 100%;
-    margin-bottom: 44px;
-    display: flex;
-    flex-direction: row-reverse;
+  width: 100%;
+  padding-top: 1x;
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: row-reverse;
 
-    article{
-
-        img{
-            margin-right: 105px;
-            width: 150px;
-            height: 150px;
-            border-radius: 100px;
-            margin-left: auto; 
-        }
-
-        .userfield, .placeholder{
-            display: none;
-        }
+  article{
+    img{
+      margin-right: 105px;
+      width: 150px;
+      height: 150px;
+      border-radius: 100px;
+      margin-left: auto;
     }
 
-    .wrapright {
-        width: 60%;
+    .userfield,
+    .placeholder{
+      display: none;
+    }
+  }
+
+  .wrapright {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+    .top{
+      display: flex;
+
+      .uname{
+        overflow: hidden;
+
+        h4{
+          font-weight: 300;
+          font-size: 28px;
+          line-height: 32px;
+          margin: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      .set_tab{
         display: flex;
+        padding-top: 6px;
+
+        .edit_profile{
+          text-decoration: none;
+          text-align: center;
+          color: #262626;
+          background-color: transparent;
+          border: 1px solid #dbdbdb;
+          margin-left: 20px;
+          border-radius: 4px;
+          font-weight: 600;
+          padding: 6px 9px;
+          font-size: 14px;
+          height: 16px;
+        }
+
+        .settings{
+          background-image: url(../../images/instagram-settings-icon.jpg);
+          background-repeat: no-repeat;
+          color: transparent;
+          background-position: left center;
+          padding: 5px 0 8px 16px;
+          background-size: 36px 40px;
+          margin-top: 2px;
+          margin-left: 7px;
+        }
+      }
+
+      .btn-not-logged-in {
+        .message, .user_activity {
+          text-decoration: none;
+          text-align: center;
+          color: #262626;
+          background-color: transparent;
+          border: 1px solid #dbdbdb;
+          margin-left: 20px;
+          border-radius: 4px;
+          font-weight: 600;
+          padding: 6px 9px;
+          font-size: 14px;
+          height: 16px;
+        }
+
+        .user_activity {
+          margin-top: -14px;
+          margin-left: 8px;
+        }
+
+        .suggestion, .suggestion-click2 {
+          border: 1px solid #dbdbdb;
+          border-radius: 4px;
+          transform: rotate(-90deg);
+          background-image: url(../../images/previous.png);
+          background-repeat: no-repeat;
+          color: transparent;
+          background-position: center;
+          padding: 14px;
+          background-size: 15px;
+          margin-top: -2px;
+          margin-left: 7px;
+          cursor: pointer;
+        }
+
+        .suggestion{
+          margin-left: 10px;
+        }
+
+        .suggestion-click2 {
+          transform: rotate(90deg);
+        }
+
+        .user_activity {
+          border: none;
+          border-radius: 0;
+          font-size: 26px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .wrapcount{
+      display: flex;
+      width: 235px;
+      justify-content: space-between;
+      margin-top: 25px;
+      height: 24%;
+
+      span{
+        display: flex;
+        margin-right: 45px;
+        font-weight: 600;
+
+        a{
+          margin-left: 4px;
+          color: #000;
+          text-decoration: none;
+          font-weight: 100;
+        }
+      }
+    }
+
+    .bottom{
+      list-style-type: none;
+      padding-left: 0;
+
+      p{
+        margin: 5px 0;
+        font-size: 16px;
+      }
+
+      p.name{
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  main{
+    justify-content: left;
+    margin: 0;
+    margin-top: 23%;
+  }
+
+  .wrapper{
+    margin: 16px;
+    justify-content: left;
+
+    article img{
+      width: 77px;
+      height: 77px;
+      border-radius: 100px;
+      margin-right: 25px;
+    }
+
+    .wrapright{
+      width: 65%;
+
+      .top{
+        flex-wrap: wrap;
         flex-direction: column;
 
-        .top{
-            display: flex;
-            
-            .uname h4{ 
-                font-weight: 300;
-                font-size: 28px;
-                line-height: 32px;
-                margin: 0;
-            }
+        .wraptop{
+          display: flex;
 
-            .set_tab{
-                padding-top: 6px;
+          .settings{
+            background-image: url(../../images/instagram-settings-icon.jpg);
+            background-repeat: no-repeat;
+            color: transparent;
+            background-position: left center;
+            padding: 5px 0 8px 16px;
+            background-size: 36px 40px;
+            margin-top: 2px;
+            margin-left: 7px;
+          }
 
-                .edit_profile{  
-                    text-decoration: none;
-                    text-align: center;
-                    color: #262626;
-                    background-color: transparent;
-                    border: 1px solid #dbdbdb;
-                    margin-left: 20px;
-                    border-radius: 4px;
-                    font-weight: 600;
-                    padding: 6px 9px;
-                    font-size: 14px;
-                    height: 16px;
-                }
-    
-                .settings{
-                    background-image: url(../../images/instagram-settings-icon.jpg);
-                    background-repeat: no-repeat; 
-                    color: transparent;
-                    background-position: left center;
-                    padding: 5px 0 8px 16px;
-                    background-size: 36px 40px; 
-                    margin-top: 2px;
-                    margin-left: 7px;
-                }
-            }
+          .settings-not-logged-in {
+            display: none;
+          }
+        }
+
+        .set_tab{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+
+          .edit_profile{
+            width: 240px;
+            margin-left: 0;
+            margin-top: 15px;
+          }
+        }
+      }
+
+      .bottomwrap{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-left: -120px;
+        width: 155%;
+
+        .bottom{
+          width: 100%;
+          padding: 20px;
         }
 
         .wrapcount{
-            display: flex;
-            width: 235px;
-            justify-content: space-between;
-            margin-top: 25px;
-            height: 24%;
+          width: 100%;
+          height: 35px;
+          padding: 12px 0;
+          border-top: 1px solid #dbdbdb;
+          border-bottom: 1px solid #dbdbdb;
+          margin-top: 0;
 
-                span{
-                    display: flex;
-                    margin-right: 45px;
-                    font-weight: 600;
+          span{
+            display: grid;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            margin: 0;
 
-                    a{
-                        margin-left: 4px;
-                        color: #000;
-                        text-decoration: none;
-                        font-weight: 100;
-                    }
-                }
+            a{
+              color: #8e8e8e;
             }
-
-        .bottom{
-            list-style-type: none;
-            padding-left: 0;
-
-            p{
-                margin: 5px 0; 
-                font-size: 16px;
-            }
-
-            p.name{
-                font-weight: 600;
-            }
+          }
         }
+      }
     }
+  }
 }
 
-@media (max-width: 425px) { 
-    main{
-        justify-content: left;
-    }
+.display-none {
+  display: none;
 
-    .wrapper{ 
-        margin: 16px;
-        justify-content: left;
-
-            article img{
-                width: 77px;
-                height: 77px;
-                border-radius: 100px;
-                margin-right: 25px;
-            }
-
-            .wrapright{
-                width: 65%;
-
-                .top{  
-                    flex-wrap: wrap;
-                    flex-direction: column;
-
-                    .wraptop{
-                        display: flex;
-
-                        .settings{ 
-                            background-image: url(../../images/instagram-settings-icon.jpg);
-                            background-repeat: no-repeat; 
-                            color: transparent;
-                            background-position: left center;
-                            padding: 5px 0 8px 16px;
-                            background-size: 36px 40px; 
-                            margin-top: 2px;
-                            margin-left: 7px;
-                        }
-                    }
-
-                    .set_tab{
-                        display: flex;
-                        flex-wrap: wrap;
-                        flex-direction: column-reverse;
-
-                        .edit_profile{  
-                            width: 240px;
-                            margin-left: 0;
-                            margin-top: 15px;
-                        }
-                    }
-                }
-
-                .bottomwrap{
-                    display: flex;
-                    flex-wrap: wrap-reverse;
-                    margin-left: -120px; 
-                    width: 155%;
-                    
-                    .bottom{
-                        width: 100%;
-                        padding: 20px;
-                    }
-
-                    .wrapcount{
-                        width: 100%;
-                        height: 35px;
-                        padding: 12px 0;
-                        border-top: 1px solid #dbdbdb;
-                        border-bottom: 1px solid #dbdbdb;
-                        margin-top: 0;
-
-                        span{
-                            display: grid;
-                            width: 100%; 
-                            text-align: center;
-                            font-size: 14px;
-                            margin: 0;
-
-                            a{
-                                color: #8e8e8e;
-                            }
-                        }
-                    }
-                }
-            }
-    }
+  .flag-following {
+    display: none;
+  }
 }
 
-@media (max-width: 375px) { 
-    .wrapper .wrapright .top .set_tab .edit_profile{  
-        width: 220px; 
-    }
+.display-flex {
+  display: flex;
 }
 
-@media (max-width: 320px) { 
-    .wrapper .wrapright .top .set_tab .edit_profile{  
-        width: 167px; 
-    }
+@media (max-width: 375px) {
+  .wrapper .wrapright .top .set_tab .edit_profile {
+    width: 220px;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper .wrapright .top .set_tab .edit_profile {
+    width: 167px;
+  }
 }
