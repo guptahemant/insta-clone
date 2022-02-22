@@ -2,8 +2,6 @@
 
 namespace Drupal\profile_block\Controller;
 
-use Drupal\user\Entity\User;
-use Drupal\Core\Url;
 use Drupal\Core\Link;
 use Drupal\Component\Serialization\Json;
 use Drupal\Core\Database\Connection;
@@ -245,8 +243,6 @@ class CustomModalController extends ControllerBase implements ContainerInjection
                 ]),
               ],
             ]);
-
-            $lin = Link::fromTextAndUrl(t('follow'), $follow_link)->toString();
           }
         }
       }
