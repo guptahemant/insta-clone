@@ -10,7 +10,7 @@ dependencies:
 id: userprofileblock
 theme: instagram
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: user_profile_block
 settings:
@@ -22,4 +22,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '/user/*'
+    pages: "/user/*\r\n\r\n"

@@ -15,6 +15,9 @@
         }
     ],
     "require": {
+        "cweagans/composer-patches": "^1.7",
+        "drupal/mentions": "^1.0@alpha",
+        "drupal/quicktabs": "^3.0@alpha",
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.0",
         "drupal/blazy": "^2.5",
@@ -54,6 +57,13 @@
         }
     },
     "extra": {
+        "enable-patching": true,
+        "patches": {
+            "drupal/mentions": {
+                "create a view of a user's mentions": "https://www.drupal.org/files/issues/2022-01-06/view-integration-3178283-4.patch",
+                "Detection for previous mentions always returns false" :"https://www.drupal.org/files/issues/2021-05-04/3212102-2.patch"
+            }         
+         },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"

@@ -1,0 +1,25 @@
+uuid: 59e17fd3-8b74-4d68-8338-e1e654510200
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - instagram
+id: quicktabsquicktab
+theme: instagram
+region: content
+weight: -6
+provider: null
+plugin: 'quicktabs_block:quick_tab'
+settings:
+  id: 'quicktabs_block:quick_tab'
+  label: 'QuickTabs - quick-tab'
+  label_display: '0'
+  provider: quicktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/user/*\r\n"
