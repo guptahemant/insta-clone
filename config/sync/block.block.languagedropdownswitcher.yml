@@ -18,6 +18,7 @@ settings:
   label_display: '0'
   provider: lang_dropdown
   showall: true
+  hide_only_one: true
   tohome: false
   width: 165
   display: 1

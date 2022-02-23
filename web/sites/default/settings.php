@@ -283,7 +283,7 @@ $databases = [];
  * @endcode
  */
 $settings['hash_salt'] =
-    'MggkWqu7PsEDzcNIC1g8lpTVjkvg3936uJQkZcOpp84TH1wp2TdSNb1Fb9ECHGJdmOoWNk-jfQ';
+    'U5aXctfRncsewZ9j8eBRySU0er2LeFlS7iycs1W8Tj48QdR6kxzfKjo-mfOUtYYnDfgfnKiu6A';
 
 /**
  * Deployment identifier.
