@@ -219,7 +219,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_link: content
+            image_link: ''
             image_style: post_614_x614_
           group_column: ''
           group_columns: {  }
@@ -646,7 +646,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"main\">\r\n    <div class=\"up_post\">\r\n        <div class=\"image\">\r\n            {{ user_picture }}\r\n        </div>\r\n        <div class=\"name\">\r\n            {{ uid }}\r\n        </div>\r\n    </div>\r\n    <div class=\"down_post\">\r\n        {{ field_image }}\r\n        <div class=\"operations\">\r\n            <div class=\"btns\">\r\n                {{ link_flag }}\r\n                <i class=\"far fa-comment\"></i>\r\n                <i class=\"far fa-paper-plane\"></i>\r\n            </div>\r\n            <div class=\"bkmrks\">\r\n                {{ link_flag_1}}\r\n            </div>\r\n        </div>\r\n        <div class=\"operation2\">\r\n            <div class=\"name2\">\r\n                {{uid_1}} {{ body }}\r\n            </div>\r\n            <div class=\"comment\">\r\n                View all {{ comment-count }} comments\r\n            </div>\r\n            <div class=\"time\">\r\n                {{ created }}\r\n            </div>\r\n        </div>\r\n    </div>\r\n{{ comment_link }}\r\n</div>"
+            text: "<div class=\"main\">\r\n    <div class=\"up_post\">\r\n        <div class=\"image\">\r\n            {{ user_picture }}\r\n        </div>\r\n        <div class=\"name\">\r\n            {{ uid }}\r\n        </div>\r\n    </div>\r\n    <div class=\"down_post\">\r\n      <div class=\"wrapper-post\">  \r\n        <div class=\"icon\">\r\n          <i class=\"fas fa-heart\"></i>\r\n        </div>\r\n        {{ field_image }}\r\n      </div>\r\n      <div class=\"operations\">\r\n            <div class=\"btns\">\r\n                {{ link_flag }}\r\n                <i class=\"far fa-comment\"></i>\r\n                <i class=\"far fa-paper-plane\"></i>\r\n            </div>\r\n            <div class=\"bkmrks\">\r\n                {{ link_flag_1}}\r\n            </div>\r\n        </div>\r\n        <div class=\"operation2\">\r\n            <div class=\"name2\">\r\n                {{uid_1}} {{ body }}\r\n            </div>\r\n            <div class=\"comment\">\r\n                View all {{ comment-count }} comments\r\n            </div>\r\n            <div class=\"time\">\r\n                {{ created }}\r\n            </div>\r\n        </div>\r\n    </div>\r\n{{ comment_link }}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
