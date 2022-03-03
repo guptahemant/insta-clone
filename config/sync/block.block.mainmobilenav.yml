@@ -12,7 +12,7 @@ dependencies:
 id: mainmobilenav
 theme: instagram
 region: header
-weight: 1
+weight: -4
 provider: null
 plugin: 'system_menu_block:mainmobilenav'
 settings:
