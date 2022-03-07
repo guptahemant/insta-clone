@@ -1,0 +1,8 @@
+retroo.simple_form {
+  path: 'retroo/simpleForm'
+  defaults: 
+    -form: '\Drupal\Form\SimpleForm'
+    -title: 'Simple Form'
+  requirements:
+    -permission: 'access content'  
+}   

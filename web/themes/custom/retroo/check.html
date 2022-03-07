@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <head>
+    <style>
+      .dblclick-wrap {
+		position: relative; /* For absolute positioning within */
+	  }
+
+	  .dblclick {
+	    position: relative; /* So z-index works later, but no surprises now */
+		/* background: blue; Uncomment to test coverage */
+	  }
+
+	  .dblclick + span {
+		position: absolute;
+		top: -1px;
+		left: -1px;
+		width: 103%; /* Gotta do this instead of right: 0; */
+		bottom: -1px;
+		z-index: 1;
+		/* background: red; Uncomment background property to test coverage */
+	  }
+
+	  .dblclick + span:active {
+		left: -9999px;
+	  }
+
+	  .dblclick:hover {
+		z-index: 2;
+	  }
+
+    </style>
+  </head>
+  <body>
+    <span class="dblclick-wrap">
+	  <a class="dblclick" href="http://google.com">Double click me</a>
+		<span></span>
+	</span>
+  </body>
+    
+</html>
