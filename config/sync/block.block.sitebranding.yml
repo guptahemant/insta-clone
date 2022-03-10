@@ -10,7 +10,7 @@ dependencies:
 id: sitebranding
 theme: instagram
 region: header
-weight: -4
+weight: -10
 provider: null
 plugin: system_branding_block
 settings:

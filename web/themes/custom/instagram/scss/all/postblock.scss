@@ -1,246 +1,73 @@
 @mixin mobile {
-    @media screen and (max-width: 426px) {
-        @content;
-    }
+  @media screen and (max-width: 426px) {
+    @content;
+  }
 }
 
 @mixin tablet {
-    @media screen and(min-width: 427px) and(max-width: 769px) {
-        @content;
-    }
+  @media screen and(min-width: 427px) and(max-width: 769px) {
+    @content;
+  }
 }
 @mixin tablet-l {
-    @media screen and(min-width: 950px) {
-        @content;
-    }
+  @media screen and(min-width: 950px) {
+    @content;
+  }
 }
 @mixin laptop {
   @media screen and(min-width: 1043px) {
-      @content;
+    @content;
+  }
+}
+@mixin laptop-m {
+  @media screen and(max-width: 1024px) {
+    @content;
   }
 }
 @mixin laptop-l {
   @media screen and(min-width: 970px) {
-      @content;
+    @content;
   }
 }
 @mixin laptop-ll {
-  @media screen and(min-width: 300px)and (max-width: 950px) {
-      @content;
+  @media screen and(min-width: 300px) and (max-width: 950px) {
+    @content;
   }
 }
 
-.insta-gallery{
-  @include laptop-l{ width: 950px;}
-    header{
-      position: absolute;
+.insta-gallery {
+  @include laptop-l {
+    width: 950px;
+  }
+  header {
+    position: absolute;
     background: transparent;
     top: -7px;
     border-bottom: unset;
     display: block;
+  }
+  position: relative;
+  margin-top: 50px;
+  margin: auto;
+  .views-row {
+    margin-bottom: 13px;
+    margin-top: 38px;
+    @include tablet {
+      margin-bottom: 4px;
     }
-      position: relative;
-     margin-top: 50px;
-     margin: auto;
-      .views-row{
-        margin-bottom: 13px;
-        margin-top: 38px;
-        @include tablet{
-         margin-bottom: 4px;
-       }
-       @include mobile{
-         margin-bottom: 2px;
-       }
-      }
-   
-   img{
-    
+    @include mobile {
+      margin-bottom: 2px;
+    }
+  }
+
+  img {
     width: 100%;
-     height: 100%; 
-       .hover-img {
-       position: relative;
-     }// width: 50%;
-     img:hover{
-       opacity: 1.0;
-     }
-     .demo {
-       position: absolute;
-       top: 0;
-       bottom: 0;
-       left: 0;
-       right: 0;
-       height: 100%;
-       width: 100%;
-       opacity: 0;
-       transition: .5s ease;
-       // background-color: #008CBA;
-       background-color: transparent;
-       
-     }
-     
-     .hover-img:hover .demo {
-       opacity: 1;
-       
-     }
-     
-     .text {
-       color: white;
-       font-size: 20px;
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       -ms-transform: translate(-50%, -50%);
-     }
-   }
-   .flex_div{
-       display: flex;
-       flex-direction: column;
-       margin-bottom: 93px;
-        margin-top: 57px;
-       .nopost_icon{
-        margin: auto;
-       width: 76px;
-       height: 74px;
-        overflow: hidden;
-        position: relative;
-        margin-bottom: 13px;
-        img{
-         
-         width: -webkit-fill-available;
-         position: absolute;
-          top: -320px;
-         height: auto;
-         left: -211px;
-         right: -207px;
-         
-        }
-        .svg-inline--fa{
-         height: 100px;
-         width: 68px;
-        }
-       }
-       .text_post{
-         font-size: 28px;
-         font-weight: 300;
-         line-height: 32px;
-       }
-   }
-   .img-insta{
-    margin-left: 10px;
-    margin-right: 10px;
-    @include tablet(){
-      margin-left: 3px;
-      margin-right: 5px;
-    }
-    @include mobile{
-      margin-left: 2px;
-      margin-right: 4px;
-    }
-  } 
-   }
-.tabsbar ul.quicktabs-tabs{
-    display: flex;
-    justify-content: center;
-    letter-spacing: 1px;
-    font-size: 12px;
-    font-weight: 600;
-    border-top: 1px solid #c5c5c5;
-    margin-bottom: 0;
-    padding-inline-start: 0;
-    border-bottom: none;
-    text-decoration: none;
-    @include tablet{
-      justify-content: space-around;
-    }
-    @include mobile{
-      justify-content: space-around;
-    }
-    .test8{
-      display: inline-block;
-      margin-left: 4px;
-      @include tablet{
-        display: none;
-      }
-      @include mobile{
-        display: none;
-      }
-    }
-    @include tablet-l{
-            width: 931px;
-            margin: auto;
-        }
-        li  {
-        a {
-           border-top: 0 ; 
-           border-top-left-radius: 0; 
-           border-top-right-radius: 0; 
-          display: block;
-          padding: 0.5rem 1rem;
-          color: #8e8e8e;
-          text-decoration: none;
-          padding: 20px;
-          margin-top: -3px;
-          @include tablet{
-            font-size: 20px;
-          }
-          @include mobile{
-            font-size: 20px;
-          }
-        }
-      
-        }
-  }
-  .tabsbar .quicktabs-tabs > li.active > a, .tabsbar .quicktabs-tabs > li.active > a:hover, .tabsbar .quicktabs-tabs > li.active > a:focus {
-    color: #061422;
-    background-color: transparent;
-    border-color: transparent;
-    border-top: 1px solid black;
-    text-decoration: none;
-    @include laptop{
-      border-top: 1px solid #000;
-    }
-    @include tablet{
-     padding-top: #8e8e8e;
-     color: rgb(0, 149, 246);
-      fill: rgb(0, 149, 246);
-      border-top: 1px solid transparent;
-    }
-    @include mobile{
-      padding-top:#8e8e8e;
-      color: rgb(0, 149, 246);
-      fill: rgb(0, 149, 246);
-      border-top: 1px solid transparent;
-     }
-  }
-  
-  .tabsbar .quicktabs-main {
-    padding: 0; 
-    padding-top: 0;
-}
-.insta-view-gallery{
-     @include laptop-l{ width: 950px;}
-    margin: auto;
-     .views-row{
-       margin-bottom: 13px;
-       @include tablet{
-        margin-bottom: 4px;
-      }
-      @include mobile{
-        margin-bottom: 2px;
-      }
-     }
-  img{
-    @include laptop-ll{
-      width: 100%;
-      height: 100%; 
-      margin-left: 0;
-      } 
+    height: 100%;
     .hover-img {
       position: relative;
-    }
-    img:hover{
-      opacity: 1.0;
+    } // width: 50%;
+    img:hover {
+      opacity: 1;
     }
     .demo {
       position: absolute;
@@ -251,16 +78,15 @@
       height: 100%;
       width: 100%;
       opacity: 0;
-      transition: .5s ease;
+      transition: 0.5s ease;
+      // background-color: #008CBA;
       background-color: transparent;
-      
     }
-    
+
     .hover-img:hover .demo {
       opacity: 1;
-      
     }
-    
+
     .text {
       color: white;
       font-size: 20px;
@@ -271,76 +97,249 @@
       -ms-transform: translate(-50%, -50%);
     }
   }
-  .flex_div{
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 93px;
-       margin-top: 57px;
-      .nopost_icon{
-       margin: auto;
+  .flex_div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 93px;
+    margin-top: 57px;
+    .nopost_icon {
+      margin: auto;
       width: 76px;
       height: 74px;
-       overflow: hidden;
-       position: relative;
-       margin-bottom: 13px;
-       img{
-        
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 13px;
+      img {
         width: -webkit-fill-available;
         position: absolute;
-         top: -320px;
+        top: -320px;
         height: auto;
         left: -211px;
         right: -207px;
-        
-       }
-       .svg-inline--fa{
+      }
+      .svg-inline--fa {
         height: 100px;
         width: 68px;
-       }
       }
-      .text_post{
-        font-size: 28px;
-        font-weight: 300;
-        line-height: 32px;
-      }
+    }
+    .text_post {
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 32px;
+    }
   }
-  .img-insta{
+  .img-insta {
     margin-left: 10px;
     margin-right: 10px;
-    @include tablet(){
+    @include tablet() {
       margin-left: 3px;
       margin-right: 5px;
     }
-    @include mobile{
+    @include mobile {
       margin-left: 2px;
       margin-right: 4px;
     }
-  } 
- 
   }
-  .new_class{
-    display: flex;
-    justify-content: space-between;
-    @include tablet-l{
-        width: 934px;
-        margin: auto;
+}
+.tabsbar ul.quicktabs-tabs {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 600;
+  border-top: 1px solid #c5c5c5;
+  margin-bottom: 0;
+  padding-inline-start: 0;
+  border-bottom: none;
+  text-decoration: none;
+  @include tablet {
+    justify-content: space-around;
+  }
+  @include mobile {
+    justify-content: space-around;
+  }
+  .test8 {
+    display: inline-block;
+    margin-left: 4px;
+    @include tablet {
+      display: none;
     }
-    p{
-      color: rgba(var(--f52,142,142,142),1);
-      font-weight: 400px;
-      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      font-size: 12px;
-      line-height: 16px;
-  
+    @include mobile {
+      display: none;
     }
-    button{
+  }
+  @include tablet-l {
+    width: 931px;
+    margin: auto;
+  }
+  li {
+    a {
+      border-top: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      display: block;
+      padding: 0.5rem 1rem;
+      color: #8e8e8e;
       text-decoration: none;
-      border: none;
-      background: none;
-      color: rgba(var(--d69,0,149,246),1);
-      font-size: 14px;
-      cursor: pointer;
-      font-weight: bold;
+      padding: 20px;
+      margin-top: -3px;
+      @include tablet {
+        font-size: 20px;
+      }
+      @include mobile {
+        font-size: 20px;
+      }
     }
   }
-  
+}
+.tabsbar .quicktabs-tabs > li.active > a,
+.tabsbar .quicktabs-tabs > li.active > a:hover,
+.tabsbar .quicktabs-tabs > li.active > a:focus {
+  color: #061422;
+  background-color: transparent;
+  border-color: transparent;
+  border-top: 1px solid black;
+  text-decoration: none;
+  @include laptop {
+    border-top: 1px solid #000;
+  }
+  @include tablet {
+    padding-top: #8e8e8e;
+    color: rgb(0, 149, 246);
+    fill: rgb(0, 149, 246);
+    border-top: 1px solid transparent;
+  }
+  @include mobile {
+    padding-top: #8e8e8e;
+    color: rgb(0, 149, 246);
+    fill: rgb(0, 149, 246);
+    border-top: 1px solid transparent;
+  }
+}
+
+.tabsbar .quicktabs-main {
+  padding: 0;
+  padding-top: 0;
+}
+.insta-view-gallery {
+  @include laptop-l {
+    width: 950px;
+  }
+  margin: auto;
+  .views-row {
+    margin-bottom: 13px;
+    @include tablet {
+      margin-bottom: 4px;
+    }
+    @include mobile {
+      margin-bottom: 2px;
+    }
+  }
+  img {
+    @include laptop-ll {
+      width: 100%;
+      height: 100%;
+      margin-left: 0;
+    }
+    .hover-img {
+      position: relative;
+    }
+    img:hover {
+      opacity: 1;
+    }
+    .demo {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: transparent;
+    }
+
+    .hover-img:hover .demo {
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+  }
+  .flex_div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 93px;
+    margin-top: 57px;
+    .nopost_icon {
+      margin: auto;
+      width: 76px;
+      height: 74px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 13px;
+      img {
+        width: -webkit-fill-available;
+        position: absolute;
+        top: -320px;
+        height: auto;
+        left: -211px;
+        right: -207px;
+      }
+      .svg-inline--fa {
+        height: 100px;
+        width: 68px;
+      }
+    }
+    .text_post {
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 32px;
+    }
+  }
+  .img-insta {
+    margin-left: 10px;
+    margin-right: 10px;
+    @include tablet() {
+      margin-left: 3px;
+      margin-right: 5px;
+    }
+    @include mobile {
+      margin-left: 2px;
+      margin-right: 4px;
+    }
+  }
+}
+.new_class {
+  display: flex;
+  justify-content: space-between;
+  @include tablet-l {
+    width: 934px;
+    margin: auto;
+  }
+  p {
+    color: rgba(var(--f52, 142, 142, 142), 1);
+    font-weight: 400px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  button {
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: rgba(var(--d69, 0, 149, 246), 1);
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,25 @@
+uuid: 84a72ca2-98ec-4da9-941c-78febdddb749
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3199cb57-d06d-45b0-b2b2-04ae6e82925b'
+  module:
+    - block_content
+  theme:
+    - instagram
+id: searchicon
+theme: instagram
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:3199cb57-d06d-45b0-b2b2-04ae6e82925b'
+settings:
+  id: 'block_content:3199cb57-d06d-45b0-b2b2-04ae6e82925b'
+  label: 'search icon '
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

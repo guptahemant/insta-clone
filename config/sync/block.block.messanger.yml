@@ -12,7 +12,7 @@ dependencies:
 id: messanger
 theme: instagram
 region: header
-weight: -3
+weight: -9
 provider: null
 plugin: 'system_menu_block:messanger'
 settings:

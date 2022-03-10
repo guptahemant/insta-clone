@@ -12,7 +12,7 @@ dependencies:
 id: mobilecamera
 theme: instagram
 region: header
-weight: -5
+weight: -11
 provider: null
 plugin: 'system_menu_block:mobilecamera'
 settings:
