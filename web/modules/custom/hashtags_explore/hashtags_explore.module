@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * To Add a extra field in the user page.
+ */
+
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implemented THEMENAME_preprocess_HOOK() to provide hashtag, count and featured thumbnail.
+ */
+function instagram_preprocess_page(&$variables) {
+  if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical') {
+      $term_id = \Drupal::routeMatch()->getRawParameter('taxonomy_term');
+      $term = Term::load($term_id);
+      $term_name= $term->getName();
+      $variables['term_name'] = $term_name;
+
+      // Get first post related to current term
+      $query = \Drupal::entityQuery('node')
+        ->condition('status', 1)
+        ->condition('type', 'article')
+        ->condition('field_hashtags', $term_id)
+        ->range(0, 1)
+        ->sort('created', 'DESC');
+      
+      $nids = $query->execute();
+
+      $node = \Drupal\node\Entity\Node::load(array_shift($nids));
+
+      $variables['node'] = $node;
+
+      // Get first 9 posts related to current term
+      $query = \Drupal::entityQuery('node')
+        ->condition('status', 1)
+        ->condition('type', 'article')
+        ->condition('field_hashtags', $term_id)
+        ->range(0, 9)
+        ->sort('created', 'DESC');
+      
+      $nids_ = $query->execute();
+
+      $nodes = \Drupal\node\Entity\Node::loadMultiple($nids_);
+
+      $variables['posts'] = $nodes;
+
+      // Get count of posts related to current term
+      $query = \Drupal::entityQuery('node')
+        ->condition('status', 1)
+        ->condition('type', 'article')
+        ->condition('field_hashtags', $term_id);
+      
+      $c = $query->count()->execute();
+
+      $variables['post_count'] = $c;
+  }
+}

@@ -5,6 +5,8 @@
  * Theme file.
  */
 
+use Drupal\taxonomy\Entity\Term;
+
 /**
  * Preprocess function to add class to regions.
  */
