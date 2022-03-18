@@ -7,11 +7,82 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\field\Entity\FieldConfig;
 use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\Core\Url;
+use Drupal\Core\Messenger\MessengerInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\Core\Config\ConfigFactoryInterface;
+use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
+use Drupal\Core\Entity\EntityDisplayRepositoryInterface;
 
 /**
  * {@inheritdoc}
  */
 class ManagerForm extends FormBase {
+
+  /**
+   * Get access to entity type manager.
+   *
+   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
+   */
+  protected $entityTypeManager;
+
+  /**
+   * The config factory.
+   *
+   * @var \Drupal\Core\Config\ConfigFactoryInterface
+   */
+  protected $configFactory;
+
+  /**
+   * Get access to Bundle Info.
+   *
+   * @var \Drupal\Core\Entity\EntityTypeBundleInfoInterface
+   */
+  protected $entityTypeBundleInfo;
+
+  /**
+   * Get access to Entity Display Repository Interface.
+   *
+   * @var \Drupal\Core\Entity\EntityDisplayRepositoryInterface
+   */
+  protected $entityDisplayRepository;
+
+  /**
+   * Get access to Messenger Interface.
+   *
+   * @var \Drupal\Core\Entity\MessengerInterface
+   */
+  protected $messenger;
+
+  /**
+   * Class constructor.
+   */
+  public function __construct(EntityTypeManagerInterface $entity_type_manager,
+    ConfigFactoryInterface $config_factory,
+    EntityTypeBundleInfoInterface $entity_type_bundle_info,
+    EntityDisplayRepositoryInterface $entity_display_repository,
+    MessengerInterface $messenger) {
+    $this->entityTypeManager = $entity_type_manager;
+    $this->configFactory = $config_factory;
+    $this->entityTypeBundleInfo = $entity_type_bundle_info;
+    $this->entityDisplayRepository = $entity_display_repository;
+    $this->messenger = $messenger;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container) {
+    // Instantiates this form class.
+    return new static(
+      // Load the service required to construct this class.
+      $container->get('entity_type.manager'),
+      $container->get('config.factory'),
+      $container->get('entity_type.bundle.info'),
+      $container->get('entity_display.repository'),
+      $container->get('messenger')
+    );
+  }
 
   /**
    * {@inheritdoc}
@@ -24,8 +95,8 @@ class ManagerForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $hashtags_field_name = \Drupal::config('hashtags.settings')
-      ->get('hashtags_taxonomy_terms_field_name');
+    $hashtags_field_name = $this->configFactory->get('hashtags.settings')->get('hashtags_taxonomy_terms_field_name');
+
     $entity_types = _hashtags_get_content_entity_types();
     // Make system content entity types to go first in the list.
     array_unshift($entity_types, 'comment');
@@ -51,8 +122,9 @@ class ManagerForm extends FormBase {
           $this->t('Operations'),
         ],
       ];
-      $bundle_info = \Drupal::service('entity_type.bundle.info');
-      $bundles = $bundle_info->getBundleInfo($entity_type);
+
+      $bundles = $this->entityTypeBundleInfo->getBundleInfo($entity_type);
+
       foreach ($bundles as $bundle => $bundle_info) {
         if (is_object($bundle_info['label'])) {
           $label = $bundle_info['label']->render();
@@ -95,8 +167,8 @@ class ManagerForm extends FormBase {
    * {@inheritdoc}
    */
   public function addField(array &$form, FormStateInterface $form_state) {
-    $hashtags_vid = \Drupal::config('hashtags.settings')
-      ->get('hashtags_vid');
+    $hashtags_vid = $this->configFactory->get('hashtags.settings')->get('hashtags_vid');
+
     $clicked_button = $form_state->getTriggeringElement();
     $entity_type = $clicked_button['#entity_type'];
     $bundle = $clicked_button['#bundle'];
@@ -110,7 +182,7 @@ class ManagerForm extends FormBase {
     if (!$field) {
       $this->createField($field_storage, $bundle, 'Hashtags', [$hashtags_vid => $hashtags_vid]);
       $this->updateFieldFormDisplay($entity_type, $bundle, $field_name);
-      $body_field = \Drupal::entityTypeManager()->getStorage('field_config')->load("{$entity_type}.{$bundle}.body");
+      $body_field = $this->entityTypeManager->getStorage('field_config')->load("{$entity_type}.{$bundle}.body");
       $entity_type_label = _hashtags_get_entity_type_label($entity_type);
       $bundle_label = _hashtags_get_bundle_label($entity_type, $bundle);
       $source = $entity_type !== $bundle ?
@@ -119,10 +191,12 @@ class ManagerForm extends FormBase {
       if (!empty($body_field)) {
         $body_field->setThirdPartySetting('hashtags', 'hashtags_activate', TRUE);
         $body_field->save();
-        \Drupal::messenger()->addMessage("Hashtags have been activated for Body field. Also you can activate Hashtags for another Text fields of {$source}.");
+        $this->messenger->addMessage("Hashtags have been activated for Body field. Also you can activate Hashtags for another Text fields of {$source}.");
+
       }
       else {
-        \Drupal::messenger()->addMessage("Body field is not found for {$source}. Create some Text field and activate Hashtags manually for it.");
+        $this->messenger->addMessage("Body field is not found for {$source}. Create some Text field and activate Hashtags manually for it.");
+
       }
     }
   }
@@ -199,7 +273,8 @@ class ManagerForm extends FormBase {
    * {@inheritdoc}
    */
   public function updateFieldFormDisplay($entity_type, $bundle, $field_name) {
-    $form_display = \Drupal::service('entity_display.repository')->getFormDisplay($entity_type, $bundle, 'default');
+    $form_display = $this->entityDisplayRepository->getFormDisplay($entity_type, $bundle, 'default');
+
     $form_display->setComponent($field_name, [
       'type' => 'entity_reference_autocomplete_tags',
       'weight' => 10,

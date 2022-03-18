@@ -27,9 +27,6 @@ class LinksConverter {
    * {@inheritdoc}
    */
   public function replace($matches) {
-    if (isset($this->hashtagsTids)) {
-      $hashtagsTids = $this->hashtagsTids;
-    }
     $first_delimeter = $matches[1] ?? '';
     $hashtag_name = $matches[3] ?? '';
     $hashtag_tid = $this->hashtagsTids[strtolower($hashtag_name)] ?? '';

@@ -45,4 +45,3 @@ Go to Administration > Configuration >
       Content authoring > Text formats and editors > Full HTML
       (admin/config/content/formats/manage/full_html)
 then uncheck Hashtags filter box and submit a form.
-
