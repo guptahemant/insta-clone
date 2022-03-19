@@ -12,6 +12,8 @@ use Drupal\taxonomy\Entity\Term;
  * Implemented THEMENAME_preprocess_HOOK() to provide hashtag data.
  */
 function instagram_preprocess_page(&$variables) {
+  $variables['#attached']['library'][] = 'hashtags_explore/hashtags';
+
   if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical') {
     $term_id = \Drupal::routeMatch()->getRawParameter('taxonomy_term');
     $term = Term::load($term_id);
@@ -56,4 +58,16 @@ function instagram_preprocess_page(&$variables) {
 
     $variables['post_count'] = $c;
   }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function hashtags_explore_theme() {
+  return [
+    'page__taxonomy' => [
+      'template' => 'page--taxonomy',
+      'base hook' => 'page',
+    ],
+  ];
 }

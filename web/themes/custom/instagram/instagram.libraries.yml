@@ -30,9 +30,3 @@ feed:
   css:
     theme:
       css/feed/style.css: {}
-
-hashtags:
-  version: VERSION
-  css:
-    theme:
-      css/hashtags/style.css: {}
