@@ -1,0 +1,22 @@
+uuid: 20e9f214-c9d4-456e-a9a5-caab9d0d2d85
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: hashtags
+label: Hashtags
+type: 'canonical_entities:taxonomy_term'
+pattern: '/explore/tags/[term:name]'
+selection_criteria:
+  5ee39c83-66e0-4be1-a7ec-18b1f73a2eb5:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 5ee39c83-66e0-4be1-a7ec-18b1f73a2eb5
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      hashtags: hashtags
+selection_logic: and
+weight: -5
+relationships: {  }
