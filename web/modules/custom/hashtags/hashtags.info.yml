@@ -1,9 +1,0 @@
-name: Hashtags
-type: module
-description: 'Provides the hashtags for the content entities.'
-core_version_requirement: ^8.8 || ^9
-package: Other
-dependencies:
-  - drupal:filter
-  - drupal:taxonomy
-configure: hashtags.manager_form
