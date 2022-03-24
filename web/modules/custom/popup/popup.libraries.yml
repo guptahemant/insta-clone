@@ -1,0 +1,6 @@
+global:
+  css:
+    theme:
+      css/popup.css: {}
+  js:
+    js/settingspopup.js: {}

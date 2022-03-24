@@ -1,0 +1,7 @@
+popup.settingslink:
+  path: '/users/settings'
+  defaults:
+    _title: 'Setting'
+    _controller: '\Drupal\popup\Controller\SettingController::setting'
+  requirements:
+    _permission: 'access content'

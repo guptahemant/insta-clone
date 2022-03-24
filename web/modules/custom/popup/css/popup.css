@@ -1,0 +1,49 @@
+.setwrap button {
+  width: 100%;
+  height: 40px;
+  font-size: 14px !important;
+}
+.setwrap button {
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid rgb(219,219,219);
+}
+
+.ui-widget-overlay {
+  background-color: rgba(0,0,0,0.65) !important;
+  opacity: unset !important;
+}
+.setwrap button a {
+  text-decoration: none;
+}
+.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix {
+  display: none;
+}
+.ui-dialog {
+  max-height: 480px !important;
+}
+.ui-dialog #drupal-modal {
+  padding: unset !important;
+  overflow-y: unset !important;
+  max-height: 480px !important;
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front {
+  animation: 0.4s popup-animation backwards;
+  position: fixed;
+  top: 87.39px !important;
+  left: 480.9px !important;
+}
+
+@keyframes popup-animation {
+  0%,
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  } }
