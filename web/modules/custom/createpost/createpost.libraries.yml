@@ -1,0 +1,6 @@
+global-styling:
+  css:
+    theme:
+      css/modal.css: {}
+  js:
+    js/modal.js: {}

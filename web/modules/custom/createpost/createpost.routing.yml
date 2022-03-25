@@ -1,0 +1,7 @@
+createpost.open_modal_form:
+  path: "/modal_form"
+  defaults:
+    _title: "Modal Form"
+    _controller: '\Drupal\createpost\Controller\ModalFormExampleController::openModalForm'
+  requirements:
+    _permission: 'access content'
