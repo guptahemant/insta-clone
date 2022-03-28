@@ -145,4 +145,119 @@ class SettingController extends ControllerBase {
     return $set;
   }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function editsetting() {
+    $set = [];
+    $set['contain'] = [
+      '#type' => 'container',
+      '#attributes' => [
+        'class' => 'setwrap',
+      ],
+    ];
+    $set['contain']['report'] = [
+      '#type' => 'html_tag',
+      '#tag' => 'button',
+          [
+            '#type' => 'html_tag',
+            '#tag' => 'a',
+            '#attributes' => [
+              'href' => ['/report'],
+              'style' => 'color:red',
+            ],
+            '#value' => 'Report',
+          ],
+    ];
+    $set['contain']['unfollow'] = [
+      '#type' => 'html_tag',
+      '#tag' => 'button',
+          [
+            '#type' => 'html_tag',
+            '#tag' => 'a',
+            '#attributes' => [
+              'href' => ['/unfollow'],
+              'style' => 'color:red',
+            ],
+            '#value' => 'Unfollow',
+          ],
+    ];
+    $set['contain']['gotopost'] = [
+      '#type' => 'html_tag',
+      '#tag' => 'button',
+          [
+            '#type' => 'html_tag',
+            '#tag' => 'a',
+            '#attributes' => [
+              'href' => ['/gotopost'],
+            ],
+            '#value' => 'Go to post ',
+          ],
+    ];
+    $set['contain']['taggedaccounts'] = [
+      '#type' => 'html_tag',
+      '#tag' => 'button',
+          [
+            '#type' => 'html_tag',
+            '#tag' => 'a',
+            '#attributes' => [
+              'href' => ['/taggedaccounts'],
+            ],
+            '#value' => 'Tagged Accounts',
+          ],
+    ];
+    $set['contain']['shareto'] = [
+      '#type' => 'html_tag',
+      '#tag' => 'button',
+          [
+            '#type' => 'html_tag',
+            '#tag' => 'a',
+            '#attributes' => [
+              'href' => ['/shareto'],
+            ],
+            '#value' => 'Share to...',
+          ],
+    ];
+    $set['contain']['copylink'] = [
+      '#type' => 'html_tag',
+      '#tag' => 'button',
+          [
+            '#type' => 'html_tag',
+            '#tag' => 'a',
+            '#attributes' => [
+              'href' => ['/copylink'],
+            ],
+            '#value' => 'Copy link',
+          ],
+    ];
+    $set['contain']['embed'] = [
+      '#type' => 'html_tag',
+      '#tag' => 'button',
+      [
+        '#type' => 'html_tag',
+        '#tag' => 'a',
+        '#attributes' => [
+          'href' => ['/embed'],
+        ],
+        '#value' => 'Embed',
+      ],
+    ];
+
+    $set['contain']['cancel'] = [
+      '#type' => 'html_tag',
+      '#tag' => 'button',
+      [
+        '#type' => 'html_tag',
+        '#tag' => 'a',
+        '#attributes' => [
+          'href' => ['#'],
+          'class' => ['cancel'],
+        ],
+        '#value' => 'Cancel',
+      ],
+    ];
+    $set['#attached']['library'][] = 'popup/global';
+    return $set;
+  }
+
 }

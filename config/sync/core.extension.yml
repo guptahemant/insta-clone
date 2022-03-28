@@ -61,6 +61,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  popup: 0
   profile_block: 0
   pseudo: 0
   quickedit: 0
