@@ -35,6 +35,24 @@
   }
 }
 
+.name .use-ajax {
+  padding-left: 420px !important;
+  @include mobile() {
+    padding-left: 180px !important;
+  }
+}
+
+.ui-dialog {
+  width: 400px !important;
+  border-radius: 20px;
+  @include mobile() {
+    width: 275px !important;
+  }
+  #drupal-modal {
+    border-radius: 20px;
+  }
+}
+
 .insta-gallery {
   @include laptop-l {
     width: 950px;

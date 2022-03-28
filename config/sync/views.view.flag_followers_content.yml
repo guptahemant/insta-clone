@@ -115,8 +115,8 @@ display:
           label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '{{ uid }} <a class="use-ajax" data-dialog-options="{&quot;width&quot;:800}" data-dialog-type="modal" href="users/editsettings">...</a>'
             make_link: false
             path: ''
             absolute: false
