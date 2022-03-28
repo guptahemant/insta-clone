@@ -1,0 +1,4 @@
+name: Popup module
+type: module
+description: A module that will show links in a modal form.
+core_version_requirement: ^8 || ^9
