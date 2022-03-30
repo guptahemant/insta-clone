@@ -43,6 +43,7 @@
         "drupal/search_api_page": "^1.0@beta",
         "drupal/twig_tweak": "^3.1",
         "drupal/user_menu_avatar": "^6.0@RC",
+        "drupal/views_infinite_scroll": "^2.0",
         "drupal/views_slideshow": "^4.8"
     },
     "conflict": {
