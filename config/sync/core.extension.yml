@@ -87,6 +87,7 @@ module:
   update: 0
   user: 0
   user_menu_avatar: 0
+  views_contextual_filters_or: 0
   views_infinite_scroll: 0
   views_slideshow: 0
   views_slideshow_cycle: 0
