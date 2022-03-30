@@ -20,6 +20,7 @@ dependencies:
     - node
     - text
     - user
+    - views_infinite_scroll
 _core:
   default_config_hash: 47IYi8RR_4zxJhMb26BYZgrrotG2TRVqZ9trCUVsGmU
 id: flag_followers_content
@@ -684,17 +685,15 @@ display:
           empty_zero: false
           hide_alter_empty: false
       pager:
-        type: full
+        type: infinite_scroll
         options:
           offset: 0
-          items_per_page: 10
+          items_per_page: 2
           total_pages: null
           id: 0
           tags:
             next: 'Next ›'
             previous: '‹ Previous'
-            first: '« First'
-            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -703,7 +702,10 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          quantity: 9
+          views_infinite_scroll:
+            button_text: ''
+            automatically_load_content: true
+            initially_load_all_pages: false
       exposed_form:
         type: basic
         options:
@@ -834,6 +836,7 @@ display:
           required: false
           flag: bookmark
           user_scope: current
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }
