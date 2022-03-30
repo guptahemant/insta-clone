@@ -17,6 +17,7 @@ module:
   config_translation: 0
   contact: 0
   contextual: 0
+  createpost: 0
   ctools: 0
   datetime: 0
   dblog: 0
@@ -39,6 +40,8 @@ module:
   fontawesome_iconpicker_widget: 0
   fontawesome_menu_icons: 0
   hal: 0
+  hashtags: 0
+  hashtags_explore: 0
   help: 0
   history: 0
   image: 0
@@ -58,6 +61,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  popup: 0
   profile_block: 0
   pseudo: 0
   quickedit: 0
@@ -79,6 +83,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  twig_tweak: 0
   update: 0
   user: 0
   user_menu_avatar: 0

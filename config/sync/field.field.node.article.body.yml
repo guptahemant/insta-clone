@@ -6,7 +6,11 @@ dependencies:
     - field.storage.node.body
     - node.type.article
   module:
+    - hashtags
     - text
+third_party_settings:
+  hashtags:
+    hashtags_activate: true
 _core:
   default_config_hash: IjZnOLWk1Pjq3WRg2pLSA1ERh7Po7izCq_p6UztZr2c
 id: node.article.body

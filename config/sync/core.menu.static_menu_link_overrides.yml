@@ -13,3 +13,9 @@ definitions:
     weight: -50
     expanded: false
     enabled: true
+  createpost__createpost:
+    menu_name: main
+    parent: ''
+    weight: -48
+    expanded: false
+    enabled: true

@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - editor
+    - hashtags
     - mentions
 _core:
   default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
@@ -52,3 +53,9 @@ filters:
     settings:
       mentions_filter:
         UserMention: UserMention
+  filter_hashtags:
+    id: filter_hashtags
+    provider: hashtags
+    status: true
+    weight: 10
+    settings: {  }

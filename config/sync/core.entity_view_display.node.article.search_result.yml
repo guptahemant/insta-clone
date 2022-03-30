@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.search_result
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_hashtags
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.thumbnail
@@ -55,6 +56,7 @@ content:
     region: content
 hidden:
   comment: true
+  field_hashtags: true
   field_tags: true
   langcode: true
   search_api_excerpt: true
