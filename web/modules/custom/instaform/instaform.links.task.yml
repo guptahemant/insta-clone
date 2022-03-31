@@ -1,0 +1,60 @@
+instagram.tab1:
+  title: Edit Profile
+  route_name: insta.my_form
+  base_route: insta.my_form
+  weight: 1
+
+
+instagram.tab2:
+  title: Change Password
+  route_name: insta.pass_form
+  base_route: insta.my_form
+  weight: 2
+
+instagram.tab3:
+  title: Apps and websites
+  route_name: insta.pass_form
+  base_route: insta.my_form
+  weight: 3
+
+instagram.tab4:
+  title: Email and SMS
+  route_name: insta.pass_form
+  base_route: insta.my_form
+  weight: 4
+
+instagram.tab5:
+  title: Push notifications
+  route_name: insta.pass_form
+  base_route: insta.my_form
+  weight: 5
+
+instagram.tab6:
+  title: Manage contacts
+  route_name: insta.pass_form
+  base_route: insta.my_form
+  weight: 6
+
+instagram.tab7:
+  title: Privacy and security
+  route_name: insta.pass_form
+  base_route: insta.my_form
+  weight: 7
+
+instagram.tab8:
+  title: Login activity
+  route_name: insta.pass_form
+  base_route: insta.my_form
+  weight: 8
+
+instagram.tab9:
+  title: Emails from Instagram
+  route_name: insta.pass_form
+  base_route: insta.my_form
+  weight: 9
+
+instagram.tab10:
+  title: Help
+  route_name: insta.pass_form
+  base_route: insta.my_form
+  weight: 10

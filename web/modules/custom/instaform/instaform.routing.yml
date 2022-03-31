@@ -1,0 +1,20 @@
+insta.my_form:
+  path: '/users/edit'
+  defaults:
+    _form: 'Drupal\instaform\Form\UserEditForm'
+  requirements:
+    _access: "TRUE"
+
+insta.pass_form:
+  path: '/insta/changepassword'
+  defaults:
+    _form: 'Drupal\instaform\Form\ChangePasswordForm'
+  requirements:
+    _access: "TRUE"
+
+profile.image_edit:
+  path: '/insta/profile/edit'
+  defaults:
+    _form: 'Drupal\instaform\Form\Editimage'
+  requirements:
+    _access: "TRUE"
