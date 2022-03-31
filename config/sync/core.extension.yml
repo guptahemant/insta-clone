@@ -45,6 +45,7 @@ module:
   help: 0
   history: 0
   image: 0
+  instaform: 0
   jquery_ui: 0
   jquery_ui_accordion: 0
   jquery_ui_tabs: 0

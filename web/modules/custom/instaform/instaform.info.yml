@@ -1,0 +1,10 @@
+name: Instagram Form
+description: Setting Form for Instagram.
+core: 8.x
+package: Custom
+type: module
+core_version_requirement: ^8 || ^9
+
+
+libraries:
+  - instaform/global-styling

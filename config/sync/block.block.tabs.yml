@@ -1,0 +1,20 @@
+uuid: eb191c2b-7c36-413d-ab8a-65f4d8b139d4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - instagram
+id: tabs
+theme: instagram
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

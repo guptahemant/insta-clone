@@ -1,0 +1,298 @@
+@media only screen and (max-width: 425px) {
+  header {
+    display: none !important;
+} }
+
+main {
+  margin-top: 65px;
+}
+@media only screen and (max-width: 425px) {
+  main {
+    margin-top: 0 !important;
+} }
+
+.layout-content {
+  width: 935px;
+  margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  .layout-content {
+    width: 100%;
+} }
+.layout-content .slide {
+  display: flex;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content .slide {
+    flex-direction: column;
+    border: none;
+} }
+.layout-content .slide #block-tabs {
+  width: 236px;
+  border-right: 1px solid #ccc;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content .slide #block-tabs {
+    width: 100%;
+    border: 1px solid #ccc;
+} }
+.layout-content .slide #block-tabs li {
+  list-style-type: none;
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content .slide #block-tabs li {
+    margin-bottom: 0;
+    text-align: center;
+} }
+.layout-content .slide #block-tabs li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content .slide #block-tabs li a {
+    display: none;
+} }
+.layout-content .slide #block-tabs li .is-active {
+  font-weight: bold;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content .slide #block-tabs li .is-active {
+    display: block;
+} }
+.layout-content form {
+  width: 500px;
+  padding: 20px 30px;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content form {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 25px 0px;
+} }
+.layout-content form .userfile {
+  display: flex;
+}
+.layout-content form .userfile .profilefield {
+  margin-left: 96px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content form .userfile .profilefield {
+    margin-left: 22px;
+} }
+
+.layout-content form .userfile .userdatafile {
+  line-height: 20px;
+  margin-left: 25px;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content form .userfile .userdatafile {
+    margin-left: 18px;
+  }
+}
+.layout-content form .userfile .userdatafile .profile-link {
+  font-size: 14px;
+  color: #0095f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+.layout-content form .userfile .userdatafile #edit-namedisplay label {
+  font-size: 20px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.layout-content form .inputdiv {
+  display: flex;
+  margin-top: 18px;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content form .inputdiv {
+    flex-direction: column;
+} }
+.layout-content form .inputdiv .js-form-type-item {
+  width: 198px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 25px;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content form .inputdiv .js-form-type-item {
+    text-align: left;
+    margin-left: 22px;
+    margin-bottom: 9px;
+} }
+.layout-content form .inputdiv #edit-bioname {
+  width: 100%;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content form .inputdiv #edit-bioname {
+    width: 77%;
+    margin-left: 22px;
+} }
+@media only screen and (max-width: 375px) {
+  .layout-content form .inputdiv #edit-bioname {
+    width: 82%;
+} }
+.layout-content form .inputdiv #edit-bioname h4 {
+  color: #8e8e8e;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.layout-content form .inputdiv #edit-bioname h4 + p {
+  margin: 0;
+}
+.layout-content form .inputdiv #edit-bioname textarea {
+  width: 100%;
+  -webkit-appearance: none;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  font-size: 16px;
+  height: 60px;
+  padding: 5px 10px;
+}
+.layout-content form .inputdiv #edit-name,
+.layout-content form .inputdiv #edit-username,
+.layout-content form .inputdiv .js-form-item-website,
+.layout-content form .inputdiv .js-form-item-email,
+.layout-content form .inputdiv .js-form-item-phoneno {
+  width: 100%;
+}
+.layout-content form .inputdiv #edit-name input,
+.layout-content form .inputdiv #edit-username input,
+.layout-content form .inputdiv .js-form-item-website input,
+.layout-content form .inputdiv .js-form-item-email input,
+.layout-content form .inputdiv .js-form-item-phoneno input {
+  width: 100%;
+  -webkit-appearance: none;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  font-size: 16px;
+  height: 30px;
+  padding: 0px 10px;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content form .inputdiv #edit-name,
+  .layout-content form .inputdiv #edit-username,
+  .layout-content form .inputdiv .js-form-item-website,
+  .layout-content form .inputdiv .js-form-item-email,
+  .layout-content form .inputdiv .js-form-item-phoneno {
+    width: 77%;
+    margin-left: 22px;
+} }
+@media only screen and (max-width: 375px) {
+  .layout-content form .inputdiv #edit-name,
+  .layout-content form .inputdiv #edit-username,
+  .layout-content form .inputdiv .js-form-item-website,
+  .layout-content form .inputdiv .js-form-item-email,
+  .layout-content form .inputdiv .js-form-item-phoneno {
+    width: 82%;
+} }
+.layout-content form .js-form-item-emailid,
+.layout-content form .js-form-item-phone-number,
+.layout-content form .js-form-item-gender {
+  display: flex;
+}
+.layout-content form .js-form-item-emailid label,
+.layout-content form .js-form-item-phone-number label,
+.layout-content form .js-form-item-gender label {
+  width: 198px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 25px;
+}
+.layout-content form .js-form-item-emailid input,
+.layout-content form .js-form-item-phone-number input,
+.layout-content form .js-form-item-gender input {
+  width: 100%;
+  -webkit-appearance: none;
+  border: 1px solid lightgray;
+  font-size: 16px;
+  height: 30px;
+  padding: 0px 10px;
+}
+.layout-content form .js-form-item-emailid select,
+.layout-content form .js-form-item-phone-number select,
+.layout-content form .js-form-item-gender select {
+  width: 100%;
+  -webkit-appearance: none;
+  border: 1px solid lightgray;
+  font-size: 16px;
+  height: 30px;
+  padding: 0px 10px;
+}
+.layout-content form .form-composite {
+  display: flex;
+  margin: 18px 0;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content form .form-composite {
+    flex-direction: column;
+} }
+.layout-content form .form-composite legend {
+  width: 198px;
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 25px;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content form .form-composite legend {
+    width: 100%;
+    margin-left: 22px;
+    margin-bottom: 12px;
+    text-align: left;
+} }
+.layout-content form .form-composite .fieldset-wrapper {
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content form .form-composite .fieldset-wrapper {
+    margin-left: 22px;
+    width: 293px;
+} }
+.layout-content form .form-composite .fieldset-wrapper .form-item-candidate-copy-suggestions {
+  display: flex;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content form .form-composite .fieldset-wrapper .form-item-candidate-copy-suggestions {
+    display: flex;
+} }
+.layout-content form .form-composite .fieldset-wrapper .form-item-candidate-copy-suggestions input {
+  margin-top: 18px;
+  margin-right: 8px;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content form .form-composite .fieldset-wrapper .form-item-candidate-copy-suggestions input {
+    margin-top: 18px;
+    margin-right: 8px;
+} }
+.layout-content form p {
+  font-size: 12px;
+  color: #8e8e8e;
+  line-height: 16px;
+}
+.layout-content form #edit-actions {
+  text-align: center;
+}
+.layout-content form #edit-actions #edit-submit {
+  border: 1px solid transparent;
+  background: #8acee9b8;
+  color: white;
+  font-weight: bolder;
+  border-radius: 4px;
+  padding: 7px 11px;
+}
