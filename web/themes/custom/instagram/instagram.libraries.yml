@@ -18,6 +18,8 @@ nodepage:
   css:
     theme:
       css/node/style.css: {}
+  js:
+    js/instalogin.js: {}
 
 # userpage a library for profile block in userpage
 userpage:
