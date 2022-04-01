@@ -6,6 +6,7 @@ dependencies:
     - 'block_content:basic:3199cb57-d06d-45b0-b2b2-04ae6e82925b'
   module:
     - block_content
+    - user
   theme:
     - instagram
 id: searchicon
@@ -22,4 +23,12 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator
