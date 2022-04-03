@@ -1,7 +1,23 @@
 uuid: 09fd93e5-818f-4a5c-ad02-3f4c7d31ade4
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.article
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contact
+    - filter
+    - flag
+    - node
+    - search_api_autocomplete
+    - search_api_page
+    - shortcut
+    - system
+    - taxonomy
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated

@@ -1,0 +1,15 @@
+popup.settingslink:
+  path: "/users/settings"
+  defaults:
+    _title: "Setting"
+    _controller: '\Drupal\popup\Controller\SettingController::setting'
+  requirements:
+    _permission: "access content"
+
+popup.editsettingslink:
+  path: "/users/editsettings"
+  defaults:
+    _title: "Edit Settings"
+    _controller: '\Drupal\popup\Controller\SettingController::editsetting'
+  requirements:
+    _permission: "access content"

@@ -8,6 +8,7 @@ global-styling:
     js/instagram.js: {}
     js/myprofile_wrapper.js: {}
     js/popup.js: {}
+    js/postlike.js: {}
   dependencies:
     - core/jquery
 
@@ -17,6 +18,8 @@ nodepage:
   css:
     theme:
       css/node/style.css: {}
+  js:
+    js/instalogin.js: {}
 
 # userpage a library for profile block in userpage
 userpage:

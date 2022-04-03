@@ -17,6 +17,7 @@ module:
   config_translation: 0
   contact: 0
   contextual: 0
+  createpost: 0
   ctools: 0
   datetime: 0
   dblog: 0
@@ -39,14 +40,21 @@ module:
   fontawesome_iconpicker_widget: 0
   fontawesome_menu_icons: 0
   hal: 0
+  hashtags: 0
+  hashtags_explore: 0
   help: 0
   history: 0
   image: 0
+  instaform: 0
+  jquery_ui: 0
+  jquery_ui_accordion: 0
+  jquery_ui_tabs: 0
   lang_dropdown: 0
   language: 0
   link: 0
   locale: 0
   log_mod: 0
+  mentions: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0
@@ -54,9 +62,13 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  popup: 0
   profile_block: 0
   pseudo: 0
   quickedit: 0
+  quicktabs: 0
+  quicktabs_accordion: 0
+  quicktabs_jqueryui: 0
   rdf: 0
   search_api: 0
   search_api_autocomplete: 0
@@ -75,9 +87,12 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  twig_tweak: 0
   update: 0
   user: 0
   user_menu_avatar: 0
+  views_contextual_filters_or: 0
+  views_infinite_scroll: 0
   views_slideshow: 0
   views_slideshow_cycle: 0
   views_ui: 0

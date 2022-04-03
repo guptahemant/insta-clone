@@ -1,0 +1,13 @@
+uuid: 2df91f59-8758-4f09-9e6c-fe53e8c7577c
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - hashtags
+_core:
+  default_config_hash: qrXqmXX-8TmOPcPjqMJKryDuU6llL6Wv-KvobTxmr_k
+name: Hashtags
+vid: hashtags
+description: 'Hashtags description test'
+weight: -10

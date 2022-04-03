@@ -18,8 +18,6 @@ display:
           tags:
             previous: '‹ 이전'
             next: '다음 ›'
-            first: '« 처음'
-            last: '마지막 »'
   page_1:
     display_title: 쪽
     display_options:

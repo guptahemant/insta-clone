@@ -1,0 +1,6 @@
+global-styling:
+  css:
+    theme:
+      css/edituser.css: {}
+  js:
+    js/userfile.js: {}

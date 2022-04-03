@@ -1,0 +1,251 @@
+.contain1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 443px;
+  justify-content: center;
+}
+
+.contain1 svg.svg-inline--fa.fa-photo-video {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.contain1 span {
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.contain1 span.choose {
+  background: #0095f6;
+  border: none;
+  padding: 5px 9px;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+input.js-form-file {
+  display: none;
+}
+
+.ui-widget-header {
+  border: unset;
+  background-color: unset;
+  text-align: center;
+  width: 100%;
+  position: unset;
+}
+
+
+.ui-dialog .ui-dialog-titlebar {
+  border: none;
+  border-bottom: 1px solid #dbdbdb;
+  width: 91.5%;
+  background: #fff;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  position: fixed;
+  right: 2rem;
+  top: 20px;
+  width: unset;
+  margin: unset;
+  padding: unset;
+  height: unset;
+  transform: scale(2.5);
+  font-size: 0;
+  background: transparent;
+}
+
+.ui-dialog .ui-dialog-titlebar-close:hover {
+  background-color: transparent;
+  border: transparent;
+}
+
+.ui-widget-overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 100%;
+}
+
+div#block-modalblock {
+  display: none;
+}
+
+div#block-subscribetonewsletter {
+  display: none;
+}
+
+.image-widget.js-form-managed-file {
+  display: none;
+}
+
+.step {
+  display: none;
+}
+.nextbutton {
+  display: none;
+}
+img.nodeimage {
+  min-width: 436px;
+  height: 436px;
+  object-fit: cover;
+}
+
+form.multi-step-form {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  /* z-index: 20; */
+}
+
+form.multi-step-form input.submitbutton {
+  position: fixed;
+  width: fit-content;
+  background: transparent;
+  color: #0095f6;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  left: 71%;
+  top: 14.6%;
+}
+
+.flex2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.ui-widget.ui-widget-content.ui-front {
+  width: 400px !important;
+  padding: 0px;
+}
+
+.ui-widget.ui-widget-content.ui-front.step2 {
+  width: 737px !important;
+  top: 89px !important;
+  padding: 0px !important;
+  border-radius: 20px;
+}
+
+.ui-dialog .ui-dialog-content {
+  padding: 0px !important;
+}
+
+.complete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 443px;
+  justify-content: center;
+}
+
+.complete svg {
+  font-size: 20px;
+}
+
+.profilefield {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 10px 15px 10px;
+  align-items: center;
+}
+
+.profilefield img {
+  padding-right: 2px;
+  border: 0px solid #262626;
+  border-radius: 40px;
+  padding-bottom: 2px;
+  height: 30px;
+  width: 30px;
+}
+
+.profilefield .profname {
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.profilefield .profname .form_text {
+  height: 168px;
+  padding: 0px 16px;
+  width: 90%;
+}
+
+.textbody {
+  width: 88%;
+  padding: 0px 16px;
+  border: none;
+  outline: none;
+}
+
+.access-title {
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.accessibility {
+  display: none;
+}
+
+.show {
+  padding: 14px 18px;
+  display: block;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.hide {
+  display: none;
+}
+.accessibility .access1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accessibility .access1 h2 {
+  font-size: 16px;
+}
+
+.data p {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.alttext {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.collapse {
+  display: flex;
+}
+.alttext img {
+  width: 44px;
+  height: 44px;
+  padding-right: 5px;
+  object-fit: cover;
+}
+
+.form-text {
+  width: 185px;
+  height: 42px;
+  outline: #dbdbdb;
+  border: 1px solid #dbdbdb;
+  font-size: 14px;
+  padding: 0px 12px;
+  border-radius: 10px;
+}
+.backbutton {
+  background: transparent;
+  border: none;
+  width: fit-content;
+  position: fixed;
+  top: 14.5%;
+  left: 25%;
+}
