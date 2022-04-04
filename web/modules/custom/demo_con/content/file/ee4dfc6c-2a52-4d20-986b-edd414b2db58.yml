@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ee4dfc6c-2a52-4d20-986b-edd414b2db58
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: instadefault.jpg
+  uri:
+    -
+      value: 'public://pictures/2022-03/instadefault.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 28350
+  status:
+    -
+      value: false
+  created:
+    -
+      value: 1649258481

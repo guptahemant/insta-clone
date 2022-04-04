@@ -296,3 +296,66 @@ main {
   border-radius: 4px;
   padding: 7px 11px;
 }
+
+
+.ui-dialog {
+  padding: 0;
+}
+.ui-dialog-titlebar {
+  background: none;
+  border: none;
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+}
+.ui-dialog-title {
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100% !important;
+}
+
+#drupal-modal {
+  padding: 0;
+}
+.ui-dialog-titlebar-close {
+  display: none;
+}
+
+.js-form-item-imagefile {
+  border-bottom: 1px solid #dbdbdb;
+  padding: 15px 0;
+  text-align: center;
+  color: #0095f6;
+  font-weight: bold;
+  font-size: 14px;
+}
+.js-form-file {
+  display: none;
+}
+
+.removeimage {
+  border: none;
+  background: none;
+  display: block;
+  width: 100%;
+  color: #ed4956;
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 14px !important;
+  border-bottom: 1px solid #dbdbdb;
+}
+.cancelform {
+  border: none;
+  background: none;
+  display: block;
+  width: 100%;
+  font-size: 14px !important;
+  padding: 15px 0;
+}
+.submitimage {
+  display: none;
+}
+.ui-widget-overlay {
+  background-color: #060606ad;
+  opacity: 1;
+}
