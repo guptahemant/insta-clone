@@ -45,6 +45,8 @@ content:
     region: content
 hidden:
   field_bio: true
+  field_phone: true
+  field_website: true
   langcode: true
   member_for: true
   search_api_excerpt: true
