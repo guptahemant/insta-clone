@@ -1,0 +1,70 @@
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front {
+  width: 78% !important;
+  left: 12% !important;  
+  .ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix {
+    padding: 15px;
+    border-bottom: 0;
+    span#ui-id-3 {
+      display: none;
+    }
+    .ui-dialog-title 
+    { 
+      display: none;
+    }
+  }
+  div#drupal-modal {
+    min-width: 100%;
+    overflow-y: hidden;
+    padding: 0;
+    .nodepopup {
+      .views-row {
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        height: 370px;
+        .views-field-nothing {
+          .mainpost {
+            display: flex;
+            .left-section {
+              width: 50%;
+              text-align: center;
+              .leftimage {
+                width: 100%;
+                img {
+                  width: 100%;
+                  height: 21.4rem;
+                  @include mobile {
+                    width: 310px;
+                    height: 260px;
+                  }
+                }
+              }
+            }
+            .right-section {
+              width: calc(50% - 50px);
+              padding: 0 0 0 50px;
+              .rightcontent {
+                padding: 14px 4px 14px 16px;
+                a {
+                  text-decoration: none;
+                }
+                .likes-notification {
+                  display: flex;
+                  .js-flag-likes-9 {
+                    padding: 5px 5px 5px 0;
+                    a {
+                      padding-right: 5px;
+                    }
+                  }
+                  .js-flag-bookmark-9 {
+                    padding: 5px;
+                  }
+                }
+              }  
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
