@@ -48,7 +48,6 @@ class Editimage extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-
     $form['imagefile'] = [
       '#title' => $this->t('Upload Photo'),
       '#type' => 'managed_file',
@@ -59,25 +58,34 @@ class Editimage extends FormBase {
     ];
 
     $form['actions']['remove'] = [
-      '#type' => 'button',
+      '#type' => 'submit',
       '#value' => $this->t('Remove current photo'),
+      '#attributes' => [
+        'class' => ['removeimage'],
+      ],
+      '#submit' => ['::removeImage'],
     ];
 
     $form['actions']['cancel'] = [
       '#type' => 'button',
       '#value' => $this->t('Cancel'),
+      '#attributes' => [
+        'class' => ['cancelform'],
+        'onClick' => ['history.go(-1); event.preventDefault()'],
+      ],
     ];
 
-    $form['actions']['#type'] = 'actions';
     $form['actions']['submit'] = [
       '#type' => 'submit',
       '#value' => $this->t('Submit'),
-      '#button_type' => 'primary',
       '#attributes' => [
         'class' => ['submitimage'],
       ],
+      '#submit' => ['::submitImage'],
     ];
+
     $form['#attached']['library'][] = 'instaform/global-styling';
+
     return $form;
   }
 
@@ -86,13 +94,30 @@ class Editimage extends FormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
 
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function submitImage(array &$form, FormStateInterface $form_state) {
+
     $photo = $form_state->getValue('imagefile');
     $file = $this->entityTypeManager->getStorage('file')->load($photo[0]);
     $file->setPermanent();
-
     $uid = $this->account->id();
     $user = $this->entityTypeManager->getStorage('user')->load($uid);
     $user->set('user_picture', $file);
+    $user->save();
+    $form_state->setRedirect('insta.my_form');
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function removeImage(array &$form, FormStateInterface $form_state) {
+    $uid = $this->account->id();
+    $user = $this->entityTypeManager->getStorage('user')->load($uid);
+    $user->set('user_picture', NULL);
     $user->save();
 
     $form_state->setRedirect('insta.my_form');

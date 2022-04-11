@@ -11,6 +11,7 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Url;
 use Drupal\Component\Serialization\Json;
 use Drupal\Core\TempStore\PrivateTempStoreFactory;
+use Drupal\Core\File\FileUrlGenerator;
 
 /**
  * A class to create form to edit user's data.
@@ -20,11 +21,12 @@ class UserEditForm extends FormBase {
   /**
    * {@inheritdoc}
    */
-  public function __construct(MessengerInterface $msg, AccountInterface $account, EntityTypeManagerInterface $entity_type_manager, PrivateTempStoreFactory $tempstore_private) {
+  public function __construct(MessengerInterface $msg, AccountInterface $account, EntityTypeManagerInterface $entity_type_manager, PrivateTempStoreFactory $tempstore_private, FileUrlGenerator $fileUrlGenerator) {
     $this->messenger = $msg;
     $this->account = $account;
     $this->entityTypeManager = $entity_type_manager;
     $this->tempstore_private = $tempstore_private;
+    $this->fileUrlGenerator = $fileUrlGenerator;
   }
 
   /**
@@ -35,7 +37,8 @@ class UserEditForm extends FormBase {
       $container->get('messenger'),
       $container->get('current_user'),
       $container->get('entity_type.manager'),
-      $container->get('tempstore.private')
+      $container->get('tempstore.private'),
+      $container->get('file_url_generator'),
     );
   }
 
@@ -52,23 +55,22 @@ class UserEditForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     $uid = $this->account->id();
     if ($uid) {
+
       $user = $this->entityTypeManager->getStorage('user')->load($uid);
       $name = $user->get('name')->value;
       $fullname = $user->get('field_full_name')->value;
       $bio = $user->get('field_bio')->value;
       $mail = $user->get('mail')->value;
-
       $phone = $user->get('field_phone')->value;
       $website = $user->get('field_website')->value;
 
-      $picture = $user->user_picture->entity->getFileName();
+      $picture = '../sites/default/files/pictures/2022-03/instadefault.jpg';
 
       if (!$user->user_picture->isEmpty()) {
-        $pic = $picture;
+        $pic = $user->user_picture->entity->getFileUri();
+        $picture = $this->fileUrlGenerator->generateString($pic);
       }
-      else {
-        $pic = '';
-      }
+
     }
 
     $form['userfile'] = [
@@ -83,7 +85,7 @@ class UserEditForm extends FormBase {
       '#tag' => 'img',
       '#attributes' => [
         'class' => 'profilefield',
-        'src' => ['../sites/default/files/pictures/2022-03/' . $pic],
+        'src' => [$picture],
       ],
     ];
 
