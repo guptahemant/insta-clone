@@ -1,0 +1,5 @@
+name: Webcam
+type: module
+description: Display a camera modal
+core_version_requirement: ^8 || ^9
+package: Custom

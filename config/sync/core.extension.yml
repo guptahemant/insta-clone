@@ -93,6 +93,7 @@ module:
   views_slideshow: 0
   views_slideshow_cycle: 0
   views_ui: 0
+  webcam: 0
   pathauto: 1
   content_translation: 10
   views: 10
