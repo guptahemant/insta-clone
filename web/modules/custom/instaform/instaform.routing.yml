@@ -18,3 +18,10 @@ profile.image_edit:
     _form: 'Drupal\instaform\Form\Editimage'
   requirements:
     _access: "TRUE"
+
+insta.route:
+  path: '/insta/requestfail'
+  defaults:
+    _form: 'Drupal\instaform\Form\Requestpage'
+  requirements:
+    _access: "TRUE"
