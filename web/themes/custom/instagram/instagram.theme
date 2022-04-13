@@ -72,3 +72,10 @@ function instagram_user_login(&$variables) {
 function instagram_preprocess_page__feedpost(&$variables) {
   $variables['#attached']['library'][] = 'instagram/feed';
 }
+
+/**
+ * Add library to suggestion page.
+ */
+function instagram_preprocess_page__suggestion(&$variables) {
+  $variables['#attached']['library'][] = 'instagram/suggested_user';
+}

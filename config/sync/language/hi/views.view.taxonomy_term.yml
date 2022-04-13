@@ -6,9 +6,6 @@ display:
     display_options:
       pager:
         options:
-          tags:
-            next: ››
-            previous: ‹‹
           expose:
             items_per_page_label: 'विषय प्रति पृष्ठ'
             items_per_page_options_all_label: '-सभी-'
@@ -22,7 +19,6 @@ display:
         tid:
           exception:
             title: सभी
-          title: '{{ arguments.tid }}'
   feed_1:
     display_title: फ़ीड
   page_1:
