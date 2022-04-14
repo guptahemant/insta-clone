@@ -75,7 +75,7 @@ class WebcamController extends ControllerBase {
    */
   public function checkName(Request $request) {
 
-    $img = \Drupal::request()->request->get('photo');
+    $img = $this->requestStack->getCurrentrequest()->get('photo');
 
     $img = str_replace('data:image/png;base64,', '', $img);
     $img = str_replace(' ', '+', $img);
