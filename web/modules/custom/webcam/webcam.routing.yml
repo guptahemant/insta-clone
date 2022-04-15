@@ -1,0 +1,24 @@
+webcam.capture:
+  path: "/capture"
+  defaults:
+    _form: 'Drupal\webcam\Form\Webcam'
+    _title: "Webcam Form"
+  requirements:
+    _access: "TRUE"
+
+webcam.controller:
+  path: "/cap"
+  defaults:
+    _controller: 'Drupal\webcam\Controller\WebcamController::checkName'
+    _title: "Webcam"
+    methods: POST
+  requirements:
+    _access: "TRUE"
+
+webcam.open_capture_form:
+  path: "/capture_form"
+  defaults:
+    _title: "Capture Form"
+    _controller: '\Drupal\webcam\Controller\CaptureFormExampleController::openModalForm'
+  requirements:
+    _permission: 'access content'

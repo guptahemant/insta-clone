@@ -33,3 +33,9 @@ feed:
   css:
     theme:
       css/feed/style.css: {}
+
+suggested_user:
+  version: VERSION
+  css:
+    theme:
+      css/suggestion/style.css: {} 
