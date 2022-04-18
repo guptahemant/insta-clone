@@ -288,6 +288,9 @@ img{
    transition: .5s ease;
    background-color: transparent;
    background: rgba(0, 0, 0, 0.5);
+   @include tablet-l{
+    width: 95%;
+     }
    
  }
  

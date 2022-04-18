@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\createpost\Form;
+namespace Drupal\webcam\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -9,11 +9,12 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\File\FileUrlGenerator;
 use Drupal\Core\Extension\ExtensionList;
+use Drupal\Core\State\State;
 
 /**
  * A class to create form for creating node.
  */
-class CreateNode extends FormBase {
+class NodeWithCapture extends FormBase {
 
   /**
    * To Get the Current user details.
@@ -30,13 +31,21 @@ class CreateNode extends FormBase {
   protected $entityTypeManager;
 
   /**
+   * To Load the file to database.
+   *
+   * @var \Drupal\Core\State\State
+   */
+  protected $state;
+
+  /**
    * Class constructor.
    */
-  public function __construct(AccountInterface $account, EntityTypeManagerInterface $entity_type_manager, FileUrlGenerator $fileUrlGenerator, ExtensionList $extensionList) {
+  public function __construct(AccountInterface $account, EntityTypeManagerInterface $entity_type_manager, FileUrlGenerator $fileUrlGenerator, ExtensionList $extensionList, State $state) {
     $this->account = $account;
     $this->entityTypeManager = $entity_type_manager;
     $this->fileUrlGenerator = $fileUrlGenerator;
     $this->extensionList = $extensionList;
+    $this->state = $state;
   }
 
   /**
@@ -49,7 +58,8 @@ class CreateNode extends FormBase {
       $container->get('current_user'),
       $container->get('entity_type.manager'),
       $container->get('file_url_generator'),
-      $container->get('extension.list.module')
+      $container->get('extension.list.module'),
+      $container->get('state'),
     );
   }
 
@@ -91,46 +101,13 @@ class CreateNode extends FormBase {
         'id' => ['ajax_form_multistep_form'],
       ],
     ];
-    if ($this->step == 1) {
-      $form['prefix']['contain'] = [
-        '#type' => 'html_tag',
-        '#tag' => 'div',
-        '#value' => '
-        <a class ="choose" href ="/capture">Capture From Webcam</a>
-        <span class = "choose">Select From Computer</span>',
-        '#attributes' => [
-          'class' => ['contain1'],
-        ],
-      ];
-      $form['prefix']['my_file'] = [
-        '#type' => 'managed_file',
-        '#upload_validators' => [
-          'file_validate_extensions' => ['zip ZIP jpeg jpg png gif'],
-        ],
-        '#attributes' => [
-          'class' => ['file'],
-          'id' => ['imagefornode'],
-        ],
-        '#upload_location' => $public_store,
-      ];
-      $form['buttons']['forward'] = [
-        '#type' => 'submit',
-        '#value' => $this->t('Next'),
-        '#attributes' => [
-          'class' => ['nextbutton'],
-        ],
-        '#ajax' => [
-          'wrapper' => 'ajax_form_multistep_form',
-          'callback' => '::ajaxFormMultistepFormAjaxCallback',
-          'event' => 'click',
-        ],
-      ];
-    }
 
-    if ($this->step == 2) {
-      $image = $form_state->get('page_values');
-      $photo = $image['my_file'];
-      $file = $this->entityTypeManager->getStorage('file')->load($photo[0]);
+    if ($this->step == 1) {
+      $fid = $this->state->get('fid');
+
+      $public_store = 'public://capture/';
+      $public = $this->fileUrlGenerator->generateString($public_store);
+      $file = $this->entityTypeManager->getStorage('file')->load($fid);
 
       $uri = $file->getFileName();
 
@@ -257,7 +234,7 @@ class CreateNode extends FormBase {
 
     $module = $this->extensionList->getPath('createpost');
 
-    if ($this->step == 3) {
+    if ($this->step == 2) {
       $form['prefix']['message-title'] = [
         '#type' => 'container',
         [
@@ -276,7 +253,7 @@ class CreateNode extends FormBase {
 
     $form['#attached']['library'][] = 'core/drupal.dialog.ajax';
     $form['#attached']['library'][] = 'core/jquery.form';
-    $form['#attached']['library'][] = 'createpost/global-styling';
+    $form['#attached']['library'][] = 'webcam/global-styling';
     return $form;
   }
 
@@ -285,32 +262,18 @@ class CreateNode extends FormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
 
-    if ($this->step == 2) {
-
+    if ($this->step == 1) {
+      $fid = $this->state->get('fid');
       $body = $form_state->getValue('body');
-      $image = $form_state->get('page_values');
-      $photo = $image['my_file'];
       $alt = $form_state->getValue('textfield');
-      $file = $this->entityTypeManager->getStorage('file')->load($photo[0]);
 
-      $uri = $file->getFileUri();
-
+      $this->state->delete('fid');
       $node = $this->entityTypeManager->getStorage('node')->create([
         'type' => 'article',
         'title' => ' ',
       ]);
-      $files = $this->entityTypeManager
-        ->getStorage('file')
-        ->loadByProperties(['uri' => $uri]);
-      $file = reset($files);
-      if (!$file) {
-        $file = $this->entityTypeManager->getStorage('file')->create([
-          'uri' => $uri,
-        ]);
-        $file->save();
-      }
       $node->field_image[] = [
-        'target_id' => $file->id(),
+        'target_id' => $fid,
         'alt' => $alt,
         'title' => 'Title',
       ];
@@ -321,18 +284,7 @@ class CreateNode extends FormBase {
       $node->enforceIsNew();
       $node->save();
       $form_state->setRedirect('<front>');
-    }
-    if ($this->step == 1) {
-      $photo = $form_state->getValue('my_file');
-      $file = $this->entityTypeManager->getStorage('file')->load($photo[0]);
-      $file->setPermanent();
-      $uri = $file->getFileUri();
 
-      $file->save();
-      $form_state->set('page_values', [
-            // Keep only first step values to minimize stored data.
-        'my_file' => $form_state->getValue('my_file'),
-      ]);
     }
 
     $this->step++;

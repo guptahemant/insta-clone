@@ -807,4 +807,3 @@ $settings['config_sync_directory'] = '../config/sync';
 $config['system.logging']['error_level'] = 'verbose';
 
 $settings['default_content_deploy_content_directory'] = '../content';
-

@@ -4,7 +4,7 @@
 } }
 
 main {
-  margin-top: 65px;
+  margin-top: 90px !important;
 }
 @media only screen and (max-width: 425px) {
   main {
@@ -71,10 +71,11 @@ main {
   .layout-content form {
     width: 100%;
     border: 1px solid #ccc;
-    padding: 25px 0px;
+    padding: 5px 0px;
 } }
 .layout-content form .userfile {
   display: flex;
+  margin-top: 15px;
 }
 .layout-content form .userfile .profilefield {
   margin-left: 96px;
@@ -97,6 +98,7 @@ main {
     margin-left: 18px;
   }
 }
+
 .layout-content form .userfile .userdatafile .profile-link {
   font-size: 14px;
   color: #0095f6;
@@ -288,6 +290,12 @@ main {
 .layout-content form #edit-actions {
   text-align: center;
 }
+@media only screen and (max-width: 425px) {
+  .layout-content form #edit-actions {
+    text-align: left;
+    margin-left: 22px;
+  }
+}
 .layout-content form #edit-actions #edit-submit {
   border: 1px solid transparent;
   background: #8acee9b8;
@@ -358,4 +366,141 @@ main {
 .ui-widget-overlay {
   background-color: #060606ad;
   opacity: 1;
+}
+
+#changepasswordform {
+  width: 600px;
+}
+@media only screen and (max-width: 425px) {
+  #changepasswordform {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+}
+
+.layout-content form .userfile .usersname {
+  margin-left: 30px;
+  margin-top: 8px;
+  font-size: 24px;
+}
+@media only screen and (max-width: 425px) {
+  .layout-content form .userfile .usersname {
+    margin-left: 18px;
+  }
+}
+#changepasswordform .userfile {
+  margin-bottom: 35px;
+}
+.form-item-old,
+.form-item-new,
+.form-item-confirm {
+  display: flex;
+  margin-top: 15px;
+}
+@media only screen and (max-width: 425px) {
+  .form-item-old,
+  .form-item-new,
+  .form-item-confirm {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
+
+.form-item-old label {
+  font-size: 16px;
+  font-weight: bold;
+  width: 198px;
+  text-align: right;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 425px) {
+  .form-item-old label {
+    margin: 3px 22px;
+    text-align: left;
+  }
+}
+
+.form-item-old input {
+  width: 100%;
+  padding: 4px 12px;
+  margin-left: 30px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+@media only screen and (max-width: 425px) {
+  .form-item-old input {
+    margin: 2px 22px;
+    width: inherit;
+  }
+}
+
+.form-item-new label {
+  font-size: 16px;
+  font-weight: bold;
+  width: 198px;
+  text-align: right;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 425px) {
+  .form-item-new label {
+    margin: 3px 22px;
+    text-align: left;
+  }
+}
+.form-item-new input {
+  width: 100%;
+  padding: 4px 12px;
+  margin-left: 30px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+@media only screen and (max-width: 425px) {
+  .form-item-new input {
+    margin: 2px 22px;
+    width: inherit;
+  }
+}
+
+.form-item-confirm label {
+  font-size: 16px;
+  font-weight: bold;
+  width: 198px;
+  text-align: right;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 425px) {
+  .form-item-confirm label {
+    margin: 3px 22px;
+    text-align: left;
+  }
+}
+.form-item-confirm input {
+  width: 100%;
+  padding: 4px 12px;
+  margin-left: 30px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+@media only screen and (max-width: 425px) {
+  .form-item-confirm input {
+    margin: 2px 22px;
+    width: inherit;
+  }
+}
+
+.changepass {
+  margin-left: -130px;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 425px) {
+  .changepass {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
 }

@@ -1,3 +1,41 @@
+.videowrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.submit1 {
+  margin-top: 10px;
+}
+button.green {
+  background-color: #3fa500b3 !important;
+}
+.submit1 a {
+  color: white;
+  text-decoration: none;
+}
+video#video {
+  width: 25%;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+}
+canvas#canvas {
+  width: 25%;
+  height: 200px;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.videowrap button {
+  background: deepskyblue;
+  border: none;
+  padding: 9px 19px;
+  color: white;
+  font-size: 22px;
+  width: 25%;
+  cursor: pointer;
+}
 .contain1 {
   display: flex;
   flex-direction: column;
@@ -119,12 +157,8 @@ form.multi-step-form input.submitbutton {
   flex-direction: row;
 }
 
-.ui-widget.ui-widget-content.ui-front {
-  width: 400px !important;
-  padding: 0px;
-}
 
-.ui-widget.ui-widget-content.ui-front.step2 {
+.ui-widget.ui-widget-content.ui-front {
   width: 737px !important;
   top: 89px !important;
   padding: 0px !important;
@@ -248,17 +282,4 @@ form.multi-step-form input.submitbutton {
   position: fixed;
   top: 14.5%;
   left: 25%;
-}
-
-a.choose {
-  background: #0095f6;
-  border: none;
-  padding: 9px 8px;
-  color: white !important;
-  font-size: 14px;
-  border-radius: 5px;
-  font-weight: 600;
-  cursor: pointer;
-  margin-bottom: 12px;
-  text-decoration: none;
 }
