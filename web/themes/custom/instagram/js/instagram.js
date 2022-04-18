@@ -13,21 +13,32 @@ var userface = document.getElementById("block-userfacemenu");
 })(jQuery, Drupal);
 
 (function ($, Drupal) {
-  Drupal.behaviors.visual = {
+  Drupal.behaviors.instant = {
     attach: function (context, settings) {
-      $(context)
-        .find("#edit-keys")
-        .on("click keypress", function () {
-          $(".fa-search").hide();
-          $("#edit-keys").addClass("expand");
-          $("#edit-keys").removeClass("shrink");
-        });
-      $("#edit-keys").keyup(function () {
-        if ($("#edit-keys").val().length == 0) {
-          $(".fa-search").show();
-          $("#edit-keys").removeClass("expand");
-          $("#edit-keys").addClass("shrink");
-        }
+      $(context).find('.storiess').slick({
+        centerMode: true,
+        centerPadding: '120px',
+        slidesToShow: 4,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 5
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
       });
     },
   };

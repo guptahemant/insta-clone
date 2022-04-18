@@ -360,3 +360,18 @@ img{
     font-weight: bold;
   }
 }
+.slick-next{
+  right: 42%;
+}
+.slick-prev{
+  left: 42%;
+  z-index: 1;
+}
+.views-row.slick-slide {
+  &:first-child{
+  width: 210px !important;
+}
+}
+.storiess{
+  padding-top: 10%;
+}

@@ -1,0 +1,34 @@
+.story {
+   
+
+.stories{
+    background: white;
+    height: 85px;
+    width: auto;
+    padding: 16px 0px;
+    border: 1px solid #cec9c9;
+    margin-bottom: 24px;
+    &:first-child{
+        padding-left: 12px;
+    }
+    display: flex;
+    .each-row{
+        max-width: 56px;
+        .story-block{
+            text-align: center;
+            img {
+                border: 2px solid transparent;
+                background-image: linear-gradient(50deg,#CA1D7E, #E35157, #F2703F);
+                border-radius: 30px;
+              }
+            }
+        padding: 0px 7px;
+        .field-content {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+        }
+    
+    }
+}
+}
