@@ -1,0 +1,7 @@
+signupForm:
+  path: "/register"
+  defaults:
+    _form: '\Drupal\signupform\Form\Personform'
+    _title: "Personal form"
+  requirements:
+    _permission: "access content"

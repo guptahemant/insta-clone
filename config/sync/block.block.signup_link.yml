@@ -6,13 +6,14 @@ dependencies:
     - 'block_content:basic:59a6bfbb-227f-4b62-86cd-c4868f3595f0'
   module:
     - block_content
+    - system
     - user
   theme:
     - instagram
 id: signup_link
 theme: instagram
 region: sidebar
-weight: -9
+weight: -10
 provider: null
 plugin: 'block_content:59a6bfbb-227f-4b62-86cd-c4868f3595f0'
 settings:
@@ -31,3 +32,7 @@ visibility:
       user: '@user.current_user_context:current_user'
     roles:
       anonymous: anonymous
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/person-details-form\r\n/register\r\n"

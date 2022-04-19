@@ -27,7 +27,7 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /node
+    pages: "/node\r\n/person-details-form\r\n/register"
   user_role:
     id: user_role
     negate: false

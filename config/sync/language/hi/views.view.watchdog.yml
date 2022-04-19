@@ -15,6 +15,8 @@ display:
           label: तारीख
         message:
           label: संदेश
+          alter:
+            alt: '{{ message }}'
         name:
           label: प्रयोक्ता
           separator: ', '
@@ -22,6 +24,9 @@ display:
           label: कार्यवाही
       pager:
         options:
+          tags:
+            next: ››
+            previous: ‹‹
           expose:
             items_per_page_label: 'विषय प्रति पृष्ठ'
             items_per_page_options_all_label: '-सभी-'

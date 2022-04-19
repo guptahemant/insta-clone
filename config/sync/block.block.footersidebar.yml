@@ -12,7 +12,7 @@ dependencies:
 id: footersidebar
 theme: instagram
 region: sidebar
-weight: -5
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer-sidebar'
 settings:

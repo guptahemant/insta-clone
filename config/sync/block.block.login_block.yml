@@ -1,0 +1,30 @@
+uuid: b760e058-c4e2-4b61-960f-0fa50914532f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ebe1390d-f650-41a2-b51c-d2cf713544c3'
+  module:
+    - block_content
+    - system
+  theme:
+    - instagram
+id: login_block
+theme: instagram
+region: sidebar
+weight: -11
+provider: null
+plugin: 'block_content:ebe1390d-f650-41a2-b51c-d2cf713544c3'
+settings:
+  id: 'block_content:ebe1390d-f650-41a2-b51c-d2cf713544c3'
+  label: login_block
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/person-details-form\r\n/register"

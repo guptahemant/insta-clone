@@ -1,25 +1,25 @@
-uuid: 0b102b4e-bf40-4f11-890f-7e87f6614b23
+uuid: 937a3b29-a3a4-4320-ab4d-6b217799b320
 langcode: en
 status: true
 dependencies:
   module:
+    - signupform
     - system
-    - user
   theme:
     - instagram
-id: userlogin
+id: signupblock
 theme: instagram
 region: sidebar
-weight: -13
+weight: -12
 provider: null
-plugin: user_login_block
+plugin: signup_block
 settings:
-  id: user_login_block
-  label: 'User login'
+  id: signup_block
+  label: 'Sign up block'
   label_display: '0'
-  provider: user
+  provider: signupform
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /node
+    pages: "/person-details-form\r\n/register\r\n"

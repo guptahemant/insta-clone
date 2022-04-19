@@ -12,7 +12,7 @@ dependencies:
 id: get_the_app
 theme: instagram
 region: sidebar
-weight: -8
+weight: -9
 provider: null
 plugin: 'block_content:9467f16e-13a9-4016-848b-54be7290888d'
 settings:

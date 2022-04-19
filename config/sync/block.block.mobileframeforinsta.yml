@@ -6,6 +6,7 @@ dependencies:
     - 'block_content:basic:37e79a6a-02b7-45b9-9a64-60d34ed57653'
   module:
     - block_content
+    - system
     - user
   theme:
     - instagram
@@ -31,3 +32,7 @@ visibility:
       user: '@user.current_user_context:current_user'
     roles:
       anonymous: anonymous
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node
