@@ -1,0 +1,7 @@
+story.open_form:
+  path: "/storycreate"
+  defaults:
+    _title: "Story Form"
+    _form: '\Drupal\story\Form\StoryForm'
+  requirements:
+    _permission: 'access content'

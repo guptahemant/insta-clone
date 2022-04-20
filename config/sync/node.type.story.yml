@@ -1,0 +1,18 @@
+uuid: 2055aeca-2697-4960-93ec-698a92c2313b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Story
+type: story
+description: 'Story Created by the users'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

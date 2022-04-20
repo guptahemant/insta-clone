@@ -96,6 +96,7 @@ class CreateNode extends FormBase {
         '#type' => 'html_tag',
         '#tag' => 'div',
         '#value' => '
+        <a href="/storycreate" class ="story-icon"><i class="fab fa-discourse"></i></a>
         <a class ="choose" href ="/capture">Capture From Webcam</a>
         <span class = "choose">Select From Computer</span>',
         '#attributes' => [
