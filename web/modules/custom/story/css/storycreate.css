@@ -1,0 +1,19 @@
+form#story-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 14%;
+}
+input#edit-story-file-upload {
+  font-size: 23px;
+  color: white;
+  background: #0095f6;
+}
+input#edit-button {
+  color: white;
+  font-size: 23px;
+  margin-top: 26px;
+  width: 27.2rem;
+  background: #0095f6;
+  border: #0095f6;
+}

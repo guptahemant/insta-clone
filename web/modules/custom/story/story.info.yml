@@ -1,0 +1,5 @@
+name: Story
+description: A story functionality the the insta-clone site.
+type: module
+core_version_requirement: ^8||^9
+package: Story

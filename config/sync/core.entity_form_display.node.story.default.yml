@@ -1,0 +1,41 @@
+uuid: 5d3d5549-40fe-4e12-951c-eae4cef20d63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.story.body
+    - field.field.node.story.field_images
+    - image.style.thumbnail
+    - node.type.story
+  module:
+    - image
+id: node.story.default
+targetEntityType: node
+bundle: story
+mode: default
+content:
+  field_images:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

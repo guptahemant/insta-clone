@@ -262,3 +262,14 @@ a.choose {
   margin-bottom: 12px;
   text-decoration: none;
 }
+a.story-icon {
+  position: relative;
+  bottom: 30%;
+  right: 44%;
+  font-size: 24px;
+  background-color: #0095f6;
+  width: 10%;
+  height: 7%;
+  color: white !important;
+  text-align: center;
+}
