@@ -95,3 +95,15 @@ function instagram_preprocess_page__feedpost(&$variables) {
 function instagram_preprocess_page__suggestion(&$variables) {
   $variables['#attached']['library'][] = 'instagram/suggested_user';
 }
+
+/**
+ * Add User Image to Search Autocomplete.
+ */
+function instagram_preprocess_search_api_autocomplete_suggestion(&$variables) {
+  $userName = $variables['keys'];
+  $account = user_load_by_name($userName);
+  $userId = $account->id();
+  $user = \Drupal::service('entity_type.manager')->getStorage('user')->load($userId);
+  $user_picture = $user->user_picture->entity->getFileUri();
+  $variables['image'] = \Drupal::service('file_url_generator')->generateString($user_picture);
+}
