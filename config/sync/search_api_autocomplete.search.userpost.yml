@@ -12,16 +12,10 @@ id: userpost
 label: userpost
 index_id: users
 suggester_settings:
-  live_results:
+  server:
     fields: {  }
-    highlight:
-      enabled: false
-      field: ''
-    view_modes:
-      'entity:user':
-        user: default
 suggester_weights:
-  live_results: 0
+  server: 0
 suggester_limits: {  }
 search_settings:
   'page:userpost': {  }
