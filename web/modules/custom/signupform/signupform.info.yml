@@ -1,0 +1,5 @@
+name: Instagram signup form
+description: Provides Custom Signup form for instagram
+type: module
+package: QED42
+core_version_requirement: ^8 || ^9

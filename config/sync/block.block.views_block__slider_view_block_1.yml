@@ -27,7 +27,7 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: "<front>\r\n/node"
   user_role:
     id: user_role
     negate: false

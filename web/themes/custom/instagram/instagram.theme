@@ -51,6 +51,22 @@ function instagram_preprocess_page__user(&$variables) {
 }
 
 /**
+ * Implemented THEMENAME_preprocess_HOOK() to add library to the page.
+ */
+function instagram_preprocess_page__person_details_form(&$variables) {
+  unset($variables['page']['content']);
+  $variables['#attached']['library'][] = 'instagram/nodepage';
+}
+
+/**
+ * Implemented THEMENAME_preprocess_HOOK() to add library to the register.
+ */
+function instagram_preprocess_page__register(&$variables) {
+  unset($variables['page']['content']);
+  $variables['#attached']['library'][] = 'instagram/nodepage';
+}
+
+/**
  * Differentiate classes for Logged in and not-logged-in User.
  */
 function instagram_user_login(&$variables) {
