@@ -1,0 +1,28 @@
+uuid: 5261a91e-587e-4d45-88fe-8743b01b3958
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+    - system
+  theme:
+    - instagram
+id: privatemessageinbox_2
+theme: instagram
+region: content
+weight: 0
+provider: null
+plugin: private_message_inbox_block
+settings:
+  id: private_message_inbox_block
+  label: 'Private Message Inbox'
+  label_display: visible
+  provider: private_message
+  thread_count: 5
+  ajax_load_count: 5
+  ajax_refresh_rate: 15
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /message

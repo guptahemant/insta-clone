@@ -2,10 +2,7 @@ uuid: b760e058-c4e2-4b61-960f-0fa50914532f
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:ebe1390d-f650-41a2-b51c-d2cf713544c3'
   module:
-    - block_content
     - system
   theme:
     - instagram

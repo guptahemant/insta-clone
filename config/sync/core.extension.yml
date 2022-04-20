@@ -57,12 +57,16 @@ module:
   mentions: 0
   menu_link_content: 0
   menu_ui: 0
+  message: 0
+  message_notify: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
   path_alias: 0
   popup: 0
+  private_message: 0
+  private_message_notify: 0
   profile_block: 0
   pseudo: 0
   quickedit: 0

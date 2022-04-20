@@ -1,0 +1,25 @@
+uuid: 003ea334-11cb-4ceb-83e1-b4a264624205
+langcode: en
+status: true
+dependencies:
+  module:
+    - message
+    - private_message
+  enforced:
+    module:
+      - private_message
+_core:
+  default_config_hash: AkWnfFrcjbJUrxl0L-M9Yv4VuRnik1lw2_Z-UtBz3Lc
+id: message.field_message_private_message
+field_name: field_message_private_message
+entity_type: message
+type: entity_reference
+settings:
+  target_type: private_message
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 8fe1d0c2-abcb-4f25-8b0b-9b4cd7e5f9fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+  theme:
+    - bartik
+_core:
+  default_config_hash: 5_HCtkU8sOicC0RgrGdoSPaJ4-OnvzdDgyhOK75rUvQ
+id: privatemessagenotification
+theme: bartik
+region: header
+weight: -3
+provider: null
+plugin: private_message_notification_block
+settings:
+  id: private_message_notification_block
+  label: 'Private Message Notification'
+  label_display: '0'
+  provider: private_message
+  ajax_refresh_rate: 15
+visibility: {  }

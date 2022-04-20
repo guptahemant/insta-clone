@@ -27,7 +27,7 @@ content:
     third_party_settings: {  }
   field_bio:
     type: string_textfield
-    weight: 31
+    weight: 4
     region: content
     settings:
       size: 60
@@ -43,7 +43,7 @@ content:
     third_party_settings: {  }
   field_phone:
     type: string_textfield
-    weight: 34
+    weight: 6
     region: content
     settings:
       size: 60
@@ -51,7 +51,7 @@ content:
     third_party_settings: {  }
   field_website:
     type: string_textfield
-    weight: 33
+    weight: 5
     region: content
     settings:
       size: 60
@@ -59,7 +59,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -75,4 +75,5 @@ hidden:
   contact: true
   langcode: true
   language: true
+  private_messages: true
   timezone: true
