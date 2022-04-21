@@ -1,0 +1,50 @@
+display:
+  default:
+    display_title: मुळस्वरुप
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: कृती
+        thumbnail__target_id:
+          separator: ', '
+        name:
+          separator: ', '
+        bundle:
+          label: प्रकार
+          separator: ', '
+        uid:
+          label: लेखक
+          separator: ', '
+        status:
+          label: वर्तमानस्थिती
+          settings:
+            format_custom_false: अप्रकाशित
+            format_custom_true: प्रकाशित
+          separator: ', '
+        changed:
+          label: सुधारित
+          separator: ', '
+        operations:
+          label: कृती
+      exposed_form:
+        options:
+          submit_button: गाळणी
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
+      filters:
+        bundle:
+          expose:
+            label: प्रकार
+        status:
+          expose:
+            label: सत्य
+          group_info:
+            label: 'प्रकाशन अवस्था'
+            group_items:
+              1:
+                title: प्रकाशित
+              2:
+                title: अप्रकाशित
+        langcode:
+          expose:
+            label: भाषा

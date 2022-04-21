@@ -1,0 +1,15 @@
+uuid: 4edcdd4d-b93e-44b5-8265-2acdb7072ff1
+langcode: en
+status: true
+dependencies: {  }
+name: story
+label: Story
+effects:
+  b3dcd97c-6f2d-47cc-8c4b-4e83366acec0:
+    uuid: b3dcd97c-6f2d-47cc-8c4b-4e83366acec0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 144
+      height: 256
+      anchor: center-center

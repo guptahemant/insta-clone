@@ -7,6 +7,7 @@ module:
   admin_toolbar_tools: 0
   automated_cron: 0
   big_pipe: 0
+  blazy: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -54,6 +55,7 @@ module:
   link: 0
   locale: 0
   log_mod: 0
+  media: 0
   mentions: 0
   menu_link_content: 0
   menu_ui: 0
@@ -82,6 +84,8 @@ module:
   serialization: 0
   shortcut: 0
   signupform: 0
+  slick: 0
+  slick_carousel_slider: 0
   statistics: 0
   story: 0
   system: 0

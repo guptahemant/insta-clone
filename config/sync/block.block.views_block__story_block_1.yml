@@ -1,0 +1,39 @@
+uuid: 9f009efc-2f8c-4ee2-a020-dd6b723667ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.story
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - instagram
+id: views_block__story_block_1
+theme: instagram
+region: story
+weight: 0
+provider: null
+plugin: 'views_block:story-block_1'
+settings:
+  id: 'views_block:story-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator

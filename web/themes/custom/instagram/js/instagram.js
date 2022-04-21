@@ -32,4 +32,43 @@ var userface = document.getElementById("block-userfacemenu");
     },
   };
 })(jQuery, Drupal);
+var initial = window.location.href;
+var count = initial.split("=")[1];
+
+(function ($, Drupal) {
+  Drupal.behaviors.instant = {
+    attach: function (context, settings) {
+      $('.each-row.slick-slide[data-slick-index= 0 ]').removeClass('slick-current');
+      $('.each-row.slick-cloned:last-child').hide();
+      $('.each-row.slick-slide[data-slick-index=' + count + ']').addClass('slick-current');
+      $(context).find('.storiess').slick({
+        
+        initialSlide: count,
+        centerMode: true,
+        centerPadding: '0px 20px',
+        slidesToShow: 5,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 5
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    },
+  };
+})(jQuery, Drupal);
 

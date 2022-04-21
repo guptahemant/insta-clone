@@ -13,6 +13,7 @@ dependencies:
     - field_ui
     - filter
     - flag
+    - media
     - node
     - private_message
     - search_api_autocomplete
@@ -58,4 +59,5 @@ permissions:
   - 'use search_api_autocomplete for userpost'
   - 'use text format basic_html'
   - 'use text format full_html'
+  - 'view media'
   - 'view search api pages'
