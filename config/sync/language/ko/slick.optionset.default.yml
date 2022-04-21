@@ -1,0 +1,5 @@
+label: 기본값
+options:
+  settings:
+    prevArrow: 이전
+    nextArrow: 다음
