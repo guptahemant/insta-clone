@@ -1,0 +1,25 @@
+uuid: 0373b42f-8170-41db-ac86-314442f5c28a
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+    - system
+  theme:
+    - instagram
+id: privatemessageactions_2
+theme: instagram
+region: content
+weight: 0
+provider: null
+plugin: private_message_actions_block
+settings:
+  id: private_message_actions_block
+  label: 'Private Message Actions'
+  label_display: visible
+  provider: private_message
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /message

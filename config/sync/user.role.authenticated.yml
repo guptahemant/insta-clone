@@ -10,9 +10,11 @@ dependencies:
   module:
     - comment
     - contact
+    - field_ui
     - filter
     - flag
     - node
+    - private_message
     - search_api_autocomplete
     - search_api_page
     - shortcut
@@ -30,11 +32,18 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'access user profiles'
+  - 'administer private message module'
+  - 'administer private messages'
+  - 'administer private_message fields'
+  - 'administer private_message form display'
+  - 'administer private_message_thread fields'
+  - 'administer private_message_thread form display'
   - 'administer search_api_autocomplete'
   - 'change own username'
   - 'create article content'
   - 'create terms in tags'
   - 'delete own article content'
+  - 'delete private message thread for all'
   - 'edit own article content'
   - 'flag bookmark'
   - 'flag following'
@@ -45,6 +54,7 @@ permissions:
   - 'unflag bookmark'
   - 'unflag following'
   - 'unflag likes'
+  - 'use private messaging system'
   - 'use search_api_autocomplete for userpost'
   - 'use text format basic_html'
   - 'use text format full_html'

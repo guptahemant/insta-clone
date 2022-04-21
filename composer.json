@@ -37,6 +37,7 @@
         "drupal/lang_dropdown": "^2.0@beta",
         "drupal/mentions": "^1.0@alpha",
         "drupal/pathauto": "^1.8",
+        "drupal/private_message": "^3.0@beta",
         "drupal/quicktabs": "^3.0@alpha",
         "drupal/search_api": "^1.21",
         "drupal/search_api_autocomplete": "^1.5",

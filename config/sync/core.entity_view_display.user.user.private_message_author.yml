@@ -1,0 +1,42 @@
+uuid: 5d4efe3c-8721-44a5-9409-ba137b08cefb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.private_message_author
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_website
+    - field.field.user.user.user_picture
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: 5VkjdDDe_kM-giLC61z36ACn6Z2eMjaH63Rh6adWWpw
+id: user.user.private_message_author
+targetEntityType: user
+bundle: user
+mode: private_message_author
+content:
+  user_picture:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_bio: true
+  field_full_name: true
+  field_phone: true
+  field_website: true
+  flag_following: true
+  langcode: true
+  linked_username: true
+  member_for: true
+  my_name: true
+  private_message_link: true
+  search_api_excerpt: true
